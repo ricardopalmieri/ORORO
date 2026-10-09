@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OROЯO · EDITOR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script type="importmap">
+    { "imports": { "three": "./assets/js/three.module.js" } }
+  </script>
+  <style>
+    :root{
+      --void:#06080d; --void-2:#0c0f16; --panel:#0e121b; --line:rgba(232,225,210,0.12);
+      --bone:#E8E1D2; --ash:#9aa2ad; --ash-dim:#5b626c; --accent:#0E8C86; --yellow:#B7F03B; --danger:#C1121F;
+      --mono:"IBM Plex Mono",monospace; --sans:"IBM Plex Sans",sans-serif;
+    }
+    *{box-sizing:border-box;}
+    html,body{margin:0;height:100%;background:var(--void);color:var(--bone);font-family:var(--sans);overflow:hidden;}
+    button,select,input,textarea{font-family:var(--mono);}
+    /* topo */
+    .toolbar{
+      position:fixed;top:0;left:0;right:0;height:52px;z-index:10;
+      display:flex;align-items:center;gap:12px;padding:0 16px;
+      background:var(--void-2);border-bottom:1px solid var(--line);
+    }
+    .toolbar .brand{font-family:var(--sans);font-weight:700;letter-spacing:0.28em;font-size:0.9rem;}
+    .toolbar .brand .ya{display:inline-block;}
+    .toolbar select,.toolbar button{
+      background:transparent;color:var(--bone);border:1px solid var(--line);
+      padding:7px 12px;font-size:0.7rem;letter-spacing:0.06em;cursor:pointer;
+    }
+    .toolbar button:hover,.toolbar select:hover{border-color:var(--accent);color:var(--accent);}
+    .toolbar .spacer{flex:1;}
+    .toolbar .group{display:flex;align-items:center;gap:6px;}
+    .toolbar .lbl{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.16em;color:var(--ash-dim);}
+    .btn-yellow{border-color:rgba(183,240,59,0.4)!important;color:var(--yellow)!important;}
+    .btn-yellow:hover{background:rgba(183,240,59,0.08);}
+    /* corpo */
+    .stage{position:fixed;top:52px;left:0;right:320px;bottom:0;}
+    #viewport{position:absolute;inset:0;}
+    #edit-canvas{width:100%;height:100%;display:block;}
+    #room-title{position:absolute;top:10px;left:14px;font-family:var(--mono);font-size:0.62rem;letter-spacing:0.14em;color:var(--ash);pointer-events:none;text-shadow:0 0 8px #000;}
+    .hint-bar{position:absolute;bottom:10px;left:14px;font-family:var(--mono);font-size:0.56rem;letter-spacing:0.1em;color:var(--ash-dim);pointer-events:none;}
+    /* inspetor */
+    .sidebar{position:fixed;top:52px;right:0;bottom:0;width:320px;background:var(--panel);border-left:1px solid var(--line);overflow-y:auto;}
+    #inspector{padding:14px 14px 40px;}
+    #inspector h3{font-family:var(--mono);font-weight:700;font-size:0.72rem;letter-spacing:0.18em;color:var(--yellow);margin:2px 0 14px;}
+    .insp-sep{font-family:var(--mono);font-size:0.56rem;letter-spacing:0.18em;color:var(--ash-dim);text-transform:uppercase;margin:16px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--line);}
+    .insp-row{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+    .insp-label{flex:0 0 92px;font-family:var(--mono);font-size:0.62rem;letter-spacing:0.04em;color:var(--ash);}
+    .insp-row input[type=text],.insp-row input[type=number],.insp-row select,.insp-row textarea{
+      flex:1;min-width:0;background:var(--void);border:1px solid var(--line);color:var(--bone);
+      padding:5px 7px;font-size:0.68rem;
+    }
+    .insp-row textarea{min-height:52px;resize:vertical;line-height:1.4;}
+    .insp-row input[type=color]{flex:1;height:28px;background:var(--void);border:1px solid var(--line);padding:2px;cursor:pointer;}
+    .insp-vec{flex:1;display:flex;gap:4px;}
+    .insp-vec input{width:100%;min-width:0;background:var(--void);border:1px solid var(--line);color:var(--bone);padding:5px 4px;font-size:0.64rem;}
+    .insp-add{display:flex;gap:6px;margin-top:8px;}
+    .insp-add input{flex:1;background:var(--void);border:1px solid var(--line);color:var(--bone);padding:5px 7px;font-size:0.64rem;}
+    .insp-add button{width:32px;background:transparent;border:1px solid var(--line);color:var(--yellow);cursor:pointer;}
+    .insp-choice{border:1px solid var(--line);border-left:2px solid var(--accent);padding:8px;margin-bottom:8px;}
+    .insp-choice-t{font-family:var(--mono);font-size:0.56rem;letter-spacing:0.16em;color:var(--yellow);margin-bottom:6px;}
+    .insp-danger{width:100%;background:transparent;border:1px solid rgba(193,18,31,0.5);color:var(--danger);padding:8px;cursor:pointer;font-size:0.66rem;letter-spacing:0.1em;}
+    .insp-danger:hover{background:rgba(193,18,31,0.12);}
+    .insp-hint{font-family:var(--mono);font-size:0.58rem;line-height:1.5;color:var(--ash-dim);margin-top:14px;}
+    @media (max-width:820px){
+      .stage{right:0;bottom:44%;}
+      .sidebar{top:auto;left:0;width:100%;height:44%;border-left:none;border-top:1px solid var(--line);}
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <span class="brand">ORO<span class="ya">Я</span>O · EDITOR</span>
+    <div class="group"><span class="lbl">SALA</span><select id="room-select"></select></div>
+    <button id="btn-scene">CENA</button>
+    <div class="group"><span class="lbl">ADD</span><select id="add-select"></select><button id="add-btn">+ objeto</button></div>
+    <div class="spacer"></div>
+    <button id="btn-export-json" class="btn-yellow">exportar JSON</button>
+    <button id="btn-export-html" class="btn-yellow">exportar HTML</button>
+  </div>
+
+  <div class="stage">
+    <div id="viewport">
+      <canvas id="edit-canvas"></canvas>
+      <div id="room-title"></div>
+      <div class="hint-bar">CLIQUE = selecionar · ARRASTAR = orbitar · SHIFT/DIREITO = pan · SCROLL = zoom</div>
+    </div>
+  </div>
+
+  <aside class="sidebar"><div id="inspector"></div></aside>
+
+  <script type="module">
+    import { initEditor, wireToolbar } from './ororo-editor.js?v=23c';
+    wireToolbar();
+    initEditor();
+  </script>
+</body>
+</html>

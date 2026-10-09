@@ -1,0 +1,425 @@
+{
+  "id": "sala-02c-espelhos-dagua",
+  "stage": 2,
+  "name": {
+    "pt": "ESPELHOS D'ÁGUA",
+    "en": "WATER MIRRORS",
+    "es": "ESPEJOS DE AGUA",
+    "de": "WASSERSPIEGEL",
+    "zh": "水镜"
+  },
+  "scene": {
+    "accent": "#243B8F",
+    "accent2": "#4B1F68",
+    "fog": "#03050b",
+    "fogDensity": 0.032,
+    "ambient": {
+      "color": "#10182c",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#E8E1D2",
+      "intensity": 6.5,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#02040a",
+      "colorA": "#243B8F",
+      "colorB": "#4B1F68",
+      "glow": "#E8E1D2",
+      "liquid": 0.85,
+      "veins": 0.0,
+      "crack": 0.0,
+      "grid": 0.18,
+      "gridScale": 0.5,
+      "scale": 0.12
+    },
+    "fireflies": {
+      "color": "#E8E1D2",
+      "count": 100,
+      "drift": 0.5,
+      "size": 34
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#243B8F",
+      "height": 6.5
+    },
+    "audio": {
+      "root": 46.2,
+      "intensity": 0.42
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "mirror-shard",
+      "position": [
+        -6.6,
+        1.3,
+        -4.0
+      ],
+      "rotation": [
+        0.0,
+        0.55,
+        0
+      ],
+      "tint": "#243B8F",
+      "size": [
+        0.9,
+        1.6
+      ],
+      "distort": 0.05,
+      "info": "ea1",
+      "content": {
+        "title": {
+          "pt": "ESPELHO CÔNCAVO",
+          "en": "CONCAVE MIRROR",
+          "es": "ESPEJO CÓNCAVO",
+          "de": "HOHLSPIEGEL",
+          "zh": "凹面镜"
+        },
+        "body": {
+          "pt": "Distorce a imagem para dentro, calibração desconhecida. Quem se olha aqui aparece menor e mais fundo, puxado para o centro do vidro.",
+          "en": "Distorts the image inward, calibration unknown. Whoever looks appears smaller and deeper, pulled toward the center of the glass.",
+          "es": "Distorsiona la imagen hacia dentro, calibración desconocida. Quien mira aparece más pequeño y más profundo, arrastrado hacia el centro del vidrio.",
+          "de": "Verzerrt das Bild nach innen, Kalibrierung unbekannt. Wer hineinschaut, erscheint kleiner und tiefer, zum Zentrum des Glases gezogen.",
+          "zh": "影像向内变形，校准方式不明。凝视它的人显得更小、更深，仿佛被拉向玻璃中心。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#243B8F",
+      "itemTint": "#0a0e1c",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "ea2",
+      "content": {
+        "title": {
+          "pt": "FOTOGRAFIA",
+          "en": "PHOTOGRAPH",
+          "es": "FOTOGRAFÍA",
+          "de": "FOTOGRAFIE",
+          "zh": "照片"
+        },
+        "body": {
+          "pt": "Imagem borrada, três sobreposições visíveis. São três momentos do mesmo lugar impressos juntos, e nenhum deles combina com este.",
+          "en": "Blurred image, three overlays visible. Three moments of the same place printed together, and none of them matches this one.",
+          "es": "Imagen borrosa, tres superposiciones visibles. Tres momentos del mismo lugar impresos juntos, y ninguno coincide con este.",
+          "de": "Unscharfes Bild, drei Überlagerungen sichtbar. Drei Momente desselben Ortes zusammen gedruckt, und keiner stimmt mit diesem überein.",
+          "zh": "模糊的影像，可见三层叠加。同一地点的三个时刻被印在一起，却没有一个与现在相符。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#4B1F68",
+      "itemTint": "#120a18",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "ea3",
+      "content": {
+        "title": {
+          "pt": "PELE TRANSLÚCIDA",
+          "en": "TRANSLUCENT SKIN",
+          "es": "PIEL TRANSLÚCIDA",
+          "de": "DURCHSCHEINENDE HAUT",
+          "zh": "半透明皮肤"
+        },
+        "body": {
+          "pt": "Material com padrão de escama, toque não recomendado. Deixa passar a luz e um pouco da imagem de quem está atrás, como um corpo meio presente.",
+          "en": "Material with a scale pattern, touch not advised. It lets through light and a little of the image behind it, like a body half present.",
+          "es": "Material con patrón de escamas, no se recomienda tocar. Deja pasar la luz y un poco de la imagen que hay detrás, como un cuerpo a medio estar.",
+          "de": "Material mit Schuppenmuster, Berührung nicht empfohlen. Es lässt Licht und etwas vom Bild dahinter hindurch, wie ein halb anwesender Körper.",
+          "zh": "带有鳞片纹理的材料，不建议触摸。它让光线和背后的部分影像穿过，像一具只存在了一半的身体。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        -2,
+        2.0,
+        -6.4
+      ],
+      "tint": "#0a0a12",
+      "glow": "#E8E1D2",
+      "itemScale": 0.22,
+      "displace": 0.06,
+      "info": "ea4",
+      "content": {
+        "title": {
+          "pt": "FRAGMENTO Я",
+          "en": "Я FRAGMENT",
+          "es": "FRAGMENTO Я",
+          "de": "Я-FRAGMENT",
+          "zh": "Я 碎片"
+        },
+        "body": {
+          "pt": "Caractere isolado, origem tipográfica não registrada. É a letra virada do nome OROЯO. Sozinha, aponta para o lado errado, como um reflexo que escapou da palavra.",
+          "en": "Isolated character, typographic origin unrecorded. It is the reversed letter from the name OROЯO. Alone, it points the wrong way, like a reflection that escaped the word.",
+          "es": "Carácter aislado, origen tipográfico no registrado. Es la letra invertida del nombre OROЯO. Sola, apunta en la dirección equivocada, como un reflejo que escapó de la palabra.",
+          "de": "Isoliertes Zeichen, typografische Herkunft nicht dokumentiert. Es ist der umgekehrte Buchstabe aus dem Namen OROЯO. Allein zeigt er in die falsche Richtung, wie ein Spiegelbild, das dem Wort entkommen ist.",
+          "zh": "孤立字符，字体来源没有记录。它是 OROЯO 名字中的反向字母。离开单词后，它指向错误的方向，像一个从词语中逃出的倒影。"
+        }
+      }
+    },
+    {
+      "type": "tank",
+      "position": [
+        0,
+        0,
+        -9.0
+      ],
+      "radius": 0.5,
+      "height": 0.5,
+      "colorA": "#03050c",
+      "colorB": "#243B8F",
+      "glow": "#E8E1D2",
+      "info": "ea5",
+      "content": {
+        "title": {
+          "pt": "BACIA",
+          "en": "BASIN",
+          "es": "CUENCO",
+          "de": "BECKEN",
+          "zh": "水盆"
+        },
+        "body": {
+          "pt": "Água parada, superfície plana, o reflexo chega atrasado. Mexa a mão sobre ela e a imagem responde depois, no seu próprio tempo.",
+          "en": "Still water, flat surface, the reflection arrives late. Move a hand over it and the image answers afterward, in its own time.",
+          "es": "Agua quieta, superficie plana, el reflejo llega tarde. Mueve una mano sobre ella y la imagen responde después, a su propio ritmo.",
+          "de": "Stilles Wasser, glatte Oberfläche, das Spiegelbild kommt verspätet. Bewege eine Hand darüber und das Bild antwortet danach, in seiner eigenen Zeit.",
+          "zh": "静止的水，平坦的表面，倒影总是迟到。把手从上方划过，影像会稍后才回应，按自己的时间。"
+        }
+      }
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        6.6,
+        1.3,
+        -4.4
+      ],
+      "rotation": [
+        0.0,
+        -0.55,
+        0
+      ],
+      "tint": "#0E8C86",
+      "size": [
+        0.9,
+        1.6
+      ],
+      "distort": 0.05,
+      "info": "ea6",
+      "content": {
+        "title": {
+          "pt": "CACO",
+          "en": "SHARD",
+          "es": "FRAGMENTO",
+          "de": "SCHERBE",
+          "zh": "碎镜"
+        },
+        "body": {
+          "pt": "Vidro rachado, reflexo incompleto. Cada pedaço mostra uma parte de quem olha, e as partes não fecham num rosto só.",
+          "en": "Cracked glass, incomplete reflection. Each piece shows part of whoever looks, and the parts do not close into a single face.",
+          "es": "Vidrio agrietado, reflejo incompleto. Cada pieza muestra una parte de quien mira, y las partes no se cierran en un solo rostro.",
+          "de": "Gesprungenes Glas, unvollständiges Spiegelbild. Jedes Stück zeigt einen Teil der betrachtenden Person, und die Teile schließen sich nicht zu einem einzigen Gesicht.",
+          "zh": "裂开的玻璃，不完整的倒影。每一片都显示观看者的一部分，而这些部分无法拼成同一张脸。"
+        }
+      }
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        -5.4,
+        1.1,
+        -7.4
+      ],
+      "rotation": [
+        0.0,
+        0.3,
+        0
+      ],
+      "tint": "#872D67",
+      "size": [
+        0.7,
+        1.3
+      ],
+      "distort": 0.05
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        5.4,
+        1.1,
+        -7.8
+      ],
+      "rotation": [
+        0.0,
+        -0.3,
+        0
+      ],
+      "tint": "#4B1F68",
+      "size": [
+        0.7,
+        1.3
+      ],
+      "distort": 0.05
+    },
+    {
+      "type": "shard",
+      "position": [
+        1.6,
+        2.3,
+        -7.2
+      ],
+      "tint": "#0a0a12",
+      "glow": "#E8E1D2",
+      "itemScale": 0.2,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        0,
+        1.8,
+        -8.6
+      ],
+      "tint": "#0a0a12",
+      "glow": "#E8E1D2",
+      "itemScale": 0.24,
+      "displace": 0.06
+    }
+  ],
+  "central": {
+    "type": "mirror",
+    "position": [
+      0,
+      0,
+      -5.4
+    ],
+    "title": {
+      "pt": "ESPELHO LÍQUIDO",
+      "en": "LIQUID MIRROR",
+      "es": "ESPEJO LÍQUIDO",
+      "de": "FLÜSSIGER SPIEGEL",
+      "zh": "液态镜"
+    },
+    "body": {
+      "pt": "Vertical, deforma o nome OROЯO a cada pulso. Nenhuma versão se repete. É água de pé, uma parede que reflete e escorre ao mesmo tempo. Quem atravessa não volta idêntico ao que era.",
+      "en": "Vertical, it warps the name OROЯO with every pulse. No version repeats. It is standing water, a wall that reflects and runs at once. Whoever crosses does not return identical to what they were.",
+      "es": "Vertical, deforma el nombre OROЯO con cada pulso. Ninguna versión se repite. Es agua erguida, una pared que refleja y fluye al mismo tiempo. Quien la cruza no vuelve idéntico a lo que era.",
+      "de": "Senkrecht stehend verzerrt er den Namen OROЯO mit jedem Puls. Keine Version wiederholt sich. Er ist aufgerichtetes Wasser, eine Wand, die zugleich spiegelt und fließt. Wer hindurchgeht, kehrt nicht identisch zurück.",
+      "zh": "它竖直存在，每一次脉动都会扭曲 OROЯO 这个名字，没有一次重复。它是站立的水，是一面同时反射又流动的墙。穿过它的人不会以原来的样子回来。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "ATRAVESSAR",
+          "en": "CROSS THROUGH",
+          "es": "ATRAVESAR",
+          "de": "HINDURCHGEHEN",
+          "zh": "穿越"
+        },
+        "detail": {
+          "pt": "a superfície cede como água espessa",
+          "en": "the surface yields like thick water",
+          "es": "la superficie cede como agua espesa",
+          "de": "die Oberfläche gibt nach wie dickes Wasser",
+          "zh": "表面像浓稠的水一样让开"
+        },
+        "rastro": {
+          "espelho": 2
+        },
+        "next": "sala-03c-corpo-fragmentado.html"
+      },
+      {
+        "verb": {
+          "pt": "QUEBRAR",
+          "en": "BREAK",
+          "es": "ROMPER",
+          "de": "ZERBRECHEN",
+          "zh": "打破"
+        },
+        "detail": {
+          "pt": "a rachadura se espalha sem som",
+          "en": "the crack spreads in silence",
+          "es": "la grieta se extiende en silencio",
+          "de": "der Riss breitet sich lautlos aus",
+          "zh": "裂纹在沉默中扩散"
+        },
+        "rastro": {
+          "espelho": 1,
+          "sangue": 1
+        },
+        "next": "sala-03b-vila-ocupada.html"
+      },
+      {
+        "verb": {
+          "pt": "OLHAR",
+          "en": "KEEP LOOKING",
+          "es": "SEGUIR MIRANDO",
+          "de": "WEITERHINSEHEN",
+          "zh": "继续凝视"
+        },
+        "detail": {
+          "pt": "a imagem demora e já chega outra",
+          "en": "the image is slow, and arrives changed",
+          "es": "la imagen es lenta y llega cambiada",
+          "de": "das Bild ist langsam und kommt verändert an",
+          "zh": "影像来得缓慢，而且已经改变"
+        },
+        "rastro": {
+          "espelho": 1,
+          "cinza": 1
+        },
+        "next": "sala-03a-animais-fantasma.html"
+      }
+    ]
+  }
+}

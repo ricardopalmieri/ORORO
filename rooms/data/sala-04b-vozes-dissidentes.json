@@ -1,0 +1,430 @@
+{
+  "id": "sala-04b-vozes-dissidentes",
+  "stage": 4,
+  "name": {
+    "pt": "VOZES DISSIDENTES",
+    "en": "DISSIDENT VOICES",
+    "es": "VOCES DISIDENTES",
+    "de": "DISSIDENTE STIMMEN",
+    "zh": "异议之声"
+  },
+  "scene": {
+    "accent": "#872D67",
+    "accent2": "#8A0303",
+    "fog": "#07050a",
+    "fogDensity": 0.036,
+    "ambient": {
+      "color": "#220f1c",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#872D67",
+      "intensity": 8.6,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#070409",
+      "colorA": "#872D67",
+      "colorB": "#8A0303",
+      "glow": "#C1121F",
+      "liquid": 0.4,
+      "veins": 0.12,
+      "crack": 0.2,
+      "grid": 0.22,
+      "gridScale": 0.42,
+      "scale": 0.15
+    },
+    "fireflies": {
+      "color": "#C1121F",
+      "count": 90,
+      "drift": 0.35
+    },
+    "boundary": {
+      "radius": 12.5,
+      "glow": "#872D67",
+      "height": 6
+    },
+    "audio": {
+      "root": 43.7,
+      "intensity": 0.5
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "speaker",
+      "position": [
+        -5,
+        0,
+        -3
+      ],
+      "accent": "#872D67",
+      "info": "vd1",
+      "content": {
+        "title": {
+          "pt": "ALTO-FALANTE A",
+          "en": "SPEAKER A",
+          "es": "ALTAVOZ A",
+          "de": "LAUTSPRECHER A",
+          "zh": "扬声器 A"
+        },
+        "body": {
+          "pt": "Emite estática em intervalos regulares. Dentro do ruído há um ritmo, sempre o mesmo. Não é falha do aparelho, é alguém batendo do outro lado.",
+          "en": "Emits static at regular intervals. Inside the noise there is a rhythm, always the same. It is not a fault in the device, it is someone knocking from the other side.",
+          "es": "Emite estática a intervalos regulares. Dentro del ruido hay un ritmo, siempre el mismo. No es una falla del aparato: es alguien golpeando desde el otro lado.",
+          "de": "Sendet in regelmäßigen Abständen statisches Rauschen. Im Geräusch liegt ein Rhythmus, immer derselbe. Es ist kein Defekt des Geräts, sondern jemand, der von der anderen Seite klopft.",
+          "zh": "以固定间隔发出静电噪声。噪声内部有一种节奏，始终相同。这不是设备故障，而是有人从另一侧敲击。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        5,
+        0,
+        -3.4
+      ],
+      "accent": "#872D67",
+      "info": "vd2",
+      "content": {
+        "title": {
+          "pt": "ALTO-FALANTE B",
+          "en": "SPEAKER B",
+          "es": "ALTAVOZ B",
+          "de": "LAUTSPRECHER B",
+          "zh": "扬声器 B"
+        },
+        "body": {
+          "pt": "Segunda unidade, fora de sincronia com a primeira. As duas quase se encontram e nunca fecham. O desencontro entre elas produz uma terceira frase que nenhuma diz sozinha.",
+          "en": "Second unit, out of sync with the first. The two almost meet and never close. The gap between them makes a third phrase that neither says alone.",
+          "es": "Segunda unidad, fuera de sincronía con la primera. Las dos casi se encuentran y nunca cierran. El desfase entre ellas produce una tercera frase que ninguna dice por separado.",
+          "de": "Zweite Einheit, nicht synchron mit der ersten. Beide treffen sich fast und schließen nie ganz. Die Lücke zwischen ihnen erzeugt einen dritten Satz, den keine für sich allein spricht.",
+          "zh": "第二个装置，与第一个不同步。两者几乎相遇，却从不真正重合。它们之间的错位生成第三句话，而任何一个单独都说不出来。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#872D67",
+      "itemTint": "#160a14",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "vd3",
+      "content": {
+        "title": {
+          "pt": "MÁSCARA",
+          "en": "MASK",
+          "es": "MÁSCARA",
+          "de": "MASKE",
+          "zh": "面具"
+        },
+        "body": {
+          "pt": "Material misto, ajuste para múltiplos rostos. Serve em qualquer um e não guarda ninguém. Foi feita para que a voz importasse mais que a cara.",
+          "en": "Mixed material, fitted for multiple faces. It fits anyone and holds no one. It was made so the voice would matter more than the face.",
+          "es": "Material mixto, adaptado a múltiples rostros. Le sirve a cualquiera y no guarda a nadie. Fue hecha para que la voz importara más que la cara.",
+          "de": "Gemischtes Material, für mehrere Gesichter angepasst. Sie passt jedem und bewahrt niemanden. Sie wurde gemacht, damit die Stimme wichtiger ist als das Gesicht.",
+          "zh": "混合材料制成，可适配多张脸。它适合任何人，却不保存任何人的身份。它被制造出来，让声音比面孔更重要。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C1121F",
+      "itemTint": "#180808",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "vd4",
+      "content": {
+        "title": {
+          "pt": "KIT DE SUTURA",
+          "en": "SUTURE KIT",
+          "es": "KIT DE SUTURA",
+          "de": "NAHTSET",
+          "zh": "缝合套件"
+        },
+        "body": {
+          "pt": "Agulhas, linhas e prótese parcial, uso recorrente. Consertaram o mesmo ponto muitas vezes. O reparo virou parte do corpo, mais firme que o original.",
+          "en": "Needles, thread, partial prosthesis, recurring use. The same spot was mended many times. The repair became part of the body, firmer than the original.",
+          "es": "Agujas, hilo, prótesis parcial, uso recurrente. El mismo punto fue reparado muchas veces. La reparación se volvió parte del cuerpo, más firme que el original.",
+          "de": "Nadeln, Faden, Teilprothese, wiederholter Gebrauch. Dieselbe Stelle wurde oft geflickt. Die Reparatur wurde Teil des Körpers, fester als das Original.",
+          "zh": "针、线和部分义肢，反复使用。同一个位置被修补了很多次。修复逐渐成为身体的一部分，甚至比原本的组织更牢固。"
+        }
+      }
+    },
+    {
+      "type": "panel",
+      "position": [
+        -5.6,
+        1.6,
+        -4.6
+      ],
+      "rotation": [
+        0,
+        0.5,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#872D67",
+      "line": "#8A0303",
+      "info": "vd5",
+      "content": {
+        "title": {
+          "pt": "CARTAZ",
+          "en": "POSTER",
+          "es": "CARTEL",
+          "de": "PLAKAT",
+          "zh": "海报"
+        },
+        "body": {
+          "pt": "Sem slogan legível, camadas de cola sugerem reuso. Por baixo do último cartaz há dezenas de outros. A parede virou arquivo de tudo que já foi gritado ali.",
+          "en": "No legible slogan, layers of glue suggest reuse. Under the last poster there are dozens more. The wall became an archive of everything already shouted there.",
+          "es": "No hay eslogan legible; las capas de pegamento sugieren reutilización. Debajo del último cartel hay decenas más. La pared se convirtió en archivo de todo lo que ya se gritó allí.",
+          "de": "Kein lesbarer Slogan, Klebstoffschichten deuten auf Wiederverwendung. Unter dem letzten Plakat liegen Dutzende weitere. Die Wand wurde zum Archiv von allem, was dort schon gerufen wurde.",
+          "zh": "没有可辨认的口号，多层胶水暗示它曾被反复使用。最后一张海报下面还有几十张。墙面成了这里所有呐喊的档案。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        2,
+        1.2,
+        -8.0
+      ],
+      "tint": "#100810",
+      "glow": "#B7F03B",
+      "itemScale": 0.28,
+      "displace": 0.06,
+      "info": "vd6",
+      "content": {
+        "title": {
+          "pt": "AMULETO",
+          "en": "AMULET",
+          "es": "AMULETO",
+          "de": "AMULETT",
+          "zh": "护符"
+        },
+        "body": {
+          "pt": "Componente costurado ao tecido, pulso intermitente. É metade reza, metade circuito. Foi feito para proteger de algo que só aparece quando ele acende.",
+          "en": "Component stitched into the fabric, intermittent pulse. It is half prayer, half circuit. It was made to protect against something that only appears when it lights up.",
+          "es": "Componente cosido a la tela, pulso intermitente. Es mitad oración, mitad circuito. Fue hecho para proteger de algo que solo aparece cuando se enciende.",
+          "de": "In den Stoff eingenähte Komponente, intermittierender Puls. Halb Gebet, halb Schaltkreis. Es wurde geschaffen, um vor etwas zu schützen, das nur erscheint, wenn es aufleuchtet.",
+          "zh": "缝在布料上的元件，间歇脉动。它一半是祈祷，一半是电路。它被制作来抵御某种只有在它亮起时才会出现的东西。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        0,
+        0,
+        -9.0
+      ],
+      "accent": "#8A0303"
+    },
+    {
+      "type": "banner",
+      "position": [
+        -6.4,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        0.35,
+        0
+      ],
+      "color": "#3a0508",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#8A0303",
+      "emissiveIntensity": 0.15
+    },
+    {
+      "type": "banner",
+      "position": [
+        6.4,
+        0,
+        -6.4
+      ],
+      "rotation": [
+        0,
+        -0.35,
+        0
+      ],
+      "color": "#2a0a18",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#872D67",
+      "emissiveIntensity": 0.12
+    },
+    {
+      "type": "panel",
+      "position": [
+        5.8,
+        1.6,
+        -5.2
+      ],
+      "rotation": [
+        0,
+        -0.5,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#C1121F",
+      "line": "#243B8F"
+    },
+    {
+      "type": "shard",
+      "position": [
+        -2.4,
+        1.0,
+        -8.4
+      ],
+      "tint": "#0c0a14",
+      "glow": "#872D67",
+      "itemScale": 0.3,
+      "displace": 0.06
+    }
+  ],
+  "central": {
+    "type": "radio",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "RÁDIO-ORÁCULO",
+      "en": "ORACLE RADIO",
+      "es": "RADIO ORÁCULO",
+      "de": "ORAKELRADIO",
+      "zh": "神谕收音机"
+    },
+    "body": {
+      "pt": "Transmite vozes fragmentadas, sobrepostas, numa língua que muda antes de se fixar. Fala em muitas bocas ao mesmo tempo e não repete. Quem escuta reconhece uma palavra e a perde no momento em que entende.",
+      "en": "Transmits fragmented, overlapping voices, in a language that shifts before it settles. It speaks in many mouths at once and never repeats. Whoever listens catches a word and loses it the moment they understand.",
+      "es": "Transmite voces fragmentadas y superpuestas, en una lengua que cambia antes de fijarse. Habla con muchas bocas al mismo tiempo y nunca repite. Quien escucha reconoce una palabra y la pierde en el instante en que la entiende.",
+      "de": "Überträgt fragmentierte, überlagerte Stimmen in einer Sprache, die sich verändert, bevor sie sich festlegt. Es spricht mit vielen Mündern zugleich und wiederholt sich nie. Wer zuhört, erkennt ein Wort und verliert es in dem Moment, in dem es verstanden wird.",
+      "zh": "传出碎片化、彼此重叠的声音，使用一种在稳定下来之前不断变化的语言。它同时用许多张嘴说话，而且从不重复。听的人刚认出一个词，就在理解它的瞬间失去它。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "TRANSMITIR",
+          "en": "TRANSMIT",
+          "es": "TRANSMITIR",
+          "de": "SENDEN",
+          "zh": "传送"
+        },
+        "detail": {
+          "pt": "sua voz se mistura às outras",
+          "en": "your voice blends with the others",
+          "es": "tu voz se mezcla con las demás",
+          "de": "deine Stimme mischt sich mit den anderen",
+          "zh": "你的声音混入其他声音"
+        },
+        "rastro": {
+          "voz": 2
+        },
+        "next": "sala-05b-fogo-cruzado.html"
+      },
+      {
+        "verb": {
+          "pt": "COSTURAR",
+          "en": "STITCH",
+          "es": "COSER",
+          "de": "NÄHEN",
+          "zh": "缝合"
+        },
+        "detail": {
+          "pt": "a linha atravessa o tecido",
+          "en": "the thread crosses the fabric",
+          "es": "el hilo atraviesa la tela",
+          "de": "der Faden durchquert den Stoff",
+          "zh": "线穿过布料"
+        },
+        "rastro": {
+          "sangue": 1,
+          "raiz": 1
+        },
+        "next": "sala-05a-maquinas-bioma.html"
+      },
+      {
+        "verb": {
+          "pt": "ORGANIZAR",
+          "en": "ORGANIZE",
+          "es": "ORGANIZAR",
+          "de": "ORDNEN",
+          "zh": "组织"
+        },
+        "detail": {
+          "pt": "os objetos formam outra ordem",
+          "en": "the objects form another order",
+          "es": "los objetos forman otro orden",
+          "de": "die Gegenstände bilden eine andere Ordnung",
+          "zh": "物件形成另一种秩序"
+        },
+        "rastro": {
+          "voz": 1,
+          "ouro": 1
+        },
+        "next": "sala-05c-viagem-cosmica.html"
+      }
+    ]
+  }
+}

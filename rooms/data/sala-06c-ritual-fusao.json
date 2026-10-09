@@ -1,0 +1,405 @@
+{
+  "id": "sala-06c-ritual-fusao",
+  "stage": 6,
+  "name": {
+    "pt": "RITUAL DE FUSÃO",
+    "en": "RITUAL OF FUSION",
+    "es": "RITUAL DE FUSIÓN",
+    "de": "RITUAL DER VERSCHMELZUNG",
+    "zh": "融合仪式"
+  },
+  "scene": {
+    "accent": "#C9A24A",
+    "accent2": "#872D67",
+    "fog": "#05040a",
+    "fogDensity": 0.032,
+    "ambient": {
+      "color": "#241a18",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C9A24A",
+      "intensity": 8.6,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#040308",
+      "colorA": "#C9A24A",
+      "colorB": "#872D67",
+      "glow": "#0E8C86",
+      "liquid": 0.6,
+      "veins": 0.15,
+      "crack": 0.15,
+      "grid": 0.15,
+      "gridScale": 0.4,
+      "scale": 0.12
+    },
+    "fireflies": {
+      "color": "#E8E1D2",
+      "count": 130,
+      "drift": 0.5
+    },
+    "boundary": {
+      "radius": 13.5,
+      "glow": "#C9A24A",
+      "height": 7
+    },
+    "audio": {
+      "root": 35.0,
+      "intensity": 0.55
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0E8C86",
+      "itemTint": "#0a1f1c",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "fu1",
+      "content": {
+        "title": {
+          "pt": "FRAGMENTO ÓLEO",
+          "en": "OIL FRAGMENT",
+          "es": "FRAGMENTO DE ACEITE",
+          "de": "ÖLFRAGMENT",
+          "zh": "油之碎片"
+        },
+        "body": {
+          "pt": "Resíduo da primeira sala, ainda muda de cor. Atravessou todo o percurso sem secar. Guarda, em pequena escala, o brilho de onde tudo começou.",
+          "en": "Residue from the first room, still changing color. It crossed the whole path without drying. It keeps, in small scale, the shine of where everything began.",
+          "es": "Residuo de la primera sala, todavía cambiando de color. Atravesó todo el recorrido sin secarse. Conserva, a pequeña escala, el brillo del lugar donde todo comenzó.",
+          "de": "Rückstand aus dem ersten Raum, noch immer die Farbe wechselnd. Er durchquerte den ganzen Weg, ohne zu trocknen. Im Kleinen bewahrt er den Glanz des Ortes, an dem alles begann.",
+          "zh": "来自第一个房间的残留物，仍在不断变色。它走过整条路径，却从未干涸。它以很小的尺度保存着一切开始之处的光泽。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C9A24A",
+      "itemTint": "#1a1306",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "fu2",
+      "content": {
+        "title": {
+          "pt": "FRAGMENTO OURO",
+          "en": "GOLD FRAGMENT",
+          "es": "FRAGMENTO DE ORO",
+          "de": "GOLDFRAGMENT",
+          "zh": "黄金碎片"
+        },
+        "body": {
+          "pt": "Liga corroída, peso inalterado. Perdeu o brilho e não perdeu a gravidade. Continua puxando para baixo com a mesma força de sempre.",
+          "en": "Corroded alloy, weight unchanged. It lost its shine and not its gravity. It keeps pulling down with the same force as always.",
+          "es": "Aleación corroída, peso sin cambios. Perdió el brillo pero no la gravedad. Sigue tirando hacia abajo con la misma fuerza de siempre.",
+          "de": "Korrodierte Legierung, Gewicht unverändert. Der Glanz ging verloren, nicht die Schwerkraft. Sie zieht noch immer mit derselben Kraft nach unten.",
+          "zh": "被腐蚀的合金，重量没有变化。它失去了光泽，却没有失去重力。它仍以和从前完全相同的力量向下拉扯。"
+        }
+      }
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        -6.6,
+        1.3,
+        -4.6
+      ],
+      "rotation": [
+        0.0,
+        0.55,
+        0
+      ],
+      "tint": "#243B8F",
+      "size": [
+        0.9,
+        1.6
+      ],
+      "distort": 0.05,
+      "info": "fu3",
+      "content": {
+        "title": {
+          "pt": "FRAGMENTO ESPELHO",
+          "en": "MIRROR FRAGMENT",
+          "es": "FRAGMENTO DE ESPEJO",
+          "de": "SPIEGELFRAGMENT",
+          "zh": "镜子碎片"
+        },
+        "body": {
+          "pt": "Vidro rachado, reflexo incompleto. Mostra só um pedaço de quem olha, sempre o mesmo pedaço. Escolheu qual parte de você vai lembrar.",
+          "en": "Cracked glass, incomplete reflection. It shows only a piece of whoever looks, always the same piece. It chose which part of you it will remember.",
+          "es": "Vidrio agrietado, reflejo incompleto. Muestra solo una parte de quien mira, siempre la misma. Eligió qué parte de ti recordará.",
+          "de": "Gesprungenes Glas, unvollständiges Spiegelbild. Es zeigt nur einen Teil der betrachtenden Person, immer denselben. Es hat entschieden, welchen Teil von dir es erinnern wird.",
+          "zh": "裂开的玻璃，不完整的倒影。它只显示观看者的一部分，而且总是同一部分。它已经选择了要记住你的哪一处。"
+        }
+      }
+    },
+    {
+      "type": "root",
+      "position": [
+        -2,
+        0,
+        -7.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "accent": "#0F6F5C",
+      "branches": 2,
+      "info": "fu4",
+      "content": {
+        "title": {
+          "pt": "FRAGMENTO RAIZ",
+          "en": "ROOT FRAGMENT",
+          "es": "FRAGMENTO DE RAÍZ",
+          "de": "WURZELFRAGMENT",
+          "zh": "根之碎片"
+        },
+        "body": {
+          "pt": "Estrutura orgânica com circuito ativo. Continua crescendo mesmo cortada em pedaço. Procura terra dentro de uma vitrine, e não desiste.",
+          "en": "Organic structure with an active circuit. It keeps growing even cut to a fragment. It searches for soil inside a display case, and does not give up.",
+          "es": "Estructura orgánica con un circuito activo. Sigue creciendo incluso reducida a un fragmento. Busca tierra dentro de una vitrina y no se rinde.",
+          "de": "Organische Struktur mit aktivem Schaltkreis. Selbst als Fragment wächst sie weiter. In einer Vitrine sucht sie nach Erde und gibt nicht auf.",
+          "zh": "带有活跃电路的有机结构。即使被切成碎片，它仍继续生长。它在展示柜里寻找土壤，从不放弃。"
+        }
+      }
+    },
+    {
+      "type": "tank",
+      "position": [
+        0,
+        0,
+        -8.6
+      ],
+      "radius": 0.45,
+      "height": 1.3,
+      "colorA": "#1a0306",
+      "colorB": "#8A0303",
+      "glow": "#C1121F",
+      "info": "fu5",
+      "content": {
+        "title": {
+          "pt": "FRAGMENTO SANGUE",
+          "en": "BLOOD FRAGMENT",
+          "es": "FRAGMENTO DE SANGRE",
+          "de": "BLUTFRAGMENT",
+          "zh": "血之碎片"
+        },
+        "body": {
+          "pt": "Líquido em suspensão, cor instável. Muda de tom conforme quem chega. Reconhece corpo e responde, guardando a memória de cada aproximação.",
+          "en": "Liquid in suspension, unstable color. It shifts tone with whoever arrives. It recognizes a body and answers, keeping the memory of each approach.",
+          "es": "Líquido en suspensión, color inestable. Cambia de tono según quien llega. Reconoce un cuerpo y responde, guardando la memoria de cada aproximación.",
+          "de": "Flüssigkeit in Suspension, instabile Farbe. Der Farbton verändert sich mit den Ankommenden. Sie erkennt einen Körper und antwortet, bewahrt die Erinnerung an jede Annäherung.",
+          "zh": "悬浮液体，颜色不稳定。不同的人到来时，它会改变色调。它能辨认身体并作出回应，保存每一次靠近的记忆。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        5.6,
+        0,
+        -7
+      ],
+      "accent": "#872D67",
+      "info": "fu6",
+      "content": {
+        "title": {
+          "pt": "FRAGMENTO VOZ",
+          "en": "VOICE FRAGMENT",
+          "es": "FRAGMENTO DE VOZ",
+          "de": "STIMMENFRAGMENT",
+          "zh": "声音碎片"
+        },
+        "body": {
+          "pt": "Pequeno alto-falante repete uma sílaba. É o resto de uma palavra que se perdeu pelo caminho. Insiste na única parte dela que sobreviveu à travessia.",
+          "en": "Small speaker repeats a single syllable. It is the remainder of a word lost along the way. It insists on the only part of it that survived the crossing.",
+          "es": "Un pequeño altavoz repite una sola sílaba. Es el resto de una palabra perdida en el camino. Insiste en la única parte que sobrevivió al cruce.",
+          "de": "Ein kleiner Lautsprecher wiederholt eine einzige Silbe. Sie ist der Rest eines Wortes, das unterwegs verloren ging. Er beharrt auf dem einzigen Teil, der die Durchquerung überlebt hat.",
+          "zh": "小型扬声器重复着一个音节。那是一个沿途丢失的词留下的残余。它执着于唯一成功穿越整条路径的部分。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        5.8,
+        1.2,
+        -4.8
+      ],
+      "tint": "#0c1208",
+      "glow": "#B7F03B",
+      "itemScale": 0.32,
+      "displace": 0.06
+    },
+    {
+      "type": "root",
+      "position": [
+        2,
+        0,
+        -7.6
+      ],
+      "rotation": [
+        0,
+        2.0,
+        0
+      ],
+      "accent": "#0F6F5C",
+      "branches": 2
+    },
+    {
+      "type": "totem",
+      "position": [
+        -8,
+        0,
+        -9
+      ],
+      "accent": "#806321",
+      "height": 3.0,
+      "segments": 4
+    },
+    {
+      "type": "totem",
+      "position": [
+        8,
+        0,
+        -8.6
+      ],
+      "accent": "#806321",
+      "height": 3.4,
+      "segments": 5
+    }
+  ],
+  "central": {
+    "type": "fusion",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "OROЯO INCOMPLETA",
+      "en": "INCOMPLETE OROЯO",
+      "es": "OROЯO INCOMPLETO",
+      "de": "UNVOLLSTÄNDIGES OROЯO",
+      "zh": "不完整的 OROЯO"
+    },
+    "body": {
+      "pt": "Formada por partículas de todas as salas, gira devagar, incompleta por escolha. Junta óleo, ouro, raiz, sangue, espelho e voz numa silhueta que se recusa a fechar. Estar inteira seria parar, e ela ainda se move.",
+      "en": "Formed from particles of every room, it turns slowly, incomplete by choice. It gathers oil, gold, root, blood, mirror, and voice into a silhouette that refuses to close. To be whole would be to stop, and it is still moving.",
+      "es": "Formado por partículas de todas las salas, gira lentamente, incompleto por elección. Reúne aceite, oro, raíz, sangre, espejo y voz en una silueta que se niega a cerrarse. Estar completo sería detenerse, y todavía sigue en movimiento.",
+      "de": "Aus Partikeln aller Räume geformt dreht es sich langsam, aus eigener Wahl unvollständig. Öl, Gold, Wurzel, Blut, Spiegel und Stimme sammeln sich in einer Silhouette, die sich weigert, sich zu schließen. Ganz zu sein hieße stillzustehen, und sie bewegt sich noch.",
+      "zh": "它由每一个房间的粒子构成，缓慢旋转，并主动选择保持不完整。油、黄金、根、血、镜子和声音汇成一个拒绝闭合的轮廓。完整就意味着停止，而它仍在移动。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "FUNDIR",
+          "en": "MERGE",
+          "es": "FUSIONAR",
+          "de": "VERSCHMELZEN",
+          "zh": "融合"
+        },
+        "detail": {
+          "pt": "os fragmentos encontram um encaixe possível",
+          "en": "the fragments find a possible fit",
+          "es": "los fragmentos encuentran un encaje posible",
+          "de": "die Fragmente finden eine mögliche Passform",
+          "zh": "碎片找到一种可能的契合方式"
+        },
+        "rastro": {
+          "raiz": 1,
+          "ouro": 1
+        },
+        "next": "sala-07-final.html"
+      },
+      {
+        "verb": {
+          "pt": "DIVIDIR",
+          "en": "DIVIDE",
+          "es": "DIVIDIR",
+          "de": "TEILEN",
+          "zh": "分裂"
+        },
+        "detail": {
+          "pt": "a silhueta se multiplica",
+          "en": "the silhouette multiplies",
+          "es": "la silueta se multiplica",
+          "de": "die Silhouette vervielfacht sich",
+          "zh": "轮廓不断复制"
+        },
+        "rastro": {
+          "espelho": 1,
+          "voz": 1
+        },
+        "next": "sala-07-final.html"
+      },
+      {
+        "verb": {
+          "pt": "RENASCER",
+          "en": "BE REBORN",
+          "es": "RENACER",
+          "de": "NEUGEBOREN WERDEN",
+          "zh": "重生"
+        },
+        "detail": {
+          "pt": "tudo recua até um ponto anterior",
+          "en": "everything recedes to an earlier point",
+          "es": "todo retrocede hasta un punto anterior",
+          "de": "alles weicht zu einem früheren Punkt zurück",
+          "zh": "一切退回到更早的节点"
+        },
+        "rastro": {
+          "cinza": 1,
+          "oleo": 1
+        },
+        "next": "sala-07-final.html"
+      }
+    ]
+  }
+}

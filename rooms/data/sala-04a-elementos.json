@@ -1,0 +1,406 @@
+{
+  "id": "sala-04a-elementos",
+  "stage": 4,
+  "name": {
+    "pt": "ELEMENTOS EM DESEQUILÍBRIO",
+    "en": "ELEMENTS OUT OF BALANCE",
+    "es": "ELEMENTOS FUERA DE EQUILIBRIO",
+    "de": "ELEMENTE AUS DEM GLEICHGEWICHT",
+    "zh": "失衡的元素"
+  },
+  "scene": {
+    "accent": "#C9A24A",
+    "accent2": "#4B1F68",
+    "fog": "#06050a",
+    "fogDensity": 0.035,
+    "ambient": {
+      "color": "#241c14",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C9A24A",
+      "intensity": 9.2,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#06050a",
+      "colorA": "#C9A24A",
+      "colorB": "#4B1F68",
+      "glow": "#C1121F",
+      "liquid": 0.45,
+      "veins": 0.2,
+      "crack": 0.35,
+      "grid": 0.25,
+      "gridScale": 0.45,
+      "scale": 0.15
+    },
+    "fireflies": {
+      "color": "#C9A24A",
+      "count": 110,
+      "drift": 0.45
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#C9A24A",
+      "height": 6.5
+    },
+    "audio": {
+      "root": 41.2,
+      "intensity": 0.5
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "tank",
+      "position": [
+        -5,
+        0,
+        -3.2
+      ],
+      "radius": 0.5,
+      "height": 0.6,
+      "colorA": "#03070a",
+      "colorB": "#243B8F",
+      "glow": "#0E8C86",
+      "info": "ela1",
+      "content": {
+        "title": {
+          "pt": "ÁGUA NEGRA",
+          "en": "BLACK WATER",
+          "es": "AGUA NEGRA",
+          "de": "SCHWARZES WASSER",
+          "zh": "黑水"
+        },
+        "body": {
+          "pt": "Bacia de água preta, temperatura abaixo do esperado. Não reflete o teto. Olha de volta como se o fundo fosse mais profundo do que a sala permite.",
+          "en": "Basin of black water, temperature below expectation. It does not reflect the ceiling. It looks back as if its bottom were deeper than the room allows.",
+          "es": "Cuenco de agua negra, temperatura inferior a la esperada. No refleja el techo. Devuelve la mirada como si su fondo fuera más profundo de lo que permite la sala.",
+          "de": "Becken mit schwarzem Wasser, Temperatur unter dem erwarteten Wert. Es spiegelt die Decke nicht. Es blickt zurück, als wäre sein Grund tiefer, als der Raum erlaubt.",
+          "zh": "一盆黑色的水，温度低于预期。它不反射天花板，而像是在回望你，仿佛盆底比房间允许的深度还要深。"
+        }
+      }
+    },
+    {
+      "type": "pedestal",
+      "position": [
+        5,
+        0,
+        -3.2
+      ],
+      "accent": "#C1121F",
+      "height": 0.7,
+      "radius": 0.32,
+      "lightIntensity": 6,
+      "item": {
+        "tint": "#1a0808",
+        "scale": 0.3
+      },
+      "info": "ela2",
+      "content": {
+        "title": {
+          "pt": "FOGO CONTIDO",
+          "en": "CONTAINED FIRE",
+          "es": "FUEGO CONTENIDO",
+          "de": "GEBÄNDIGTES FEUER",
+          "zh": "被控制的火"
+        },
+        "body": {
+          "pt": "Chama sob vidro, consumo de oxigênio monitorado. Queima sem fumaça e sem diminuir. Alguém calculou exatamente o quanto de ar dar para que nunca acabe.",
+          "en": "Flame under glass, oxygen consumption monitored. It burns without smoke and without shrinking. Someone calculated exactly how much air to give so it never ends.",
+          "es": "Llama bajo vidrio, consumo de oxígeno monitorizado. Arde sin humo y sin reducirse. Alguien calculó exactamente cuánto aire darle para que nunca termine.",
+          "de": "Flamme unter Glas, Sauerstoffverbrauch überwacht. Sie brennt ohne Rauch und ohne kleiner zu werden. Jemand hat genau berechnet, wie viel Luft sie bekommt, damit sie niemals endet.",
+          "zh": "玻璃下的火焰，氧气消耗受到监测。它无烟燃烧，也从不缩小。有人精确计算了应该给它多少空气，好让它永远不会熄灭。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        -6,
+        1.0,
+        -7.0
+      ],
+      "radius": 0.4,
+      "color": "#2a2014",
+      "glow": "#C9A24A",
+      "info": "ela3",
+      "content": {
+        "title": {
+          "pt": "VENTO",
+          "en": "WIND",
+          "es": "VIENTO",
+          "de": "WIND",
+          "zh": "风"
+        },
+        "body": {
+          "pt": "Sensores de corrente de ar, direção muda sem padrão. Há vento numa sala fechada. Vem de lugar nenhum e insiste, como se fugisse de algo lá dentro.",
+          "en": "Airflow sensors, direction shifts without pattern. There is wind in a sealed room. It comes from nowhere and insists, as if fleeing something inside.",
+          "es": "Sensores de flujo de aire, la dirección cambia sin patrón. Hay viento en una sala sellada. Viene de ninguna parte e insiste, como si huyera de algo que está dentro.",
+          "de": "Luftstromsensoren, die Richtung wechselt ohne Muster. In einem versiegelten Raum weht Wind. Er kommt aus dem Nichts und bleibt bestehen, als fliehe er vor etwas im Inneren.",
+          "zh": "气流传感器显示方向毫无规律地变化。密封的房间里却有风。它无处而来，持续吹动，像是在逃离房间内部的某样东西。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        -2,
+        0.25,
+        -6.0
+      ],
+      "radius": 0.4,
+      "color": "#2a2014",
+      "glow": "#C9A24A",
+      "info": "ela4",
+      "content": {
+        "title": {
+          "pt": "TERRA",
+          "en": "EARTH",
+          "es": "TIERRA",
+          "de": "ERDE",
+          "zh": "土"
+        },
+        "body": {
+          "pt": "Areia sob vibração constante, origem do sinal desconhecida. Os grãos se organizam em linhas e desmancham. A terra desenha e apaga um mapa que ninguém pediu.",
+          "en": "Sand under constant vibration, signal origin unknown. The grains arrange into lines and collapse. The earth draws and erases a map no one asked for.",
+          "es": "Arena bajo vibración constante, origen de la señal desconocido. Los granos se organizan en líneas y colapsan. La tierra dibuja y borra un mapa que nadie pidió.",
+          "de": "Sand unter ständiger Vibration, Signalquelle unbekannt. Die Körner ordnen sich zu Linien und brechen wieder zusammen. Die Erde zeichnet und löscht eine Karte, um die niemand gebeten hat.",
+          "zh": "沙子持续振动，信号来源不明。沙粒排列成线又坍塌。土地画出又抹去一张无人要求的地图。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#4B1F68",
+      "itemTint": "#120a18",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "ela5",
+      "content": {
+        "title": {
+          "pt": "MONITOR",
+          "en": "MONITOR",
+          "es": "MONITOR",
+          "de": "MONITOR",
+          "zh": "监视器"
+        },
+        "body": {
+          "pt": "Dados de um clima que não corresponde a este lugar. Marca chuva quando está seco, calor quando está frio. Mede um território que talvez ainda vá existir.",
+          "en": "Climate data that does not match this place. It reads rain when it is dry, heat when it is cold. It measures a territory that maybe is yet to exist.",
+          "es": "Datos climáticos que no coinciden con este lugar. Indica lluvia cuando está seco, calor cuando hace frío. Mide un territorio que quizá todavía no exista.",
+          "de": "Klimadaten, die nicht zu diesem Ort passen. Regen wird angezeigt, wenn es trocken ist, Hitze, wenn es kalt ist. Gemessen wird ein Territorium, das vielleicht noch gar nicht existiert.",
+          "zh": "气候数据与此地不符。干燥时显示下雨，寒冷时显示高温。它测量的是一片也许尚未存在的领地。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0E8C86",
+      "itemTint": "#0a1418",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "ela6",
+      "content": {
+        "title": {
+          "pt": "AMOSTRA",
+          "en": "SAMPLE",
+          "es": "MUESTRA",
+          "de": "PROBE",
+          "zh": "样本"
+        },
+        "body": {
+          "pt": "Pó dourado, peso instável na balança. O número sobe e desce sozinho. O ouro aqui não decide quanto pesa, e a balança já desistiu de brigar.",
+          "en": "Golden dust, unstable weight on the scale. The number rises and falls on its own. The gold here will not decide how much it weighs, and the scale has given up arguing.",
+          "es": "Polvo dorado, peso inestable en la balanza. El número sube y baja por sí solo. El oro aquí no decide cuánto pesa, y la balanza ha dejado de discutir.",
+          "de": "Goldener Staub, instabiles Gewicht auf der Waage. Die Zahl steigt und fällt von selbst. Das Gold hier kann sich nicht entscheiden, wie viel es wiegt, und die Waage hat aufgehört zu widersprechen.",
+          "zh": "金色粉尘，在秤上的重量不稳定。数字自行升降。这里的黄金无法决定自己究竟有多重，而秤已经放弃争论。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        -6.6,
+        1.4,
+        -7.6
+      ],
+      "tint": "#11141B",
+      "glow": "#858B94",
+      "itemScale": 0.28,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        6,
+        1.0,
+        -7.0
+      ],
+      "tint": "#11141B",
+      "glow": "#858B94",
+      "itemScale": 0.36,
+      "displace": 0.06
+    },
+    {
+      "type": "rock",
+      "position": [
+        0,
+        0.25,
+        -8.4
+      ],
+      "radius": 0.4,
+      "color": "#2a2014",
+      "glow": "#806321"
+    },
+    {
+      "type": "totem",
+      "position": [
+        -8,
+        0,
+        -9
+      ],
+      "accent": "#806321",
+      "height": 3.0,
+      "segments": 4
+    },
+    {
+      "type": "totem",
+      "position": [
+        8,
+        0,
+        -8.6
+      ],
+      "accent": "#806321",
+      "height": 3.4,
+      "segments": 5
+    }
+  ],
+  "central": {
+    "type": "astrolabe",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "ASTROLÁBIO ORGÂNICO",
+      "en": "ORGANIC ASTROLABE",
+      "es": "ASTROLABIO ORGÁNICO",
+      "de": "ORGANISCHES ASTROLABIUM",
+      "zh": "有机星盘"
+    },
+    "body": {
+      "pt": "Meio máquina, meio concha, muda de cor a cada escolha feita aqui. Foi feito para ler o céu e acabou lendo quem chega. Aponta sempre para o próximo desequilíbrio, nunca para o repouso.",
+      "en": "Half machine, half shell, it changes color with every choice made here. It was built to read the sky and ended up reading whoever arrives. It always points to the next imbalance, never to rest.",
+      "es": "Mitad máquina, mitad caparazón, cambia de color con cada elección hecha aquí. Fue construido para leer el cielo y terminó leyendo a quien llega. Siempre apunta al próximo desequilibrio, nunca al reposo.",
+      "de": "Halb Maschine, halb Schale verändert es mit jeder hier getroffenen Wahl seine Farbe. Es wurde gebaut, um den Himmel zu lesen, und liest am Ende die Ankommenden. Es zeigt immer auf das nächste Ungleichgewicht, niemals auf Ruhe.",
+      "zh": "一半机器，一半外壳，它会随着这里的每一次选择改变颜色。它原本被制造来读取天空，最后却开始读取来到这里的人。它总是指向下一个失衡，从不指向休息。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "QUEIMAR",
+          "en": "BURN",
+          "es": "QUEMAR",
+          "de": "VERBRENNEN",
+          "zh": "燃烧"
+        },
+        "detail": {
+          "pt": "o calor sobe rápido e desce devagar",
+          "en": "heat rises fast and falls slowly",
+          "es": "el calor sube rápido y baja despacio",
+          "de": "die Hitze steigt schnell und fällt langsam",
+          "zh": "热量迅速上升，缓慢下降"
+        },
+        "rastro": {
+          "cinza": 2
+        },
+        "next": "sala-05b-fogo-cruzado.html"
+      },
+      {
+        "verb": {
+          "pt": "INUNDAR",
+          "en": "FLOOD",
+          "es": "INUNDAR",
+          "de": "ÜBERFLUTEN",
+          "zh": "淹没"
+        },
+        "detail": {
+          "pt": "a água preta cobre os símbolos",
+          "en": "black water covers the symbols",
+          "es": "el agua negra cubre los símbolos",
+          "de": "das schwarze Wasser bedeckt die Symbole",
+          "zh": "黑水覆盖符号"
+        },
+        "rastro": {
+          "oleo": 2
+        },
+        "next": "sala-05c-viagem-cosmica.html"
+      },
+      {
+        "verb": {
+          "pt": "RESPIRAR",
+          "en": "BREATHE",
+          "es": "RESPIRAR",
+          "de": "ATMEN",
+          "zh": "呼吸"
+        },
+        "detail": {
+          "pt": "o ar muda de direção ao redor",
+          "en": "the air changes direction around you",
+          "es": "el aire cambia de dirección a tu alrededor",
+          "de": "die Luft ändert um dich herum ihre Richtung",
+          "zh": "空气在你周围改变方向"
+        },
+        "rastro": {
+          "voz": 1,
+          "raiz": 1
+        },
+        "next": "sala-05a-maquinas-bioma.html"
+      }
+    ]
+  }
+}

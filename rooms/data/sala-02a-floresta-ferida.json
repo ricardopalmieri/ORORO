@@ -1,0 +1,499 @@
+{
+  "id": "sala-02a-floresta-ferida",
+  "stage": 2,
+  "name": {
+    "pt": "FLORESTA FERIDA",
+    "en": "WOUNDED FOREST",
+    "es": "BOSQUE HERIDO",
+    "de": "VERWUNDETER WALD",
+    "zh": "受伤的森林"
+  },
+  "scene": {
+    "accent": "#0F6F5C",
+    "accent2": "#4B1F68",
+    "fog": "#05080a",
+    "fogDensity": 0.038,
+    "ambient": {
+      "color": "#10241a",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#B7F03B",
+      "intensity": 8.1,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#040806",
+      "colorA": "#0F6F5C",
+      "colorB": "#4B1F68",
+      "glow": "#B7F03B",
+      "liquid": 0.4,
+      "veins": 0.5,
+      "crack": 0.15,
+      "grid": 0.2,
+      "gridScale": 0.4,
+      "scale": 0.18
+    },
+    "fireflies": {
+      "color": "#B7F03B",
+      "count": 130,
+      "drift": 0.4
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#0F6F5C",
+      "height": 7
+    },
+    "audio": {
+      "root": 38.9,
+      "intensity": 0.52
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0F6F5C",
+      "itemTint": "#0a1408",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "fa1",
+      "content": {
+        "title": {
+          "pt": "RAIZ",
+          "en": "ROOT",
+          "es": "RAÍZ",
+          "de": "WURZEL",
+          "zh": "根"
+        },
+        "body": {
+          "pt": "Raiz encapsulada em acrílico. Pulso elétrico contínuo, função desconhecida. Cresceu para dentro do sensor que deveria medi-la, e agora os dois pulsam juntos.",
+          "en": "Root encased in acrylic. Continuous electric pulse, function unknown. It grew into the sensor meant to measure it, and now the two pulse together.",
+          "es": "Raíz encapsulada en acrílico. Pulso eléctrico continuo, función desconocida. Creció dentro del sensor que debía medirla, y ahora ambos laten juntos.",
+          "de": "Eine Wurzel, in Acryl eingeschlossen. Kontinuierlicher elektrischer Puls, Funktion unbekannt. Sie wuchs in den Sensor hinein, der sie messen sollte, und nun pulsieren beide gemeinsam.",
+          "zh": "一根根被封进亚克力中。持续的电脉冲，功能不明。它长进了本应用来测量它的传感器里，如今两者一起脉动。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C9A24A",
+      "itemTint": "#1a1306",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "fa2",
+      "content": {
+        "title": {
+          "pt": "FOLHA",
+          "en": "LEAF",
+          "es": "HOJA",
+          "de": "BLATT",
+          "zh": "叶片"
+        },
+        "body": {
+          "pt": "Folha queimada com veios dourados. Combustão controlada em laboratório, segundo a etiqueta. A borda ainda solta um cheiro fino de fumaça quando a sala esquenta.",
+          "en": "Burnt leaf with golden veins. Controlled combustion in a lab, per the label. Its edge still gives off a thin smell of smoke when the room warms.",
+          "es": "Hoja quemada con venas doradas. Combustión controlada en laboratorio, según la etiqueta. El borde todavía desprende un leve olor a humo cuando la sala se calienta.",
+          "de": "Verbranntes Blatt mit goldenen Adern. Laut Etikett kontrollierte Verbrennung im Labor. Wenn sich der Raum erwärmt, verströmt der Rand noch immer einen feinen Rauchgeruch.",
+          "zh": "带有金色叶脉的焦叶。标签称其经过实验室可控燃烧。当房间升温时，叶缘仍会散发淡淡的烟味。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        -2,
+        0.3,
+        -6.4
+      ],
+      "radius": 0.4,
+      "color": "#1c1f1a",
+      "glow": "#B7F03B",
+      "info": "fa3",
+      "content": {
+        "title": {
+          "pt": "INSCRIÇÃO A",
+          "en": "INSCRIPTION A",
+          "es": "INSCRIPCIÓN A",
+          "de": "INSCHRIFT A",
+          "zh": "铭文 A"
+        },
+        "body": {
+          "pt": "Pedra com símbolos recentes. A tradução foi recusada pelo sistema três vezes. Parece escrita à mão sobre uma escrita mais antiga, uma memória por cima da outra.",
+          "en": "Stone with recent symbols. Translation refused by the system three times. It looks handwritten over an older writing, one memory laid across another.",
+          "es": "Piedra con símbolos recientes. El sistema rechazó la traducción tres veces. Parece escrita a mano sobre una escritura más antigua, una memoria superpuesta a otra.",
+          "de": "Stein mit neuen Symbolen. Das System verweigerte dreimal die Übersetzung. Es wirkt wie Handschrift über einer älteren Schrift, eine Erinnerung über die andere gelegt.",
+          "zh": "一块刻有新近符号的石头。系统三次拒绝翻译。它像是手写在更古老的文字之上，一层记忆压着另一层。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        5,
+        0.3,
+        -7.0
+      ],
+      "radius": 0.4,
+      "color": "#1c1f1a",
+      "glow": "#0F6F5C",
+      "info": "fa4",
+      "content": {
+        "title": {
+          "pt": "INSCRIÇÃO B",
+          "en": "INSCRIPTION B",
+          "es": "INSCRIPCIÓN B",
+          "de": "INSCHRIFT B",
+          "zh": "铭文 B"
+        },
+        "body": {
+          "pt": "Segunda pedra, mesma família de símbolos, sinal mais fraco. O padrão continua a inscrição anterior, mas falta um pedaço no meio, como fala interrompida.",
+          "en": "Second stone, same family of symbols, weaker signal. The pattern continues the first inscription, but a piece is missing in the middle, like speech cut off.",
+          "es": "Segunda piedra, misma familia de símbolos, señal más débil. El patrón continúa la primera inscripción, pero falta un fragmento en medio, como una frase interrumpida.",
+          "de": "Zweiter Stein, dieselbe Symbolfamilie, schwächeres Signal. Das Muster setzt die erste Inschrift fort, doch in der Mitte fehlt ein Stück, wie abgebrochene Sprache.",
+          "zh": "第二块石头，同一类符号，信号更弱。图案延续前一段铭文，但中间缺了一块，像被突然打断的话语。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        6.4,
+        1.2,
+        -3.4
+      ],
+      "tint": "#150d08",
+      "glow": "#C1121F",
+      "itemScale": 0.34,
+      "displace": 0.06,
+      "info": "fa5",
+      "content": {
+        "title": {
+          "pt": "ESPÉCIME",
+          "en": "SPECIMEN",
+          "es": "ESPÉCIMEN",
+          "de": "PRÄPARAT",
+          "zh": "标本"
+        },
+        "body": {
+          "pt": "Restos de animal com circuito interno, bateria ainda ativa. Metade corpo, metade máquina, e nenhuma das metades sabe que a outra parou.",
+          "en": "Animal remains with an internal circuit, battery still active. Half body, half machine, and neither half knows the other has stopped.",
+          "es": "Restos de animal con un circuito interno, batería aún activa. Mitad cuerpo, mitad máquina, y ninguna de las dos mitades sabe que la otra se detuvo.",
+          "de": "Tierreste mit internem Schaltkreis, die Batterie noch aktiv. Halb Körper, halb Maschine, und keine Hälfte weiß, dass die andere aufgehört hat.",
+          "zh": "动物遗骸中嵌着内部电路，电池仍在工作。一半是身体，一半是机器，而两半都不知道另一半已经停止。"
+        }
+      }
+    },
+    {
+      "type": "panel",
+      "position": [
+        -5.6,
+        1.7,
+        -5.0
+      ],
+      "rotation": [
+        0,
+        0.4,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#B7F03B",
+      "line": "#0F6F5C",
+      "info": "fa6",
+      "content": {
+        "title": {
+          "pt": "TELA",
+          "en": "SCREEN",
+          "es": "PANTALLA",
+          "de": "BILDSCHIRM",
+          "zh": "屏幕"
+        },
+        "body": {
+          "pt": "Tela vertical mostra raízes pulsando como cabos de fibra óptica. A imagem é ao vivo. Em algum lugar abaixo do piso, isso está acontecendo agora.",
+          "en": "Vertical screen shows roots pulsing like fiber optic cables. The image is live. Somewhere below the floor, this is happening now.",
+          "es": "Una pantalla vertical muestra raíces latiendo como cables de fibra óptica. La imagen es en directo. En algún lugar bajo el suelo, esto está ocurriendo ahora.",
+          "de": "Ein vertikaler Bildschirm zeigt Wurzeln, die wie Glasfaserkabel pulsieren. Das Bild ist live. Irgendwo unter dem Boden geschieht das gerade jetzt.",
+          "zh": "竖直屏幕上，根系像光纤电缆一样脉动。画面是实时的。在地板下某处，这一切此刻正在发生。"
+        }
+      }
+    },
+    {
+      "type": "totem",
+      "position": [
+        -7,
+        0,
+        -3
+      ],
+      "accent": "#B7F03B",
+      "height": 3.6,
+      "segments": 5
+    },
+    {
+      "type": "totem",
+      "position": [
+        7,
+        0,
+        -3.5
+      ],
+      "accent": "#0F6F5C",
+      "height": 4.0,
+      "segments": 6
+    },
+    {
+      "type": "totem",
+      "position": [
+        -8,
+        0,
+        -8.6
+      ],
+      "accent": "#0F6F5C",
+      "height": 3.0,
+      "segments": 4
+    },
+    {
+      "type": "totem",
+      "position": [
+        8,
+        0,
+        -8.8
+      ],
+      "accent": "#B7F03B",
+      "height": 3.4,
+      "segments": 5
+    },
+    {
+      "type": "root",
+      "position": [
+        -3,
+        0,
+        -2.4
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "accent": "#B7F03B",
+      "branches": 4
+    },
+    {
+      "type": "root",
+      "position": [
+        0,
+        0,
+        -8.2
+      ],
+      "rotation": [
+        0,
+        2.4,
+        0
+      ],
+      "accent": "#B7F03B",
+      "branches": 4
+    },
+    {
+      "type": "bones",
+      "position": [
+        2,
+        0,
+        -3.4
+      ],
+      "accent": "#B7F03B",
+      "count": 6
+    },
+    {
+      "type": "palm",
+      "position": [
+        -8.0,
+        0,
+        -8.5
+      ],
+      "height": 3.4,
+      "accent": "#14603a",
+      "glow": "#B7F03B"
+    },
+    {
+      "type": "palm",
+      "position": [
+        8.4,
+        0,
+        -9.0
+      ],
+      "height": 2.8,
+      "accent": "#0F6F5C",
+      "glow": "#B7F03B"
+    },
+    {
+      "type": "plant",
+      "position": [
+        -6.5,
+        0,
+        -3.5
+      ],
+      "accent": "#1f7a3a",
+      "glow": "#B7F03B",
+      "count": 9,
+      "height": 1.3
+    },
+    {
+      "type": "plant",
+      "position": [
+        6.0,
+        0,
+        -4.2
+      ],
+      "accent": "#14603a",
+      "glow": "#0E8C86",
+      "count": 7,
+      "height": 1.0
+    },
+    {
+      "type": "lowpoly-jaguar",
+      "position": [
+        3.5,
+        0,
+        -6.5
+      ],
+      "rotation": [
+        0,
+        -2.2,
+        0
+      ],
+      "base": "#070809",
+      "glow": "#B7F03B",
+      "bodyScale": 1.05
+    }
+  ],
+  "central": {
+    "type": "core",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "NÚCLEO DO TRONCO",
+      "en": "TRUNK CORE",
+      "es": "NÚCLEO DEL TRONCO",
+      "de": "STAMMKERN",
+      "zh": "树干核心"
+    },
+    "body": {
+      "pt": "Um tronco oco abriga uma luz vermelha pulsante. Parece coração, forno e servidor ao mesmo tempo. A floresta virou infraestrutura, a natureza virou sistema. O que pulsa aqui ainda não decidiu se está vivo.",
+      "en": "A hollow trunk holds a pulsing red light. Part heart, part furnace, part server. The forest became infrastructure, nature became system. What pulses here has not yet decided whether it is alive.",
+      "es": "Un tronco hueco alberga una luz roja pulsante. Parte corazón, parte horno, parte servidor. El bosque se volvió infraestructura, la naturaleza se volvió sistema. Lo que late aquí todavía no ha decidido si está vivo.",
+      "de": "Ein hohler Stamm enthält ein pulsierendes rotes Licht. Teils Herz, teils Ofen, teils Server. Der Wald wurde Infrastruktur, die Natur wurde System. Was hier pulsiert, hat noch nicht entschieden, ob es lebt.",
+      "zh": "空心树干里装着一团脉动的红光。它既像心脏，又像熔炉，也像服务器。森林变成了基础设施，自然变成了系统。这里脉动的东西还没有决定自己是否活着。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "OUVIR A RAIZ",
+          "en": "LISTEN TO THE ROOT",
+          "es": "ESCUCHAR LA RAÍZ",
+          "de": "DER WURZEL ZUHÖREN",
+          "zh": "聆听根系"
+        },
+        "detail": {
+          "pt": "o som sobe antes da imagem",
+          "en": "sound rises before image",
+          "es": "el sonido sube antes que la imagen",
+          "de": "der Klang steigt vor dem Bild auf",
+          "zh": "声音先于影像升起"
+        },
+        "rastro": {
+          "raiz": 2,
+          "voz": 1
+        },
+        "next": "sala-03a-animais-fantasma.html"
+      },
+      {
+        "verb": {
+          "pt": "TOCAR A CINZA",
+          "en": "TOUCH THE ASH",
+          "es": "TOCAR LA CENIZA",
+          "de": "DIE ASCHE BERÜHREN",
+          "zh": "触摸灰烬"
+        },
+        "detail": {
+          "pt": "ainda está morna",
+          "en": "still warm",
+          "es": "todavía está tibia",
+          "de": "noch warm",
+          "zh": "仍有余温"
+        },
+        "rastro": {
+          "cinza": 2
+        },
+        "next": "sala-03c-corpo-fragmentado.html"
+      },
+      {
+        "verb": {
+          "pt": "ALIMENTAR O FUNGO",
+          "en": "FEED THE FUNGUS",
+          "es": "ALIMENTAR EL HONGO",
+          "de": "DEN PILZ FÜTTERN",
+          "zh": "喂养真菌"
+        },
+        "detail": {
+          "pt": "o brilho muda de tom",
+          "en": "the glow shifts tone",
+          "es": "el brillo cambia de tono",
+          "de": "das Leuchten wechselt den Ton",
+          "zh": "光芒改变色调"
+        },
+        "rastro": {
+          "raiz": 1,
+          "oleo": 1
+        },
+        "next": "sala-03b-vila-ocupada.html"
+      }
+    ]
+  }
+}

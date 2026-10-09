@@ -1,0 +1,422 @@
+{
+  "id": "sala-05c-viagem-cosmica",
+  "stage": 5,
+  "name": {
+    "pt": "VIAGEM CÓSMICA",
+    "en": "COSMIC VOYAGE",
+    "es": "VIAJE CÓSMICO",
+    "de": "KOSMISCHE REISE",
+    "zh": "宇宙旅程"
+  },
+  "scene": {
+    "accent": "#4B1F68",
+    "accent2": "#C9A24A",
+    "fog": "#04030a",
+    "fogDensity": 0.028,
+    "ambient": {
+      "color": "#1a1228",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C9A24A",
+      "intensity": 7.4,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#03020a",
+      "colorA": "#4B1F68",
+      "colorB": "#243B8F",
+      "glow": "#C9A24A",
+      "liquid": 0.7,
+      "veins": 0.05,
+      "crack": 0.0,
+      "grid": 0.12,
+      "gridScale": 0.35,
+      "scale": 0.1
+    },
+    "fireflies": {
+      "color": "#C9A24A",
+      "count": 140,
+      "drift": 0.6,
+      "height": 4.5
+    },
+    "boundary": {
+      "radius": 14,
+      "glow": "#4B1F68",
+      "height": 7
+    },
+    "audio": {
+      "root": 49.0,
+      "intensity": 0.4
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#4B1F68",
+      "itemTint": "#100a1c",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "vc1",
+      "content": {
+        "title": {
+          "pt": "MAPA CELESTE",
+          "en": "STAR MAP",
+          "es": "MAPA ESTELAR",
+          "de": "STERNKARTE",
+          "zh": "星图"
+        },
+        "body": {
+          "pt": "Mapa rasurado à mão. As constelações não correspondem ao céu atual. Alguém redesenhou as estrelas para caberem outra história. As linhas antigas ainda aparecem por baixo.",
+          "en": "Hand marked map. The constellations do not match the current sky. Someone redrew the stars to fit another story. The old lines still show underneath.",
+          "es": "Mapa marcado a mano. Las constelaciones no coinciden con el cielo actual. Alguien redibujó las estrellas para que encajaran en otra historia. Debajo todavía se ven las líneas antiguas.",
+          "de": "Von Hand markierte Karte. Die Sternbilder stimmen nicht mit dem heutigen Himmel überein. Jemand hat die Sterne neu gezeichnet, damit sie zu einer anderen Geschichte passen. Die alten Linien sind darunter noch sichtbar.",
+          "zh": "手工标记的地图。星座与现在的天空不符。有人重新绘制了星星，让它们适应另一个故事。旧的连线仍能在下面看见。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C9A24A",
+      "itemTint": "#1a1306",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "vc2",
+      "content": {
+        "title": {
+          "pt": "ASTRO LÍQUIDO",
+          "en": "LIQUID STAR",
+          "es": "ESTRELLA LÍQUIDA",
+          "de": "FLÜSSIGER STERN",
+          "zh": "液态恒星"
+        },
+        "body": {
+          "pt": "Esfera em suspensão, núcleo móvel, comportamento de fluido. É uma estrela que esqueceu de ser sólida. Muda de forma devagar, procurando um centro que não fica quieto.",
+          "en": "Suspended sphere, moving core, fluid behaviour. It is a star that forgot to be solid. It shifts shape slowly, seeking a center that will not stay still.",
+          "es": "Esfera suspendida, núcleo móvil, comportamiento fluido. Es una estrella que olvidó ser sólida. Cambia de forma lentamente, buscando un centro que no permanece quieto.",
+          "de": "Schwebende Kugel, beweglicher Kern, fließendes Verhalten. Ein Stern, der vergessen hat, fest zu sein. Langsam verändert er seine Form und sucht ein Zentrum, das nicht stillsteht.",
+          "zh": "悬浮的球体，核心移动，呈现流体行为。它是一颗忘记如何保持固态的星。形状缓慢变化，寻找一个始终无法静止的中心。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        -4,
+        1.4,
+        -4.0
+      ],
+      "radius": 0.36,
+      "color": "#1c1430",
+      "glow": "#C9A24A",
+      "info": "vc3",
+      "content": {
+        "title": {
+          "pt": "FRAGMENTO ORBITAL",
+          "en": "ORBITAL FRAGMENT",
+          "es": "FRAGMENTO ORBITAL",
+          "de": "ORBITALFRAGMENT",
+          "zh": "轨道碎片"
+        },
+        "body": {
+          "pt": "Peça de satélite coberta por musgo, órbita decadente. Foi lançada para vigiar a Terra e a Terra a cobriu de volta. O verde tomou a máquina que a olhava de cima.",
+          "en": "Satellite piece covered in moss, decaying orbit. It was launched to watch the Earth and the Earth grew back over it. Green took the machine that watched from above.",
+          "es": "Pieza de satélite cubierta de musgo, órbita en decadencia. Fue lanzada para observar la Tierra y la Tierra volvió a crecer sobre ella. El verde tomó la máquina que miraba desde arriba.",
+          "de": "Mit Moos bedecktes Satellitenteil, zerfallende Umlaufbahn. Es wurde gestartet, um die Erde zu beobachten, und die Erde wuchs darüber zurück. Das Grün nahm die Maschine ein, die von oben zusah.",
+          "zh": "一块被苔藓覆盖的卫星部件，轨道正在衰减。它曾被发射去观察地球，而地球又重新生长到它的表面。绿色吞没了那台从上方凝视的机器。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        4.4,
+        1.8,
+        -5.0
+      ],
+      "radius": 0.4,
+      "color": "#1c1430",
+      "glow": "#0F6F5C",
+      "info": "vc4",
+      "content": {
+        "title": {
+          "pt": "CORAL ESPACIAL",
+          "en": "SPACE CORAL",
+          "es": "CORAL ESPACIAL",
+          "de": "WELTRAUMKORALLE",
+          "zh": "太空珊瑚"
+        },
+        "body": {
+          "pt": "Estrutura mineral com crescimento orgânico. Cresce como coral e brilha como circuito. Não se sabe se é fóssil do futuro ou semente de outro planeta.",
+          "en": "Mineral structure with organic growth. It grows like coral and glows like a circuit. No one knows if it is a fossil of the future or a seed from another planet.",
+          "es": "Estructura mineral con crecimiento orgánico. Crece como coral y brilla como un circuito. Nadie sabe si es un fósil del futuro o una semilla de otro planeta.",
+          "de": "Mineralische Struktur mit organischem Wachstum. Sie wächst wie Koralle und leuchtet wie ein Schaltkreis. Niemand weiß, ob sie ein Fossil der Zukunft oder ein Samen von einem anderen Planeten ist.",
+          "zh": "带有有机生长的矿物结构。它像珊瑚一样生长，像电路一样发光。没人知道它是未来的化石，还是来自另一颗行星的种子。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        -5.6,
+        1.6,
+        -6.4
+      ],
+      "tint": "#0a0a16",
+      "glow": "#0F6F5C",
+      "itemScale": 0.26,
+      "displace": 0.06,
+      "info": "vc5",
+      "content": {
+        "title": {
+          "pt": "CABO FLUTUANTE",
+          "en": "FLOATING CABLE",
+          "es": "CABLE FLOTANTE",
+          "de": "SCHWEBENDES KABEL",
+          "zh": "漂浮电缆"
+        },
+        "body": {
+          "pt": "Sem ponto de ancoragem visível, tensão constante. As duas pontas somem no escuro. Está esticado como se segurasse algo pesado que a sala não mostra.",
+          "en": "No visible anchor point, constant tension. Both ends vanish into the dark. It is pulled taut as if it held something heavy the room does not show.",
+          "es": "Sin punto de anclaje visible, tensión constante. Ambos extremos desaparecen en la oscuridad. Está tensado como si sostuviera algo pesado que la sala no muestra.",
+          "de": "Kein sichtbarer Ankerpunkt, konstante Spannung. Beide Enden verschwinden im Dunkel. Es ist straff gezogen, als hielte es etwas Schweres, das der Raum nicht zeigt.",
+          "zh": "看不见任何固定点，却始终保持张力。两端都消失在黑暗中。它像是在拉住某个房间没有显示出来的沉重物体。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        5.8,
+        1.9,
+        -6.8
+      ],
+      "tint": "#0a0a16",
+      "glow": "#C9A24A",
+      "itemScale": 0.28,
+      "displace": 0.06,
+      "info": "vc6",
+      "content": {
+        "title": {
+          "pt": "POEIRA",
+          "en": "DUST",
+          "es": "POLVO",
+          "de": "STAUB",
+          "zh": "尘埃"
+        },
+        "body": {
+          "pt": "Partículas suspensas, brilho intermitente. Cada grão acende e apaga fora de tempo com os outros. Junto, formam devagar o desenho de um bicho, e desmancham.",
+          "en": "Suspended particles, intermittent glow. Each grain lights and fades out of time with the rest. Together they slowly form the shape of an animal, and scatter.",
+          "es": "Partículas suspendidas, brillo intermitente. Cada grano se enciende y apaga fuera de tiempo respecto a los demás. Juntos forman lentamente la figura de un animal y se dispersan.",
+          "de": "Schwebende Partikel, intermittierendes Leuchten. Jedes Korn leuchtet und erlischt in einem anderen Takt. Gemeinsam bilden sie langsam die Form eines Tieres und zerstreuen sich wieder.",
+          "zh": "悬浮的颗粒，间歇发光。每一粒都与其他颗粒错开地亮起和熄灭。它们一起慢慢形成一个动物的轮廓，然后散开。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        0,
+        2.2,
+        -8.4
+      ],
+      "radius": 0.34,
+      "color": "#1c1430",
+      "glow": "#C9A24A"
+    },
+    {
+      "type": "shard",
+      "position": [
+        -2.4,
+        2.4,
+        -8.6
+      ],
+      "tint": "#0a0a16",
+      "glow": "#4B1F68",
+      "itemScale": 0.24,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        2.6,
+        2.6,
+        -8.8
+      ],
+      "tint": "#0a0a16",
+      "glow": "#0E8C86",
+      "itemScale": 0.22,
+      "displace": 0.06
+    },
+    {
+      "type": "cable",
+      "from": [
+        -6,
+        4.6,
+        -3
+      ],
+      "to": [
+        -2,
+        5.4,
+        -6
+      ],
+      "sag": -0.6,
+      "glow": "#4B1F68"
+    },
+    {
+      "type": "cable",
+      "from": [
+        6,
+        4.8,
+        -3.4
+      ],
+      "to": [
+        2,
+        5.6,
+        -6.4
+      ],
+      "sag": -0.6,
+      "glow": "#0E8C86"
+    },
+    {
+      "type": "fish-school",
+      "position": [
+        0,
+        1.2,
+        -6.0
+      ],
+      "count": 8,
+      "glow": "#243B8F"
+    }
+  ],
+  "central": {
+    "type": "constellation",
+    "position": [
+      0,
+      0,
+      -5.4
+    ],
+    "title": {
+      "pt": "CONSTELAÇÃO ONÇA-SEREIA",
+      "en": "JAGUAR-MERMAID CONSTELLATION",
+      "es": "CONSTELACIÓN JAGUAR-SIRENA",
+      "de": "JAGUAR-MEERJUNGFRAU-STERNBILD",
+      "zh": "美洲豹-美人鱼星座"
+    },
+    "body": {
+      "pt": "Móvel e instável, desenha e desfaz a silhueta de uma onça-sereia, sem nunca completar a forma. É o bicho que junta floresta e água, projetado no escuro como se fosse céu. Fica sempre a um traço de existir.",
+      "en": "Mobile and unstable, it draws and undoes the shape of a jaguar-mermaid, never complete. It is the animal that joins forest and water, cast on the dark as if it were sky. It stays always one stroke short of existing.",
+      "es": "Móvil e inestable, dibuja y deshace la figura de un jaguar-sirena, nunca completa. Es el animal que une bosque y agua, proyectado sobre la oscuridad como si fuera cielo. Siempre le falta un trazo para existir.",
+      "de": "Beweglich und instabil zeichnet und löscht es die Form einer Jaguar-Meerjungfrau, niemals vollständig. Es ist das Tier, das Wald und Wasser verbindet, in die Dunkelheit geworfen, als wäre sie Himmel. Zum Dasein fehlt ihm immer ein Strich.",
+      "zh": "它移动而不稳定，不断画出又抹去一只美洲豹-美人鱼的形状，从未完整。它把森林与水连接起来，被投向黑暗，仿佛黑暗就是天空。它总差最后一笔才真正存在。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "DISSOLVER",
+          "en": "DISSOLVE",
+          "es": "DISOLVERSE",
+          "de": "AUFLÖSEN",
+          "zh": "溶解"
+        },
+        "detail": {
+          "pt": "sua silhueta se mistura à constelação",
+          "en": "your silhouette blends into the constellation",
+          "es": "tu silueta se mezcla con la constelación",
+          "de": "deine Silhouette verschmilzt mit dem Sternbild",
+          "zh": "你的轮廓融入星座"
+        },
+        "rastro": {
+          "espelho": 1,
+          "cinza": 1
+        },
+        "next": "sala-06c-ritual-fusao.html"
+      },
+      {
+        "verb": {
+          "pt": "ORBITAR",
+          "en": "ORBIT",
+          "es": "ORBITAR",
+          "de": "UMKREISEN",
+          "zh": "环绕"
+        },
+        "detail": {
+          "pt": "você gira sem se aproximar",
+          "en": "you circle without getting closer",
+          "es": "giras sin acercarte",
+          "de": "du kreist, ohne näher zu kommen",
+          "zh": "你不断绕行，却没有靠近"
+        },
+        "rastro": {
+          "oleo": 1,
+          "espelho": 1
+        },
+        "next": "sala-06a-ritual-sangue.html"
+      },
+      {
+        "verb": {
+          "pt": "CAIR",
+          "en": "FALL BACK",
+          "es": "CAER DE NUEVO",
+          "de": "ZURÜCKFALLEN",
+          "zh": "再次坠落"
+        },
+        "detail": {
+          "pt": "o chão, quando chega, parece outro",
+          "en": "the ground, when it arrives, feels different",
+          "es": "el suelo, cuando llega, se siente diferente",
+          "de": "wenn der Boden kommt, fühlt er sich anders an",
+          "zh": "地面终于到来时，感觉已经不同"
+        },
+        "rastro": {
+          "raiz": 1,
+          "sangue": 1
+        },
+        "next": "sala-06b-insurreicao.html"
+      }
+    ]
+  }
+}

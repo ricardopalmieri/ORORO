@@ -1,0 +1,395 @@
+{
+  "id": "sala-04c-vozes-ancestrais",
+  "stage": 4,
+  "name": {
+    "pt": "VOZES ANCESTRAIS",
+    "en": "ANCESTRAL VOICES",
+    "es": "VOCES ANCESTRALES",
+    "de": "AHNENSTIMMEN",
+    "zh": "祖先之声"
+  },
+  "scene": {
+    "accent": "#806321",
+    "accent2": "#0F6F5C",
+    "fog": "#06050a",
+    "fogDensity": 0.036,
+    "ambient": {
+      "color": "#221c10",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C9A24A",
+      "intensity": 8.1,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#060503",
+      "colorA": "#806321",
+      "colorB": "#0F6F5C",
+      "glow": "#C9A24A",
+      "liquid": 0.35,
+      "veins": 0.15,
+      "crack": 0.2,
+      "grid": 0.25,
+      "gridScale": 0.42,
+      "scale": 0.15
+    },
+    "fireflies": {
+      "color": "#C9A24A",
+      "count": 100,
+      "drift": 0.35
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#806321",
+      "height": 6.5
+    },
+    "audio": {
+      "root": 36.0,
+      "intensity": 0.46
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0F6F5C",
+      "itemTint": "#0a1208",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "an1",
+      "content": {
+        "title": {
+          "pt": "FITA",
+          "en": "TAPE",
+          "es": "CINTA",
+          "de": "BAND",
+          "zh": "磁带"
+        },
+        "body": {
+          "pt": "Fita magnética deformada, trecho recuperável, sentido incerto. O calor entortou o plástico e a voz junto. O que sobra é a entonação, sem as palavras que a sustentavam.",
+          "en": "Warped magnetic tape, recoverable segment, uncertain meaning. Heat bent the plastic and the voice with it. What remains is the intonation, without the words that held it up.",
+          "es": "Cinta magnética deformada, fragmento recuperable, sentido incierto. El calor dobló el plástico y con él la voz. Lo que queda es la entonación, sin las palabras que la sostenían.",
+          "de": "Verformtes Magnetband, ein Abschnitt ist wiederherstellbar, seine Bedeutung ungewiss. Die Hitze verbog den Kunststoff und mit ihm die Stimme. Übrig bleibt die Intonation, ohne die Worte, die sie getragen haben.",
+          "zh": "变形的磁带，有一段仍可恢复，意义却不确定。高温扭曲了塑料，也同时扭曲了声音。留下来的只是语调，没有支撑它的词语。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C9A24A",
+      "itemTint": "#1a1306",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "an2",
+      "content": {
+        "title": {
+          "pt": "CONCHA",
+          "en": "SHELL",
+          "es": "CONCHA",
+          "de": "MUSCHEL",
+          "zh": "贝壳"
+        },
+        "body": {
+          "pt": "Concha com captação interna, ressonância acima do esperado. Guardou o som de uma água que secou. Encostada ao ouvido, devolve um mar que não existe mais aqui.",
+          "en": "Shell with internal pickup, resonance above expectation. It kept the sound of a water that dried up. Held to the ear, it gives back a sea that no longer exists here.",
+          "es": "Concha con captación interna, resonancia superior a la esperada. Guardó el sonido de un agua que se secó. Al acercarla al oído devuelve un mar que ya no existe aquí.",
+          "de": "Muschel mit internem Tonabnehmer, Resonanz stärker als erwartet. Sie bewahrte den Klang eines Wassers, das versiegte. Ans Ohr gehalten gibt sie ein Meer zurück, das hier nicht mehr existiert.",
+          "zh": "内部装有拾音装置的贝壳，共振强于预期。它保存了某片已经干涸水域的声音。贴近耳朵时，它会还给你一片这里早已不存在的海。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        -2,
+        0.3,
+        -6.4
+      ],
+      "radius": 0.4,
+      "color": "#241c10",
+      "glow": "#0F6F5C",
+      "info": "an3",
+      "content": {
+        "title": {
+          "pt": "INSCRIÇÃO C",
+          "en": "INSCRIPTION C",
+          "es": "INSCRIPCIÓN C",
+          "de": "INSCHRIFT C",
+          "zh": "铭文 C"
+        },
+        "body": {
+          "pt": "Símbolos gravados, padrão repetido em outros lugares. A mesma marca aparece em salas distantes. É assinatura ou aviso, deixado por quem passou antes por todo o percurso.",
+          "en": "Engraved symbols, pattern repeated elsewhere. The same mark appears in distant rooms. It is a signature or a warning, left by whoever passed through the whole path before.",
+          "es": "Símbolos grabados, patrón repetido en otros lugares. La misma marca aparece en salas distantes. Es una firma o una advertencia, dejada por quien ya recorrió todo el trayecto.",
+          "de": "Eingravierte Symbole, Muster an anderen Orten wiederholt. Dasselbe Zeichen erscheint in entfernten Räumen. Es ist eine Signatur oder eine Warnung, hinterlassen von jemandem, der den ganzen Weg zuvor gegangen ist.",
+          "zh": "刻下的符号，这一图案也在其他地方重复出现。同样的标记出现在遥远的房间里。它可能是签名，也可能是警告，由曾经走完整条路径的人留下。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        2.4,
+        0.3,
+        -7.0
+      ],
+      "radius": 0.4,
+      "color": "#241c10",
+      "glow": "#C9A24A",
+      "info": "an4",
+      "content": {
+        "title": {
+          "pt": "INSCRIÇÃO D",
+          "en": "INSCRIPTION D",
+          "es": "INSCRIPCIÓN D",
+          "de": "INSCHRIFT D",
+          "zh": "铭文 D"
+        },
+        "body": {
+          "pt": "Variante do mesmo símbolo, profundidade maior. Foi cavada com mais força, ou com mais tempo. A pressa da primeira inscrição virou insistência nesta.",
+          "en": "Variant of the same symbol, greater depth. It was cut with more force, or more time. The haste of the first inscription became insistence in this one.",
+          "es": "Variante del mismo símbolo, de mayor profundidad. Fue tallada con más fuerza, o con más tiempo. La prisa de la primera inscripción se volvió insistencia en esta.",
+          "de": "Variante desselben Symbols, tiefer eingeschnitten. Mit mehr Kraft oder mehr Zeit geschaffen. Die Eile der ersten Inschrift wurde hier zu Beharrlichkeit.",
+          "zh": "同一符号的变体，刻得更深。也许用了更大的力，也许花了更多时间。第一处铭文的匆忙，在这里变成了坚持。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        5.8,
+        1.2,
+        -5.4
+      ],
+      "tint": "#120e08",
+      "glow": "#806321",
+      "itemScale": 0.3,
+      "displace": 0.06,
+      "info": "an5",
+      "content": {
+        "title": {
+          "pt": "NÓ DE TECIDO",
+          "en": "FABRIC KNOT",
+          "es": "NUDO DE TELA",
+          "de": "STOFFKNOTEN",
+          "zh": "布结"
+        },
+        "body": {
+          "pt": "Tecido amarrado em padrão específico, função mnemônica provável. Cada nó guarda um dado que só o corpo lê, passando o dedo. É um arquivo que não precisa de tela.",
+          "en": "Fabric tied in a specific pattern, likely mnemonic function. Each knot holds a piece of data only the body reads, running a finger over it. It is an archive with no need for a screen.",
+          "es": "Tela atada siguiendo un patrón específico, probable función mnemónica. Cada nudo guarda un dato que solo el cuerpo lee al pasar el dedo. Es un archivo que no necesita pantalla.",
+          "de": "Stoff in einem bestimmten Muster geknotet, vermutlich als Gedächtnisstütze. Jeder Knoten bewahrt eine Information, die nur der Körper beim Darüberstreichen liest. Ein Archiv ohne Bildschirm.",
+          "zh": "布料按照特定方式打结，很可能具有记忆功能。每一个结都保存着只有身体用手指触摸时才能读取的信息。这是一份不需要屏幕的档案。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        0,
+        0,
+        -9.0
+      ],
+      "accent": "#0F6F5C",
+      "info": "an6",
+      "content": {
+        "title": {
+          "pt": "ALTO-FALANTE",
+          "en": "SPEAKER",
+          "es": "ALTAVOZ",
+          "de": "LAUTSPRECHER",
+          "zh": "扬声器"
+        },
+        "body": {
+          "pt": "Emite pulsos graves em intervalos irregulares. O grave é sentido antes de ser ouvido, no peito. Chega como batida de tambor que perdeu a pele.",
+          "en": "Emits low pulses at irregular intervals. The low end is felt before it is heard, in the chest. It arrives like a drumbeat that lost its skin.",
+          "es": "Emite pulsos graves a intervalos irregulares. El grave se siente antes de oírse, en el pecho. Llega como un golpe de tambor que perdió su piel.",
+          "de": "Sendet tiefe Impulse in unregelmäßigen Abständen. Der Bass wird in der Brust gespürt, bevor er gehört wird. Er kommt wie ein Trommelschlag, der seine Haut verloren hat.",
+          "zh": "以不规则间隔发出低频脉冲。低音先在胸腔中被感受到，然后才被听见。它像一记失去了鼓皮的鼓声。"
+        }
+      }
+    },
+    {
+      "type": "totem",
+      "position": [
+        -7,
+        0,
+        -3
+      ],
+      "accent": "#C9A24A",
+      "height": 3.4,
+      "segments": 5
+    },
+    {
+      "type": "totem",
+      "position": [
+        7,
+        0,
+        -3.4
+      ],
+      "accent": "#0F6F5C",
+      "height": 3.8,
+      "segments": 6
+    },
+    {
+      "type": "totem",
+      "position": [
+        -7.6,
+        0,
+        -8
+      ],
+      "accent": "#0F6F5C",
+      "height": 3.0,
+      "segments": 4
+    },
+    {
+      "type": "totem",
+      "position": [
+        7.6,
+        0,
+        -8.4
+      ],
+      "accent": "#C9A24A",
+      "height": 3.6,
+      "segments": 5
+    },
+    {
+      "type": "speaker",
+      "position": [
+        0,
+        0,
+        -3.6
+      ],
+      "accent": "#806321"
+    }
+  ],
+  "central": {
+    "type": "shell",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "CONCHA-AMPLIFICADOR",
+      "en": "AMPLIFIER SHELL",
+      "es": "CONCHA AMPLIFICADORA",
+      "de": "VERSTÄRKERMUSCHEL",
+      "zh": "扩音贝壳"
+    },
+    "body": {
+      "pt": "Suspensa, emite pulsos baixos. Cada um carrega uma sílaba que nunca termina. É a escuta feita objeto, uma boca de pedra que só sabe começar a falar. O sentido fica sempre a uma sílaba de distância.",
+      "en": "Suspended, it emits low pulses. Each one carries a syllable that never ends. It is listening made object, a mouth of stone that only knows how to begin. Meaning stays always one syllable away.",
+      "es": "Suspendida, emite pulsos bajos. Cada uno carga una sílaba que nunca termina. Es la escucha convertida en objeto, una boca de piedra que solo sabe empezar a hablar. El sentido queda siempre a una sílaba de distancia.",
+      "de": "Schwebend sendet sie tiefe Impulse. Jeder trägt eine Silbe, die niemals endet. Zuhören ist hier zum Objekt geworden, ein steinerner Mund, der nur anfangen kann zu sprechen. Bedeutung bleibt immer eine Silbe entfernt.",
+      "zh": "它悬浮着，发出低沉脉冲。每个脉冲都携带一个永远不会结束的音节。聆听在这里变成了物件，一张只知道如何开始说话的石嘴。意义总是还差一个音节。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "ESCUTAR",
+          "en": "LISTEN",
+          "es": "ESCUCHAR",
+          "de": "ZUHÖREN",
+          "zh": "聆听"
+        },
+        "detail": {
+          "pt": "o som entra antes do sentido",
+          "en": "sound enters before meaning",
+          "es": "el sonido entra antes que el sentido",
+          "de": "der Klang tritt vor der Bedeutung ein",
+          "zh": "声音先于意义进入"
+        },
+        "rastro": {
+          "voz": 2,
+          "raiz": 1
+        },
+        "next": "sala-05c-viagem-cosmica.html"
+      },
+      {
+        "verb": {
+          "pt": "GRAVAR",
+          "en": "RECORD",
+          "es": "GRABAR",
+          "de": "AUFNEHMEN",
+          "zh": "记录"
+        },
+        "detail": {
+          "pt": "o pulso muda a cada repetição",
+          "en": "the pulse changes with each repetition",
+          "es": "el pulso cambia con cada repetición",
+          "de": "der Puls verändert sich bei jeder Wiederholung",
+          "zh": "脉冲每次重复都会改变"
+        },
+        "rastro": {
+          "voz": 1,
+          "ouro": 1
+        },
+        "next": "sala-05a-maquinas-bioma.html"
+      },
+      {
+        "verb": {
+          "pt": "SILENCIAR",
+          "en": "SILENCE",
+          "es": "SILENCIAR",
+          "de": "VERSTUMMEN LASSEN",
+          "zh": "静音"
+        },
+        "detail": {
+          "pt": "o que sobra tem peso",
+          "en": "what remains has weight",
+          "es": "lo que queda tiene peso",
+          "de": "was bleibt, hat Gewicht",
+          "zh": "留下来的东西有重量"
+        },
+        "rastro": {
+          "cinza": 2
+        },
+        "next": "sala-05b-fogo-cruzado.html"
+      }
+    ]
+  }
+}

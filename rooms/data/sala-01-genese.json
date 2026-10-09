@@ -1,0 +1,456 @@
+{
+  "id": "sala-01-genese",
+  "stage": 1,
+  "name": {
+    "pt": "GÊNESE",
+    "en": "GENESIS",
+    "es": "GÉNESIS",
+    "de": "GENESE",
+    "zh": "创世"
+  },
+  "scene": {
+    "accent": "#0E8C86",
+    "accent2": "#243B8F",
+    "fog": "#03070a",
+    "fogDensity": 0.036,
+    "ambient": {
+      "color": "#16222a",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#0E8C86",
+      "intensity": 10.1,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#020608",
+      "colorA": "#0E8C86",
+      "colorB": "#243B8F",
+      "glow": "#B7F03B",
+      "liquid": 0.78,
+      "veins": 0.0,
+      "crack": 0.0,
+      "grid": 0.22,
+      "gridScale": 0.42,
+      "scale": 0.16
+    },
+    "fireflies": {
+      "color": "#B7F03B",
+      "count": 110,
+      "drift": 0.5
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#0E8C86",
+      "height": 6.5
+    },
+    "audio": {
+      "root": 36.7,
+      "intensity": 0.5
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    },
+    "showControls": true
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.0
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0E8C86",
+      "itemTint": "#0a1f1c",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "g1",
+      "content": {
+        "title": {
+          "pt": "ESCAMA",
+          "en": "SCALE",
+          "es": "ESCAMA",
+          "de": "SCHUPPE",
+          "zh": "鳞片"
+        },
+        "body": {
+          "pt": "Fragmento de escama preso em resina. Contaminação registrada, origem não localizada. Sob a luz certa muda de cor, como óleo sobre a água. A ficha do sistema termina numa palavra riscada.",
+          "en": "Scale fragment held in resin. Contamination logged, origin unlocated. Under the right light it shifts color, like oil on water. The system's label ends on a crossed-out word.",
+          "es": "Fragmento de escama conservado en resina. Contaminación registrada, origen no localizado. Bajo la luz adecuada cambia de color, como aceite sobre el agua. La etiqueta del sistema termina en una palabra tachada.",
+          "de": "Ein Schuppenfragment, in Harz eingeschlossen. Kontamination protokolliert, Herkunft unbekannt. Im richtigen Licht wechselt es die Farbe, wie Öl auf Wasser. Das Etikett des Systems endet mit einem durchgestrichenen Wort.",
+          "zh": "一块鳞片碎片被封存在树脂中。污染已记录，来源无法定位。在合适的光线下，它会像水面上的油一样变色。系统标签的最后是一个被划掉的词。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#4B1F68",
+      "itemTint": "#160c1c",
+      "itemScale": 0.4,
+      "displace": 0.06,
+      "info": "g2",
+      "content": {
+        "title": {
+          "pt": "PELO",
+          "en": "FUR",
+          "es": "PELAJE",
+          "de": "FELL",
+          "zh": "毛皮"
+        },
+        "body": {
+          "pt": "Pelo de onça em resina industrial. A espécie está ausente do registro atual, dada como extinta em três arquivos e viva em um. A textura guarda calor que a sala não tem.",
+          "en": "Jaguar fur in industrial resin. The species is absent from the current record, listed extinct in three archives and alive in one. The texture holds a warmth the room does not have.",
+          "es": "Pelaje de jaguar en resina industrial. La especie no aparece en el registro actual: figura extinta en tres archivos y viva en uno. La textura conserva un calor que la sala no tiene.",
+          "de": "Jaguarfell in Industrieharz. Die Art fehlt im aktuellen Register, in drei Archiven als ausgestorben und in einem als lebend geführt. Die Textur bewahrt eine Wärme, die der Raum nicht besitzt.",
+          "zh": "工业树脂中的美洲豹毛皮。现有记录中已没有这种物种，三个档案说它灭绝，一个档案说它仍然存活。纹理中保留着这个房间没有的温度。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        -5.4,
+        0,
+        -6.4
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.85,
+        1.4,
+        0.85
+      ],
+      "accent": "#C9A24A",
+      "itemTint": "#1a1306",
+      "itemScale": 0.46,
+      "displace": 0.06,
+      "info": "g3",
+      "content": {
+        "title": {
+          "pt": "METAL",
+          "en": "METAL",
+          "es": "METAL",
+          "de": "METALL",
+          "zh": "金属"
+        },
+        "body": {
+          "pt": "Liga dourada corroída. O peso está acima do esperado para o tamanho, como se guardasse algo dentro. Foi minério antes de ser objeto, e território antes de ser minério.",
+          "en": "Corroded gold alloy. Its weight exceeds what its size suggests, as if it held something inside. It was ore before it was object, and territory before it was ore.",
+          "es": "Aleación de oro corroída. Su peso supera lo que su tamaño sugiere, como si guardara algo dentro. Fue mineral antes de ser objeto, y territorio antes de ser mineral.",
+          "de": "Korrodierte Goldlegierung. Ihr Gewicht übersteigt, was ihre Größe vermuten lässt, als trüge sie etwas in sich. Sie war Erz, bevor sie Objekt war, und Territorium, bevor sie Erz war.",
+          "zh": "被腐蚀的金合金。它的重量超过体积所暗示的程度，仿佛内部还装着什么。成为物件之前它是矿石，成为矿石之前它是领地。"
+        }
+      }
+    },
+    {
+      "type": "tank",
+      "position": [
+        5.4,
+        0,
+        -6.4
+      ],
+      "radius": 0.42,
+      "height": 1.5,
+      "colorA": "#0E8C86",
+      "colorB": "#4B1F68",
+      "glow": "#B7F03B",
+      "info": "g4",
+      "content": {
+        "title": {
+          "pt": "ÁGUA",
+          "en": "WATER",
+          "es": "AGUA",
+          "de": "WASSER",
+          "zh": "水"
+        },
+        "body": {
+          "pt": "Água do rio, selada numa coluna de vidro. O reflexo não corresponde ao ambiente ao redor. Quem se aproxima demais aparece atrasado na superfície, um segundo depois do corpo.",
+          "en": "River water, sealed in a glass column. Its reflection does not match the room around it. Whoever leans too close appears late on the surface, a second behind the body.",
+          "es": "Agua de río, sellada en una columna de vidrio. Su reflejo no coincide con la sala que la rodea. Quien se acerca demasiado aparece tarde en la superficie, un segundo después del cuerpo.",
+          "de": "Flusswasser, in einer Glassäule versiegelt. Sein Spiegelbild stimmt nicht mit dem Raum um es herum überein. Wer sich zu nah darüber beugt, erscheint verspätet auf der Oberfläche, eine Sekunde nach dem Körper.",
+          "zh": "河水，被密封在玻璃柱中。它的倒影与周围的房间并不一致。靠得太近的人会延迟出现在水面上，比身体晚一秒。"
+        }
+      }
+    },
+    {
+      "type": "bones",
+      "position": [
+        0,
+        0,
+        -9.2
+      ],
+      "accent": "#B7F03B",
+      "count": 10,
+      "info": "g5",
+      "content": {
+        "title": {
+          "pt": "ARQUIVO",
+          "en": "ARCHIVE",
+          "es": "ARCHIVO",
+          "de": "ARCHIV",
+          "zh": "档案"
+        },
+        "body": {
+          "pt": "Ossos de peixe soldados a um circuito ativo. Sinal fraco e contínuo, sempre a mesma frase curta. É memória de um bioma gravada em hardware, um arquivo que ninguém sabe abrir.",
+          "en": "Fish bones fused to a live circuit. Faint, continuous signal, always the same short phrase. It is a biome's memory recorded onto hardware, an archive no one knows how to open.",
+          "es": "Espinas de pez fusionadas a un circuito activo. Señal tenue y continua, siempre la misma frase breve. Es la memoria de un bioma grabada en hardware, un archivo que nadie sabe abrir.",
+          "de": "Fischgräten, mit einem aktiven Schaltkreis verschmolzen. Schwaches, kontinuierliches Signal, immer derselbe kurze Satz. Es ist die Erinnerung eines Bioms, auf Hardware aufgezeichnet, ein Archiv, das niemand zu öffnen weiß.",
+          "zh": "鱼骨与仍在工作的电路熔合在一起。微弱而持续的信号，反复说着同一句短语。这是一个生境被写进硬件的记忆，一份无人知道如何打开的档案。"
+        }
+      }
+    },
+    {
+      "type": "totem",
+      "position": [
+        -2,
+        0,
+        -3.6
+      ],
+      "accent": "#243B8F",
+      "height": 3.0,
+      "segments": 4,
+      "info": "g6",
+      "content": {
+        "title": {
+          "pt": "CABO",
+          "en": "CABLE",
+          "es": "CABLE",
+          "de": "KABEL",
+          "zh": "电缆"
+        },
+        "body": {
+          "pt": "Cabo descendo do teto até a água. Não conduz eletricidade, conduz som. Encoste o ouvido perto e a sala inteira parece passar por ali, filtrada e grave.",
+          "en": "Cable hanging from ceiling to water. It carries no current, only sound. Bring your ear close and the whole room seems to pass through it, filtered and low.",
+          "es": "Cable que cuelga del techo hasta el agua. No transporta corriente, solo sonido. Acerca el oído y toda la sala parece atravesarlo, filtrada y grave.",
+          "de": "Ein Kabel hängt von der Decke bis ins Wasser. Es führt keinen Strom, nur Klang. Hält man das Ohr nah heran, scheint der ganze Raum hindurchzugehen, gefiltert und tief.",
+          "zh": "一根电缆从天花板垂入水中。它不传导电流，只传递声音。把耳朵靠近，仿佛整个房间都从其中经过，变得低沉而被过滤。"
+        }
+      }
+    },
+    {
+      "type": "totem",
+      "position": [
+        8.2,
+        0,
+        -8.6
+      ],
+      "accent": "#0F6F5C",
+      "height": 2.9,
+      "segments": 4
+    },
+    {
+      "type": "cable",
+      "from": [
+        -6.5,
+        4.6,
+        -1.5
+      ],
+      "to": [
+        -2.0,
+        3.6,
+        -3.4
+      ],
+      "sag": 1.0,
+      "glow": "#243B8F"
+    },
+    {
+      "type": "cable",
+      "from": [
+        2.2,
+        4.8,
+        -4.4
+      ],
+      "to": [
+        6.4,
+        3.8,
+        -7.4
+      ],
+      "sag": 1.2,
+      "glow": "#4B1F68"
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        6.6,
+        1.35,
+        -3.2
+      ],
+      "rotation": [
+        0.0,
+        -0.6,
+        0
+      ],
+      "tint": "#243B8F",
+      "size": [
+        0.9,
+        1.6
+      ],
+      "distort": 0.05
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        -6.8,
+        1.15,
+        -4.6
+      ],
+      "rotation": [
+        0.05,
+        0.55,
+        0
+      ],
+      "tint": "#0E8C86",
+      "size": [
+        0.7,
+        1.3
+      ],
+      "distort": 0.05
+    },
+    {
+      "type": "oil-blob",
+      "position": [
+        -7.5,
+        0,
+        -7.5
+      ],
+      "radius": 1.1,
+      "glow": "#0E8C86"
+    },
+    {
+      "type": "plant",
+      "position": [
+        7.2,
+        0,
+        -8.2
+      ],
+      "accent": "#14603a",
+      "glow": "#B7F03B",
+      "count": 8,
+      "height": 1.2
+    }
+  ],
+  "central": {
+    "type": "egg",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "OVO OLEOSO",
+      "en": "OILY EGG",
+      "es": "HUEVO ACEITOSO",
+      "de": "ÖLIGES EI",
+      "zh": "油之卵"
+    },
+    "body": {
+      "pt": "Coberto de óleo, gira devagar sobre a água parada e devolve, distorcido, o nome OROЯO. É o começo de tudo e já está contaminado. Cada volta oferece uma abertura diferente para o mesmo território.",
+      "en": "Coated in oil, it turns slowly over still water and returns the name OROЯO, distorted. It is the beginning of everything and already contaminated. Each turn offers a different opening into the same territory.",
+      "es": "Cubierto de aceite, gira lentamente sobre agua inmóvil y devuelve el nombre OROЯO, deformado. Es el comienzo de todo y ya está contaminado. Cada vuelta ofrece una abertura distinta hacia el mismo territorio.",
+      "de": "Mit Öl überzogen dreht es sich langsam über stillem Wasser und gibt den Namen OROЯO verzerrt zurück. Es ist der Anfang von allem und bereits kontaminiert. Jede Drehung bietet einen anderen Zugang zum selben Territorium.",
+      "zh": "它覆满油，在静水上缓慢旋转，扭曲地回送出 OROЯO 这个名字。它是一切的开端，却已经受到污染。每一次转动，都向同一片领地打开不同的入口。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "ABSORVER",
+          "en": "ABSORB",
+          "es": "ABSORBER",
+          "de": "ABSORBIEREN",
+          "zh": "吸收"
+        },
+        "detail": {
+          "pt": "o óleo entra pela pele",
+          "en": "the oil enters the skin",
+          "es": "el aceite entra en la piel",
+          "de": "das Öl dringt in die Haut ein",
+          "zh": "油渗入皮肤"
+        },
+        "rastro": {
+          "oleo": 2
+        },
+        "next": "sala-02a-floresta-ferida.html"
+      },
+      {
+        "verb": {
+          "pt": "SEGUIR O REFLEXO",
+          "en": "FOLLOW THE REFLECTION",
+          "es": "SEGUIR EL REFLEJO",
+          "de": "DEM SPIEGELBILD FOLGEN",
+          "zh": "跟随倒影"
+        },
+        "detail": {
+          "pt": "a imagem se move primeiro",
+          "en": "the image moves first",
+          "es": "la imagen se mueve primero",
+          "de": "das Bild bewegt sich zuerst",
+          "zh": "影像先移动"
+        },
+        "rastro": {
+          "espelho": 2
+        },
+        "next": "sala-02c-espelhos-dagua.html"
+      },
+      {
+        "verb": {
+          "pt": "DESCER",
+          "en": "DESCEND",
+          "es": "DESCENDER",
+          "de": "HINABSTEIGEN",
+          "zh": "下潜"
+        },
+        "detail": {
+          "pt": "o fundo guarda outra temperatura",
+          "en": "the riverbed holds another temperature",
+          "es": "el lecho del río guarda otra temperatura",
+          "de": "das Flussbett bewahrt eine andere Temperatur",
+          "zh": "河床保存着另一种温度"
+        },
+        "rastro": {
+          "cinza": 1,
+          "oleo": 1
+        },
+        "next": "sala-02b-invasores.html"
+      }
+    ]
+  }
+}

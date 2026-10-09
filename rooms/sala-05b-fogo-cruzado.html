@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR" data-room="sala-05b-fogo-cruzado">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>OROЯO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css?v=38" />
+  <link rel="stylesheet" href="../multiplayer/style.css?v=38" />
+  <script type="importmap">
+    { "imports": { "three": "../assets/js/three.module.js" } }
+  </script>
+</head>
+<body class="ororo-room">
+  <canvas id="scene-canvas" tabindex="0"></canvas>
+  <script type="module">
+    import { initRoom } from '../ororo-core.js?v=38';
+    // Modelo novo: toda a sala (3D + textos) vive em ./data/sala-05b-fogo-cruzado.json
+    initRoom({ dataPath: './data/sala-05b-fogo-cruzado.json' });
+  </script>
+</body>
+</html>

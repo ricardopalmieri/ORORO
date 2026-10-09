@@ -1,0 +1,3363 @@
+{
+  "ui": {
+    "pt": {
+      "brand": "OROЯO",
+      "start_tagline": "GALERIA DIGITAL · TERRITÓRIO CONTAMINADO",
+      "start_enter": "ENTRAR",
+      "start_lang": "IDIOMA",
+      "start_sound_on": "SOM ATIVADO",
+      "start_sound_off": "SOM DESATIVADO",
+      "enter_prompt": "TOQUE PARA ENTRAR",
+      "controls": "WASD MOVER · ARRASTAR OLHAR · TOQUE INSPECIONAR",
+      "mute": "SILENCIAR SOM",
+      "unmute": "ATIVAR SOM",
+      "close": "FECHAR",
+      "reset_label": "APAGAR RASTROS",
+      "rastros_title": "RASTROS",
+      "stage_of": "DE",
+      "exit_label": "SAIR",
+      "a11y_title": "ACESSIBILIDADE",
+      "a11y_motion": "Movimento reduzido",
+      "a11y_motion_hint": "Menos animações e transições",
+      "a11y_contrast": "Alto contraste",
+      "a11y_contrast_hint": "Reforça texto e bordas",
+      "a11y_textsize": "Texto maior",
+      "a11y_textsize_hint": "Aumenta os textos dos modais",
+      "choices_label": "ESCOLHA UM VERBO",
+      "load_error": "Não foi possível carregar os dados da sala.",
+      "refresh_hint": "Se você acabou de atualizar o projeto, faça um refresh forçado (Ctrl/Cmd+Shift+R) para limpar o cache do navegador.",
+      "rastros": {
+        "oleo": "ÓLEO",
+        "sangue": "SANGUE",
+        "raiz": "RAIZ",
+        "ouro": "OURO",
+        "espelho": "ESPELHO",
+        "voz": "VOZ",
+        "cinza": "CINZA"
+      }
+    },
+    "en": {
+      "brand": "OROЯO",
+      "start_tagline": "DIGITAL GALLERY · CONTAMINATED TERRITORY",
+      "start_enter": "ENTER",
+      "start_lang": "LANGUAGE",
+      "start_sound_on": "SOUND ON",
+      "start_sound_off": "SOUND OFF",
+      "enter_prompt": "TAP TO ENTER",
+      "controls": "WASD MOVE · DRAG LOOK · TAP INSPECT",
+      "mute": "MUTE SOUND",
+      "unmute": "UNMUTE SOUND",
+      "close": "CLOSE",
+      "reset_label": "CLEAR TRACES",
+      "rastros_title": "TRACES",
+      "stage_of": "OF",
+      "exit_label": "EXIT",
+      "a11y_title": "ACCESSIBILITY",
+      "a11y_motion": "Reduced motion",
+      "a11y_motion_hint": "Fewer animations and transitions",
+      "a11y_contrast": "High contrast",
+      "a11y_contrast_hint": "Stronger text and borders",
+      "a11y_textsize": "Larger text",
+      "a11y_textsize_hint": "Enlarges modal text",
+      "choices_label": "CHOOSE A VERB",
+      "load_error": "Could not load the room data.",
+      "refresh_hint": "If you just updated the project, force-refresh (Ctrl/Cmd+Shift+R) to clear the browser cache.",
+      "rastros": {
+        "oleo": "OIL",
+        "sangue": "BLOOD",
+        "raiz": "ROOT",
+        "ouro": "GOLD",
+        "espelho": "MIRROR",
+        "voz": "VOICE",
+        "cinza": "ASH"
+      }
+    },
+    "es": {
+      "brand": "OROЯO",
+      "start_tagline": "GALERÍA DIGITAL · TERRITORIO CONTAMINADO",
+      "start_enter": "ENTRAR",
+      "start_lang": "IDIOMA",
+      "start_sound_on": "SONIDO ACTIVADO",
+      "start_sound_off": "SONIDO DESACTIVADO",
+      "enter_prompt": "TOCA PARA ENTRAR",
+      "controls": "WASD MOVER · ARRASTRAR MIRADA · TOCAR INSPECCIONAR",
+      "mute": "SILENCIAR SONIDO",
+      "unmute": "ACTIVAR SONIDO",
+      "close": "CERRAR",
+      "reset_label": "BORRAR RASTROS",
+      "rastros_title": "RASTROS",
+      "stage_of": "DE",
+      "exit_label": "SALIR",
+      "a11y_title": "ACCESIBILIDAD",
+      "a11y_motion": "Movimiento reducido",
+      "a11y_motion_hint": "Menos animaciones y transiciones",
+      "a11y_contrast": "Alto contraste",
+      "a11y_contrast_hint": "Refuerza textos y bordes",
+      "a11y_textsize": "Texto más grande",
+      "a11y_textsize_hint": "Aumenta el texto de los modales",
+      "choices_label": "ELIGE UN VERBO",
+      "load_error": "No se pudieron cargar los datos de la sala.",
+      "refresh_hint": "Si acabas de actualizar el proyecto, fuerza una recarga (Ctrl/Cmd+Shift+R) para limpiar la caché del navegador.",
+      "rastros": {
+        "oleo": "ACEITE",
+        "sangue": "SANGRE",
+        "raiz": "RAÍZ",
+        "ouro": "ORO",
+        "espelho": "ESPEJO",
+        "voz": "VOZ",
+        "cinza": "CENIZA"
+      }
+    },
+    "de": {
+      "brand": "OROЯO",
+      "start_tagline": "DIGITALE GALERIE · KONTAMINIERTES TERRITORIUM",
+      "start_enter": "EINTRETEN",
+      "start_lang": "SPRACHE",
+      "start_sound_on": "TON AN",
+      "start_sound_off": "TON AUS",
+      "enter_prompt": "ZUM EINTRETEN TIPPEN",
+      "controls": "WASD BEWEGEN · BLICK ZIEHEN · TIPPEN ZUM UNTERSUCHEN",
+      "mute": "TON STUMMSCHALTEN",
+      "unmute": "TON AKTIVIEREN",
+      "close": "SCHLIESSEN",
+      "reset_label": "SPUREN LÖSCHEN",
+      "rastros_title": "SPUREN",
+      "stage_of": "VON",
+      "exit_label": "VERLASSEN",
+      "a11y_title": "BARRIEREFREIHEIT",
+      "a11y_motion": "Reduzierte Bewegung",
+      "a11y_motion_hint": "Weniger Animationen und Übergänge",
+      "a11y_contrast": "Hoher Kontrast",
+      "a11y_contrast_hint": "Stärkere Texte und Konturen",
+      "a11y_textsize": "Größerer Text",
+      "a11y_textsize_hint": "Vergrößert den Text in Dialogen",
+      "choices_label": "WÄHLE EIN VERB",
+      "load_error": "Die Raumdaten konnten nicht geladen werden.",
+      "refresh_hint": "Wenn du das Projekt gerade aktualisiert hast, erzwinge eine Aktualisierung (Ctrl/Cmd+Shift+R), um den Browser-Cache zu leeren.",
+      "rastros": {
+        "oleo": "ÖL",
+        "sangue": "BLUT",
+        "raiz": "WURZEL",
+        "ouro": "GOLD",
+        "espelho": "SPIEGEL",
+        "voz": "STIMME",
+        "cinza": "ASCHE"
+      }
+    },
+    "zh": {
+      "brand": "OROЯO",
+      "start_tagline": "数字画廊 · 受污染的领地",
+      "start_enter": "进入",
+      "start_lang": "语言",
+      "start_sound_on": "声音已开启",
+      "start_sound_off": "声音已关闭",
+      "enter_prompt": "点击进入",
+      "controls": "WASD 移动 · 拖动视角 · 点击查看",
+      "mute": "静音",
+      "unmute": "开启声音",
+      "close": "关闭",
+      "reset_label": "清除痕迹",
+      "rastros_title": "痕迹",
+      "stage_of": "/",
+      "exit_label": "退出",
+      "a11y_title": "无障碍",
+      "a11y_motion": "减少动态效果",
+      "a11y_motion_hint": "减少动画和过渡",
+      "a11y_contrast": "高对比度",
+      "a11y_contrast_hint": "增强文字和边界",
+      "a11y_textsize": "更大文字",
+      "a11y_textsize_hint": "放大弹窗中的文字",
+      "choices_label": "选择一个动词",
+      "load_error": "无法加载房间数据。",
+      "refresh_hint": "如果刚更新项目，请强制刷新（Ctrl/Cmd+Shift+R）以清除浏览器缓存。",
+      "rastros": {
+        "oleo": "油",
+        "sangue": "血",
+        "raiz": "根",
+        "ouro": "黄金",
+        "espelho": "镜子",
+        "voz": "声音",
+        "cinza": "灰烬"
+      }
+    }
+  },
+  "rooms": {
+    "sala-01-genese": {
+      "stage": 1,
+      "name": {
+        "pt": "GÊNESE",
+        "en": "GENESIS",
+        "es": "GÉNESIS",
+        "de": "GENESE",
+        "zh": "创世"
+      },
+      "objects": {
+        "g1": {
+          "title": {
+            "pt": "ESCAMA",
+            "en": "SCALE",
+            "es": "ESCAMA",
+            "de": "SCHUPPE",
+            "zh": "鳞片"
+          },
+          "body": {
+            "pt": "Fragmento de escama preso em resina. Contaminação registrada, origem não localizada. Sob a luz certa muda de cor, como óleo sobre a água. A ficha do sistema termina numa palavra riscada.",
+            "en": "Scale fragment held in resin. Contamination logged, origin unlocated. Under the right light it shifts color, like oil on water. The system's label ends on a crossed-out word.",
+            "es": "Fragmento de escama conservado en resina. Contaminación registrada, origen no localizado. Bajo la luz adecuada cambia de color, como aceite sobre el agua. La etiqueta del sistema termina en una palabra tachada.",
+            "de": "Ein Schuppenfragment, in Harz eingeschlossen. Kontamination protokolliert, Herkunft unbekannt. Im richtigen Licht wechselt es die Farbe, wie Öl auf Wasser. Das Etikett des Systems endet mit einem durchgestrichenen Wort.",
+            "zh": "一块鳞片碎片被封存在树脂中。污染已记录，来源无法定位。在合适的光线下，它会像水面上的油一样变色。系统标签的最后是一个被划掉的词。"
+          }
+        },
+        "g2": {
+          "title": {
+            "pt": "PELO",
+            "en": "FUR",
+            "es": "PELAJE",
+            "de": "FELL",
+            "zh": "毛皮"
+          },
+          "body": {
+            "pt": "Pelo de onça em resina industrial. A espécie está ausente do registro atual, dada como extinta em três arquivos e viva em um. A textura guarda calor que a sala não tem.",
+            "en": "Jaguar fur in industrial resin. The species is absent from the current record, listed extinct in three archives and alive in one. The texture holds a warmth the room does not have.",
+            "es": "Pelaje de jaguar en resina industrial. La especie no aparece en el registro actual: figura extinta en tres archivos y viva en uno. La textura conserva un calor que la sala no tiene.",
+            "de": "Jaguarfell in Industrieharz. Die Art fehlt im aktuellen Register, in drei Archiven als ausgestorben und in einem als lebend geführt. Die Textur bewahrt eine Wärme, die der Raum nicht besitzt.",
+            "zh": "工业树脂中的美洲豹毛皮。现有记录中已没有这种物种，三个档案说它灭绝，一个档案说它仍然存活。纹理中保留着这个房间没有的温度。"
+          }
+        },
+        "g3": {
+          "title": {
+            "pt": "METAL",
+            "en": "METAL",
+            "es": "METAL",
+            "de": "METALL",
+            "zh": "金属"
+          },
+          "body": {
+            "pt": "Liga dourada corroída. O peso está acima do esperado para o tamanho, como se guardasse algo dentro. Foi minério antes de ser objeto, e território antes de ser minério.",
+            "en": "Corroded gold alloy. Its weight exceeds what its size suggests, as if it held something inside. It was ore before it was object, and territory before it was ore.",
+            "es": "Aleación de oro corroída. Su peso supera lo que su tamaño sugiere, como si guardara algo dentro. Fue mineral antes de ser objeto, y territorio antes de ser mineral.",
+            "de": "Korrodierte Goldlegierung. Ihr Gewicht übersteigt, was ihre Größe vermuten lässt, als trüge sie etwas in sich. Sie war Erz, bevor sie Objekt war, und Territorium, bevor sie Erz war.",
+            "zh": "被腐蚀的金合金。它的重量超过体积所暗示的程度，仿佛内部还装着什么。成为物件之前它是矿石，成为矿石之前它是领地。"
+          }
+        },
+        "g4": {
+          "title": {
+            "pt": "ÁGUA",
+            "en": "WATER",
+            "es": "AGUA",
+            "de": "WASSER",
+            "zh": "水"
+          },
+          "body": {
+            "pt": "Água do rio, selada numa coluna de vidro. O reflexo não corresponde ao ambiente ao redor. Quem se aproxima demais aparece atrasado na superfície, um segundo depois do corpo.",
+            "en": "River water, sealed in a glass column. Its reflection does not match the room around it. Whoever leans too close appears late on the surface, a second behind the body.",
+            "es": "Agua de río, sellada en una columna de vidrio. Su reflejo no coincide con la sala que la rodea. Quien se acerca demasiado aparece tarde en la superficie, un segundo después del cuerpo.",
+            "de": "Flusswasser, in einer Glassäule versiegelt. Sein Spiegelbild stimmt nicht mit dem Raum um es herum überein. Wer sich zu nah darüber beugt, erscheint verspätet auf der Oberfläche, eine Sekunde nach dem Körper.",
+            "zh": "河水，被密封在玻璃柱中。它的倒影与周围的房间并不一致。靠得太近的人会延迟出现在水面上，比身体晚一秒。"
+          }
+        },
+        "g5": {
+          "title": {
+            "pt": "ARQUIVO",
+            "en": "ARCHIVE",
+            "es": "ARCHIVO",
+            "de": "ARCHIV",
+            "zh": "档案"
+          },
+          "body": {
+            "pt": "Ossos de peixe soldados a um circuito ativo. Sinal fraco e contínuo, sempre a mesma frase curta. É memória de um bioma gravada em hardware, um arquivo que ninguém sabe abrir.",
+            "en": "Fish bones fused to a live circuit. Faint, continuous signal, always the same short phrase. It is a biome's memory recorded onto hardware, an archive no one knows how to open.",
+            "es": "Espinas de pez fusionadas a un circuito activo. Señal tenue y continua, siempre la misma frase breve. Es la memoria de un bioma grabada en hardware, un archivo que nadie sabe abrir.",
+            "de": "Fischgräten, mit einem aktiven Schaltkreis verschmolzen. Schwaches, kontinuierliches Signal, immer derselbe kurze Satz. Es ist die Erinnerung eines Bioms, auf Hardware aufgezeichnet, ein Archiv, das niemand zu öffnen weiß.",
+            "zh": "鱼骨与仍在工作的电路熔合在一起。微弱而持续的信号，反复说着同一句短语。这是一个生境被写进硬件的记忆，一份无人知道如何打开的档案。"
+          }
+        },
+        "g6": {
+          "title": {
+            "pt": "CABO",
+            "en": "CABLE",
+            "es": "CABLE",
+            "de": "KABEL",
+            "zh": "电缆"
+          },
+          "body": {
+            "pt": "Cabo descendo do teto até a água. Não conduz eletricidade, conduz som. Encoste o ouvido perto e a sala inteira parece passar por ali, filtrada e grave.",
+            "en": "Cable hanging from ceiling to water. It carries no current, only sound. Bring your ear close and the whole room seems to pass through it, filtered and low.",
+            "es": "Cable que cuelga del techo hasta el agua. No transporta corriente, solo sonido. Acerca el oído y toda la sala parece atravesarlo, filtrada y grave.",
+            "de": "Ein Kabel hängt von der Decke bis ins Wasser. Es führt keinen Strom, nur Klang. Hält man das Ohr nah heran, scheint der ganze Raum hindurchzugehen, gefiltert und tief.",
+            "zh": "一根电缆从天花板垂入水中。它不传导电流，只传递声音。把耳朵靠近，仿佛整个房间都从其中经过，变得低沉而被过滤。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "OVO OLEOSO",
+          "en": "OILY EGG",
+          "es": "HUEVO ACEITOSO",
+          "de": "ÖLIGES EI",
+          "zh": "油之卵"
+        },
+        "body": {
+          "pt": "Coberto de óleo, gira devagar sobre a água parada e devolve, distorcido, o nome OROЯO. É o começo de tudo e já está contaminado. Cada volta oferece uma abertura diferente para o mesmo território.",
+          "en": "Coated in oil, it turns slowly over still water and returns the name OROЯO, distorted. It is the beginning of everything and already contaminated. Each turn offers a different opening into the same territory.",
+          "es": "Cubierto de aceite, gira lentamente sobre agua inmóvil y devuelve el nombre OROЯO, deformado. Es el comienzo de todo y ya está contaminado. Cada vuelta ofrece una abertura distinta hacia el mismo territorio.",
+          "de": "Mit Öl überzogen dreht es sich langsam über stillem Wasser und gibt den Namen OROЯO verzerrt zurück. Es ist der Anfang von allem und bereits kontaminiert. Jede Drehung bietet einen anderen Zugang zum selben Territorium.",
+          "zh": "它覆满油，在静水上缓慢旋转，扭曲地回送出 OROЯO 这个名字。它是一切的开端，却已经受到污染。每一次转动，都向同一片领地打开不同的入口。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "ABSORVER",
+              "en": "ABSORB",
+              "es": "ABSORBER",
+              "de": "ABSORBIEREN",
+              "zh": "吸收"
+            },
+            "detail": {
+              "pt": "o óleo entra pela pele",
+              "en": "the oil enters the skin",
+              "es": "el aceite entra en la piel",
+              "de": "das Öl dringt in die Haut ein",
+              "zh": "油渗入皮肤"
+            },
+            "rastro": {
+              "oleo": 2
+            },
+            "next": "sala-02a-floresta-ferida.html"
+          },
+          {
+            "verb": {
+              "pt": "SEGUIR O REFLEXO",
+              "en": "FOLLOW THE REFLECTION",
+              "es": "SEGUIR EL REFLEJO",
+              "de": "DEM SPIEGELBILD FOLGEN",
+              "zh": "跟随倒影"
+            },
+            "detail": {
+              "pt": "a imagem se move primeiro",
+              "en": "the image moves first",
+              "es": "la imagen se mueve primero",
+              "de": "das Bild bewegt sich zuerst",
+              "zh": "影像先移动"
+            },
+            "rastro": {
+              "espelho": 2
+            },
+            "next": "sala-02c-espelhos-dagua.html"
+          },
+          {
+            "verb": {
+              "pt": "DESCER",
+              "en": "DESCEND",
+              "es": "DESCENDER",
+              "de": "HINABSTEIGEN",
+              "zh": "下潜"
+            },
+            "detail": {
+              "pt": "o fundo guarda outra temperatura",
+              "en": "the riverbed holds another temperature",
+              "es": "el lecho del río guarda otra temperatura",
+              "de": "das Flussbett bewahrt eine andere Temperatur",
+              "zh": "河床保存着另一种温度"
+            },
+            "rastro": {
+              "cinza": 1,
+              "oleo": 1
+            },
+            "next": "sala-02b-invasores.html"
+          }
+        ]
+      }
+    },
+    "sala-02a-floresta-ferida": {
+      "stage": 2,
+      "name": {
+        "pt": "FLORESTA FERIDA",
+        "en": "WOUNDED FOREST",
+        "es": "BOSQUE HERIDO",
+        "de": "VERWUNDETER WALD",
+        "zh": "受伤的森林"
+      },
+      "objects": {
+        "fa1": {
+          "title": {
+            "pt": "RAIZ",
+            "en": "ROOT",
+            "es": "RAÍZ",
+            "de": "WURZEL",
+            "zh": "根"
+          },
+          "body": {
+            "pt": "Raiz encapsulada em acrílico. Pulso elétrico contínuo, função desconhecida. Cresceu para dentro do sensor que deveria medi-la, e agora os dois pulsam juntos.",
+            "en": "Root encased in acrylic. Continuous electric pulse, function unknown. It grew into the sensor meant to measure it, and now the two pulse together.",
+            "es": "Raíz encapsulada en acrílico. Pulso eléctrico continuo, función desconocida. Creció dentro del sensor que debía medirla, y ahora ambos laten juntos.",
+            "de": "Eine Wurzel, in Acryl eingeschlossen. Kontinuierlicher elektrischer Puls, Funktion unbekannt. Sie wuchs in den Sensor hinein, der sie messen sollte, und nun pulsieren beide gemeinsam.",
+            "zh": "一根根被封进亚克力中。持续的电脉冲，功能不明。它长进了本应用来测量它的传感器里，如今两者一起脉动。"
+          }
+        },
+        "fa2": {
+          "title": {
+            "pt": "FOLHA",
+            "en": "LEAF",
+            "es": "HOJA",
+            "de": "BLATT",
+            "zh": "叶片"
+          },
+          "body": {
+            "pt": "Folha queimada com veios dourados. Combustão controlada em laboratório, segundo a etiqueta. A borda ainda solta um cheiro fino de fumaça quando a sala esquenta.",
+            "en": "Burnt leaf with golden veins. Controlled combustion in a lab, per the label. Its edge still gives off a thin smell of smoke when the room warms.",
+            "es": "Hoja quemada con venas doradas. Combustión controlada en laboratorio, según la etiqueta. El borde todavía desprende un leve olor a humo cuando la sala se calienta.",
+            "de": "Verbranntes Blatt mit goldenen Adern. Laut Etikett kontrollierte Verbrennung im Labor. Wenn sich der Raum erwärmt, verströmt der Rand noch immer einen feinen Rauchgeruch.",
+            "zh": "带有金色叶脉的焦叶。标签称其经过实验室可控燃烧。当房间升温时，叶缘仍会散发淡淡的烟味。"
+          }
+        },
+        "fa3": {
+          "title": {
+            "pt": "INSCRIÇÃO A",
+            "en": "INSCRIPTION A",
+            "es": "INSCRIPCIÓN A",
+            "de": "INSCHRIFT A",
+            "zh": "铭文 A"
+          },
+          "body": {
+            "pt": "Pedra com símbolos recentes. A tradução foi recusada pelo sistema três vezes. Parece escrita à mão sobre uma escrita mais antiga, uma memória por cima da outra.",
+            "en": "Stone with recent symbols. Translation refused by the system three times. It looks handwritten over an older writing, one memory laid across another.",
+            "es": "Piedra con símbolos recientes. El sistema rechazó la traducción tres veces. Parece escrita a mano sobre una escritura más antigua, una memoria superpuesta a otra.",
+            "de": "Stein mit neuen Symbolen. Das System verweigerte dreimal die Übersetzung. Es wirkt wie Handschrift über einer älteren Schrift, eine Erinnerung über die andere gelegt.",
+            "zh": "一块刻有新近符号的石头。系统三次拒绝翻译。它像是手写在更古老的文字之上，一层记忆压着另一层。"
+          }
+        },
+        "fa4": {
+          "title": {
+            "pt": "INSCRIÇÃO B",
+            "en": "INSCRIPTION B",
+            "es": "INSCRIPCIÓN B",
+            "de": "INSCHRIFT B",
+            "zh": "铭文 B"
+          },
+          "body": {
+            "pt": "Segunda pedra, mesma família de símbolos, sinal mais fraco. O padrão continua a inscrição anterior, mas falta um pedaço no meio, como fala interrompida.",
+            "en": "Second stone, same family of symbols, weaker signal. The pattern continues the first inscription, but a piece is missing in the middle, like speech cut off.",
+            "es": "Segunda piedra, misma familia de símbolos, señal más débil. El patrón continúa la primera inscripción, pero falta un fragmento en medio, como una frase interrumpida.",
+            "de": "Zweiter Stein, dieselbe Symbolfamilie, schwächeres Signal. Das Muster setzt die erste Inschrift fort, doch in der Mitte fehlt ein Stück, wie abgebrochene Sprache.",
+            "zh": "第二块石头，同一类符号，信号更弱。图案延续前一段铭文，但中间缺了一块，像被突然打断的话语。"
+          }
+        },
+        "fa5": {
+          "title": {
+            "pt": "ESPÉCIME",
+            "en": "SPECIMEN",
+            "es": "ESPÉCIMEN",
+            "de": "PRÄPARAT",
+            "zh": "标本"
+          },
+          "body": {
+            "pt": "Restos de animal com circuito interno, bateria ainda ativa. Metade corpo, metade máquina, e nenhuma das metades sabe que a outra parou.",
+            "en": "Animal remains with an internal circuit, battery still active. Half body, half machine, and neither half knows the other has stopped.",
+            "es": "Restos de animal con un circuito interno, batería aún activa. Mitad cuerpo, mitad máquina, y ninguna de las dos mitades sabe que la otra se detuvo.",
+            "de": "Tierreste mit internem Schaltkreis, die Batterie noch aktiv. Halb Körper, halb Maschine, und keine Hälfte weiß, dass die andere aufgehört hat.",
+            "zh": "动物遗骸中嵌着内部电路，电池仍在工作。一半是身体，一半是机器，而两半都不知道另一半已经停止。"
+          }
+        },
+        "fa6": {
+          "title": {
+            "pt": "TELA",
+            "en": "SCREEN",
+            "es": "PANTALLA",
+            "de": "BILDSCHIRM",
+            "zh": "屏幕"
+          },
+          "body": {
+            "pt": "Tela vertical mostra raízes pulsando como cabos de fibra óptica. A imagem é ao vivo. Em algum lugar abaixo do piso, isso está acontecendo agora.",
+            "en": "Vertical screen shows roots pulsing like fiber optic cables. The image is live. Somewhere below the floor, this is happening now.",
+            "es": "Una pantalla vertical muestra raíces latiendo como cables de fibra óptica. La imagen es en directo. En algún lugar bajo el suelo, esto está ocurriendo ahora.",
+            "de": "Ein vertikaler Bildschirm zeigt Wurzeln, die wie Glasfaserkabel pulsieren. Das Bild ist live. Irgendwo unter dem Boden geschieht das gerade jetzt.",
+            "zh": "竖直屏幕上，根系像光纤电缆一样脉动。画面是实时的。在地板下某处，这一切此刻正在发生。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "NÚCLEO DO TRONCO",
+          "en": "TRUNK CORE",
+          "es": "NÚCLEO DEL TRONCO",
+          "de": "STAMMKERN",
+          "zh": "树干核心"
+        },
+        "body": {
+          "pt": "Um tronco oco abriga uma luz vermelha pulsante. Parece coração, forno e servidor ao mesmo tempo. A floresta virou infraestrutura, a natureza virou sistema. O que pulsa aqui ainda não decidiu se está vivo.",
+          "en": "A hollow trunk holds a pulsing red light. Part heart, part furnace, part server. The forest became infrastructure, nature became system. What pulses here has not yet decided whether it is alive.",
+          "es": "Un tronco hueco alberga una luz roja pulsante. Parte corazón, parte horno, parte servidor. El bosque se volvió infraestructura, la naturaleza se volvió sistema. Lo que late aquí todavía no ha decidido si está vivo.",
+          "de": "Ein hohler Stamm enthält ein pulsierendes rotes Licht. Teils Herz, teils Ofen, teils Server. Der Wald wurde Infrastruktur, die Natur wurde System. Was hier pulsiert, hat noch nicht entschieden, ob es lebt.",
+          "zh": "空心树干里装着一团脉动的红光。它既像心脏，又像熔炉，也像服务器。森林变成了基础设施，自然变成了系统。这里脉动的东西还没有决定自己是否活着。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "OUVIR A RAIZ",
+              "en": "LISTEN TO THE ROOT",
+              "es": "ESCUCHAR LA RAÍZ",
+              "de": "DER WURZEL ZUHÖREN",
+              "zh": "聆听根系"
+            },
+            "detail": {
+              "pt": "o som sobe antes da imagem",
+              "en": "sound rises before image",
+              "es": "el sonido sube antes que la imagen",
+              "de": "der Klang steigt vor dem Bild auf",
+              "zh": "声音先于影像升起"
+            },
+            "rastro": {
+              "raiz": 2,
+              "voz": 1
+            },
+            "next": "sala-03a-animais-fantasma.html"
+          },
+          {
+            "verb": {
+              "pt": "TOCAR A CINZA",
+              "en": "TOUCH THE ASH",
+              "es": "TOCAR LA CENIZA",
+              "de": "DIE ASCHE BERÜHREN",
+              "zh": "触摸灰烬"
+            },
+            "detail": {
+              "pt": "ainda está morna",
+              "en": "still warm",
+              "es": "todavía está tibia",
+              "de": "noch warm",
+              "zh": "仍有余温"
+            },
+            "rastro": {
+              "cinza": 2
+            },
+            "next": "sala-03c-corpo-fragmentado.html"
+          },
+          {
+            "verb": {
+              "pt": "ALIMENTAR O FUNGO",
+              "en": "FEED THE FUNGUS",
+              "es": "ALIMENTAR EL HONGO",
+              "de": "DEN PILZ FÜTTERN",
+              "zh": "喂养真菌"
+            },
+            "detail": {
+              "pt": "o brilho muda de tom",
+              "en": "the glow shifts tone",
+              "es": "el brillo cambia de tono",
+              "de": "das Leuchten wechselt den Ton",
+              "zh": "光芒改变色调"
+            },
+            "rastro": {
+              "raiz": 1,
+              "oleo": 1
+            },
+            "next": "sala-03b-vila-ocupada.html"
+          }
+        ]
+      }
+    },
+    "sala-02b-invasores": {
+      "stage": 2,
+      "name": {
+        "pt": "INVASORES",
+        "en": "INVADERS",
+        "es": "INVASORES",
+        "de": "EINDRINGLINGE",
+        "zh": "入侵者"
+      },
+      "objects": {
+        "ia1": {
+          "title": {
+            "pt": "ARMAS",
+            "en": "WEAPONS",
+            "es": "ARMAS",
+            "de": "WAFFEN",
+            "zh": "武器"
+          },
+          "body": {
+            "pt": "Armas desmontadas, sem número de série, procedência apagada. Foram limpas com cuidado antes de virarem peça de museu. Alguém quis que continuassem prontas.",
+            "en": "Disassembled weapons, no serial number, provenance erased. They were cleaned with care before becoming museum pieces. Someone wanted them kept ready.",
+            "es": "Armas desmontadas, sin número de serie, procedencia borrada. Fueron limpiadas con cuidado antes de convertirse en piezas de museo. Alguien quería conservarlas listas.",
+            "de": "Zerlegte Waffen, ohne Seriennummer, Herkunft ausgelöscht. Sie wurden sorgfältig gereinigt, bevor sie zu Museumsstücken wurden. Jemand wollte sie einsatzbereit halten.",
+            "zh": "拆解的武器，没有序列号，来源被抹去。成为博物馆展品之前，它们被仔细清洗过。有人希望它们随时保持可用。"
+          }
+        },
+        "ia2": {
+          "title": {
+            "pt": "MAPA",
+            "en": "MAP",
+            "es": "MAPA",
+            "de": "KARTE",
+            "zh": "地图"
+          },
+          "body": {
+            "pt": "Pepitas de réplica e um mapa de rotas. A escala não confere com o terreno. As linhas vão todas para o mesmo ponto, e esse ponto está desenhado por cima de uma aldeia.",
+            "en": "Replica nuggets and a route map. The scale does not match the terrain. The lines all lead to one point, and that point is drawn over a village.",
+            "es": "Pepitas de réplica y un mapa de rutas. La escala no coincide con el terreno. Todas las líneas conducen a un punto, y ese punto está dibujado sobre una aldea.",
+            "de": "Nachgebildete Goldnuggets und eine Routenkarte. Der Maßstab passt nicht zum Gelände. Alle Linien führen zu einem Punkt, und dieser Punkt liegt über einem Dorf.",
+            "zh": "仿制金块和一张路线图。比例与地形不符。所有线条都通向同一个点，而那个点正画在一个村庄之上。"
+          }
+        },
+        "ia3": {
+          "title": {
+            "pt": "OSSOS",
+            "en": "BONES",
+            "es": "HUESOS",
+            "de": "KNOCHEN",
+            "zh": "骨骼"
+          },
+          "body": {
+            "pt": "Ossos misturados a fragmentos de ouro, datações divergentes. O sistema não consegue dizer o que veio antes, o corpo ou o metal que o cercou.",
+            "en": "Bones mixed with gold fragments, conflicting datings. The system cannot say which came first, the body or the metal that surrounded it.",
+            "es": "Huesos mezclados con fragmentos de oro, dataciones contradictorias. El sistema no puede decir qué llegó primero: el cuerpo o el metal que lo rodeó.",
+            "de": "Knochen, vermischt mit Goldfragmenten, widersprüchliche Datierungen. Das System kann nicht sagen, was zuerst kam: der Körper oder das Metall, das ihn umgab.",
+            "zh": "骨骼与黄金碎片混在一起，年代测定彼此矛盾。系统无法判断哪个先出现：身体，还是包围它的金属。"
+          }
+        },
+        "ia4": {
+          "title": {
+            "pt": "DOCUMENTO",
+            "en": "DOCUMENT",
+            "es": "DOCUMENTO",
+            "de": "DOKUMENT",
+            "zh": "文件"
+          },
+          "body": {
+            "pt": "Contrato ilegível, três assinaturas, nenhuma identificável. O papel foi dobrado e desdobrado tantas vezes que o texto sumiu justo nas cláusulas.",
+            "en": "Illegible contract, three signatures, none identifiable. The paper was folded and unfolded so many times that the text vanished right at the clauses.",
+            "es": "Contrato ilegible, tres firmas, ninguna identificable. El papel fue doblado y desplegado tantas veces que el texto desapareció justo en las cláusulas.",
+            "de": "Unleserlicher Vertrag, drei Unterschriften, keine identifizierbar. Das Papier wurde so oft gefaltet und entfaltet, dass der Text genau bei den Klauseln verschwunden ist.",
+            "zh": "无法辨认的合同，三处签名，没有一个能确认身份。纸张被反复折叠展开太多次，文字恰好在条款处消失了。"
+          }
+        },
+        "ia5": {
+          "title": {
+            "pt": "MÁQUINA",
+            "en": "MACHINE",
+            "es": "MÁQUINA",
+            "de": "MASCHINE",
+            "zh": "机器"
+          },
+          "body": {
+            "pt": "Perfuratriz desligada, vibração residual ainda registrada. O chão em volta guarda a marca circular de anos de trabalho. A máquina parou, o buraco não.",
+            "en": "Drill switched off, residual vibration still recorded. The floor around it holds the circular mark of years of work. The machine stopped, the hole did not.",
+            "es": "Taladro apagado, vibración residual todavía registrada. El suelo a su alrededor conserva la marca circular de años de trabajo. La máquina se detuvo, el agujero no.",
+            "de": "Abgeschalteter Bohrer, Restvibration noch messbar. Der Boden ringsum trägt die kreisförmige Spur jahrelanger Arbeit. Die Maschine hielt an, das Loch nicht.",
+            "zh": "已经关闭的钻机，残余振动仍被记录。周围地板保留着多年工作留下的圆形痕迹。机器停了，洞没有。"
+          }
+        },
+        "ia6": {
+          "title": {
+            "pt": "BANDEIRA",
+            "en": "FLAG",
+            "es": "BANDERA",
+            "de": "FLAGGE",
+            "zh": "旗帜"
+          },
+          "body": {
+            "pt": "Tecido marcado por fumaça, símbolo parcialmente apagado. Sobrou o suficiente para saber que era uma bandeira, não o bastante para saber de quem.",
+            "en": "Fabric marked by smoke, symbol partially erased. Enough survived to know it was a flag, not enough to know whose.",
+            "es": "Tela marcada por el humo, símbolo parcialmente borrado. Sobrevivió lo suficiente para saber que era una bandera, no para saber de quién.",
+            "de": "Vom Rauch gezeichnetes Tuch, Symbol teilweise ausgelöscht. Genug blieb erhalten, um zu erkennen, dass es eine Flagge war, aber nicht, wem sie gehörte.",
+            "zh": "被烟熏过的布料，图案部分被抹去。留下的部分足以证明它曾是一面旗，却不足以说明属于谁。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "BROCA DOURADA",
+          "en": "GOLDEN DRILL",
+          "es": "TALADRO DORADO",
+          "de": "GOLDENER BOHRER",
+          "zh": "黄金钻机"
+        },
+        "body": {
+          "pt": "Suspensa por uma corrente, gira devagar, coberta por sangue seco e óleo. É ferramenta e troféu ao mesmo tempo. Abriu o território, e agora está exposta como se fosse a obra e não a ferida.",
+          "en": "Hanging from a chain, it turns slowly, covered in dried blood and oil. It is tool and trophy at once. It opened the territory, and now it hangs on display as if it were the artwork and not the wound.",
+          "es": "Suspendido de una cadena, gira lentamente, cubierto de sangre seca y aceite. Es herramienta y trofeo al mismo tiempo. Abrió el territorio y ahora cuelga expuesto como si fuera la obra de arte y no la herida.",
+          "de": "An einer Kette hängend dreht er sich langsam, bedeckt mit getrocknetem Blut und Öl. Werkzeug und Trophäe zugleich. Er öffnete das Territorium und hängt nun ausgestellt, als wäre er das Kunstwerk und nicht die Wunde.",
+          "zh": "它悬在链条上缓慢转动，表面覆着干涸的血和油。它既是工具也是战利品。它打开了这片领地，如今却像艺术品一样被悬挂展示，仿佛作品不是伤口。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "SABOTAR",
+              "en": "SABOTAGE",
+              "es": "SABOTEAR",
+              "de": "SABOTIEREN",
+              "zh": "破坏"
+            },
+            "detail": {
+              "pt": "uma peça sai do lugar",
+              "en": "a part comes loose",
+              "es": "una pieza se suelta",
+              "de": "ein Teil löst sich",
+              "zh": "一个部件松脱"
+            },
+            "rastro": {
+              "cinza": 1,
+              "sangue": 1
+            },
+            "next": "sala-03b-vila-ocupada.html"
+          },
+          {
+            "verb": {
+              "pt": "INFILTRAR",
+              "en": "INFILTRATE",
+              "es": "INFILTRARSE",
+              "de": "EINSICKERN",
+              "zh": "潜入"
+            },
+            "detail": {
+              "pt": "você veste o silêncio do lugar",
+              "en": "you wear the place's silence",
+              "es": "vistes el silencio del lugar",
+              "de": "du trägst die Stille des Ortes",
+              "zh": "你披上这个地方的沉默"
+            },
+            "rastro": {
+              "espelho": 1,
+              "ouro": 1
+            },
+            "next": "sala-03a-animais-fantasma.html"
+          },
+          {
+            "verb": {
+              "pt": "ESPELHAR O INIMIGO",
+              "en": "MIRROR THE ENEMY",
+              "es": "REFLEJAR AL ENEMIGO",
+              "de": "DEN FEIND SPIEGELN",
+              "zh": "映照敌人"
+            },
+            "detail": {
+              "pt": "a broca reflete seu rosto",
+              "en": "the drill reflects your face",
+              "es": "el taladro refleja tu rostro",
+              "de": "der Bohrer spiegelt dein Gesicht",
+              "zh": "钻机映出你的脸"
+            },
+            "rastro": {
+              "espelho": 2,
+              "ouro": 1
+            },
+            "next": "sala-03c-corpo-fragmentado.html"
+          }
+        ]
+      }
+    },
+    "sala-02c-espelhos-dagua": {
+      "stage": 2,
+      "name": {
+        "pt": "ESPELHOS D'ÁGUA",
+        "en": "WATER MIRRORS",
+        "es": "ESPEJOS DE AGUA",
+        "de": "WASSERSPIEGEL",
+        "zh": "水镜"
+      },
+      "objects": {
+        "ea1": {
+          "title": {
+            "pt": "ESPELHO CÔNCAVO",
+            "en": "CONCAVE MIRROR",
+            "es": "ESPEJO CÓNCAVO",
+            "de": "HOHLSPIEGEL",
+            "zh": "凹面镜"
+          },
+          "body": {
+            "pt": "Distorce a imagem para dentro, calibração desconhecida. Quem se olha aqui aparece menor e mais fundo, puxado para o centro do vidro.",
+            "en": "Distorts the image inward, calibration unknown. Whoever looks appears smaller and deeper, pulled toward the center of the glass.",
+            "es": "Distorsiona la imagen hacia dentro, calibración desconocida. Quien mira aparece más pequeño y más profundo, arrastrado hacia el centro del vidrio.",
+            "de": "Verzerrt das Bild nach innen, Kalibrierung unbekannt. Wer hineinschaut, erscheint kleiner und tiefer, zum Zentrum des Glases gezogen.",
+            "zh": "影像向内变形，校准方式不明。凝视它的人显得更小、更深，仿佛被拉向玻璃中心。"
+          }
+        },
+        "ea2": {
+          "title": {
+            "pt": "FOTOGRAFIA",
+            "en": "PHOTOGRAPH",
+            "es": "FOTOGRAFÍA",
+            "de": "FOTOGRAFIE",
+            "zh": "照片"
+          },
+          "body": {
+            "pt": "Imagem borrada, três sobreposições visíveis. São três momentos do mesmo lugar impressos juntos, e nenhum deles combina com este.",
+            "en": "Blurred image, three overlays visible. Three moments of the same place printed together, and none of them matches this one.",
+            "es": "Imagen borrosa, tres superposiciones visibles. Tres momentos del mismo lugar impresos juntos, y ninguno coincide con este.",
+            "de": "Unscharfes Bild, drei Überlagerungen sichtbar. Drei Momente desselben Ortes zusammen gedruckt, und keiner stimmt mit diesem überein.",
+            "zh": "模糊的影像，可见三层叠加。同一地点的三个时刻被印在一起，却没有一个与现在相符。"
+          }
+        },
+        "ea3": {
+          "title": {
+            "pt": "PELE TRANSLÚCIDA",
+            "en": "TRANSLUCENT SKIN",
+            "es": "PIEL TRANSLÚCIDA",
+            "de": "DURCHSCHEINENDE HAUT",
+            "zh": "半透明皮肤"
+          },
+          "body": {
+            "pt": "Material com padrão de escama, toque não recomendado. Deixa passar a luz e um pouco da imagem de quem está atrás, como um corpo meio presente.",
+            "en": "Material with a scale pattern, touch not advised. It lets through light and a little of the image behind it, like a body half present.",
+            "es": "Material con patrón de escamas, no se recomienda tocar. Deja pasar la luz y un poco de la imagen que hay detrás, como un cuerpo a medio estar.",
+            "de": "Material mit Schuppenmuster, Berührung nicht empfohlen. Es lässt Licht und etwas vom Bild dahinter hindurch, wie ein halb anwesender Körper.",
+            "zh": "带有鳞片纹理的材料，不建议触摸。它让光线和背后的部分影像穿过，像一具只存在了一半的身体。"
+          }
+        },
+        "ea4": {
+          "title": {
+            "pt": "FRAGMENTO Я",
+            "en": "Я FRAGMENT",
+            "es": "FRAGMENTO Я",
+            "de": "Я-FRAGMENT",
+            "zh": "Я 碎片"
+          },
+          "body": {
+            "pt": "Caractere isolado, origem tipográfica não registrada. É a letra virada do nome OROЯO. Sozinha, aponta para o lado errado, como um reflexo que escapou da palavra.",
+            "en": "Isolated character, typographic origin unrecorded. It is the reversed letter from the name OROЯO. Alone, it points the wrong way, like a reflection that escaped the word.",
+            "es": "Carácter aislado, origen tipográfico no registrado. Es la letra invertida del nombre OROЯO. Sola, apunta en la dirección equivocada, como un reflejo que escapó de la palabra.",
+            "de": "Isoliertes Zeichen, typografische Herkunft nicht dokumentiert. Es ist der umgekehrte Buchstabe aus dem Namen OROЯO. Allein zeigt er in die falsche Richtung, wie ein Spiegelbild, das dem Wort entkommen ist.",
+            "zh": "孤立字符，字体来源没有记录。它是 OROЯO 名字中的反向字母。离开单词后，它指向错误的方向，像一个从词语中逃出的倒影。"
+          }
+        },
+        "ea5": {
+          "title": {
+            "pt": "BACIA",
+            "en": "BASIN",
+            "es": "CUENCO",
+            "de": "BECKEN",
+            "zh": "水盆"
+          },
+          "body": {
+            "pt": "Água parada, superfície plana, o reflexo chega atrasado. Mexa a mão sobre ela e a imagem responde depois, no seu próprio tempo.",
+            "en": "Still water, flat surface, the reflection arrives late. Move a hand over it and the image answers afterward, in its own time.",
+            "es": "Agua quieta, superficie plana, el reflejo llega tarde. Mueve una mano sobre ella y la imagen responde después, a su propio ritmo.",
+            "de": "Stilles Wasser, glatte Oberfläche, das Spiegelbild kommt verspätet. Bewege eine Hand darüber und das Bild antwortet danach, in seiner eigenen Zeit.",
+            "zh": "静止的水，平坦的表面，倒影总是迟到。把手从上方划过，影像会稍后才回应，按自己的时间。"
+          }
+        },
+        "ea6": {
+          "title": {
+            "pt": "CACO",
+            "en": "SHARD",
+            "es": "FRAGMENTO",
+            "de": "SCHERBE",
+            "zh": "碎镜"
+          },
+          "body": {
+            "pt": "Vidro rachado, reflexo incompleto. Cada pedaço mostra uma parte de quem olha, e as partes não fecham num rosto só.",
+            "en": "Cracked glass, incomplete reflection. Each piece shows part of whoever looks, and the parts do not close into a single face.",
+            "es": "Vidrio agrietado, reflejo incompleto. Cada pieza muestra una parte de quien mira, y las partes no se cierran en un solo rostro.",
+            "de": "Gesprungenes Glas, unvollständiges Spiegelbild. Jedes Stück zeigt einen Teil der betrachtenden Person, und die Teile schließen sich nicht zu einem einzigen Gesicht.",
+            "zh": "裂开的玻璃，不完整的倒影。每一片都显示观看者的一部分，而这些部分无法拼成同一张脸。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "ESPELHO LÍQUIDO",
+          "en": "LIQUID MIRROR",
+          "es": "ESPEJO LÍQUIDO",
+          "de": "FLÜSSIGER SPIEGEL",
+          "zh": "液态镜"
+        },
+        "body": {
+          "pt": "Vertical, deforma o nome OROЯO a cada pulso. Nenhuma versão se repete. É água de pé, uma parede que reflete e escorre ao mesmo tempo. Quem atravessa não volta idêntico ao que era.",
+          "en": "Vertical, it warps the name OROЯO with every pulse. No version repeats. It is standing water, a wall that reflects and runs at once. Whoever crosses does not return identical to what they were.",
+          "es": "Vertical, deforma el nombre OROЯO con cada pulso. Ninguna versión se repite. Es agua erguida, una pared que refleja y fluye al mismo tiempo. Quien la cruza no vuelve idéntico a lo que era.",
+          "de": "Senkrecht stehend verzerrt er den Namen OROЯO mit jedem Puls. Keine Version wiederholt sich. Er ist aufgerichtetes Wasser, eine Wand, die zugleich spiegelt und fließt. Wer hindurchgeht, kehrt nicht identisch zurück.",
+          "zh": "它竖直存在，每一次脉动都会扭曲 OROЯO 这个名字，没有一次重复。它是站立的水，是一面同时反射又流动的墙。穿过它的人不会以原来的样子回来。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "ATRAVESSAR",
+              "en": "CROSS THROUGH",
+              "es": "ATRAVESAR",
+              "de": "HINDURCHGEHEN",
+              "zh": "穿越"
+            },
+            "detail": {
+              "pt": "a superfície cede como água espessa",
+              "en": "the surface yields like thick water",
+              "es": "la superficie cede como agua espesa",
+              "de": "die Oberfläche gibt nach wie dickes Wasser",
+              "zh": "表面像浓稠的水一样让开"
+            },
+            "rastro": {
+              "espelho": 2
+            },
+            "next": "sala-03c-corpo-fragmentado.html"
+          },
+          {
+            "verb": {
+              "pt": "QUEBRAR",
+              "en": "BREAK",
+              "es": "ROMPER",
+              "de": "ZERBRECHEN",
+              "zh": "打破"
+            },
+            "detail": {
+              "pt": "a rachadura se espalha sem som",
+              "en": "the crack spreads in silence",
+              "es": "la grieta se extiende en silencio",
+              "de": "der Riss breitet sich lautlos aus",
+              "zh": "裂纹在沉默中扩散"
+            },
+            "rastro": {
+              "espelho": 1,
+              "sangue": 1
+            },
+            "next": "sala-03b-vila-ocupada.html"
+          },
+          {
+            "verb": {
+              "pt": "OLHAR",
+              "en": "KEEP LOOKING",
+              "es": "SEGUIR MIRANDO",
+              "de": "WEITERHINSEHEN",
+              "zh": "继续凝视"
+            },
+            "detail": {
+              "pt": "a imagem demora e já chega outra",
+              "en": "the image is slow, and arrives changed",
+              "es": "la imagen es lenta y llega cambiada",
+              "de": "das Bild ist langsam und kommt verändert an",
+              "zh": "影像来得缓慢，而且已经改变"
+            },
+            "rastro": {
+              "espelho": 1,
+              "cinza": 1
+            },
+            "next": "sala-03a-animais-fantasma.html"
+          }
+        ]
+      }
+    },
+    "sala-03a-animais-fantasma": {
+      "stage": 3,
+      "name": {
+        "pt": "ANIMAIS FANTASMA",
+        "en": "GHOST ANIMALS",
+        "es": "ANIMALES FANTASMA",
+        "de": "GEISTERTIERE",
+        "zh": "幽灵动物"
+      },
+      "objects": {
+        "xa1": {
+          "title": {
+            "pt": "CRÂNIO 7",
+            "en": "SKULL 7",
+            "es": "CRÁNEO 7",
+            "de": "SCHÄDEL 7",
+            "zh": "头骨 7"
+          },
+          "body": {
+            "pt": "Crânio suspenso, espécie não catalogada. O número foi escrito à mão sobre o osso. Antes dele havia outro número, ainda visível por baixo.",
+            "en": "Suspended skull, species not catalogued. The number was handwritten onto the bone. Before it there was another number, still visible beneath.",
+            "es": "Cráneo suspendido, especie no catalogada. El número fue escrito a mano sobre el hueso. Debajo todavía se ve otro número anterior.",
+            "de": "Schwebender Schädel, Art nicht katalogisiert. Die Nummer wurde von Hand auf den Knochen geschrieben. Darunter ist noch eine ältere Nummer zu erkennen.",
+            "zh": "悬浮的头骨，物种未被编目。编号是手写在骨头上的。它下面还能看见另一个更早的编号。"
+          }
+        },
+        "xa2": {
+          "title": {
+            "pt": "CRÂNIO 12",
+            "en": "SKULL 12",
+            "es": "CRÁNEO 12",
+            "de": "SCHÄDEL 12",
+            "zh": "头骨 12"
+          },
+          "body": {
+            "pt": "Segundo crânio, fratura compatível com captura. É parente do primeiro, marcado do mesmo jeito. Foram guardados juntos e catalogados como coisas separadas.",
+            "en": "Second skull, fracture consistent with capture. It is kin to the first, marked the same way. They were kept together and catalogued as separate things.",
+            "es": "Segundo cráneo, fractura compatible con captura. Es pariente del primero, marcado de la misma manera. Se conservaron juntos y fueron catalogados como cosas separadas.",
+            "de": "Zweiter Schädel, Fraktur passend zu einer Gefangennahme. Er ist mit dem ersten verwandt und auf dieselbe Weise markiert. Sie wurden zusammen aufbewahrt und als getrennte Dinge katalogisiert.",
+            "zh": "第二个头骨，骨折特征符合被捕获时造成的损伤。它与第一个属于同类，也以同样方式标记。它们被放在一起保存，却被归档为彼此分离的东西。"
+          }
+        },
+        "xa3": {
+          "title": {
+            "pt": "REGISTRO",
+            "en": "RECORDING",
+            "es": "GRABACIÓN",
+            "de": "AUFNAHME",
+            "zh": "录音"
+          },
+          "body": {
+            "pt": "Arquivo sonoro de espécie ausente, em loop. É a única coisa que restou viva do bicho, um som repetindo num aparelho que não sabe o que guarda.",
+            "en": "Sound archive of an absent species, looping. It is the only thing left alive of the animal, a sound repeating in a device that does not know what it holds.",
+            "es": "Archivo sonoro de una especie ausente, en bucle. Es lo único que queda vivo del animal: un sonido que se repite en un dispositivo que no sabe lo que contiene.",
+            "de": "Klangarchiv einer verschwundenen Art, in Endlosschleife. Es ist das Einzige, was vom Tier noch lebt: ein Ton, der sich in einem Gerät wiederholt, das nicht weiß, was es bewahrt.",
+            "zh": "一个已经消失物种的声音档案，循环播放。这是那只动物唯一仍然活着的部分：声音在一个并不知道自己承载何物的设备中反复出现。"
+          }
+        },
+        "xa4": {
+          "title": {
+            "pt": "RASTRO",
+            "en": "TRACK",
+            "es": "HUELLA",
+            "de": "SPUR",
+            "zh": "痕迹"
+          },
+          "body": {
+            "pt": "Marca de garra em metal, profundidade incomum. Algo com muita força passou por uma parede que deveria ser dura demais para guardar rastros.",
+            "en": "Claw mark in metal, unusual depth. Something with great strength crossed a wall that should have been too hard to hold tracks.",
+            "es": "Marca de garra en metal, profundidad inusual. Algo de gran fuerza atravesó una pared que debería haber sido demasiado dura para conservar huellas.",
+            "de": "Krallenspur in Metall, ungewöhnlich tief. Etwas mit großer Kraft überquerte eine Wand, die eigentlich zu hart hätte sein müssen, um Spuren zu halten.",
+            "zh": "金属上的爪痕，深度异常。某种力量极强的东西穿过了一面本应坚硬到无法留下痕迹的墙。"
+          }
+        },
+        "xa5": {
+          "title": {
+            "pt": "MEMBRANA",
+            "en": "MEMBRANE",
+            "es": "MEMBRANA",
+            "de": "MEMBRAN",
+            "zh": "膜"
+          },
+          "body": {
+            "pt": "Fragmento translúcido, reage à luz direta. Quando iluminado, mostra por dentro um desenho de veias que continua se movendo devagar.",
+            "en": "Translucent fragment, reacts to direct light. When lit, it reveals inside a pattern of veins that keeps moving slowly.",
+            "es": "Fragmento translúcido, reacciona a la luz directa. Al iluminarlo, revela en su interior un patrón de venas que sigue moviéndose lentamente.",
+            "de": "Durchscheinendes Fragment, reagiert auf direktes Licht. Beleuchtet zeigt es im Inneren ein Adermuster, das sich langsam weiterbewegt.",
+            "zh": "半透明碎片，会对直射光产生反应。被照亮时，内部显出缓慢移动的血管状纹理。"
+          }
+        },
+        "xa6": {
+          "title": {
+            "pt": "TELA",
+            "en": "SCREEN",
+            "es": "PANTALLA",
+            "de": "BILDSCHIRM",
+            "zh": "屏幕"
+          },
+          "body": {
+            "pt": "Projeções de cardumes cruzam a parede. Os peixes nadam contra o canto e desaparecem, e outro cardume nasce do mesmo ponto, sem parar.",
+            "en": "Projections of fish swarms cross the wall. The fish swim into the corner and vanish, and another swarm is born from the same point, without stopping.",
+            "es": "Proyecciones de cardúmenes cruzan la pared. Los peces nadan hacia la esquina y desaparecen, y otro cardumen nace del mismo punto, sin detenerse.",
+            "de": "Projektionen von Fischschwärmen ziehen über die Wand. Die Fische schwimmen in die Ecke und verschwinden, und aus demselben Punkt entsteht ohne Pause ein neuer Schwarm.",
+            "zh": "鱼群投影从墙面游过。鱼游入角落后消失，另一群又从同一点诞生，循环不止。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "ONÇA DE FUMAÇA",
+          "en": "SMOKE JAGUAR",
+          "es": "JAGUAR DE HUMO",
+          "de": "RAUCHJAGUAR",
+          "zh": "烟雾美洲豹"
+        },
+        "body": {
+          "pt": "Feita de fumaça e pixels, não ataca. Observa, e a sala gira devagar ao redor dela. É o animal que sumiu do território voltando como imagem. Presença sem corpo, memória que aprendeu a andar.",
+          "en": "Made of smoke and pixels, it does not attack. It watches, and the room turns slowly around it. It is the animal that vanished from the territory, returning as image. Presence without a body, memory that learned to walk.",
+          "es": "Hecho de humo y píxeles, no ataca. Observa, y la sala gira lentamente a su alrededor. Es el animal que desapareció del territorio y regresa como imagen. Presencia sin cuerpo, memoria que aprendió a caminar.",
+          "de": "Aus Rauch und Pixeln gemacht greift er nicht an. Er beobachtet, und der Raum dreht sich langsam um ihn. Es ist das Tier, das aus dem Territorium verschwand und als Bild zurückkehrt. Präsenz ohne Körper, Erinnerung, die laufen gelernt hat.",
+          "zh": "它由烟与像素构成，并不攻击。它只是注视，而房间缓慢围着它旋转。它是从领地中消失的动物，以影像重新归来。没有身体的存在，学会行走的记忆。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "SEGUIR",
+              "en": "FOLLOW",
+              "es": "SEGUIR",
+              "de": "FOLGEN",
+              "zh": "跟随"
+            },
+            "detail": {
+              "pt": "ela anda sem deixar marca",
+              "en": "it walks leaving no trace",
+              "es": "camina sin dejar rastro",
+              "de": "er läuft, ohne eine Spur zu hinterlassen",
+              "zh": "它行走，却不留下痕迹"
+            },
+            "rastro": {
+              "espelho": 1,
+              "voz": 1
+            },
+            "next": "sala-04a-elementos.html"
+          },
+          {
+            "verb": {
+              "pt": "LIBERTAR O CARDUME",
+              "en": "RELEASE THE SHOAL",
+              "es": "LIBERAR EL CARDUMEN",
+              "de": "DEN SCHWARM FREILASSEN",
+              "zh": "释放鱼群"
+            },
+            "detail": {
+              "pt": "as projeções se espalham pelas paredes",
+              "en": "the projections spread across the walls",
+              "es": "las proyecciones se extienden por las paredes",
+              "de": "die Projektionen breiten sich über die Wände aus",
+              "zh": "投影扩散到墙面"
+            },
+            "rastro": {
+              "raiz": 1,
+              "espelho": 1
+            },
+            "next": "sala-04c-vozes-ancestrais.html"
+          },
+          {
+            "verb": {
+              "pt": "VESTIR A PELE",
+              "en": "WEAR THE SKIN",
+              "es": "VESTIR LA PIEL",
+              "de": "DIE HAUT TRAGEN",
+              "zh": "披上皮肤"
+            },
+            "detail": {
+              "pt": "seu contorno fica translúcido",
+              "en": "your outline turns translucent",
+              "es": "tu contorno se vuelve translúcido",
+              "de": "deine Kontur wird durchscheinend",
+              "zh": "你的轮廓变得半透明"
+            },
+            "rastro": {
+              "espelho": 2,
+              "cinza": 1
+            },
+            "next": "sala-04b-vozes-dissidentes.html"
+          }
+        ]
+      }
+    },
+    "sala-03b-vila-ocupada": {
+      "stage": 3,
+      "name": {
+        "pt": "VILA OCUPADA",
+        "en": "OCCUPIED VILLAGE",
+        "es": "ALDEA OCUPADA",
+        "de": "BESETZTES DORF",
+        "zh": "被占据的村庄"
+      },
+      "objects": {
+        "va1": {
+          "title": {
+            "pt": "BANDEIRA",
+            "en": "FLAG",
+            "es": "BANDERA",
+            "de": "FLAGGE",
+            "zh": "旗帜"
+          },
+          "body": {
+            "pt": "Tecido rasgado, símbolo parcial. Foi feita à mão, com linha de outra cor nas emendas. Quem costurou sabia que ela ia durar pouco.",
+            "en": "Torn fabric, partial symbol. It was made by hand, with thread of another color at the seams. Whoever sewed it knew it would not last long.",
+            "es": "Tela rasgada, símbolo parcial. Fue hecha a mano, con hilo de otro color en las costuras. Quien la cosió sabía que no duraría mucho.",
+            "de": "Zerrissenes Tuch, unvollständiges Symbol. Von Hand gefertigt, mit andersfarbigem Faden an den Nähten. Wer es nähte, wusste, dass es nicht lange halten würde.",
+            "zh": "撕裂的布料，图案残缺。它是手工制作的，缝线处用了另一种颜色的线。缝制它的人知道，它不会维持太久。"
+          }
+        },
+        "va2": {
+          "title": {
+            "pt": "CADEIRA",
+            "en": "CHAIR",
+            "es": "SILLA",
+            "de": "STUHL",
+            "zh": "椅子"
+          },
+          "body": {
+            "pt": "Lugar vazio à mesa. O assento ainda guarda a forma de um peso. A madeira está gasta só de um lado, o lado por onde a pessoa se levantava todo dia.",
+            "en": "Empty seat at the table. It still holds the shape of a weight. The wood is worn on one side only, the side the person rose from every day.",
+            "es": "Asiento vacío junto a la mesa. Todavía conserva la forma de un peso. La madera está gastada solo de un lado, el lado por el que aquella persona se levantaba cada día.",
+            "de": "Leerer Platz am Tisch. Er trägt noch die Form eines Gewichts. Das Holz ist nur auf einer Seite abgenutzt, auf der Seite, von der die Person jeden Tag aufstand.",
+            "zh": "桌边的空座位。它仍保留着某种重量留下的形状。木头只在一侧磨损，那是那个人每天起身的一侧。"
+          }
+        },
+        "va3": {
+          "title": {
+            "pt": "RÁDIO",
+            "en": "RADIO",
+            "es": "RADIO",
+            "de": "RADIO",
+            "zh": "收音机"
+          },
+          "body": {
+            "pt": "Sintonia perdida, ruído constante, talvez intencional. De vez em quando, dentro da estática, uma voz quase forma uma palavra, e some antes de terminar.",
+            "en": "Lost frequency, constant noise, perhaps intentional. Now and then, inside the static, a voice almost forms a word, and fades before it finishes.",
+            "es": "Frecuencia perdida, ruido constante, quizá intencional. De vez en cuando, dentro de la estática, una voz casi forma una palabra y se desvanece antes de terminarla.",
+            "de": "Verlorene Frequenz, konstantes Rauschen, vielleicht absichtlich. Hin und wieder bildet sich in der Statik beinahe ein Wort, doch die Stimme verblasst, bevor es endet.",
+            "zh": "失落的频率，持续的噪声，也许是故意的。偶尔在静电中，一个声音几乎形成一个词，却在说完前消散。"
+          }
+        },
+        "va4": {
+          "title": {
+            "pt": "RETRATO",
+            "en": "PORTRAIT",
+            "es": "RETRATO",
+            "de": "PORTRÄT",
+            "zh": "肖像"
+          },
+          "body": {
+            "pt": "Moldura vazia, verso parcialmente queimado. A foto não está aqui. Restou o retângulo mais claro na parede, onde ela protegeu a tinta do tempo.",
+            "en": "Empty frame, back partially burnt. The photo is not here. What remains is the lighter rectangle on the wall, where it shielded the paint from time.",
+            "es": "Marco vacío, parte trasera parcialmente quemada. La foto no está. Lo que queda es el rectángulo más claro de la pared, donde protegió la pintura del paso del tiempo.",
+            "de": "Leerer Rahmen, Rückseite teilweise verbrannt. Das Foto fehlt. Übrig ist das hellere Rechteck an der Wand, wo es die Farbe vor der Zeit geschützt hat.",
+            "zh": "空画框，背面部分烧焦。照片已经不在。墙上只留下一个更浅的矩形，那是照片曾替油漆挡住时间的地方。"
+          }
+        },
+        "va5": {
+          "title": {
+            "pt": "TECIDO",
+            "en": "FABRIC",
+            "es": "TELA",
+            "de": "STOFF",
+            "zh": "布料"
+          },
+          "body": {
+            "pt": "Bordado com coordenadas. O ponto marcado não existe em nenhum mapa. Alguém guardou um lugar dentro de um pano, um endereço que só o corpo de quem bordou sabia chegar.",
+            "en": "Embroidered with coordinates. The marked point exists on no map. Someone kept a place inside a cloth, an address only the body that stitched it knew how to reach.",
+            "es": "Bordada con coordenadas. El punto marcado no existe en ningún mapa. Alguien guardó un lugar dentro de una tela, una dirección a la que solo sabía llegar el cuerpo que la bordó.",
+            "de": "Mit Koordinaten bestickt. Der markierte Punkt existiert auf keiner Karte. Jemand bewahrte einen Ort in einem Stoff auf, eine Adresse, die nur der Körper zu erreichen wusste, der sie gestickt hatte.",
+            "zh": "绣着坐标。标记的点不存在于任何地图上。有人把一个地点保存在一块布里，一个只有缝出它的身体才知道如何抵达的地址。"
+          }
+        },
+        "va6": {
+          "title": {
+            "pt": "MARCA",
+            "en": "MARK",
+            "es": "MARCA",
+            "de": "SPUR",
+            "zh": "痕迹"
+          },
+          "body": {
+            "pt": "Vestígio de corrente no chão, função não confirmada. O desenho no piso repete a distância exata de um passo curto, o passo de quem andava preso a algo.",
+            "en": "Trace of a chain on the floor, function unconfirmed. The pattern on the floor repeats the exact length of a short step, the step of someone bound to something.",
+            "es": "Rastro de una cadena en el suelo, función no confirmada. El patrón repite exactamente la longitud de un paso corto, el paso de alguien atado a algo.",
+            "de": "Kettenspur auf dem Boden, Funktion unbestätigt. Das Muster wiederholt exakt die Länge eines kurzen Schrittes, den Schritt von jemandem, der an etwas gebunden war.",
+            "zh": "地板上的锁链痕迹，功能尚未确认。图案精确重复着一个短步的长度，那是被某物束缚之人的步幅。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "MESA DOS AUSENTES",
+          "en": "TABLE OF THE ABSENT",
+          "es": "MESA DE LOS AUSENTES",
+          "de": "TISCH DER ABWESENDEN",
+          "zh": "缺席者之桌"
+        },
+        "body": {
+          "pt": "Três lugares vazios. Sobre a mesa, uma concha, uma garra e um documento queimado. O jantar foi posto e ninguém veio, ou vieram e foram levados. A ausência aqui tem forma, peso e lugar reservado.",
+          "en": "Three empty seats. On the table, a shell, a claw, and a burnt document. The meal was set and no one came, or they came and were taken. Absence here has shape, weight, and a seat reserved.",
+          "es": "Tres asientos vacíos. Sobre la mesa, una concha, una garra y un documento quemado. La comida estaba servida y nadie llegó, o llegaron y se los llevaron. Aquí la ausencia tiene forma, peso y un asiento reservado.",
+          "de": "Drei leere Plätze. Auf dem Tisch liegen eine Muschel, eine Kralle und ein verbranntes Dokument. Das Essen war gedeckt und niemand kam, oder sie kamen und wurden fortgebracht. Abwesenheit hat hier Form, Gewicht und einen reservierten Platz.",
+          "zh": "三个空座位。桌上放着一只贝壳、一只爪子和一份烧焦的文件。饭已经摆好，却没人来，或者他们来了之后被带走。这里的缺席拥有形状、重量，以及一个被保留的座位。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "SENTAR",
+              "en": "SIT",
+              "es": "SENTARSE",
+              "de": "SICH SETZEN",
+              "zh": "坐下"
+            },
+            "detail": {
+              "pt": "a cadeira aceita seu peso",
+              "en": "the chair accepts your weight",
+              "es": "la silla acepta tu peso",
+              "de": "der Stuhl nimmt dein Gewicht an",
+              "zh": "椅子接纳你的重量"
+            },
+            "rastro": {
+              "voz": 1,
+              "cinza": 1
+            },
+            "next": "sala-04b-vozes-dissidentes.html"
+          },
+          {
+            "verb": {
+              "pt": "ROUBAR O DOCUMENTO",
+              "en": "TAKE THE DOCUMENT",
+              "es": "TOMAR EL DOCUMENTO",
+              "de": "DAS DOKUMENT NEHMEN",
+              "zh": "拿起文件"
+            },
+            "detail": {
+              "pt": "o papel queimado resiste",
+              "en": "the burnt paper resists",
+              "es": "el papel quemado se resiste",
+              "de": "das verbrannte Papier widersetzt sich",
+              "zh": "烧焦的纸在抵抗"
+            },
+            "rastro": {
+              "ouro": 2
+            },
+            "next": "sala-04a-elementos.html"
+          },
+          {
+            "verb": {
+              "pt": "CHAMAR OS AUSENTES",
+              "en": "CALL THE ABSENT",
+              "es": "LLAMAR A LOS AUSENTES",
+              "de": "DIE ABWESENDEN RUFEN",
+              "zh": "呼唤缺席者"
+            },
+            "detail": {
+              "pt": "o ar muda de densidade",
+              "en": "the air changes density",
+              "es": "el aire cambia de densidad",
+              "de": "die Luft verändert ihre Dichte",
+              "zh": "空气的密度发生变化"
+            },
+            "rastro": {
+              "voz": 2,
+              "espelho": 1
+            },
+            "next": "sala-04c-vozes-ancestrais.html"
+          }
+        ]
+      }
+    },
+    "sala-03c-corpo-fragmentado": {
+      "stage": 3,
+      "name": {
+        "pt": "CORPO FRAGMENTADO",
+        "en": "FRAGMENTED BODY",
+        "es": "CUERPO FRAGMENTADO",
+        "de": "FRAGMENTIERTER KÖRPER",
+        "zh": "碎片化身体"
+      },
+      "objects": {
+        "ca1": {
+          "title": {
+            "pt": "PRÓTESE",
+            "en": "PROSTHESIS",
+            "es": "PRÓTESIS",
+            "de": "PROTHESE",
+            "zh": "义肢"
+          },
+          "body": {
+            "pt": "Peça articulada, compatível com membro ausente. Foi feita para um corpo específico. As dobras já estão gastas no lugar exato onde ele usava mais.",
+            "en": "Articulated piece, compatible with a missing limb. It was made for one specific body. The joints are already worn in the exact place it was used most.",
+            "es": "Pieza articulada, compatible con una extremidad ausente. Fue hecha para un cuerpo específico. Las articulaciones ya están gastadas justo en el punto donde más se utilizó.",
+            "de": "Gelenkiges Teil, passend zu einer fehlenden Gliedmaße. Es wurde für einen bestimmten Körper gefertigt. Die Gelenke sind genau dort abgenutzt, wo sie am meisten benutzt wurden.",
+            "zh": "一件可活动的部件，与缺失的肢体相匹配。它是为某一个特定身体制作的。关节恰好在使用最频繁的位置已经磨损。"
+          }
+        },
+        "ca2": {
+          "title": {
+            "pt": "GARRA",
+            "en": "CLAW",
+            "es": "GARRA",
+            "de": "KRALLE",
+            "zh": "爪"
+          },
+          "body": {
+            "pt": "Réplica em escala real, microfraturas na superfície. Não é osso nem metal. É uma terceira coisa, feita para lembrar as duas ao mesmo tempo.",
+            "en": "Full scale replica, microfractures on the surface. It is neither bone nor metal. It is a third thing, made to recall both at once.",
+            "es": "Réplica a escala real, microfracturas en la superficie. No es hueso ni metal. Es una tercera cosa, hecha para recordar ambos a la vez.",
+            "de": "Replik in Originalgröße, Mikrorisse auf der Oberfläche. Weder Knochen noch Metall. Etwas Drittes, geschaffen, um zugleich an beides zu erinnern.",
+            "zh": "等比例复制品，表面有微裂纹。它既不是骨，也不是金属。它是第三种东西，被制造出来同时唤起两者。"
+          }
+        },
+        "ca3": {
+          "title": {
+            "pt": "ÓRGÃO",
+            "en": "ORGAN",
+            "es": "ÓRGANO",
+            "de": "ORGAN",
+            "zh": "器官"
+          },
+          "body": {
+            "pt": "Estrutura sem correspondência anatômica conhecida. Tem entradas e saídas, mas nenhum manual. Pulsa como se ainda esperasse ser ligada a um corpo.",
+            "en": "Structure with no known anatomical match. It has inputs and outputs, but no manual. It pulses as if still waiting to be joined to a body.",
+            "es": "Estructura sin equivalente anatómico conocido. Tiene entradas y salidas, pero ningún manual. Late como si todavía esperara ser unida a un cuerpo.",
+            "de": "Struktur ohne bekannte anatomische Entsprechung. Sie hat Ein- und Ausgänge, aber keine Anleitung. Sie pulsiert, als warte sie noch darauf, mit einem Körper verbunden zu werden.",
+            "zh": "一种没有已知解剖对应物的结构。它有输入和输出，却没有说明书。它脉动着，仿佛仍在等待与某具身体连接。"
+          }
+        },
+        "ca4": {
+          "title": {
+            "pt": "TECIDO",
+            "en": "TISSUE",
+            "es": "TEJIDO",
+            "de": "GEWEBE",
+            "zh": "组织"
+          },
+          "body": {
+            "pt": "Amostra muscular com luz própria, pulso constante. A luz acompanha o pulso e o pulso não para. Foi separada do corpo e não recebeu o aviso.",
+            "en": "Muscle sample with its own light, constant pulse. The light follows the pulse and the pulse does not stop. It was cut from the body and never got the message.",
+            "es": "Muestra muscular con luz propia, pulso constante. La luz sigue el pulso y el pulso no se detiene. Fue cortada del cuerpo y nunca recibió el aviso.",
+            "de": "Muskelprobe mit eigenem Licht, konstanter Puls. Das Licht folgt dem Puls und der Puls hört nicht auf. Sie wurde vom Körper getrennt und hat die Nachricht nie erhalten.",
+            "zh": "带有自身光源的肌肉样本，持续脉动。光跟着脉动，脉动从未停止。它被从身体切下，却从未收到身体已经分离的消息。"
+          }
+        },
+        "ca5": {
+          "title": {
+            "pt": "GEL",
+            "en": "GEL",
+            "es": "GEL",
+            "de": "GEL",
+            "zh": "凝胶"
+          },
+          "body": {
+            "pt": "Cultura em suspensão, crescimento lento e contínuo. Toma devagar a forma do frasco. Se trocarem o frasco, ela recomeça sem se lembrar da forma anterior.",
+            "en": "Culture in suspension, slow, continuous growth. It slowly takes the shape of its jar. Change the jar and it starts over, with no memory of the earlier shape.",
+            "es": "Cultivo en suspensión, crecimiento lento y continuo. Toma poco a poco la forma de su recipiente. Cambia el recipiente y empieza de nuevo, sin memoria de la forma anterior.",
+            "de": "Kultur in Suspension, langsames, kontinuierliches Wachstum. Sie nimmt allmählich die Form ihres Gefäßes an. Wechselt man das Gefäß, beginnt sie von vorn, ohne Erinnerung an die frühere Form.",
+            "zh": "悬浮培养物，缓慢而持续地生长。它一点点变成容器的形状。换一个容器，它就重新开始，对之前的形状毫无记忆。"
+          }
+        },
+        "ca6": {
+          "title": {
+            "pt": "DIAGRAMA",
+            "en": "DIAGRAM",
+            "es": "DIAGRAMA",
+            "de": "DIAGRAMM",
+            "zh": "图示"
+          },
+          "body": {
+            "pt": "Mapa corporal com órgãos fora de posição. As setas ligam partes que não deviam se ligar. Talvez seja um erro, talvez seja outro corpo.",
+            "en": "Body map with organs out of position. The arrows connect parts that should not connect. Maybe it is a mistake, maybe it is another body.",
+            "es": "Mapa corporal con órganos fuera de lugar. Las flechas conectan partes que no deberían conectarse. Tal vez sea un error, tal vez sea otro cuerpo.",
+            "de": "Körperkarte mit Organen an falschen Stellen. Pfeile verbinden Teile, die nicht verbunden sein sollten. Vielleicht ist es ein Fehler, vielleicht ein anderer Körper.",
+            "zh": "一张器官位置错乱的身体图。箭头连接着本不该相连的部位。也许这是错误，也许这是另一种身体。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "CORAÇÃO HÍBRIDO",
+          "en": "HYBRID HEART",
+          "es": "CORAZÓN HÍBRIDO",
+          "de": "HYBRIDHERZ",
+          "zh": "混合心脏"
+        },
+        "body": {
+          "pt": "Metade músculo, metade concha, pulsa dentro de uma cápsula. O ritmo muda perto de alguém. Bate mais rápido quando há corpo por perto, como se reconhecesse. É montagem de restos, e mesmo assim reage.",
+          "en": "Half muscle, half shell, it beats inside a capsule. The rhythm shifts when someone is near. It quickens when a body approaches, as if it recognized. It is an assembly of remains, and still it responds.",
+          "es": "Mitad músculo, mitad caparazón, late dentro de una cápsula. El ritmo cambia cuando alguien se acerca. Se acelera ante la proximidad de un cuerpo, como si lo reconociera. Es un ensamblaje de restos y, aun así, responde.",
+          "de": "Halb Muskel, halb Schale schlägt es in einer Kapsel. Der Rhythmus verändert sich, wenn jemand nahe ist. Er beschleunigt sich, sobald sich ein Körper nähert, als würde er ihn erkennen. Es ist aus Überresten zusammengesetzt und reagiert dennoch.",
+          "zh": "一半肌肉，一半外壳，它在胶囊中跳动。有人靠近时节奏会改变。身体接近时，它会加快，仿佛能够辨认。它由残余物拼成，却依然作出回应。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "RECOMPOR",
+              "en": "RECOMPOSE",
+              "es": "RECOMPONER",
+              "de": "NEU ZUSAMMENSETZEN",
+              "zh": "重组"
+            },
+            "detail": {
+              "pt": "as peças se aproximam sem encaixar de vez",
+              "en": "the pieces come close without fully fitting",
+              "es": "las piezas se acercan sin encajar del todo",
+              "de": "die Teile nähern sich, ohne ganz zu passen",
+              "zh": "碎片彼此靠近，却无法完全契合"
+            },
+            "rastro": {
+              "raiz": 1,
+              "ouro": 1
+            },
+            "next": "sala-04c-vozes-ancestrais.html"
+          },
+          {
+            "verb": {
+              "pt": "AMPUTAR",
+              "en": "AMPUTATE",
+              "es": "AMPUTAR",
+              "de": "AMPUTIEREN",
+              "zh": "截除"
+            },
+            "detail": {
+              "pt": "uma parte segue pulsando, separada",
+              "en": "one part keeps beating, separate",
+              "es": "una parte sigue latiendo, separada",
+              "de": "ein Teil schlägt weiter, getrennt",
+              "zh": "有一部分分离后仍继续跳动"
+            },
+            "rastro": {
+              "sangue": 2
+            },
+            "next": "sala-04b-vozes-dissidentes.html"
+          },
+          {
+            "verb": {
+              "pt": "MULTIPLICAR",
+              "en": "MULTIPLY",
+              "es": "MULTIPLICAR",
+              "de": "VERVIELFACHEN",
+              "zh": "增殖"
+            },
+            "detail": {
+              "pt": "o coração se divide em quatro imagens",
+              "en": "the heart divides into four images",
+              "es": "el corazón se divide en cuatro imágenes",
+              "de": "das Herz teilt sich in vier Bilder",
+              "zh": "心脏分裂成四个影像"
+            },
+            "rastro": {
+              "espelho": 2,
+              "sangue": 1
+            },
+            "next": "sala-04a-elementos.html"
+          }
+        ]
+      }
+    },
+    "sala-04a-elementos": {
+      "stage": 4,
+      "name": {
+        "pt": "ELEMENTOS EM DESEQUILÍBRIO",
+        "en": "ELEMENTS OUT OF BALANCE",
+        "es": "ELEMENTOS FUERA DE EQUILIBRIO",
+        "de": "ELEMENTE AUS DEM GLEICHGEWICHT",
+        "zh": "失衡的元素"
+      },
+      "objects": {
+        "ela1": {
+          "title": {
+            "pt": "ÁGUA NEGRA",
+            "en": "BLACK WATER",
+            "es": "AGUA NEGRA",
+            "de": "SCHWARZES WASSER",
+            "zh": "黑水"
+          },
+          "body": {
+            "pt": "Bacia de água preta, temperatura abaixo do esperado. Não reflete o teto. Olha de volta como se o fundo fosse mais profundo do que a sala permite.",
+            "en": "Basin of black water, temperature below expectation. It does not reflect the ceiling. It looks back as if its bottom were deeper than the room allows.",
+            "es": "Cuenco de agua negra, temperatura inferior a la esperada. No refleja el techo. Devuelve la mirada como si su fondo fuera más profundo de lo que permite la sala.",
+            "de": "Becken mit schwarzem Wasser, Temperatur unter dem erwarteten Wert. Es spiegelt die Decke nicht. Es blickt zurück, als wäre sein Grund tiefer, als der Raum erlaubt.",
+            "zh": "一盆黑色的水，温度低于预期。它不反射天花板，而像是在回望你，仿佛盆底比房间允许的深度还要深。"
+          }
+        },
+        "ela2": {
+          "title": {
+            "pt": "FOGO CONTIDO",
+            "en": "CONTAINED FIRE",
+            "es": "FUEGO CONTENIDO",
+            "de": "GEBÄNDIGTES FEUER",
+            "zh": "被控制的火"
+          },
+          "body": {
+            "pt": "Chama sob vidro, consumo de oxigênio monitorado. Queima sem fumaça e sem diminuir. Alguém calculou exatamente o quanto de ar dar para que nunca acabe.",
+            "en": "Flame under glass, oxygen consumption monitored. It burns without smoke and without shrinking. Someone calculated exactly how much air to give so it never ends.",
+            "es": "Llama bajo vidrio, consumo de oxígeno monitorizado. Arde sin humo y sin reducirse. Alguien calculó exactamente cuánto aire darle para que nunca termine.",
+            "de": "Flamme unter Glas, Sauerstoffverbrauch überwacht. Sie brennt ohne Rauch und ohne kleiner zu werden. Jemand hat genau berechnet, wie viel Luft sie bekommt, damit sie niemals endet.",
+            "zh": "玻璃下的火焰，氧气消耗受到监测。它无烟燃烧，也从不缩小。有人精确计算了应该给它多少空气，好让它永远不会熄灭。"
+          }
+        },
+        "ela3": {
+          "title": {
+            "pt": "VENTO",
+            "en": "WIND",
+            "es": "VIENTO",
+            "de": "WIND",
+            "zh": "风"
+          },
+          "body": {
+            "pt": "Sensores de corrente de ar, direção muda sem padrão. Há vento numa sala fechada. Vem de lugar nenhum e insiste, como se fugisse de algo lá dentro.",
+            "en": "Airflow sensors, direction shifts without pattern. There is wind in a sealed room. It comes from nowhere and insists, as if fleeing something inside.",
+            "es": "Sensores de flujo de aire, la dirección cambia sin patrón. Hay viento en una sala sellada. Viene de ninguna parte e insiste, como si huyera de algo que está dentro.",
+            "de": "Luftstromsensoren, die Richtung wechselt ohne Muster. In einem versiegelten Raum weht Wind. Er kommt aus dem Nichts und bleibt bestehen, als fliehe er vor etwas im Inneren.",
+            "zh": "气流传感器显示方向毫无规律地变化。密封的房间里却有风。它无处而来，持续吹动，像是在逃离房间内部的某样东西。"
+          }
+        },
+        "ela4": {
+          "title": {
+            "pt": "TERRA",
+            "en": "EARTH",
+            "es": "TIERRA",
+            "de": "ERDE",
+            "zh": "土"
+          },
+          "body": {
+            "pt": "Areia sob vibração constante, origem do sinal desconhecida. Os grãos se organizam em linhas e desmancham. A terra desenha e apaga um mapa que ninguém pediu.",
+            "en": "Sand under constant vibration, signal origin unknown. The grains arrange into lines and collapse. The earth draws and erases a map no one asked for.",
+            "es": "Arena bajo vibración constante, origen de la señal desconocido. Los granos se organizan en líneas y colapsan. La tierra dibuja y borra un mapa que nadie pidió.",
+            "de": "Sand unter ständiger Vibration, Signalquelle unbekannt. Die Körner ordnen sich zu Linien und brechen wieder zusammen. Die Erde zeichnet und löscht eine Karte, um die niemand gebeten hat.",
+            "zh": "沙子持续振动，信号来源不明。沙粒排列成线又坍塌。土地画出又抹去一张无人要求的地图。"
+          }
+        },
+        "ela5": {
+          "title": {
+            "pt": "MONITOR",
+            "en": "MONITOR",
+            "es": "MONITOR",
+            "de": "MONITOR",
+            "zh": "监视器"
+          },
+          "body": {
+            "pt": "Dados de um clima que não corresponde a este lugar. Marca chuva quando está seco, calor quando está frio. Mede um território que talvez ainda vá existir.",
+            "en": "Climate data that does not match this place. It reads rain when it is dry, heat when it is cold. It measures a territory that maybe is yet to exist.",
+            "es": "Datos climáticos que no coinciden con este lugar. Indica lluvia cuando está seco, calor cuando hace frío. Mide un territorio que quizá todavía no exista.",
+            "de": "Klimadaten, die nicht zu diesem Ort passen. Regen wird angezeigt, wenn es trocken ist, Hitze, wenn es kalt ist. Gemessen wird ein Territorium, das vielleicht noch gar nicht existiert.",
+            "zh": "气候数据与此地不符。干燥时显示下雨，寒冷时显示高温。它测量的是一片也许尚未存在的领地。"
+          }
+        },
+        "ela6": {
+          "title": {
+            "pt": "AMOSTRA",
+            "en": "SAMPLE",
+            "es": "MUESTRA",
+            "de": "PROBE",
+            "zh": "样本"
+          },
+          "body": {
+            "pt": "Pó dourado, peso instável na balança. O número sobe e desce sozinho. O ouro aqui não decide quanto pesa, e a balança já desistiu de brigar.",
+            "en": "Golden dust, unstable weight on the scale. The number rises and falls on its own. The gold here will not decide how much it weighs, and the scale has given up arguing.",
+            "es": "Polvo dorado, peso inestable en la balanza. El número sube y baja por sí solo. El oro aquí no decide cuánto pesa, y la balanza ha dejado de discutir.",
+            "de": "Goldener Staub, instabiles Gewicht auf der Waage. Die Zahl steigt und fällt von selbst. Das Gold hier kann sich nicht entscheiden, wie viel es wiegt, und die Waage hat aufgehört zu widersprechen.",
+            "zh": "金色粉尘，在秤上的重量不稳定。数字自行升降。这里的黄金无法决定自己究竟有多重，而秤已经放弃争论。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "ASTROLÁBIO ORGÂNICO",
+          "en": "ORGANIC ASTROLABE",
+          "es": "ASTROLABIO ORGÁNICO",
+          "de": "ORGANISCHES ASTROLABIUM",
+          "zh": "有机星盘"
+        },
+        "body": {
+          "pt": "Meio máquina, meio concha, muda de cor a cada escolha feita aqui. Foi feito para ler o céu e acabou lendo quem chega. Aponta sempre para o próximo desequilíbrio, nunca para o repouso.",
+          "en": "Half machine, half shell, it changes color with every choice made here. It was built to read the sky and ended up reading whoever arrives. It always points to the next imbalance, never to rest.",
+          "es": "Mitad máquina, mitad caparazón, cambia de color con cada elección hecha aquí. Fue construido para leer el cielo y terminó leyendo a quien llega. Siempre apunta al próximo desequilibrio, nunca al reposo.",
+          "de": "Halb Maschine, halb Schale verändert es mit jeder hier getroffenen Wahl seine Farbe. Es wurde gebaut, um den Himmel zu lesen, und liest am Ende die Ankommenden. Es zeigt immer auf das nächste Ungleichgewicht, niemals auf Ruhe.",
+          "zh": "一半机器，一半外壳，它会随着这里的每一次选择改变颜色。它原本被制造来读取天空，最后却开始读取来到这里的人。它总是指向下一个失衡，从不指向休息。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "QUEIMAR",
+              "en": "BURN",
+              "es": "QUEMAR",
+              "de": "VERBRENNEN",
+              "zh": "燃烧"
+            },
+            "detail": {
+              "pt": "o calor sobe rápido e desce devagar",
+              "en": "heat rises fast and falls slowly",
+              "es": "el calor sube rápido y baja despacio",
+              "de": "die Hitze steigt schnell und fällt langsam",
+              "zh": "热量迅速上升，缓慢下降"
+            },
+            "rastro": {
+              "cinza": 2
+            },
+            "next": "sala-05b-fogo-cruzado.html"
+          },
+          {
+            "verb": {
+              "pt": "INUNDAR",
+              "en": "FLOOD",
+              "es": "INUNDAR",
+              "de": "ÜBERFLUTEN",
+              "zh": "淹没"
+            },
+            "detail": {
+              "pt": "a água preta cobre os símbolos",
+              "en": "black water covers the symbols",
+              "es": "el agua negra cubre los símbolos",
+              "de": "das schwarze Wasser bedeckt die Symbole",
+              "zh": "黑水覆盖符号"
+            },
+            "rastro": {
+              "oleo": 2
+            },
+            "next": "sala-05c-viagem-cosmica.html"
+          },
+          {
+            "verb": {
+              "pt": "RESPIRAR",
+              "en": "BREATHE",
+              "es": "RESPIRAR",
+              "de": "ATMEN",
+              "zh": "呼吸"
+            },
+            "detail": {
+              "pt": "o ar muda de direção ao redor",
+              "en": "the air changes direction around you",
+              "es": "el aire cambia de dirección a tu alrededor",
+              "de": "die Luft ändert um dich herum ihre Richtung",
+              "zh": "空气在你周围改变方向"
+            },
+            "rastro": {
+              "voz": 1,
+              "raiz": 1
+            },
+            "next": "sala-05a-maquinas-bioma.html"
+          }
+        ]
+      }
+    },
+    "sala-04b-vozes-dissidentes": {
+      "stage": 4,
+      "name": {
+        "pt": "VOZES DISSIDENTES",
+        "en": "DISSIDENT VOICES",
+        "es": "VOCES DISIDENTES",
+        "de": "DISSIDENTE STIMMEN",
+        "zh": "异议之声"
+      },
+      "objects": {
+        "vd1": {
+          "title": {
+            "pt": "ALTO-FALANTE A",
+            "en": "SPEAKER A",
+            "es": "ALTAVOZ A",
+            "de": "LAUTSPRECHER A",
+            "zh": "扬声器 A"
+          },
+          "body": {
+            "pt": "Emite estática em intervalos regulares. Dentro do ruído há um ritmo, sempre o mesmo. Não é falha do aparelho, é alguém batendo do outro lado.",
+            "en": "Emits static at regular intervals. Inside the noise there is a rhythm, always the same. It is not a fault in the device, it is someone knocking from the other side.",
+            "es": "Emite estática a intervalos regulares. Dentro del ruido hay un ritmo, siempre el mismo. No es una falla del aparato: es alguien golpeando desde el otro lado.",
+            "de": "Sendet in regelmäßigen Abständen statisches Rauschen. Im Geräusch liegt ein Rhythmus, immer derselbe. Es ist kein Defekt des Geräts, sondern jemand, der von der anderen Seite klopft.",
+            "zh": "以固定间隔发出静电噪声。噪声内部有一种节奏，始终相同。这不是设备故障，而是有人从另一侧敲击。"
+          }
+        },
+        "vd2": {
+          "title": {
+            "pt": "ALTO-FALANTE B",
+            "en": "SPEAKER B",
+            "es": "ALTAVOZ B",
+            "de": "LAUTSPRECHER B",
+            "zh": "扬声器 B"
+          },
+          "body": {
+            "pt": "Segunda unidade, fora de sincronia com a primeira. As duas quase se encontram e nunca fecham. O desencontro entre elas produz uma terceira frase que nenhuma diz sozinha.",
+            "en": "Second unit, out of sync with the first. The two almost meet and never close. The gap between them makes a third phrase that neither says alone.",
+            "es": "Segunda unidad, fuera de sincronía con la primera. Las dos casi se encuentran y nunca cierran. El desfase entre ellas produce una tercera frase que ninguna dice por separado.",
+            "de": "Zweite Einheit, nicht synchron mit der ersten. Beide treffen sich fast und schließen nie ganz. Die Lücke zwischen ihnen erzeugt einen dritten Satz, den keine für sich allein spricht.",
+            "zh": "第二个装置，与第一个不同步。两者几乎相遇，却从不真正重合。它们之间的错位生成第三句话，而任何一个单独都说不出来。"
+          }
+        },
+        "vd3": {
+          "title": {
+            "pt": "MÁSCARA",
+            "en": "MASK",
+            "es": "MÁSCARA",
+            "de": "MASKE",
+            "zh": "面具"
+          },
+          "body": {
+            "pt": "Material misto, ajuste para múltiplos rostos. Serve em qualquer um e não guarda ninguém. Foi feita para que a voz importasse mais que a cara.",
+            "en": "Mixed material, fitted for multiple faces. It fits anyone and holds no one. It was made so the voice would matter more than the face.",
+            "es": "Material mixto, adaptado a múltiples rostros. Le sirve a cualquiera y no guarda a nadie. Fue hecha para que la voz importara más que la cara.",
+            "de": "Gemischtes Material, für mehrere Gesichter angepasst. Sie passt jedem und bewahrt niemanden. Sie wurde gemacht, damit die Stimme wichtiger ist als das Gesicht.",
+            "zh": "混合材料制成，可适配多张脸。它适合任何人，却不保存任何人的身份。它被制造出来，让声音比面孔更重要。"
+          }
+        },
+        "vd4": {
+          "title": {
+            "pt": "KIT DE SUTURA",
+            "en": "SUTURE KIT",
+            "es": "KIT DE SUTURA",
+            "de": "NAHTSET",
+            "zh": "缝合套件"
+          },
+          "body": {
+            "pt": "Agulhas, linhas e prótese parcial, uso recorrente. Consertaram o mesmo ponto muitas vezes. O reparo virou parte do corpo, mais firme que o original.",
+            "en": "Needles, thread, partial prosthesis, recurring use. The same spot was mended many times. The repair became part of the body, firmer than the original.",
+            "es": "Agujas, hilo, prótesis parcial, uso recurrente. El mismo punto fue reparado muchas veces. La reparación se volvió parte del cuerpo, más firme que el original.",
+            "de": "Nadeln, Faden, Teilprothese, wiederholter Gebrauch. Dieselbe Stelle wurde oft geflickt. Die Reparatur wurde Teil des Körpers, fester als das Original.",
+            "zh": "针、线和部分义肢，反复使用。同一个位置被修补了很多次。修复逐渐成为身体的一部分，甚至比原本的组织更牢固。"
+          }
+        },
+        "vd5": {
+          "title": {
+            "pt": "CARTAZ",
+            "en": "POSTER",
+            "es": "CARTEL",
+            "de": "PLAKAT",
+            "zh": "海报"
+          },
+          "body": {
+            "pt": "Sem slogan legível, camadas de cola sugerem reuso. Por baixo do último cartaz há dezenas de outros. A parede virou arquivo de tudo que já foi gritado ali.",
+            "en": "No legible slogan, layers of glue suggest reuse. Under the last poster there are dozens more. The wall became an archive of everything already shouted there.",
+            "es": "No hay eslogan legible; las capas de pegamento sugieren reutilización. Debajo del último cartel hay decenas más. La pared se convirtió en archivo de todo lo que ya se gritó allí.",
+            "de": "Kein lesbarer Slogan, Klebstoffschichten deuten auf Wiederverwendung. Unter dem letzten Plakat liegen Dutzende weitere. Die Wand wurde zum Archiv von allem, was dort schon gerufen wurde.",
+            "zh": "没有可辨认的口号，多层胶水暗示它曾被反复使用。最后一张海报下面还有几十张。墙面成了这里所有呐喊的档案。"
+          }
+        },
+        "vd6": {
+          "title": {
+            "pt": "AMULETO",
+            "en": "AMULET",
+            "es": "AMULETO",
+            "de": "AMULETT",
+            "zh": "护符"
+          },
+          "body": {
+            "pt": "Componente costurado ao tecido, pulso intermitente. É metade reza, metade circuito. Foi feito para proteger de algo que só aparece quando ele acende.",
+            "en": "Component stitched into the fabric, intermittent pulse. It is half prayer, half circuit. It was made to protect against something that only appears when it lights up.",
+            "es": "Componente cosido a la tela, pulso intermitente. Es mitad oración, mitad circuito. Fue hecho para proteger de algo que solo aparece cuando se enciende.",
+            "de": "In den Stoff eingenähte Komponente, intermittierender Puls. Halb Gebet, halb Schaltkreis. Es wurde geschaffen, um vor etwas zu schützen, das nur erscheint, wenn es aufleuchtet.",
+            "zh": "缝在布料上的元件，间歇脉动。它一半是祈祷，一半是电路。它被制作来抵御某种只有在它亮起时才会出现的东西。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "RÁDIO-ORÁCULO",
+          "en": "ORACLE RADIO",
+          "es": "RADIO ORÁCULO",
+          "de": "ORAKELRADIO",
+          "zh": "神谕收音机"
+        },
+        "body": {
+          "pt": "Transmite vozes fragmentadas, sobrepostas, numa língua que muda antes de se fixar. Fala em muitas bocas ao mesmo tempo e não repete. Quem escuta reconhece uma palavra e a perde no momento em que entende.",
+          "en": "Transmits fragmented, overlapping voices, in a language that shifts before it settles. It speaks in many mouths at once and never repeats. Whoever listens catches a word and loses it the moment they understand.",
+          "es": "Transmite voces fragmentadas y superpuestas, en una lengua que cambia antes de fijarse. Habla con muchas bocas al mismo tiempo y nunca repite. Quien escucha reconoce una palabra y la pierde en el instante en que la entiende.",
+          "de": "Überträgt fragmentierte, überlagerte Stimmen in einer Sprache, die sich verändert, bevor sie sich festlegt. Es spricht mit vielen Mündern zugleich und wiederholt sich nie. Wer zuhört, erkennt ein Wort und verliert es in dem Moment, in dem es verstanden wird.",
+          "zh": "传出碎片化、彼此重叠的声音，使用一种在稳定下来之前不断变化的语言。它同时用许多张嘴说话，而且从不重复。听的人刚认出一个词，就在理解它的瞬间失去它。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "TRANSMITIR",
+              "en": "TRANSMIT",
+              "es": "TRANSMITIR",
+              "de": "SENDEN",
+              "zh": "传送"
+            },
+            "detail": {
+              "pt": "sua voz se mistura às outras",
+              "en": "your voice blends with the others",
+              "es": "tu voz se mezcla con las demás",
+              "de": "deine Stimme mischt sich mit den anderen",
+              "zh": "你的声音混入其他声音"
+            },
+            "rastro": {
+              "voz": 2
+            },
+            "next": "sala-05b-fogo-cruzado.html"
+          },
+          {
+            "verb": {
+              "pt": "COSTURAR",
+              "en": "STITCH",
+              "es": "COSER",
+              "de": "NÄHEN",
+              "zh": "缝合"
+            },
+            "detail": {
+              "pt": "a linha atravessa o tecido",
+              "en": "the thread crosses the fabric",
+              "es": "el hilo atraviesa la tela",
+              "de": "der Faden durchquert den Stoff",
+              "zh": "线穿过布料"
+            },
+            "rastro": {
+              "sangue": 1,
+              "raiz": 1
+            },
+            "next": "sala-05a-maquinas-bioma.html"
+          },
+          {
+            "verb": {
+              "pt": "ORGANIZAR",
+              "en": "ORGANIZE",
+              "es": "ORGANIZAR",
+              "de": "ORDNEN",
+              "zh": "组织"
+            },
+            "detail": {
+              "pt": "os objetos formam outra ordem",
+              "en": "the objects form another order",
+              "es": "los objetos forman otro orden",
+              "de": "die Gegenstände bilden eine andere Ordnung",
+              "zh": "物件形成另一种秩序"
+            },
+            "rastro": {
+              "voz": 1,
+              "ouro": 1
+            },
+            "next": "sala-05c-viagem-cosmica.html"
+          }
+        ]
+      }
+    },
+    "sala-04c-vozes-ancestrais": {
+      "stage": 4,
+      "name": {
+        "pt": "VOZES ANCESTRAIS",
+        "en": "ANCESTRAL VOICES",
+        "es": "VOCES ANCESTRALES",
+        "de": "AHNENSTIMMEN",
+        "zh": "祖先之声"
+      },
+      "objects": {
+        "an1": {
+          "title": {
+            "pt": "FITA",
+            "en": "TAPE",
+            "es": "CINTA",
+            "de": "BAND",
+            "zh": "磁带"
+          },
+          "body": {
+            "pt": "Fita magnética deformada, trecho recuperável, sentido incerto. O calor entortou o plástico e a voz junto. O que sobra é a entonação, sem as palavras que a sustentavam.",
+            "en": "Warped magnetic tape, recoverable segment, uncertain meaning. Heat bent the plastic and the voice with it. What remains is the intonation, without the words that held it up.",
+            "es": "Cinta magnética deformada, fragmento recuperable, sentido incierto. El calor dobló el plástico y con él la voz. Lo que queda es la entonación, sin las palabras que la sostenían.",
+            "de": "Verformtes Magnetband, ein Abschnitt ist wiederherstellbar, seine Bedeutung ungewiss. Die Hitze verbog den Kunststoff und mit ihm die Stimme. Übrig bleibt die Intonation, ohne die Worte, die sie getragen haben.",
+            "zh": "变形的磁带，有一段仍可恢复，意义却不确定。高温扭曲了塑料，也同时扭曲了声音。留下来的只是语调，没有支撑它的词语。"
+          }
+        },
+        "an2": {
+          "title": {
+            "pt": "CONCHA",
+            "en": "SHELL",
+            "es": "CONCHA",
+            "de": "MUSCHEL",
+            "zh": "贝壳"
+          },
+          "body": {
+            "pt": "Concha com captação interna, ressonância acima do esperado. Guardou o som de uma água que secou. Encostada ao ouvido, devolve um mar que não existe mais aqui.",
+            "en": "Shell with internal pickup, resonance above expectation. It kept the sound of a water that dried up. Held to the ear, it gives back a sea that no longer exists here.",
+            "es": "Concha con captación interna, resonancia superior a la esperada. Guardó el sonido de un agua que se secó. Al acercarla al oído devuelve un mar que ya no existe aquí.",
+            "de": "Muschel mit internem Tonabnehmer, Resonanz stärker als erwartet. Sie bewahrte den Klang eines Wassers, das versiegte. Ans Ohr gehalten gibt sie ein Meer zurück, das hier nicht mehr existiert.",
+            "zh": "内部装有拾音装置的贝壳，共振强于预期。它保存了某片已经干涸水域的声音。贴近耳朵时，它会还给你一片这里早已不存在的海。"
+          }
+        },
+        "an3": {
+          "title": {
+            "pt": "INSCRIÇÃO C",
+            "en": "INSCRIPTION C",
+            "es": "INSCRIPCIÓN C",
+            "de": "INSCHRIFT C",
+            "zh": "铭文 C"
+          },
+          "body": {
+            "pt": "Símbolos gravados, padrão repetido em outros lugares. A mesma marca aparece em salas distantes. É assinatura ou aviso, deixado por quem passou antes por todo o percurso.",
+            "en": "Engraved symbols, pattern repeated elsewhere. The same mark appears in distant rooms. It is a signature or a warning, left by whoever passed through the whole path before.",
+            "es": "Símbolos grabados, patrón repetido en otros lugares. La misma marca aparece en salas distantes. Es una firma o una advertencia, dejada por quien ya recorrió todo el trayecto.",
+            "de": "Eingravierte Symbole, Muster an anderen Orten wiederholt. Dasselbe Zeichen erscheint in entfernten Räumen. Es ist eine Signatur oder eine Warnung, hinterlassen von jemandem, der den ganzen Weg zuvor gegangen ist.",
+            "zh": "刻下的符号，这一图案也在其他地方重复出现。同样的标记出现在遥远的房间里。它可能是签名，也可能是警告，由曾经走完整条路径的人留下。"
+          }
+        },
+        "an4": {
+          "title": {
+            "pt": "INSCRIÇÃO D",
+            "en": "INSCRIPTION D",
+            "es": "INSCRIPCIÓN D",
+            "de": "INSCHRIFT D",
+            "zh": "铭文 D"
+          },
+          "body": {
+            "pt": "Variante do mesmo símbolo, profundidade maior. Foi cavada com mais força, ou com mais tempo. A pressa da primeira inscrição virou insistência nesta.",
+            "en": "Variant of the same symbol, greater depth. It was cut with more force, or more time. The haste of the first inscription became insistence in this one.",
+            "es": "Variante del mismo símbolo, de mayor profundidad. Fue tallada con más fuerza, o con más tiempo. La prisa de la primera inscripción se volvió insistencia en esta.",
+            "de": "Variante desselben Symbols, tiefer eingeschnitten. Mit mehr Kraft oder mehr Zeit geschaffen. Die Eile der ersten Inschrift wurde hier zu Beharrlichkeit.",
+            "zh": "同一符号的变体，刻得更深。也许用了更大的力，也许花了更多时间。第一处铭文的匆忙，在这里变成了坚持。"
+          }
+        },
+        "an5": {
+          "title": {
+            "pt": "NÓ DE TECIDO",
+            "en": "FABRIC KNOT",
+            "es": "NUDO DE TELA",
+            "de": "STOFFKNOTEN",
+            "zh": "布结"
+          },
+          "body": {
+            "pt": "Tecido amarrado em padrão específico, função mnemônica provável. Cada nó guarda um dado que só o corpo lê, passando o dedo. É um arquivo que não precisa de tela.",
+            "en": "Fabric tied in a specific pattern, likely mnemonic function. Each knot holds a piece of data only the body reads, running a finger over it. It is an archive with no need for a screen.",
+            "es": "Tela atada siguiendo un patrón específico, probable función mnemónica. Cada nudo guarda un dato que solo el cuerpo lee al pasar el dedo. Es un archivo que no necesita pantalla.",
+            "de": "Stoff in einem bestimmten Muster geknotet, vermutlich als Gedächtnisstütze. Jeder Knoten bewahrt eine Information, die nur der Körper beim Darüberstreichen liest. Ein Archiv ohne Bildschirm.",
+            "zh": "布料按照特定方式打结，很可能具有记忆功能。每一个结都保存着只有身体用手指触摸时才能读取的信息。这是一份不需要屏幕的档案。"
+          }
+        },
+        "an6": {
+          "title": {
+            "pt": "ALTO-FALANTE",
+            "en": "SPEAKER",
+            "es": "ALTAVOZ",
+            "de": "LAUTSPRECHER",
+            "zh": "扬声器"
+          },
+          "body": {
+            "pt": "Emite pulsos graves em intervalos irregulares. O grave é sentido antes de ser ouvido, no peito. Chega como batida de tambor que perdeu a pele.",
+            "en": "Emits low pulses at irregular intervals. The low end is felt before it is heard, in the chest. It arrives like a drumbeat that lost its skin.",
+            "es": "Emite pulsos graves a intervalos irregulares. El grave se siente antes de oírse, en el pecho. Llega como un golpe de tambor que perdió su piel.",
+            "de": "Sendet tiefe Impulse in unregelmäßigen Abständen. Der Bass wird in der Brust gespürt, bevor er gehört wird. Er kommt wie ein Trommelschlag, der seine Haut verloren hat.",
+            "zh": "以不规则间隔发出低频脉冲。低音先在胸腔中被感受到，然后才被听见。它像一记失去了鼓皮的鼓声。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "CONCHA-AMPLIFICADOR",
+          "en": "AMPLIFIER SHELL",
+          "es": "CONCHA AMPLIFICADORA",
+          "de": "VERSTÄRKERMUSCHEL",
+          "zh": "扩音贝壳"
+        },
+        "body": {
+          "pt": "Suspensa, emite pulsos baixos. Cada um carrega uma sílaba que nunca termina. É a escuta feita objeto, uma boca de pedra que só sabe começar a falar. O sentido fica sempre a uma sílaba de distância.",
+          "en": "Suspended, it emits low pulses. Each one carries a syllable that never ends. It is listening made object, a mouth of stone that only knows how to begin. Meaning stays always one syllable away.",
+          "es": "Suspendida, emite pulsos bajos. Cada uno carga una sílaba que nunca termina. Es la escucha convertida en objeto, una boca de piedra que solo sabe empezar a hablar. El sentido queda siempre a una sílaba de distancia.",
+          "de": "Schwebend sendet sie tiefe Impulse. Jeder trägt eine Silbe, die niemals endet. Zuhören ist hier zum Objekt geworden, ein steinerner Mund, der nur anfangen kann zu sprechen. Bedeutung bleibt immer eine Silbe entfernt.",
+          "zh": "它悬浮着，发出低沉脉冲。每个脉冲都携带一个永远不会结束的音节。聆听在这里变成了物件，一张只知道如何开始说话的石嘴。意义总是还差一个音节。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "ESCUTAR",
+              "en": "LISTEN",
+              "es": "ESCUCHAR",
+              "de": "ZUHÖREN",
+              "zh": "聆听"
+            },
+            "detail": {
+              "pt": "o som entra antes do sentido",
+              "en": "sound enters before meaning",
+              "es": "el sonido entra antes que el sentido",
+              "de": "der Klang tritt vor der Bedeutung ein",
+              "zh": "声音先于意义进入"
+            },
+            "rastro": {
+              "voz": 2,
+              "raiz": 1
+            },
+            "next": "sala-05c-viagem-cosmica.html"
+          },
+          {
+            "verb": {
+              "pt": "GRAVAR",
+              "en": "RECORD",
+              "es": "GRABAR",
+              "de": "AUFNEHMEN",
+              "zh": "记录"
+            },
+            "detail": {
+              "pt": "o pulso muda a cada repetição",
+              "en": "the pulse changes with each repetition",
+              "es": "el pulso cambia con cada repetición",
+              "de": "der Puls verändert sich bei jeder Wiederholung",
+              "zh": "脉冲每次重复都会改变"
+            },
+            "rastro": {
+              "voz": 1,
+              "ouro": 1
+            },
+            "next": "sala-05a-maquinas-bioma.html"
+          },
+          {
+            "verb": {
+              "pt": "SILENCIAR",
+              "en": "SILENCE",
+              "es": "SILENCIAR",
+              "de": "VERSTUMMEN LASSEN",
+              "zh": "静音"
+            },
+            "detail": {
+              "pt": "o que sobra tem peso",
+              "en": "what remains has weight",
+              "es": "lo que queda tiene peso",
+              "de": "was bleibt, hat Gewicht",
+              "zh": "留下来的东西有重量"
+            },
+            "rastro": {
+              "cinza": 2
+            },
+            "next": "sala-05b-fogo-cruzado.html"
+          }
+        ]
+      }
+    },
+    "sala-05a-maquinas-bioma": {
+      "stage": 5,
+      "name": {
+        "pt": "MÁQUINAS NO BIOMA",
+        "en": "MACHINES IN THE BIOME",
+        "es": "MÁQUINAS EN EL BIOMA",
+        "de": "MASCHINEN IM BIOM",
+        "zh": "生境中的机器"
+      },
+      "objects": {
+        "mb1": {
+          "title": {
+            "pt": "MOTOSSERRA",
+            "en": "CHAINSAW",
+            "es": "MOTOSIERRA",
+            "de": "KETTENSÄGE",
+            "zh": "链锯"
+          },
+          "body": {
+            "pt": "Suspensa por um cabo, lâmina parada a meio corte. O tronco em volta continua a marca do dente. Faltou um segundo para terminar, e esse segundo virou exposição.",
+            "en": "Hung from a cable, blade frozen mid cut. The trunk around it still shows the tooth's mark. It was one second short of finishing, and that second became display.",
+            "es": "Suspendida de un cable, hoja congelada a mitad del corte. El tronco a su alrededor todavía muestra la marca de los dientes. Le faltó un segundo para terminar, y ese segundo se convirtió en exposición.",
+            "de": "An einem Kabel hängend, die Klinge mitten im Schnitt eingefroren. Der Stamm ringsum trägt noch die Zahnspur. Eine Sekunde fehlte zur Vollendung, und diese Sekunde wurde zum Ausstellungsstück.",
+            "zh": "它悬在电缆上，锯片被冻结在切割途中。周围的树干还留着锯齿痕迹。它只差一秒就能完成，而这一秒被变成了展品。"
+          }
+        },
+        "mb2": {
+          "title": {
+            "pt": "DIESEL",
+            "en": "DIESEL",
+            "es": "DIÉSEL",
+            "de": "DIESEL",
+            "zh": "柴油"
+          },
+          "body": {
+            "pt": "Tambor furado. O líquido escuro ainda escorre devagar. A poça no chão não seca nem cresce. Fica do mesmo tamanho, alimentada por um vazamento sem fim.",
+            "en": "Punctured drum. The dark liquid still drips slowly. The pool on the floor neither dries nor grows. It stays the same size, fed by a leak without end.",
+            "es": "Tambor perforado. El líquido oscuro todavía gotea lentamente. El charco del suelo no se seca ni crece. Mantiene el mismo tamaño, alimentado por una fuga sin fin.",
+            "de": "Durchlöchertes Fass. Die dunkle Flüssigkeit tropft noch langsam. Die Pfütze am Boden trocknet weder aus noch wächst sie. Sie bleibt gleich groß, gespeist von einem Leck ohne Ende.",
+            "zh": "被刺破的桶。深色液体仍在缓慢滴落。地面的积液既不干涸，也不扩大。它始终保持同样大小，由一个永不停止的泄漏供给。"
+          }
+        },
+        "mb3": {
+          "title": {
+            "pt": "PAINEL",
+            "en": "PANEL",
+            "es": "PANEL",
+            "de": "PANEL",
+            "zh": "控制面板"
+          },
+          "body": {
+            "pt": "Painel de controle da extração, indicadores piscam sem padrão. Ninguém opera e mesmo assim ele decide. As luzes obedecem a uma lógica que já não precisa de mão humana.",
+            "en": "Extraction control panel, indicators blink without pattern. No one operates it and still it decides. The lights obey a logic that no longer needs a human hand.",
+            "es": "Panel de control de extracción, los indicadores parpadean sin patrón. Nadie lo opera y aun así decide. Las luces obedecen una lógica que ya no necesita una mano humana.",
+            "de": "Steuerpanel der Förderung, Anzeigen blinken ohne Muster. Niemand bedient es, und trotzdem entscheidet es. Die Lichter folgen einer Logik, die keine menschliche Hand mehr braucht.",
+            "zh": "采掘控制面板，指示灯毫无规律地闪烁。没有人在操作，它却仍在作出决定。灯光服从一种已经不再需要人手的逻辑。"
+          }
+        },
+        "mb4": {
+          "title": {
+            "pt": "RAIZ ARRANCADA",
+            "en": "TORN ROOT",
+            "es": "RAÍZ ARRANCADA",
+            "de": "HERAUSGERISSENE WURZEL",
+            "zh": "断裂的根"
+          },
+          "body": {
+            "pt": "Raiz cortada, ainda emite um pulso fraco. Foi separada da terra e não parou de mandar sinal. Chama por uma árvore que já não está ali para responder.",
+            "en": "Severed root, still emitting a faint pulse. It was torn from the ground and never stopped sending signal. It calls for a tree that is no longer there to answer.",
+            "es": "Raíz cortada, todavía emite un pulso débil. Fue arrancada de la tierra y nunca dejó de enviar señal. Llama a un árbol que ya no está para responder.",
+            "de": "Abgetrennte Wurzel, sendet noch einen schwachen Puls. Aus dem Boden gerissen, hat sie nie aufgehört zu senden. Sie ruft nach einem Baum, der nicht mehr da ist, um zu antworten.",
+            "zh": "被切断的根仍发出微弱脉冲。它被从土地里扯出，却从未停止发送信号。它呼唤着一棵已经不在这里、无法回应的树。"
+          }
+        },
+        "mb5": {
+          "title": {
+            "pt": "ESTEIRA",
+            "en": "CONVEYOR",
+            "es": "CINTA TRANSPORTADORA",
+            "de": "FÖRDERBAND",
+            "zh": "传送带"
+          },
+          "body": {
+            "pt": "Trecho de esteira parado, coberto por lama escura. Levava o território embora aos pedaços, um por vez. Parou cheia, com a última carga ainda no lugar.",
+            "en": "Section of conveyor belt at rest, covered in dark mud. It carried the territory away in pieces, one at a time. It stopped full, with the last load still in place.",
+            "es": "Tramo de cinta transportadora en reposo, cubierto de barro oscuro. Se llevó el territorio en pedazos, uno por uno. Se detuvo llena, con la última carga todavía en su lugar.",
+            "de": "Stillstehender Abschnitt eines Förderbands, bedeckt mit dunklem Schlamm. Es trug das Territorium Stück für Stück fort. Es blieb beladen stehen, die letzte Ladung noch an ihrem Platz.",
+            "zh": "一段停止的传送带，覆满深色泥土。它曾一点一点把领地运走。它满载着停了下来，最后一批货物仍留在原位。"
+          }
+        },
+        "mb6": {
+          "title": {
+            "pt": "RESTOS",
+            "en": "REMAINS",
+            "es": "RESTOS",
+            "de": "ÜBERRESTE",
+            "zh": "残骸"
+          },
+          "body": {
+            "pt": "Pequenos ossos misturados a parafusos e fios. O bicho e a máquina foram triturados juntos. Agora é impossível dizer onde termina um e começa o outro.",
+            "en": "Small bones mixed with bolts and wires. The animal and the machine were ground together. Now it is impossible to say where one ends and the other begins.",
+            "es": "Pequeños huesos mezclados con tornillos y cables. El animal y la máquina fueron triturados juntos. Ahora es imposible decir dónde termina uno y empieza el otro.",
+            "de": "Kleine Knochen, vermischt mit Schrauben und Drähten. Tier und Maschine wurden gemeinsam zermahlen. Jetzt lässt sich nicht mehr sagen, wo das eine endet und das andere beginnt.",
+            "zh": "小骨头与螺栓、电线混在一起。动物与机器被一起碾碎。现在已经无法分辨一个在哪里结束，另一个从哪里开始。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "MOTOR-TRONCO",
+          "en": "ENGINE TRUNK",
+          "es": "TRONCO MOTOR",
+          "de": "MOTORSTAMM",
+          "zh": "发动机树干"
+        },
+        "body": {
+          "pt": "Um tronco oco abriga um motor ainda quente. Bate como um coração que aprendeu a queimar combustível. A floresta foi refeita como máquina, e a máquina imita a floresta. Nenhuma das duas sabe mais qual era a original.",
+          "en": "A hollow trunk holds a still warm engine. It beats like a heart that learned to burn fuel. The forest was remade as machine, and the machine mimics the forest. Neither one still knows which was the original.",
+          "es": "Un tronco hueco contiene un motor aún tibio. Late como un corazón que aprendió a quemar combustible. El bosque fue rehecho como máquina y la máquina imita al bosque. Ninguno sabe ya cuál fue el original.",
+          "de": "Ein hohler Stamm enthält einen noch warmen Motor. Er schlägt wie ein Herz, das gelernt hat, Treibstoff zu verbrennen. Der Wald wurde als Maschine neu gebaut, und die Maschine ahmt den Wald nach. Keiner weiß noch, was das Original war.",
+          "zh": "空心树干里装着一台仍有余温的发动机。它像一颗学会燃烧燃料的心脏一样跳动。森林被重造成机器，机器又模仿森林。如今两者都不知道谁才是原本的那个。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "DESLIGAR",
+              "en": "SHUT DOWN",
+              "es": "APAGAR",
+              "de": "ABSCHALTEN",
+              "zh": "关闭"
+            },
+            "detail": {
+              "pt": "o silêncio chega devagar",
+              "en": "silence arrives slowly",
+              "es": "el silencio llega lentamente",
+              "de": "die Stille kommt langsam",
+              "zh": "寂静缓慢到来"
+            },
+            "rastro": {
+              "raiz": 2,
+              "cinza": 1
+            },
+            "next": "sala-06a-ritual-sangue.html"
+          },
+          {
+            "verb": {
+              "pt": "INCENDIAR",
+              "en": "SET ALIGHT",
+              "es": "PRENDER FUEGO",
+              "de": "ENTZÜNDEN",
+              "zh": "点燃"
+            },
+            "detail": {
+              "pt": "o calor se espalha sem chama visível",
+              "en": "heat spreads with no visible flame",
+              "es": "el calor se extiende sin llama visible",
+              "de": "Hitze breitet sich ohne sichtbare Flamme aus",
+              "zh": "热量在没有可见火焰的情况下扩散"
+            },
+            "rastro": {
+              "cinza": 2,
+              "sangue": 1
+            },
+            "next": "sala-06b-insurreicao.html"
+          },
+          {
+            "verb": {
+              "pt": "ENRAIZAR",
+              "en": "RE-ROOT",
+              "es": "VOLVER A ENRAIZAR",
+              "de": "NEU VERWURZELN",
+              "zh": "重新扎根"
+            },
+            "detail": {
+              "pt": "o metal aceita a raiz de volta",
+              "en": "the metal accepts the root again",
+              "es": "el metal acepta de nuevo la raíz",
+              "de": "das Metall nimmt die Wurzel wieder an",
+              "zh": "金属再次接受根系"
+            },
+            "rastro": {
+              "raiz": 2,
+              "oleo": 1
+            },
+            "next": "sala-06c-ritual-fusao.html"
+          }
+        ]
+      }
+    },
+    "sala-05b-fogo-cruzado": {
+      "stage": 5,
+      "name": {
+        "pt": "FOGO CRUZADO",
+        "en": "CROSSFIRE",
+        "es": "FUEGO CRUZADO",
+        "de": "KREUZFEUER",
+        "zh": "交叉火力"
+      },
+      "objects": {
+        "fc1": {
+          "title": {
+            "pt": "TOCHA",
+            "en": "TORCH",
+            "es": "ANTORCHA",
+            "de": "FACKEL",
+            "zh": "火把"
+          },
+          "body": {
+            "pt": "Chama presa no ar, combustível ainda gotejando. O fogo foi congelado no meio de um gesto. Ainda dá para ver a mão que o carregava, ausente logo atrás.",
+            "en": "Flame frozen in the air, fuel still dripping. The fire was frozen mid gesture. You can still make out the hand that carried it, absent just behind.",
+            "es": "Llama congelada en el aire, el combustible todavía gotea. El fuego quedó detenido a mitad del gesto. Aún se distingue la mano que lo llevaba, ausente justo detrás.",
+            "de": "Flamme in der Luft eingefroren, der Brennstoff tropft noch. Das Feuer wurde mitten in der Geste angehalten. Die Hand, die es trug, lässt sich noch erahnen, direkt dahinter abwesend.",
+            "zh": "火焰被冻结在半空，燃料仍在滴落。火被定格在一个动作中途。还能辨认出曾握着它的那只手，而手的主人已经不在后方。"
+          }
+        },
+        "fc2": {
+          "title": {
+            "pt": "ESCUDO",
+            "en": "SHIELD",
+            "es": "ESCUDO",
+            "de": "SCHILD",
+            "zh": "盾牌"
+          },
+          "body": {
+            "pt": "Placa de metal amassada, marcas de impacto recentes. Cada amassado é de um lado diferente. Foi usado por muitas mãos, contra muitas direções, no mesmo dia.",
+            "en": "Dented metal plate, recent impact marks. Each dent comes from a different side. It was held by many hands, against many directions, on the same day.",
+            "es": "Placa metálica abollada, marcas de impacto recientes. Cada abolladura viene de un lado diferente. Fue sostenida por muchas manos, contra muchas direcciones, el mismo día.",
+            "de": "Verbeulte Metallplatte, frische Einschlagspuren. Jede Delle kommt aus einer anderen Richtung. Sie wurde am selben Tag von vielen Händen gegen viele Richtungen gehalten.",
+            "zh": "凹陷的金属板，带着新近的撞击痕迹。每个凹痕来自不同方向。同一天里，它被许多只手举着，抵挡来自许多方向的力量。"
+          }
+        },
+        "fc3": {
+          "title": {
+            "pt": "PROJÉTIL",
+            "en": "PROJECTILE",
+            "es": "PROYECTIL",
+            "de": "PROJEKTIL",
+            "zh": "弹丸"
+          },
+          "body": {
+            "pt": "Suspenso a meio caminho, trajetória interrompida. Parou entre quem atirou e quem levaria. O meio do caminho virou o lugar mais quieto da sala.",
+            "en": "Suspended mid flight, trajectory interrupted. It stopped between the one who fired and the one who would be hit. The middle of its path became the quietest place in the room.",
+            "es": "Suspendido a mitad de vuelo, trayectoria interrumpida. Se detuvo entre quien disparó y quien iba a ser alcanzado. El centro de su recorrido se convirtió en el lugar más silencioso de la sala.",
+            "de": "Mitten im Flug schwebend, Flugbahn unterbrochen. Es blieb zwischen der Person, die schoss, und der Person, die getroffen worden wäre. Die Mitte seiner Bahn wurde zum stillsten Ort im Raum.",
+            "zh": "悬停在飞行途中，轨迹被中断。它停在开枪者与本应被击中者之间。飞行路径的中点成了房间里最安静的地方。"
+          }
+        },
+        "fc4": {
+          "title": {
+            "pt": "RÁDIO TÁTICO",
+            "en": "TACTICAL RADIO",
+            "es": "RADIO TÁCTICA",
+            "de": "TAKTISCHES FUNKGERÄT",
+            "zh": "战术无线电"
+          },
+          "body": {
+            "pt": "Transmite ordens cruzadas, dois lados na mesma frequência. As vozes se contradizem sem se ouvir. Cada lado acha que fala sozinho, e os dois mandam avançar.",
+            "en": "Transmits crossed orders, both sides on the same frequency. The voices contradict each other without listening. Each side thinks it speaks alone, and both order the advance.",
+            "es": "Transmite órdenes cruzadas, ambos bandos en la misma frecuencia. Las voces se contradicen sin escucharse. Cada lado cree hablar solo, y ambos ordenan avanzar.",
+            "de": "Überträgt sich kreuzende Befehle, beide Seiten auf derselben Frequenz. Die Stimmen widersprechen sich, ohne einander zuzuhören. Jede Seite glaubt, allein zu sprechen, und beide befehlen den Vormarsch.",
+            "zh": "传出交错的命令，双方处在同一个频率上。声音彼此矛盾，却从不倾听。每一方都以为只有自己在说话，而双方都下令前进。"
+          }
+        },
+        "fc5": {
+          "title": {
+            "pt": "BARRICADA",
+            "en": "BARRICADE",
+            "es": "BARRICADA",
+            "de": "BARRIKADE",
+            "zh": "路障"
+          },
+          "body": {
+            "pt": "Estrutura improvisada, ainda fumegando. Feita de móveis, portas e o que tinha por perto. Uma casa desmontada às pressas para virar parede.",
+            "en": "Improvised structure, still smoking. Made of furniture, doors, and whatever was near. A home taken apart in haste to become a wall.",
+            "es": "Estructura improvisada, todavía humeante. Hecha con muebles, puertas y todo lo que había cerca. Una casa desmontada a toda prisa para convertirse en muro.",
+            "de": "Improvisierte Struktur, noch rauchend. Aus Möbeln, Türen und allem gebaut, was in der Nähe war. Ein Zuhause wurde hastig zerlegt, um zur Mauer zu werden.",
+            "zh": "临时搭建的结构，仍在冒烟。由家具、门和身边能找到的一切组成。一个家被匆忙拆开，变成一堵墙。"
+          }
+        },
+        "fc6": {
+          "title": {
+            "pt": "CAPACETE",
+            "en": "HELMET",
+            "es": "CASCO",
+            "de": "HELM",
+            "zh": "头盔"
+          },
+          "body": {
+            "pt": "Capacete amassado, sem identificação. Protegeu uma cabeça e perdeu o dono no mesmo instante. Serve para os dois lados, e por isso não diz de qual era.",
+            "en": "Dented helmet, no identification. It shielded a head and lost its owner in the same instant. It fits both sides, and so it will not say which it was.",
+            "es": "Casco abollado, sin identificación. Protegió una cabeza y perdió a su dueño en el mismo instante. Sirve para ambos bandos, y por eso no dirá cuál era.",
+            "de": "Verbeulter Helm ohne Kennzeichnung. Er schützte einen Kopf und verlor im selben Augenblick seinen Besitzer. Er passt beiden Seiten und verrät deshalb nicht, zu welcher er gehörte.",
+            "zh": "凹陷的头盔，没有任何身份标记。它保护了一个头，也在同一瞬间失去了主人。它适合双方，因此拒绝说明自己属于哪一边。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "ESFERA DE TRÉGUA",
+          "en": "TRUCE SPHERE",
+          "es": "ESFERA DE TREGUA",
+          "de": "WAFFENRUHE-KUGEL",
+          "zh": "停火之球"
+        },
+        "body": {
+          "pt": "Uma esfera de vidro guarda fumaça presa no centro. Gira devagar entre os dois lados. É a pausa feita objeto, o instante em que ninguém atira. Frágil como vidro, e por enquanto ninguém a quebrou.",
+          "en": "A glass sphere holds smoke trapped at its center. It turns slowly between both sides. It is the pause made object, the instant when no one fires. Fragile as glass, and for now no one has broken it.",
+          "es": "Una esfera de vidrio contiene humo atrapado en el centro. Gira lentamente entre ambos lados. Es la pausa convertida en objeto, el instante en que nadie dispara. Frágil como el vidrio, y por ahora nadie la ha roto.",
+          "de": "Eine Glaskugel hält Rauch in ihrem Zentrum gefangen. Sie dreht sich langsam zwischen beiden Seiten. Sie ist die Pause als Objekt, der Augenblick, in dem niemand schießt. Zerbrechlich wie Glas, und vorerst hat sie niemand zerbrochen.",
+          "zh": "玻璃球中央困着一团烟。它在双方之间缓慢旋转。它是被物化的暂停，是没有人开枪的那个瞬间。像玻璃一样脆弱，而至少现在还没有人打碎它。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "ATIRAR",
+              "en": "FIRE",
+              "es": "DISPARAR",
+              "de": "FEUERN",
+              "zh": "开火"
+            },
+            "detail": {
+              "pt": "o som chega antes do gesto",
+              "en": "the sound arrives before the gesture",
+              "es": "el sonido llega antes que el gesto",
+              "de": "der Klang kommt vor der Geste",
+              "zh": "声音先于动作到来"
+            },
+            "rastro": {
+              "sangue": 2
+            },
+            "next": "sala-06b-insurreicao.html"
+          },
+          {
+            "verb": {
+              "pt": "ABAIXAR AS ARMAS",
+              "en": "LOWER WEAPONS",
+              "es": "BAJAR LAS ARMAS",
+              "de": "WAFFEN SENKEN",
+              "zh": "放下武器"
+            },
+            "detail": {
+              "pt": "as mãos pesam mais que o metal",
+              "en": "hands weigh more than metal",
+              "es": "las manos pesan más que el metal",
+              "de": "Hände wiegen mehr als Metall",
+              "zh": "双手比金属更沉"
+            },
+            "rastro": {
+              "voz": 1,
+              "raiz": 1
+            },
+            "next": "sala-06a-ritual-sangue.html"
+          },
+          {
+            "verb": {
+              "pt": "FUGIR",
+              "en": "FLEE",
+              "es": "HUIR",
+              "de": "FLIEHEN",
+              "zh": "逃离"
+            },
+            "detail": {
+              "pt": "o caminho se abre na fumaça",
+              "en": "a path opens in the smoke",
+              "es": "se abre un camino en el humo",
+              "de": "im Rauch öffnet sich ein Weg",
+              "zh": "烟雾中打开一条路"
+            },
+            "rastro": {
+              "cinza": 1,
+              "espelho": 1
+            },
+            "next": "sala-06c-ritual-fusao.html"
+          }
+        ]
+      }
+    },
+    "sala-05c-viagem-cosmica": {
+      "stage": 5,
+      "name": {
+        "pt": "VIAGEM CÓSMICA",
+        "en": "COSMIC VOYAGE",
+        "es": "VIAJE CÓSMICO",
+        "de": "KOSMISCHE REISE",
+        "zh": "宇宙旅程"
+      },
+      "objects": {
+        "vc1": {
+          "title": {
+            "pt": "MAPA CELESTE",
+            "en": "STAR MAP",
+            "es": "MAPA ESTELAR",
+            "de": "STERNKARTE",
+            "zh": "星图"
+          },
+          "body": {
+            "pt": "Mapa rasurado à mão. As constelações não correspondem ao céu atual. Alguém redesenhou as estrelas para caberem outra história. As linhas antigas ainda aparecem por baixo.",
+            "en": "Hand marked map. The constellations do not match the current sky. Someone redrew the stars to fit another story. The old lines still show underneath.",
+            "es": "Mapa marcado a mano. Las constelaciones no coinciden con el cielo actual. Alguien redibujó las estrellas para que encajaran en otra historia. Debajo todavía se ven las líneas antiguas.",
+            "de": "Von Hand markierte Karte. Die Sternbilder stimmen nicht mit dem heutigen Himmel überein. Jemand hat die Sterne neu gezeichnet, damit sie zu einer anderen Geschichte passen. Die alten Linien sind darunter noch sichtbar.",
+            "zh": "手工标记的地图。星座与现在的天空不符。有人重新绘制了星星，让它们适应另一个故事。旧的连线仍能在下面看见。"
+          }
+        },
+        "vc2": {
+          "title": {
+            "pt": "ASTRO LÍQUIDO",
+            "en": "LIQUID STAR",
+            "es": "ESTRELLA LÍQUIDA",
+            "de": "FLÜSSIGER STERN",
+            "zh": "液态恒星"
+          },
+          "body": {
+            "pt": "Esfera em suspensão, núcleo móvel, comportamento de fluido. É uma estrela que esqueceu de ser sólida. Muda de forma devagar, procurando um centro que não fica quieto.",
+            "en": "Suspended sphere, moving core, fluid behaviour. It is a star that forgot to be solid. It shifts shape slowly, seeking a center that will not stay still.",
+            "es": "Esfera suspendida, núcleo móvil, comportamiento fluido. Es una estrella que olvidó ser sólida. Cambia de forma lentamente, buscando un centro que no permanece quieto.",
+            "de": "Schwebende Kugel, beweglicher Kern, fließendes Verhalten. Ein Stern, der vergessen hat, fest zu sein. Langsam verändert er seine Form und sucht ein Zentrum, das nicht stillsteht.",
+            "zh": "悬浮的球体，核心移动，呈现流体行为。它是一颗忘记如何保持固态的星。形状缓慢变化，寻找一个始终无法静止的中心。"
+          }
+        },
+        "vc3": {
+          "title": {
+            "pt": "FRAGMENTO ORBITAL",
+            "en": "ORBITAL FRAGMENT",
+            "es": "FRAGMENTO ORBITAL",
+            "de": "ORBITALFRAGMENT",
+            "zh": "轨道碎片"
+          },
+          "body": {
+            "pt": "Peça de satélite coberta por musgo, órbita decadente. Foi lançada para vigiar a Terra e a Terra a cobriu de volta. O verde tomou a máquina que a olhava de cima.",
+            "en": "Satellite piece covered in moss, decaying orbit. It was launched to watch the Earth and the Earth grew back over it. Green took the machine that watched from above.",
+            "es": "Pieza de satélite cubierta de musgo, órbita en decadencia. Fue lanzada para observar la Tierra y la Tierra volvió a crecer sobre ella. El verde tomó la máquina que miraba desde arriba.",
+            "de": "Mit Moos bedecktes Satellitenteil, zerfallende Umlaufbahn. Es wurde gestartet, um die Erde zu beobachten, und die Erde wuchs darüber zurück. Das Grün nahm die Maschine ein, die von oben zusah.",
+            "zh": "一块被苔藓覆盖的卫星部件，轨道正在衰减。它曾被发射去观察地球，而地球又重新生长到它的表面。绿色吞没了那台从上方凝视的机器。"
+          }
+        },
+        "vc4": {
+          "title": {
+            "pt": "CORAL ESPACIAL",
+            "en": "SPACE CORAL",
+            "es": "CORAL ESPACIAL",
+            "de": "WELTRAUMKORALLE",
+            "zh": "太空珊瑚"
+          },
+          "body": {
+            "pt": "Estrutura mineral com crescimento orgânico. Cresce como coral e brilha como circuito. Não se sabe se é fóssil do futuro ou semente de outro planeta.",
+            "en": "Mineral structure with organic growth. It grows like coral and glows like a circuit. No one knows if it is a fossil of the future or a seed from another planet.",
+            "es": "Estructura mineral con crecimiento orgánico. Crece como coral y brilla como un circuito. Nadie sabe si es un fósil del futuro o una semilla de otro planeta.",
+            "de": "Mineralische Struktur mit organischem Wachstum. Sie wächst wie Koralle und leuchtet wie ein Schaltkreis. Niemand weiß, ob sie ein Fossil der Zukunft oder ein Samen von einem anderen Planeten ist.",
+            "zh": "带有有机生长的矿物结构。它像珊瑚一样生长，像电路一样发光。没人知道它是未来的化石，还是来自另一颗行星的种子。"
+          }
+        },
+        "vc5": {
+          "title": {
+            "pt": "CABO FLUTUANTE",
+            "en": "FLOATING CABLE",
+            "es": "CABLE FLOTANTE",
+            "de": "SCHWEBENDES KABEL",
+            "zh": "漂浮电缆"
+          },
+          "body": {
+            "pt": "Sem ponto de ancoragem visível, tensão constante. As duas pontas somem no escuro. Está esticado como se segurasse algo pesado que a sala não mostra.",
+            "en": "No visible anchor point, constant tension. Both ends vanish into the dark. It is pulled taut as if it held something heavy the room does not show.",
+            "es": "Sin punto de anclaje visible, tensión constante. Ambos extremos desaparecen en la oscuridad. Está tensado como si sostuviera algo pesado que la sala no muestra.",
+            "de": "Kein sichtbarer Ankerpunkt, konstante Spannung. Beide Enden verschwinden im Dunkel. Es ist straff gezogen, als hielte es etwas Schweres, das der Raum nicht zeigt.",
+            "zh": "看不见任何固定点，却始终保持张力。两端都消失在黑暗中。它像是在拉住某个房间没有显示出来的沉重物体。"
+          }
+        },
+        "vc6": {
+          "title": {
+            "pt": "POEIRA",
+            "en": "DUST",
+            "es": "POLVO",
+            "de": "STAUB",
+            "zh": "尘埃"
+          },
+          "body": {
+            "pt": "Partículas suspensas, brilho intermitente. Cada grão acende e apaga fora de tempo com os outros. Junto, formam devagar o desenho de um bicho, e desmancham.",
+            "en": "Suspended particles, intermittent glow. Each grain lights and fades out of time with the rest. Together they slowly form the shape of an animal, and scatter.",
+            "es": "Partículas suspendidas, brillo intermitente. Cada grano se enciende y apaga fuera de tiempo respecto a los demás. Juntos forman lentamente la figura de un animal y se dispersan.",
+            "de": "Schwebende Partikel, intermittierendes Leuchten. Jedes Korn leuchtet und erlischt in einem anderen Takt. Gemeinsam bilden sie langsam die Form eines Tieres und zerstreuen sich wieder.",
+            "zh": "悬浮的颗粒，间歇发光。每一粒都与其他颗粒错开地亮起和熄灭。它们一起慢慢形成一个动物的轮廓，然后散开。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "CONSTELAÇÃO ONÇA-SEREIA",
+          "en": "JAGUAR-MERMAID CONSTELLATION",
+          "es": "CONSTELACIÓN JAGUAR-SIRENA",
+          "de": "JAGUAR-MEERJUNGFRAU-STERNBILD",
+          "zh": "美洲豹-美人鱼星座"
+        },
+        "body": {
+          "pt": "Móvel e instável, desenha e desfaz a silhueta de uma onça-sereia, sem nunca completar a forma. É o bicho que junta floresta e água, projetado no escuro como se fosse céu. Fica sempre a um traço de existir.",
+          "en": "Mobile and unstable, it draws and undoes the shape of a jaguar-mermaid, never complete. It is the animal that joins forest and water, cast on the dark as if it were sky. It stays always one stroke short of existing.",
+          "es": "Móvil e inestable, dibuja y deshace la figura de un jaguar-sirena, nunca completa. Es el animal que une bosque y agua, proyectado sobre la oscuridad como si fuera cielo. Siempre le falta un trazo para existir.",
+          "de": "Beweglich und instabil zeichnet und löscht es die Form einer Jaguar-Meerjungfrau, niemals vollständig. Es ist das Tier, das Wald und Wasser verbindet, in die Dunkelheit geworfen, als wäre sie Himmel. Zum Dasein fehlt ihm immer ein Strich.",
+          "zh": "它移动而不稳定，不断画出又抹去一只美洲豹-美人鱼的形状，从未完整。它把森林与水连接起来，被投向黑暗，仿佛黑暗就是天空。它总差最后一笔才真正存在。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "DISSOLVER",
+              "en": "DISSOLVE",
+              "es": "DISOLVERSE",
+              "de": "AUFLÖSEN",
+              "zh": "溶解"
+            },
+            "detail": {
+              "pt": "sua silhueta se mistura à constelação",
+              "en": "your silhouette blends into the constellation",
+              "es": "tu silueta se mezcla con la constelación",
+              "de": "deine Silhouette verschmilzt mit dem Sternbild",
+              "zh": "你的轮廓融入星座"
+            },
+            "rastro": {
+              "espelho": 1,
+              "cinza": 1
+            },
+            "next": "sala-06c-ritual-fusao.html"
+          },
+          {
+            "verb": {
+              "pt": "ORBITAR",
+              "en": "ORBIT",
+              "es": "ORBITAR",
+              "de": "UMKREISEN",
+              "zh": "环绕"
+            },
+            "detail": {
+              "pt": "você gira sem se aproximar",
+              "en": "you circle without getting closer",
+              "es": "giras sin acercarte",
+              "de": "du kreist, ohne näher zu kommen",
+              "zh": "你不断绕行，却没有靠近"
+            },
+            "rastro": {
+              "oleo": 1,
+              "espelho": 1
+            },
+            "next": "sala-06a-ritual-sangue.html"
+          },
+          {
+            "verb": {
+              "pt": "CAIR",
+              "en": "FALL BACK",
+              "es": "CAER DE NUEVO",
+              "de": "ZURÜCKFALLEN",
+              "zh": "再次坠落"
+            },
+            "detail": {
+              "pt": "o chão, quando chega, parece outro",
+              "en": "the ground, when it arrives, feels different",
+              "es": "el suelo, cuando llega, se siente diferente",
+              "de": "wenn der Boden kommt, fühlt er sich anders an",
+              "zh": "地面终于到来时，感觉已经不同"
+            },
+            "rastro": {
+              "raiz": 1,
+              "sangue": 1
+            },
+            "next": "sala-06b-insurreicao.html"
+          }
+        ]
+      }
+    },
+    "sala-06a-ritual-sangue": {
+      "stage": 6,
+      "name": {
+        "pt": "RITUAL DE ÁGUA E SANGUE",
+        "en": "RITUAL OF WATER AND BLOOD",
+        "es": "RITUAL DE AGUA Y SANGRE",
+        "de": "RITUAL AUS WASSER UND BLUT",
+        "zh": "水与血的仪式"
+      },
+      "objects": {
+        "rs1": {
+          "title": {
+            "pt": "TIGELA A",
+            "en": "BOWL A",
+            "es": "CUENCO A",
+            "de": "SCHALE A",
+            "zh": "碗 A"
+          },
+          "body": {
+            "pt": "Tigela rasa, resíduo escuro no fundo. O que ficou secou em anéis, um por vez. Cada anel marca uma vez em que ela foi usada e esvaziada.",
+            "en": "Shallow bowl, dark residue at the bottom. What was left dried in rings, one at a time. Each ring marks a time it was used and emptied.",
+            "es": "Cuenco poco profundo, residuo oscuro en el fondo. Lo que quedó se secó formando anillos, uno tras otro. Cada anillo marca una vez que fue usado y vaciado.",
+            "de": "Flache Schale, dunkle Rückstände am Boden. Was übrig blieb, trocknete Ring für Ring. Jeder Ring markiert eine Nutzung und eine Leerung.",
+            "zh": "浅碗，底部有深色残留物。留下的东西一圈一圈地干涸。每一道环形痕迹都记录了一次使用与清空。"
+          }
+        },
+        "rs2": {
+          "title": {
+            "pt": "TIGELA B",
+            "en": "BOWL B",
+            "es": "CUENCO B",
+            "de": "SCHALE B",
+            "zh": "碗 B"
+          },
+          "body": {
+            "pt": "Segunda tigela, líquido diferente, temperatura elevada. Está morna sem fonte de calor. Guarda o calor de um corpo que encostou aqui há pouco tempo.",
+            "en": "Second bowl, different liquid, elevated temperature. It is warm with no source of heat. It holds the warmth of a body that touched here not long ago.",
+            "es": "Segundo cuenco, líquido diferente, temperatura elevada. Está caliente sin fuente de calor. Conserva el calor de un cuerpo que lo tocó hace poco.",
+            "de": "Zweite Schale, andere Flüssigkeit, erhöhte Temperatur. Sie ist warm ohne Wärmequelle. Sie bewahrt die Wärme eines Körpers, der sie vor nicht langer Zeit berührt hat.",
+            "zh": "第二只碗，里面是不同的液体，温度偏高。没有热源，它却仍然温暖。它保存着不久前触碰这里的某具身体的热度。"
+          }
+        },
+        "rs3": {
+          "title": {
+            "pt": "TECIDO",
+            "en": "CLOTH",
+            "es": "TELA",
+            "de": "TUCH",
+            "zh": "布"
+          },
+          "body": {
+            "pt": "Tecido molhado com mancha irregular, não foi limpo de propósito. A mancha é a única escrita que sobrou do ato. Lavar seria apagar, e alguém escolheu guardar.",
+            "en": "Wet cloth with an irregular stain, left unclean on purpose. The stain is the only writing the act left behind. To wash it would be to erase, and someone chose to keep it.",
+            "es": "Tela mojada con una mancha irregular, dejada sin limpiar a propósito. La mancha es la única escritura que dejó el acto. Lavarla sería borrar, y alguien eligió conservarla.",
+            "de": "Nasses Tuch mit unregelmäßigem Fleck, absichtlich ungereinigt. Der Fleck ist die einzige Schrift, die die Handlung hinterließ. Ihn auszuwaschen hieße zu löschen, und jemand entschied sich, ihn zu bewahren.",
+            "zh": "湿布上有不规则污迹，被故意留下而没有清洗。污迹是这次行为留下的唯一文字。洗掉它就是抹除，而有人选择保留。"
+          }
+        },
+        "rs4": {
+          "title": {
+            "pt": "VASO",
+            "en": "VESSEL",
+            "es": "RECIPIENTE",
+            "de": "GEFÄSS",
+            "zh": "容器"
+          },
+          "body": {
+            "pt": "Água escura, superfície parada, reflexo não condiz com a sala. Mostra um teto que não é este. Talvez o teto do lugar onde a água foi tirada, guardado dentro dela.",
+            "en": "Dark water, still surface, reflection does not match the room. It shows a ceiling that is not this one. Maybe the ceiling of the place the water was drawn from, kept inside it.",
+            "es": "Agua oscura, superficie quieta, el reflejo no coincide con la sala. Muestra un techo que no es este. Quizá el techo del lugar de donde se extrajo el agua, guardado dentro de ella.",
+            "de": "Dunkles Wasser, stille Oberfläche, das Spiegelbild passt nicht zum Raum. Es zeigt eine Decke, die nicht diese ist. Vielleicht die Decke des Ortes, an dem das Wasser geschöpft wurde, in ihm bewahrt.",
+            "zh": "深色的水，表面静止，倒影与房间不符。它映出一个并非这里的天花板。也许是取水之地的天花板，被水带在内部。"
+          }
+        },
+        "rs5": {
+          "title": {
+            "pt": "MARCA CIRCULAR",
+            "en": "CIRCULAR MARK",
+            "es": "MARCA CIRCULAR",
+            "de": "KREISMARKIERUNG",
+            "zh": "圆形标记"
+          },
+          "body": {
+            "pt": "Marca no chão, diâmetro constante, repetida em outros pontos. Os círculos se alinham numa rota pela sala. Quem os fez andava sempre o mesmo caminho, sempre parando nos mesmos lugares.",
+            "en": "Mark on the floor, constant diameter, repeated elsewhere. The circles line up into a route through the room. Whoever made them walked the same path, always stopping at the same places.",
+            "es": "Marca en el suelo, diámetro constante, repetida en otros lugares. Los círculos se alinean formando una ruta por la sala. Quien los hizo recorrió el mismo camino, deteniéndose siempre en los mismos puntos.",
+            "de": "Markierung auf dem Boden, gleichbleibender Durchmesser, andernorts wiederholt. Die Kreise bilden eine Route durch den Raum. Wer sie machte, ging immer denselben Weg und hielt an denselben Stellen.",
+            "zh": "地板上的标记，直径始终一致，在其他地方也反复出现。这些圆连接成一条穿过房间的路线。留下它们的人总走同一条路，也总在同样的位置停下。"
+          }
+        },
+        "rs6": {
+          "title": {
+            "pt": "PEDRA VERMELHA",
+            "en": "RED STONE",
+            "es": "PIEDRA ROJA",
+            "de": "ROTER STEIN",
+            "zh": "红石"
+          },
+          "body": {
+            "pt": "Pedra lisa, quente ao toque. Foi gasta de tanto ser segurada. A cor não é tinta, é o que ela absorveu de tudo que passou pela mão de quem a usava.",
+            "en": "Smooth stone, warm to the touch. It was worn smooth from being held. The color is not paint, it is what it soaked up from all that passed through the hand that used it.",
+            "es": "Piedra lisa, cálida al tacto. Se volvió suave de tanto ser sostenida. El color no es pintura: es lo que absorbió de todo lo que pasó por la mano que la usó.",
+            "de": "Glatter Stein, warm bei Berührung. Er wurde durch das Halten glatt. Die Farbe ist keine Farbe, sondern das, was er von allem aufnahm, das durch die Hand ging, die ihn benutzte.",
+            "zh": "光滑的石头，触摸时温暖。它因为长期被握持而磨得平滑。颜色不是涂料，而是它从那只使用它的手所经过的一切中吸收来的。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "BACIA NEGRA",
+          "en": "BLACK BASIN",
+          "es": "CUENCO NEGRO",
+          "de": "SCHWARZES BECKEN",
+          "zh": "黑色水盆"
+        },
+        "body": {
+          "pt": "Uma gota vermelha cai em loop e se transforma em iridescência antes de sumir. Sangue vira óleo vira ouro, e recomeça. É o ritual reduzido ao mínimo gesto, repetido até virar imagem que não pede explicação.",
+          "en": "A red drop falls in a loop, turning iridescent before it disappears. Blood becomes oil becomes gold, and starts again. It is ritual reduced to the smallest gesture, repeated until it becomes an image that asks for no explanation.",
+          "es": "Una gota roja cae en bucle, se vuelve iridiscente antes de desaparecer. Sangre se vuelve aceite, aceite se vuelve oro, y todo empieza de nuevo. Es el ritual reducido al gesto más pequeño, repetido hasta convertirse en una imagen que no pide explicación.",
+          "de": "Ein roter Tropfen fällt in einer Schleife, wird schillernd und verschwindet. Blut wird Öl, Öl wird Gold, dann beginnt alles wieder. Ritual auf die kleinste Geste reduziert, wiederholt, bis daraus ein Bild wird, das keine Erklärung verlangt.",
+          "zh": "一滴红色液体循环落下，在消失前变得虹彩。血变成油，油变成黄金，然后再次开始。仪式被缩减到最小的动作，不断重复，直到成为一个无需解释的影像。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "SANGRAR",
+              "en": "BLEED",
+              "es": "SANGRAR",
+              "de": "BLUTEN",
+              "zh": "流血"
+            },
+            "detail": {
+              "pt": "escrever com o corpo",
+              "en": "writing with the body",
+              "es": "escribir con el cuerpo",
+              "de": "mit dem Körper schreiben",
+              "zh": "用身体书写"
+            },
+            "rastro": {
+              "sangue": 2
+            },
+            "next": "sala-07-final.html"
+          },
+          {
+            "verb": {
+              "pt": "LAVAR",
+              "en": "WASH",
+              "es": "LAVAR",
+              "de": "WASCHEN",
+              "zh": "清洗"
+            },
+            "detail": {
+              "pt": "limpa e mancha ao mesmo tempo",
+              "en": "it cleans and stains at once",
+              "es": "limpia y mancha al mismo tiempo",
+              "de": "es reinigt und befleckt zugleich",
+              "zh": "同时清洁，也同时染污"
+            },
+            "rastro": {
+              "oleo": 1,
+              "espelho": 1
+            },
+            "next": "sala-07-final.html"
+          },
+          {
+            "verb": {
+              "pt": "BEBER",
+              "en": "DRINK",
+              "es": "BEBER",
+              "de": "TRINKEN",
+              "zh": "饮下"
+            },
+            "detail": {
+              "pt": "o gosto muda depois de engolir",
+              "en": "the taste changes after swallowing",
+              "es": "el sabor cambia después de tragar",
+              "de": "der Geschmack verändert sich nach dem Schlucken",
+              "zh": "吞咽之后，味道发生变化"
+            },
+            "rastro": {
+              "sangue": 1,
+              "raiz": 1
+            },
+            "next": "sala-07-final.html"
+          }
+        ]
+      }
+    },
+    "sala-06b-insurreicao": {
+      "stage": 6,
+      "name": {
+        "pt": "INSURREIÇÃO",
+        "en": "INSURRECTION",
+        "es": "INSURRECCIÓN",
+        "de": "AUFSTAND",
+        "zh": "起义"
+      },
+      "objects": {
+        "ins1": {
+          "title": {
+            "pt": "BANDEIRA A",
+            "en": "FLAG A",
+            "es": "BANDERA A",
+            "de": "FLAGGE A",
+            "zh": "旗帜 A"
+          },
+          "body": {
+            "pt": "Tecido rasgado, símbolo parcialmente visível. O rasgo não é do tempo, é de uso. Foi puxada de muitas mãos ao mesmo tempo e resistiu.",
+            "en": "Torn fabric, symbol partly visible. The tear is not from time, it is from use. It was pulled by many hands at once and held.",
+            "es": "Tela rasgada, símbolo parcialmente visible. El desgarro no viene del tiempo, sino del uso. Muchas manos tiraron de ella al mismo tiempo y resistió.",
+            "de": "Zerrissenes Tuch, Symbol teilweise sichtbar. Der Riss stammt nicht von der Zeit, sondern vom Gebrauch. Viele Hände zogen gleichzeitig daran, und es hielt stand.",
+            "zh": "撕裂的布料，图案部分可见。这道裂口不是岁月造成的，而是使用留下的。许多只手同时拉扯它，而它撑住了。"
+          }
+        },
+        "ins2": {
+          "title": {
+            "pt": "BANDEIRA B",
+            "en": "FLAG B",
+            "es": "BANDERA B",
+            "de": "FLAGGE B",
+            "zh": "旗帜 B"
+          },
+          "body": {
+            "pt": "Segunda bandeira, cor diferente, mesmo rasgo. Foi feita depois da primeira, copiando até o dano. O gesto virou modelo, o modelo virou movimento.",
+            "en": "Second flag, different color, same tear. It was made after the first, copying even the damage. The gesture became a template, the template became a movement.",
+            "es": "Segunda bandera, color diferente, mismo desgarro. Fue hecha después de la primera, copiando incluso el daño. El gesto se volvió modelo y el modelo se volvió movimiento.",
+            "de": "Zweite Flagge, andere Farbe, derselbe Riss. Sie entstand nach der ersten und kopierte sogar den Schaden. Die Geste wurde zur Vorlage, die Vorlage zur Bewegung.",
+            "zh": "第二面旗帜，颜色不同，却有同样的裂口。它在第一面之后被制作，甚至复制了损伤。动作变成模板，模板又变成运动。"
+          }
+        },
+        "ins3": {
+          "title": {
+            "pt": "TAMBOR",
+            "en": "DRUM",
+            "es": "TAMBOR",
+            "de": "TROMMEL",
+            "zh": "鼓"
+          },
+          "body": {
+            "pt": "Membrana de metal, vibração ainda perceptível. Encoste a mão e sente o último toque, ainda vivo no material. O ritmo não terminou, só ficou baixo demais para ouvir.",
+            "en": "Metal membrane, vibration still perceptible. Touch it and feel the last beat, still alive in the material. The rhythm did not end, it only dropped too low to hear.",
+            "es": "Membrana de metal, la vibración todavía es perceptible. Tócala y siente el último golpe, aún vivo en el material. El ritmo no terminó: simplemente cayó por debajo de lo audible.",
+            "de": "Metallmembran, Vibration noch spürbar. Berühre sie und fühle den letzten Schlag, noch lebendig im Material. Der Rhythmus endete nicht, er wurde nur zu tief, um ihn zu hören.",
+            "zh": "金属鼓膜，振动仍能感受到。触摸它，可以感觉到最后一次敲击仍活在材料里。节奏并没有结束，只是低到无法听见。"
+          }
+        },
+        "ins4": {
+          "title": {
+            "pt": "BARRICADA",
+            "en": "BARRICADE",
+            "es": "BARRICADA",
+            "de": "BARRIKADE",
+            "zh": "路障"
+          },
+          "body": {
+            "pt": "Pedaço de estrutura, marcas de impacto recentes. Foi feita para segurar e segurou. As marcas contam de que lado veio a força, e de que lado ela parou.",
+            "en": "Piece of structure, recent impact marks. It was made to hold and it held. The marks tell which side the force came from, and which side it stopped.",
+            "es": "Fragmento de estructura, marcas de impacto recientes. Fue hecha para resistir y resistió. Las marcas dicen de qué lado llegó la fuerza y de qué lado se detuvo.",
+            "de": "Stück einer Struktur, frische Einschlagspuren. Sie wurde gebaut, um standzuhalten, und sie hielt. Die Spuren zeigen, von welcher Seite die Kraft kam und auf welcher Seite sie gestoppt wurde.",
+            "zh": "一块结构残片，带有新近的撞击痕迹。它被制造来抵挡，而它确实抵挡住了。痕迹说明力量从哪一边来，又在哪一边停止。"
+          }
+        },
+        "ins5": {
+          "title": {
+            "pt": "OBJETOS",
+            "en": "OBJECTS",
+            "es": "OBJETOS",
+            "de": "GEGENSTÄNDE",
+            "zh": "物件"
+          },
+          "body": {
+            "pt": "Conjunto de pequenos itens, nenhum identificado. São coisas de bolso, deixadas juntas às pressas. Cada uma pertenceu a um corpo que precisou ter as mãos livres.",
+            "en": "Set of small items, none identified. They are pocket things, left together in haste. Each one belonged to a body that needed its hands free.",
+            "es": "Conjunto de pequeños objetos, ninguno identificado. Son cosas de bolsillo, dejadas juntas con prisa. Cada una perteneció a un cuerpo que necesitó tener las manos libres.",
+            "de": "Sammlung kleiner Dinge, keines identifiziert. Taschensachen, hastig zusammen abgelegt. Jedes gehörte zu einem Körper, der seine Hände frei haben musste.",
+            "zh": "一组小物品，没有一个能够确认身份。都是口袋里的东西，被匆忙放在一起。每一样都曾属于一具需要腾出双手的身体。"
+          }
+        },
+        "ins6": {
+          "title": {
+            "pt": "PROJEÇÃO",
+            "en": "PROJECTION",
+            "es": "PROYECCIÓN",
+            "de": "PROJEKTION",
+            "zh": "投影"
+          },
+          "body": {
+            "pt": "Sombra de corpo em movimento, sem fonte aparente. A sombra anda sem quem a faça. Repete o mesmo gesto de erguer algo, de novo e de novo, sem cansar.",
+            "en": "Shadow of a moving body, no apparent source. The shadow walks with no one to cast it. It repeats the same gesture of raising something, again and again, without tiring.",
+            "es": "Sombra de un cuerpo en movimiento, sin fuente aparente. La sombra camina sin nadie que la proyecte. Repite el mismo gesto de levantar algo, una y otra vez, sin cansarse.",
+            "de": "Schatten eines bewegten Körpers ohne erkennbare Quelle. Der Schatten geht, ohne dass jemand ihn wirft. Immer wieder hebt er etwas hoch, ohne müde zu werden.",
+            "zh": "移动身体的影子，却没有明显来源。影子在没有任何人投射它的情况下行走。它不断重复举起某物的动作，一次又一次，永不疲倦。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "MÁSCARA COLETIVA",
+          "en": "COLLECTIVE MASK",
+          "es": "MÁSCARA COLECTIVA",
+          "de": "KOLLEKTIVE MASKE",
+          "zh": "集体面具"
+        },
+        "body": {
+          "pt": "Muitas faces se sobrepõem nesta máscara enorme. Nenhuma é a principal, e todas se movem juntas. É o rosto que a multidão faz quando decide ter um só. Cabe em qualquer um e não devolve nenhuma cara sozinha.",
+          "en": "Many faces overlap in this enormous mask. None is the main one, and all move together. It is the face a crowd makes when it decides to have just one. It fits anyone and gives back no single face alone.",
+          "es": "Muchos rostros se superponen en esta máscara enorme. Ninguno es el principal y todos se mueven juntos. Es el rostro que forma una multitud cuando decide tener uno solo. Le sirve a cualquiera y no devuelve ningún rostro individual.",
+          "de": "Viele Gesichter überlagern sich in dieser riesigen Maske. Keines ist das Hauptgesicht, und alle bewegen sich gemeinsam. Es ist das Gesicht, das eine Menge formt, wenn sie beschließt, nur eines zu haben. Sie passt jedem und gibt kein einzelnes Gesicht zurück.",
+          "zh": "许多张脸重叠在这张巨大面具上。没有哪一张是主角，而它们全部一起移动。这是一群人决定只拥有一张脸时形成的面孔。它适合任何人，却不会单独还给任何一张脸。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "ERGUER",
+              "en": "RAISE",
+              "es": "LEVANTAR",
+              "de": "ERHEBEN",
+              "zh": "举起"
+            },
+            "detail": {
+              "pt": "a sala parece responder ao gesto",
+              "en": "the room seems to answer the gesture",
+              "es": "la sala parece responder al gesto",
+              "de": "der Raum scheint auf die Geste zu antworten",
+              "zh": "房间仿佛回应这个动作"
+            },
+            "rastro": {
+              "ouro": 1,
+              "voz": 1
+            },
+            "next": "sala-07-final.html"
+          },
+          {
+            "verb": {
+              "pt": "INCENDIAR",
+              "en": "SET ALIGHT",
+              "es": "PRENDER FUEGO",
+              "de": "ENTZÜNDEN",
+              "zh": "点燃"
+            },
+            "detail": {
+              "pt": "o ar fica mais pesado",
+              "en": "the air grows heavier",
+              "es": "el aire se vuelve más pesado",
+              "de": "die Luft wird schwerer",
+              "zh": "空气变得更沉重"
+            },
+            "rastro": {
+              "cinza": 2,
+              "sangue": 1
+            },
+            "next": "sala-07-final.html"
+          },
+          {
+            "verb": {
+              "pt": "DESAPARECER",
+              "en": "DISAPPEAR",
+              "es": "DESAPARECER",
+              "de": "VERSCHWINDEN",
+              "zh": "消失"
+            },
+            "detail": {
+              "pt": "seu contorno se perde nas sombras",
+              "en": "your outline is lost in the shadows",
+              "es": "tu contorno se pierde entre las sombras",
+              "de": "deine Kontur verliert sich in den Schatten",
+              "zh": "你的轮廓消失在阴影中"
+            },
+            "rastro": {
+              "espelho": 2,
+              "voz": 1
+            },
+            "next": "sala-07-final.html"
+          }
+        ]
+      }
+    },
+    "sala-06c-ritual-fusao": {
+      "stage": 6,
+      "name": {
+        "pt": "RITUAL DE FUSÃO",
+        "en": "RITUAL OF FUSION",
+        "es": "RITUAL DE FUSIÓN",
+        "de": "RITUAL DER VERSCHMELZUNG",
+        "zh": "融合仪式"
+      },
+      "objects": {
+        "fu1": {
+          "title": {
+            "pt": "FRAGMENTO ÓLEO",
+            "en": "OIL FRAGMENT",
+            "es": "FRAGMENTO DE ACEITE",
+            "de": "ÖLFRAGMENT",
+            "zh": "油之碎片"
+          },
+          "body": {
+            "pt": "Resíduo da primeira sala, ainda muda de cor. Atravessou todo o percurso sem secar. Guarda, em pequena escala, o brilho de onde tudo começou.",
+            "en": "Residue from the first room, still changing color. It crossed the whole path without drying. It keeps, in small scale, the shine of where everything began.",
+            "es": "Residuo de la primera sala, todavía cambiando de color. Atravesó todo el recorrido sin secarse. Conserva, a pequeña escala, el brillo del lugar donde todo comenzó.",
+            "de": "Rückstand aus dem ersten Raum, noch immer die Farbe wechselnd. Er durchquerte den ganzen Weg, ohne zu trocknen. Im Kleinen bewahrt er den Glanz des Ortes, an dem alles begann.",
+            "zh": "来自第一个房间的残留物，仍在不断变色。它走过整条路径，却从未干涸。它以很小的尺度保存着一切开始之处的光泽。"
+          }
+        },
+        "fu2": {
+          "title": {
+            "pt": "FRAGMENTO OURO",
+            "en": "GOLD FRAGMENT",
+            "es": "FRAGMENTO DE ORO",
+            "de": "GOLDFRAGMENT",
+            "zh": "黄金碎片"
+          },
+          "body": {
+            "pt": "Liga corroída, peso inalterado. Perdeu o brilho e não perdeu a gravidade. Continua puxando para baixo com a mesma força de sempre.",
+            "en": "Corroded alloy, weight unchanged. It lost its shine and not its gravity. It keeps pulling down with the same force as always.",
+            "es": "Aleación corroída, peso sin cambios. Perdió el brillo pero no la gravedad. Sigue tirando hacia abajo con la misma fuerza de siempre.",
+            "de": "Korrodierte Legierung, Gewicht unverändert. Der Glanz ging verloren, nicht die Schwerkraft. Sie zieht noch immer mit derselben Kraft nach unten.",
+            "zh": "被腐蚀的合金，重量没有变化。它失去了光泽，却没有失去重力。它仍以和从前完全相同的力量向下拉扯。"
+          }
+        },
+        "fu3": {
+          "title": {
+            "pt": "FRAGMENTO ESPELHO",
+            "en": "MIRROR FRAGMENT",
+            "es": "FRAGMENTO DE ESPEJO",
+            "de": "SPIEGELFRAGMENT",
+            "zh": "镜子碎片"
+          },
+          "body": {
+            "pt": "Vidro rachado, reflexo incompleto. Mostra só um pedaço de quem olha, sempre o mesmo pedaço. Escolheu qual parte de você vai lembrar.",
+            "en": "Cracked glass, incomplete reflection. It shows only a piece of whoever looks, always the same piece. It chose which part of you it will remember.",
+            "es": "Vidrio agrietado, reflejo incompleto. Muestra solo una parte de quien mira, siempre la misma. Eligió qué parte de ti recordará.",
+            "de": "Gesprungenes Glas, unvollständiges Spiegelbild. Es zeigt nur einen Teil der betrachtenden Person, immer denselben. Es hat entschieden, welchen Teil von dir es erinnern wird.",
+            "zh": "裂开的玻璃，不完整的倒影。它只显示观看者的一部分，而且总是同一部分。它已经选择了要记住你的哪一处。"
+          }
+        },
+        "fu4": {
+          "title": {
+            "pt": "FRAGMENTO RAIZ",
+            "en": "ROOT FRAGMENT",
+            "es": "FRAGMENTO DE RAÍZ",
+            "de": "WURZELFRAGMENT",
+            "zh": "根之碎片"
+          },
+          "body": {
+            "pt": "Estrutura orgânica com circuito ativo. Continua crescendo mesmo cortada em pedaço. Procura terra dentro de uma vitrine, e não desiste.",
+            "en": "Organic structure with an active circuit. It keeps growing even cut to a fragment. It searches for soil inside a display case, and does not give up.",
+            "es": "Estructura orgánica con un circuito activo. Sigue creciendo incluso reducida a un fragmento. Busca tierra dentro de una vitrina y no se rinde.",
+            "de": "Organische Struktur mit aktivem Schaltkreis. Selbst als Fragment wächst sie weiter. In einer Vitrine sucht sie nach Erde und gibt nicht auf.",
+            "zh": "带有活跃电路的有机结构。即使被切成碎片，它仍继续生长。它在展示柜里寻找土壤，从不放弃。"
+          }
+        },
+        "fu5": {
+          "title": {
+            "pt": "FRAGMENTO SANGUE",
+            "en": "BLOOD FRAGMENT",
+            "es": "FRAGMENTO DE SANGRE",
+            "de": "BLUTFRAGMENT",
+            "zh": "血之碎片"
+          },
+          "body": {
+            "pt": "Líquido em suspensão, cor instável. Muda de tom conforme quem chega. Reconhece corpo e responde, guardando a memória de cada aproximação.",
+            "en": "Liquid in suspension, unstable color. It shifts tone with whoever arrives. It recognizes a body and answers, keeping the memory of each approach.",
+            "es": "Líquido en suspensión, color inestable. Cambia de tono según quien llega. Reconoce un cuerpo y responde, guardando la memoria de cada aproximación.",
+            "de": "Flüssigkeit in Suspension, instabile Farbe. Der Farbton verändert sich mit den Ankommenden. Sie erkennt einen Körper und antwortet, bewahrt die Erinnerung an jede Annäherung.",
+            "zh": "悬浮液体，颜色不稳定。不同的人到来时，它会改变色调。它能辨认身体并作出回应，保存每一次靠近的记忆。"
+          }
+        },
+        "fu6": {
+          "title": {
+            "pt": "FRAGMENTO VOZ",
+            "en": "VOICE FRAGMENT",
+            "es": "FRAGMENTO DE VOZ",
+            "de": "STIMMENFRAGMENT",
+            "zh": "声音碎片"
+          },
+          "body": {
+            "pt": "Pequeno alto-falante repete uma sílaba. É o resto de uma palavra que se perdeu pelo caminho. Insiste na única parte dela que sobreviveu à travessia.",
+            "en": "Small speaker repeats a single syllable. It is the remainder of a word lost along the way. It insists on the only part of it that survived the crossing.",
+            "es": "Un pequeño altavoz repite una sola sílaba. Es el resto de una palabra perdida en el camino. Insiste en la única parte que sobrevivió al cruce.",
+            "de": "Ein kleiner Lautsprecher wiederholt eine einzige Silbe. Sie ist der Rest eines Wortes, das unterwegs verloren ging. Er beharrt auf dem einzigen Teil, der die Durchquerung überlebt hat.",
+            "zh": "小型扬声器重复着一个音节。那是一个沿途丢失的词留下的残余。它执着于唯一成功穿越整条路径的部分。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "OROЯO INCOMPLETA",
+          "en": "INCOMPLETE OROЯO",
+          "es": "OROЯO INCOMPLETO",
+          "de": "UNVOLLSTÄNDIGES OROЯO",
+          "zh": "不完整的 OROЯO"
+        },
+        "body": {
+          "pt": "Formada por partículas de todas as salas, gira devagar, incompleta por escolha. Junta óleo, ouro, raiz, sangue, espelho e voz numa silhueta que se recusa a fechar. Estar inteira seria parar, e ela ainda se move.",
+          "en": "Formed from particles of every room, it turns slowly, incomplete by choice. It gathers oil, gold, root, blood, mirror, and voice into a silhouette that refuses to close. To be whole would be to stop, and it is still moving.",
+          "es": "Formado por partículas de todas las salas, gira lentamente, incompleto por elección. Reúne aceite, oro, raíz, sangre, espejo y voz en una silueta que se niega a cerrarse. Estar completo sería detenerse, y todavía sigue en movimiento.",
+          "de": "Aus Partikeln aller Räume geformt dreht es sich langsam, aus eigener Wahl unvollständig. Öl, Gold, Wurzel, Blut, Spiegel und Stimme sammeln sich in einer Silhouette, die sich weigert, sich zu schließen. Ganz zu sein hieße stillzustehen, und sie bewegt sich noch.",
+          "zh": "它由每一个房间的粒子构成，缓慢旋转，并主动选择保持不完整。油、黄金、根、血、镜子和声音汇成一个拒绝闭合的轮廓。完整就意味着停止，而它仍在移动。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "FUNDIR",
+              "en": "MERGE",
+              "es": "FUSIONAR",
+              "de": "VERSCHMELZEN",
+              "zh": "融合"
+            },
+            "detail": {
+              "pt": "os fragmentos encontram um encaixe possível",
+              "en": "the fragments find a possible fit",
+              "es": "los fragmentos encuentran un encaje posible",
+              "de": "die Fragmente finden eine mögliche Passform",
+              "zh": "碎片找到一种可能的契合方式"
+            },
+            "rastro": {
+              "raiz": 1,
+              "ouro": 1
+            },
+            "next": "sala-07-final.html"
+          },
+          {
+            "verb": {
+              "pt": "DIVIDIR",
+              "en": "DIVIDE",
+              "es": "DIVIDIR",
+              "de": "TEILEN",
+              "zh": "分裂"
+            },
+            "detail": {
+              "pt": "a silhueta se multiplica",
+              "en": "the silhouette multiplies",
+              "es": "la silueta se multiplica",
+              "de": "die Silhouette vervielfacht sich",
+              "zh": "轮廓不断复制"
+            },
+            "rastro": {
+              "espelho": 1,
+              "voz": 1
+            },
+            "next": "sala-07-final.html"
+          },
+          {
+            "verb": {
+              "pt": "RENASCER",
+              "en": "BE REBORN",
+              "es": "RENACER",
+              "de": "NEUGEBOREN WERDEN",
+              "zh": "重生"
+            },
+            "detail": {
+              "pt": "tudo recua até um ponto anterior",
+              "en": "everything recedes to an earlier point",
+              "es": "todo retrocede hasta un punto anterior",
+              "de": "alles weicht zu einem früheren Punkt zurück",
+              "zh": "一切退回到更早的节点"
+            },
+            "rastro": {
+              "cinza": 1,
+              "oleo": 1
+            },
+            "next": "sala-07-final.html"
+          }
+        ]
+      }
+    },
+    "sala-07-final": {
+      "stage": 7,
+      "name": {
+        "pt": "LIMIAR",
+        "en": "THRESHOLD",
+        "es": "UMBRAL",
+        "de": "SCHWELLE",
+        "zh": "门槛"
+      },
+      "objects": {
+        "fi1": {
+          "title": {
+            "pt": "ÓLEO",
+            "en": "OIL",
+            "es": "ACEITE",
+            "de": "ÖL",
+            "zh": "油"
+          },
+          "body": {
+            "pt": "O primeiro brilho ainda está aqui, sob a poeira. É o mesmo óleo do ovo da gênese, mais velho e mais quieto. Reconhece quem chegou até aqui.",
+            "en": "The first shine is still here, under the dust. It is the same oil from the egg of the genesis, older and quieter. It recognizes whoever made it this far.",
+            "es": "El primer brillo sigue aquí, bajo el polvo. Es el mismo aceite del huevo de la génesis, más viejo y más quieto. Reconoce a quien logró llegar hasta aquí.",
+            "de": "Der erste Glanz ist noch hier, unter dem Staub. Es ist dasselbe Öl aus dem Ei der Genese, älter und stiller. Es erkennt, wer es bis hierher geschafft hat.",
+            "zh": "最初的光泽仍在这里，藏在尘埃下面。它还是创世之卵里的那种油，只是更古老、更安静。它认得那些真正走到这里的人。"
+          }
+        },
+        "fi2": {
+          "title": {
+            "pt": "OURO",
+            "en": "GOLD",
+            "es": "ORO",
+            "de": "GOLD",
+            "zh": "黄金"
+          },
+          "body": {
+            "pt": "O peso não diminuiu. Carregou o percurso inteiro e continua pesando o mesmo. O que ele guarda dentro não se gasta com a viagem.",
+            "en": "The weight has not lessened. It bore the whole journey and still weighs the same. What it holds inside does not wear down with the crossing.",
+            "es": "El peso no ha disminuido. Cargó con todo el recorrido y sigue pesando lo mismo. Lo que guarda dentro no se desgasta con el cruce.",
+            "de": "Das Gewicht hat nicht abgenommen. Es trug die ganze Reise und wiegt noch immer gleich viel. Was es in sich bewahrt, nutzt sich auf dem Weg nicht ab.",
+            "zh": "重量没有减轻。它承载了整段旅程，如今仍然同样沉重。它内部保存的东西不会因为穿越而磨损。"
+          }
+        },
+        "fi3": {
+          "title": {
+            "pt": "ESPELHO",
+            "en": "MIRROR",
+            "es": "ESPEJO",
+            "de": "SPIEGEL",
+            "zh": "镜子"
+          },
+          "body": {
+            "pt": "Cada caco mostra uma versão diferente do mesmo rosto. São todas as escolhas feitas no caminho, guardadas em pedaços de vidro. Juntas, ainda não fecham numa cara só.",
+            "en": "Each shard shows a different version of the same face. They are all the choices made along the way, kept in pieces of glass. Together, they still do not close into one face.",
+            "es": "Cada fragmento muestra una versión diferente del mismo rostro. Son todas las decisiones tomadas en el camino, guardadas en pedazos de vidrio. Juntas, todavía no cierran en una sola cara.",
+            "de": "Jede Scherbe zeigt eine andere Version desselben Gesichts. Es sind all die Entscheidungen des Weges, in Glasstücken bewahrt. Zusammen schließen sie sich noch immer nicht zu einem einzigen Gesicht.",
+            "zh": "每一片碎镜都显示同一张脸的不同版本。那是一路上所有选择，被保存在玻璃碎片里。即使放在一起，它们仍无法闭合成唯一的一张脸。"
+          }
+        },
+        "fi4": {
+          "title": {
+            "pt": "RAIZ",
+            "en": "ROOT",
+            "es": "RAÍZ",
+            "de": "WURZEL",
+            "zh": "根"
+          },
+          "body": {
+            "pt": "Continua crescendo, mesmo aqui. Chegou ao fim do percurso e não parou. Procura, no limiar, uma terra que talvez esteja do outro lado.",
+            "en": "Still growing, even here. It reached the end of the path and did not stop. At the threshold, it searches for a soil that maybe lies on the other side.",
+            "es": "Sigue creciendo, incluso aquí. Llegó al final del camino y no se detuvo. En el umbral busca una tierra que quizá esté al otro lado.",
+            "de": "Sie wächst weiter, selbst hier. Sie erreichte das Ende des Weges und hörte nicht auf. An der Schwelle sucht sie nach Erde, die vielleicht auf der anderen Seite liegt.",
+            "zh": "即使到了这里，它仍在继续生长。它抵达路径尽头，却没有停止。在门槛处，它寻找一片也许存在于另一侧的土地。"
+          }
+        },
+        "fi5": {
+          "title": {
+            "pt": "SANGUE",
+            "en": "BLOOD",
+            "es": "SANGRE",
+            "de": "BLUT",
+            "zh": "血"
+          },
+          "body": {
+            "pt": "A cor muda conforme alguém se aproxima. Guardou a memória de cada corpo que passou pelas salas. Diante de você, escolhe um tom que só você viu.",
+            "en": "The color shifts as someone approaches. It kept the memory of every body that passed through the rooms. Before you, it picks a tone only you have seen.",
+            "es": "El color cambia cuando alguien se acerca. Guardó la memoria de cada cuerpo que pasó por las salas. Ante ti elige un tono que solo tú has visto.",
+            "de": "Die Farbe verändert sich, wenn sich jemand nähert. Es bewahrte die Erinnerung an jeden Körper, der die Räume durchquerte. Vor dir wählt es einen Ton, den nur du gesehen hast.",
+            "zh": "有人靠近时，颜色会改变。它保存着每一具穿过这些房间的身体的记忆。面对你，它选择一种只有你见过的色调。"
+          }
+        },
+        "fi6": {
+          "title": {
+            "pt": "VOZ",
+            "en": "VOICE",
+            "es": "VOZ",
+            "de": "STIMME",
+            "zh": "声音"
+          },
+          "body": {
+            "pt": "Repete, baixinho, tudo o que foi dito nas salas anteriores. É o arquivo do percurso inteiro, falado sem parar. Reconhece as suas escolhas entre todas as outras.",
+            "en": "Quietly repeats everything said in the rooms before. It is the archive of the whole crossing, spoken without pause. It knows your choices among all the others.",
+            "es": "Repite en voz baja todo lo dicho en las salas anteriores. Es el archivo de todo el recorrido, hablado sin pausa. Reconoce tus elecciones entre todas las demás.",
+            "de": "Leise wiederholt sie alles, was in den vorherigen Räumen gesagt wurde. Sie ist das Archiv der gesamten Durchquerung, ohne Pause gesprochen. Unter all den anderen erkennt sie deine Entscheidungen.",
+            "zh": "它低声重复之前房间里说过的一切。这是整段穿越的档案，不停地被说出。在所有其他选择之中，它认得属于你的那些。"
+          }
+        }
+      },
+      "central": {
+        "title": {
+          "pt": "OROЯO",
+          "en": "OROЯO",
+          "es": "OROЯO",
+          "de": "OROЯO",
+          "zh": "OROЯO"
+        },
+        "body": {
+          "pt": "Uma silhueta incompleta, feita de tudo o que foi absorvido, recusado e transformado até aqui. Ela tem a sua forma, montada com os rastros que você deixou. No limiar, decide se o percurso recomeça ou se dissolve em outro.",
+          "en": "An incomplete silhouette, made of everything absorbed, refused, and transformed so far. It has your shape, assembled from the traces you left. At the threshold, it decides whether the crossing starts over or dissolves into another.",
+          "es": "Una silueta incompleta, hecha de todo lo absorbido, rechazado y transformado hasta aquí. Tiene tu forma, ensamblada con los rastros que dejaste. En el umbral decide si el cruce vuelve a comenzar o se disuelve en otro.",
+          "de": "Eine unvollständige Silhouette, gemacht aus allem, was bisher aufgenommen, abgelehnt und verwandelt wurde. Sie hat deine Form, zusammengesetzt aus den Spuren, die du hinterlassen hast. An der Schwelle entscheidet sie, ob die Durchquerung von vorn beginnt oder sich in eine andere auflöst.",
+          "zh": "一个不完整的轮廓，由一路上所有被吸收、拒绝和转化的东西构成。它拥有你的形状，由你留下的痕迹拼装而成。在门槛上，它决定这次穿越是重新开始，还是溶解进另一场穿越。"
+        },
+        "choices": [
+          {
+            "verb": {
+              "pt": "RECOMEÇAR",
+              "en": "START OVER",
+              "es": "EMPEZAR DE NUEVO",
+              "de": "VON VORN BEGINNEN",
+              "zh": "重新开始"
+            },
+            "detail": {
+              "pt": "a água volta a ficar lisa",
+              "en": "the water turns smooth again",
+              "es": "el agua vuelve a quedar lisa",
+              "de": "das Wasser wird wieder glatt",
+              "zh": "水面再次变得平滑"
+            },
+            "rastro": {},
+            "next": "sala-01-genese.html",
+            "reset": true
+          },
+          {
+            "verb": {
+              "pt": "DISSOLVER",
+              "en": "DISSOLVE",
+              "es": "DISOLVERSE",
+              "de": "AUFLÖSEN",
+              "zh": "溶解"
+            },
+            "detail": {
+              "pt": "você se torna parte de outro percurso",
+              "en": "you become part of another crossing",
+              "es": "te vuelves parte de otro cruce",
+              "de": "du wirst Teil einer anderen Durchquerung",
+              "zh": "你成为另一场穿越的一部分"
+            },
+            "rastro": {
+              "espelho": 1
+            },
+            "next": "../index.html"
+          }
+        ]
+      }
+    }
+  }
+}

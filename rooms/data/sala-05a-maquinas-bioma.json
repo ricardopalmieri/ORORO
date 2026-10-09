@@ -1,0 +1,430 @@
+{
+  "id": "sala-05a-maquinas-bioma",
+  "stage": 5,
+  "name": {
+    "pt": "MÁQUINAS NO BIOMA",
+    "en": "MACHINES IN THE BIOME",
+    "es": "MÁQUINAS EN EL BIOMA",
+    "de": "MASCHINEN IM BIOM",
+    "zh": "生境中的机器"
+  },
+  "scene": {
+    "accent": "#B06A1E",
+    "accent2": "#0F6F5C",
+    "fog": "#06040a",
+    "fogDensity": 0.038,
+    "ambient": {
+      "color": "#221c10",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#B06A1E",
+      "intensity": 8.9,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#06040a",
+      "colorA": "#B06A1E",
+      "colorB": "#0F6F5C",
+      "glow": "#C9A24A",
+      "liquid": 0.32,
+      "veins": 0.18,
+      "crack": 0.32,
+      "grid": 0.25,
+      "gridScale": 0.45,
+      "scale": 0.16
+    },
+    "fireflies": {
+      "color": "#C9A24A",
+      "count": 90,
+      "drift": 0.3
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#B06A1E",
+      "height": 6.5
+    },
+    "audio": {
+      "root": 32.4,
+      "intensity": 0.55
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "shard",
+      "position": [
+        -3.6,
+        1.6,
+        -3.0
+      ],
+      "tint": "#1a1006",
+      "glow": "#B06A1E",
+      "itemScale": 0.34,
+      "displace": 0.06,
+      "info": "mb1",
+      "content": {
+        "title": {
+          "pt": "MOTOSSERRA",
+          "en": "CHAINSAW",
+          "es": "MOTOSIERRA",
+          "de": "KETTENSÄGE",
+          "zh": "链锯"
+        },
+        "body": {
+          "pt": "Suspensa por um cabo, lâmina parada a meio corte. O tronco em volta continua a marca do dente. Faltou um segundo para terminar, e esse segundo virou exposição.",
+          "en": "Hung from a cable, blade frozen mid cut. The trunk around it still shows the tooth's mark. It was one second short of finishing, and that second became display.",
+          "es": "Suspendida de un cable, hoja congelada a mitad del corte. El tronco a su alrededor todavía muestra la marca de los dientes. Le faltó un segundo para terminar, y ese segundo se convirtió en exposición.",
+          "de": "An einem Kabel hängend, die Klinge mitten im Schnitt eingefroren. Der Stamm ringsum trägt noch die Zahnspur. Eine Sekunde fehlte zur Vollendung, und diese Sekunde wurde zum Ausstellungsstück.",
+          "zh": "它悬在电缆上，锯片被冻结在切割途中。周围的树干还留着锯齿痕迹。它只差一秒就能完成，而这一秒被变成了展品。"
+        }
+      }
+    },
+    {
+      "type": "tank",
+      "position": [
+        5,
+        0,
+        -3.2
+      ],
+      "radius": 0.42,
+      "height": 1.0,
+      "colorA": "#1a0e02",
+      "colorB": "#0F6F5C",
+      "glow": "#B06A1E",
+      "info": "mb2",
+      "content": {
+        "title": {
+          "pt": "DIESEL",
+          "en": "DIESEL",
+          "es": "DIÉSEL",
+          "de": "DIESEL",
+          "zh": "柴油"
+        },
+        "body": {
+          "pt": "Tambor furado. O líquido escuro ainda escorre devagar. A poça no chão não seca nem cresce. Fica do mesmo tamanho, alimentada por um vazamento sem fim.",
+          "en": "Punctured drum. The dark liquid still drips slowly. The pool on the floor neither dries nor grows. It stays the same size, fed by a leak without end.",
+          "es": "Tambor perforado. El líquido oscuro todavía gotea lentamente. El charco del suelo no se seca ni crece. Mantiene el mismo tamaño, alimentado por una fuga sin fin.",
+          "de": "Durchlöchertes Fass. Die dunkle Flüssigkeit tropft noch langsam. Die Pfütze am Boden trocknet weder aus noch wächst sie. Sie bleibt gleich groß, gespeist von einem Leck ohne Ende.",
+          "zh": "被刺破的桶。深色液体仍在缓慢滴落。地面的积液既不干涸，也不扩大。它始终保持同样大小，由一个永不停止的泄漏供给。"
+        }
+      }
+    },
+    {
+      "type": "panel",
+      "position": [
+        -5.6,
+        1.6,
+        -4.6
+      ],
+      "rotation": [
+        0,
+        0.5,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#B06A1E",
+      "line": "#0F6F5C",
+      "info": "mb3",
+      "content": {
+        "title": {
+          "pt": "PAINEL",
+          "en": "PANEL",
+          "es": "PANEL",
+          "de": "PANEL",
+          "zh": "控制面板"
+        },
+        "body": {
+          "pt": "Painel de controle da extração, indicadores piscam sem padrão. Ninguém opera e mesmo assim ele decide. As luzes obedecem a uma lógica que já não precisa de mão humana.",
+          "en": "Extraction control panel, indicators blink without pattern. No one operates it and still it decides. The lights obey a logic that no longer needs a human hand.",
+          "es": "Panel de control de extracción, los indicadores parpadean sin patrón. Nadie lo opera y aun así decide. Las luces obedecen una lógica que ya no necesita una mano humana.",
+          "de": "Steuerpanel der Förderung, Anzeigen blinken ohne Muster. Niemand bedient es, und trotzdem entscheidet es. Die Lichter folgen einer Logik, die keine menschliche Hand mehr braucht.",
+          "zh": "采掘控制面板，指示灯毫无规律地闪烁。没有人在操作，它却仍在作出决定。灯光服从一种已经不再需要人手的逻辑。"
+        }
+      }
+    },
+    {
+      "type": "root",
+      "position": [
+        2,
+        0,
+        -7.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "accent": "#0F6F5C",
+      "branches": 3,
+      "info": "mb4",
+      "content": {
+        "title": {
+          "pt": "RAIZ ARRANCADA",
+          "en": "TORN ROOT",
+          "es": "RAÍZ ARRANCADA",
+          "de": "HERAUSGERISSENE WURZEL",
+          "zh": "断裂的根"
+        },
+        "body": {
+          "pt": "Raiz cortada, ainda emite um pulso fraco. Foi separada da terra e não parou de mandar sinal. Chama por uma árvore que já não está ali para responder.",
+          "en": "Severed root, still emitting a faint pulse. It was torn from the ground and never stopped sending signal. It calls for a tree that is no longer there to answer.",
+          "es": "Raíz cortada, todavía emite un pulso débil. Fue arrancada de la tierra y nunca dejó de enviar señal. Llama a un árbol que ya no está para responder.",
+          "de": "Abgetrennte Wurzel, sendet noch einen schwachen Puls. Aus dem Boden gerissen, hat sie nie aufgehört zu senden. Sie ruft nach einem Baum, der nicht mehr da ist, um zu antworten.",
+          "zh": "被切断的根仍发出微弱脉冲。它被从土地里扯出，却从未停止发送信号。它呼唤着一棵已经不在这里、无法回应的树。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0F6F5C",
+      "itemTint": "#0a1208",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "mb5",
+      "content": {
+        "title": {
+          "pt": "ESTEIRA",
+          "en": "CONVEYOR",
+          "es": "CINTA TRANSPORTADORA",
+          "de": "FÖRDERBAND",
+          "zh": "传送带"
+        },
+        "body": {
+          "pt": "Trecho de esteira parado, coberto por lama escura. Levava o território embora aos pedaços, um por vez. Parou cheia, com a última carga ainda no lugar.",
+          "en": "Section of conveyor belt at rest, covered in dark mud. It carried the territory away in pieces, one at a time. It stopped full, with the last load still in place.",
+          "es": "Tramo de cinta transportadora en reposo, cubierto de barro oscuro. Se llevó el territorio en pedazos, uno por uno. Se detuvo llena, con la última carga todavía en su lugar.",
+          "de": "Stillstehender Abschnitt eines Förderbands, bedeckt mit dunklem Schlamm. Es trug das Territorium Stück für Stück fort. Es blieb beladen stehen, die letzte Ladung noch an ihrem Platz.",
+          "zh": "一段停止的传送带，覆满深色泥土。它曾一点一点把领地运走。它满载着停了下来，最后一批货物仍留在原位。"
+        }
+      }
+    },
+    {
+      "type": "bones",
+      "position": [
+        0,
+        0,
+        -3.4
+      ],
+      "accent": "#B06A1E",
+      "count": 9,
+      "info": "mb6",
+      "content": {
+        "title": {
+          "pt": "RESTOS",
+          "en": "REMAINS",
+          "es": "RESTOS",
+          "de": "ÜBERRESTE",
+          "zh": "残骸"
+        },
+        "body": {
+          "pt": "Pequenos ossos misturados a parafusos e fios. O bicho e a máquina foram triturados juntos. Agora é impossível dizer onde termina um e começa o outro.",
+          "en": "Small bones mixed with bolts and wires. The animal and the machine were ground together. Now it is impossible to say where one ends and the other begins.",
+          "es": "Pequeños huesos mezclados con tornillos y cables. El animal y la máquina fueron triturados juntos. Ahora es imposible decir dónde termina uno y empieza el otro.",
+          "de": "Kleine Knochen, vermischt mit Schrauben und Drähten. Tier und Maschine wurden gemeinsam zermahlen. Jetzt lässt sich nicht mehr sagen, wo das eine endet und das andere beginnt.",
+          "zh": "小骨头与螺栓、电线混在一起。动物与机器被一起碾碎。现在已经无法分辨一个在哪里结束，另一个从哪里开始。"
+        }
+      }
+    },
+    {
+      "type": "totem",
+      "position": [
+        -7.5,
+        0,
+        -3
+      ],
+      "accent": "#B06A1E",
+      "height": 4.0,
+      "segments": 6
+    },
+    {
+      "type": "totem",
+      "position": [
+        7.5,
+        0,
+        -8.6
+      ],
+      "accent": "#0F6F5C",
+      "height": 3.4,
+      "segments": 5
+    },
+    {
+      "type": "root",
+      "position": [
+        -2,
+        0,
+        -8.2
+      ],
+      "rotation": [
+        0,
+        2.0,
+        0
+      ],
+      "accent": "#0F6F5C",
+      "branches": 3
+    },
+    {
+      "type": "shard",
+      "position": [
+        6.4,
+        1.2,
+        -7.0
+      ],
+      "tint": "#1a1006",
+      "glow": "#806321",
+      "itemScale": 0.3,
+      "displace": 0.06
+    },
+    {
+      "type": "oil-blob",
+      "position": [
+        -6.0,
+        0,
+        -5.5
+      ],
+      "radius": 1.3,
+      "glow": "#4B1F68"
+    },
+    {
+      "type": "oil-blob",
+      "position": [
+        5.5,
+        0,
+        -8.0
+      ],
+      "radius": 0.9,
+      "glow": "#872D67"
+    },
+    {
+      "type": "plant",
+      "position": [
+        8.0,
+        0,
+        -4.0
+      ],
+      "accent": "#0F6F5C",
+      "glow": "#B7F03B",
+      "count": 6,
+      "height": 0.9
+    }
+  ],
+  "central": {
+    "type": "core",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "glow": "#B06A1E",
+    "title": {
+      "pt": "MOTOR-TRONCO",
+      "en": "ENGINE TRUNK",
+      "es": "TRONCO MOTOR",
+      "de": "MOTORSTAMM",
+      "zh": "发动机树干"
+    },
+    "body": {
+      "pt": "Um tronco oco abriga um motor ainda quente. Bate como um coração que aprendeu a queimar combustível. A floresta foi refeita como máquina, e a máquina imita a floresta. Nenhuma das duas sabe mais qual era a original.",
+      "en": "A hollow trunk holds a still warm engine. It beats like a heart that learned to burn fuel. The forest was remade as machine, and the machine mimics the forest. Neither one still knows which was the original.",
+      "es": "Un tronco hueco contiene un motor aún tibio. Late como un corazón que aprendió a quemar combustible. El bosque fue rehecho como máquina y la máquina imita al bosque. Ninguno sabe ya cuál fue el original.",
+      "de": "Ein hohler Stamm enthält einen noch warmen Motor. Er schlägt wie ein Herz, das gelernt hat, Treibstoff zu verbrennen. Der Wald wurde als Maschine neu gebaut, und die Maschine ahmt den Wald nach. Keiner weiß noch, was das Original war.",
+      "zh": "空心树干里装着一台仍有余温的发动机。它像一颗学会燃烧燃料的心脏一样跳动。森林被重造成机器，机器又模仿森林。如今两者都不知道谁才是原本的那个。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "DESLIGAR",
+          "en": "SHUT DOWN",
+          "es": "APAGAR",
+          "de": "ABSCHALTEN",
+          "zh": "关闭"
+        },
+        "detail": {
+          "pt": "o silêncio chega devagar",
+          "en": "silence arrives slowly",
+          "es": "el silencio llega lentamente",
+          "de": "die Stille kommt langsam",
+          "zh": "寂静缓慢到来"
+        },
+        "rastro": {
+          "raiz": 2,
+          "cinza": 1
+        },
+        "next": "sala-06a-ritual-sangue.html"
+      },
+      {
+        "verb": {
+          "pt": "INCENDIAR",
+          "en": "SET ALIGHT",
+          "es": "PRENDER FUEGO",
+          "de": "ENTZÜNDEN",
+          "zh": "点燃"
+        },
+        "detail": {
+          "pt": "o calor se espalha sem chama visível",
+          "en": "heat spreads with no visible flame",
+          "es": "el calor se extiende sin llama visible",
+          "de": "Hitze breitet sich ohne sichtbare Flamme aus",
+          "zh": "热量在没有可见火焰的情况下扩散"
+        },
+        "rastro": {
+          "cinza": 2,
+          "sangue": 1
+        },
+        "next": "sala-06b-insurreicao.html"
+      },
+      {
+        "verb": {
+          "pt": "ENRAIZAR",
+          "en": "RE-ROOT",
+          "es": "VOLVER A ENRAIZAR",
+          "de": "NEU VERWURZELN",
+          "zh": "重新扎根"
+        },
+        "detail": {
+          "pt": "o metal aceita a raiz de volta",
+          "en": "the metal accepts the root again",
+          "es": "el metal acepta de nuevo la raíz",
+          "de": "das Metall nimmt die Wurzel wieder an",
+          "zh": "金属再次接受根系"
+        },
+        "rastro": {
+          "raiz": 2,
+          "oleo": 1
+        },
+        "next": "sala-06c-ritual-fusao.html"
+      }
+    ]
+  }
+}

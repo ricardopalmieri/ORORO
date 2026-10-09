@@ -1,0 +1,12 @@
+# Secrets — never commit real credentials
+multiplayer/sfu-config.php
+ororo-sfu.php
+*.secret.php
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/

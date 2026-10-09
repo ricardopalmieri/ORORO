@@ -1,0 +1,425 @@
+{
+  "id": "sala-02b-invasores",
+  "stage": 2,
+  "name": {
+    "pt": "INVASORES",
+    "en": "INVADERS",
+    "es": "INVASORES",
+    "de": "EINDRINGLINGE",
+    "zh": "入侵者"
+  },
+  "scene": {
+    "accent": "#806321",
+    "accent2": "#8A0303",
+    "fog": "#070504",
+    "fogDensity": 0.041,
+    "ambient": {
+      "color": "#241a10",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C9A24A",
+      "intensity": 9.2,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#070503",
+      "colorA": "#806321",
+      "colorB": "#8A0303",
+      "glow": "#C9A24A",
+      "liquid": 0.3,
+      "veins": 0.1,
+      "crack": 0.4,
+      "grid": 0.3,
+      "gridScale": 0.5,
+      "scale": 0.16
+    },
+    "fireflies": {
+      "color": "#C9A24A",
+      "count": 90,
+      "drift": 0.3
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#806321",
+      "height": 6.5
+    },
+    "audio": {
+      "root": 34.6,
+      "intensity": 0.55
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#8A0303",
+      "itemTint": "#160808",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "ia1",
+      "content": {
+        "title": {
+          "pt": "ARMAS",
+          "en": "WEAPONS",
+          "es": "ARMAS",
+          "de": "WAFFEN",
+          "zh": "武器"
+        },
+        "body": {
+          "pt": "Armas desmontadas, sem número de série, procedência apagada. Foram limpas com cuidado antes de virarem peça de museu. Alguém quis que continuassem prontas.",
+          "en": "Disassembled weapons, no serial number, provenance erased. They were cleaned with care before becoming museum pieces. Someone wanted them kept ready.",
+          "es": "Armas desmontadas, sin número de serie, procedencia borrada. Fueron limpiadas con cuidado antes de convertirse en piezas de museo. Alguien quería conservarlas listas.",
+          "de": "Zerlegte Waffen, ohne Seriennummer, Herkunft ausgelöscht. Sie wurden sorgfältig gereinigt, bevor sie zu Museumsstücken wurden. Jemand wollte sie einsatzbereit halten.",
+          "zh": "拆解的武器，没有序列号，来源被抹去。成为博物馆展品之前，它们被仔细清洗过。有人希望它们随时保持可用。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C9A24A",
+      "itemTint": "#1a1306",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "ia2",
+      "content": {
+        "title": {
+          "pt": "MAPA",
+          "en": "MAP",
+          "es": "MAPA",
+          "de": "KARTE",
+          "zh": "地图"
+        },
+        "body": {
+          "pt": "Pepitas de réplica e um mapa de rotas. A escala não confere com o terreno. As linhas vão todas para o mesmo ponto, e esse ponto está desenhado por cima de uma aldeia.",
+          "en": "Replica nuggets and a route map. The scale does not match the terrain. The lines all lead to one point, and that point is drawn over a village.",
+          "es": "Pepitas de réplica y un mapa de rutas. La escala no coincide con el terreno. Todas las líneas conducen a un punto, y ese punto está dibujado sobre una aldea.",
+          "de": "Nachgebildete Goldnuggets und eine Routenkarte. Der Maßstab passt nicht zum Gelände. Alle Linien führen zu einem Punkt, und dieser Punkt liegt über einem Dorf.",
+          "zh": "仿制金块和一张路线图。比例与地形不符。所有线条都通向同一个点，而那个点正画在一个村庄之上。"
+        }
+      }
+    },
+    {
+      "type": "bones",
+      "position": [
+        0,
+        0,
+        -3.4
+      ],
+      "accent": "#C9A24A",
+      "count": 10,
+      "info": "ia3",
+      "content": {
+        "title": {
+          "pt": "OSSOS",
+          "en": "BONES",
+          "es": "HUESOS",
+          "de": "KNOCHEN",
+          "zh": "骨骼"
+        },
+        "body": {
+          "pt": "Ossos misturados a fragmentos de ouro, datações divergentes. O sistema não consegue dizer o que veio antes, o corpo ou o metal que o cercou.",
+          "en": "Bones mixed with gold fragments, conflicting datings. The system cannot say which came first, the body or the metal that surrounded it.",
+          "es": "Huesos mezclados con fragmentos de oro, dataciones contradictorias. El sistema no puede decir qué llegó primero: el cuerpo o el metal que lo rodeó.",
+          "de": "Knochen, vermischt mit Goldfragmenten, widersprüchliche Datierungen. Das System kann nicht sagen, was zuerst kam: der Körper oder das Metall, das ihn umgab.",
+          "zh": "骨骼与黄金碎片混在一起，年代测定彼此矛盾。系统无法判断哪个先出现：身体，还是包围它的金属。"
+        }
+      }
+    },
+    {
+      "type": "panel",
+      "position": [
+        5.6,
+        1.6,
+        -3.6
+      ],
+      "rotation": [
+        0,
+        -0.5,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#C9A24A",
+      "line": "#8A0303",
+      "info": "ia4",
+      "content": {
+        "title": {
+          "pt": "DOCUMENTO",
+          "en": "DOCUMENT",
+          "es": "DOCUMENTO",
+          "de": "DOKUMENT",
+          "zh": "文件"
+        },
+        "body": {
+          "pt": "Contrato ilegível, três assinaturas, nenhuma identificável. O papel foi dobrado e desdobrado tantas vezes que o texto sumiu justo nas cláusulas.",
+          "en": "Illegible contract, three signatures, none identifiable. The paper was folded and unfolded so many times that the text vanished right at the clauses.",
+          "es": "Contrato ilegible, tres firmas, ninguna identificable. El papel fue doblado y desplegado tantas veces que el texto desapareció justo en las cláusulas.",
+          "de": "Unleserlicher Vertrag, drei Unterschriften, keine identifizierbar. Das Papier wurde so oft gefaltet und entfaltet, dass der Text genau bei den Klauseln verschwunden ist.",
+          "zh": "无法辨认的合同，三处签名，没有一个能确认身份。纸张被反复折叠展开太多次，文字恰好在条款处消失了。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        -5.6,
+        0,
+        -3.6
+      ],
+      "accent": "#8A0303",
+      "info": "ia5",
+      "content": {
+        "title": {
+          "pt": "MÁQUINA",
+          "en": "MACHINE",
+          "es": "MÁQUINA",
+          "de": "MASCHINE",
+          "zh": "机器"
+        },
+        "body": {
+          "pt": "Perfuratriz desligada, vibração residual ainda registrada. O chão em volta guarda a marca circular de anos de trabalho. A máquina parou, o buraco não.",
+          "en": "Drill switched off, residual vibration still recorded. The floor around it holds the circular mark of years of work. The machine stopped, the hole did not.",
+          "es": "Taladro apagado, vibración residual todavía registrada. El suelo a su alrededor conserva la marca circular de años de trabajo. La máquina se detuvo, el agujero no.",
+          "de": "Abgeschalteter Bohrer, Restvibration noch messbar. Der Boden ringsum trägt die kreisförmige Spur jahrelanger Arbeit. Die Maschine hielt an, das Loch nicht.",
+          "zh": "已经关闭的钻机，残余振动仍被记录。周围地板保留着多年工作留下的圆形痕迹。机器停了，洞没有。"
+        }
+      }
+    },
+    {
+      "type": "banner",
+      "position": [
+        -6.4,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        0.4,
+        0
+      ],
+      "color": "#3a2410",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#C9A24A",
+      "emissiveIntensity": 0.12,
+      "info": "ia6",
+      "content": {
+        "title": {
+          "pt": "BANDEIRA",
+          "en": "FLAG",
+          "es": "BANDERA",
+          "de": "FLAGGE",
+          "zh": "旗帜"
+        },
+        "body": {
+          "pt": "Tecido marcado por fumaça, símbolo parcialmente apagado. Sobrou o suficiente para saber que era uma bandeira, não o bastante para saber de quem.",
+          "en": "Fabric marked by smoke, symbol partially erased. Enough survived to know it was a flag, not enough to know whose.",
+          "es": "Tela marcada por el humo, símbolo parcialmente borrado. Sobrevivió lo suficiente para saber que era una bandera, no para saber de quién.",
+          "de": "Vom Rauch gezeichnetes Tuch, Symbol teilweise ausgelöscht. Genug blieb erhalten, um zu erkennen, dass es eine Flagge war, aber nicht, wem sie gehörte.",
+          "zh": "被烟熏过的布料，图案部分被抹去。留下的部分足以证明它曾是一面旗，却不足以说明属于谁。"
+        }
+      }
+    },
+    {
+      "type": "totem",
+      "position": [
+        -7.5,
+        0,
+        -3
+      ],
+      "accent": "#8A0303",
+      "height": 4.2,
+      "segments": 6
+    },
+    {
+      "type": "totem",
+      "position": [
+        7.5,
+        0,
+        -3.4
+      ],
+      "accent": "#8A0303",
+      "height": 3.8,
+      "segments": 6
+    },
+    {
+      "type": "banner",
+      "position": [
+        6.4,
+        0,
+        -6.4
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "color": "#2a1c10",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#8A0303",
+      "emissiveIntensity": 0.12
+    },
+    {
+      "type": "shard",
+      "position": [
+        -2,
+        1.2,
+        -7.2
+      ],
+      "tint": "#1a1006",
+      "glow": "#C1121F",
+      "itemScale": 0.3,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        2.4,
+        1.0,
+        -7.6
+      ],
+      "tint": "#120a06",
+      "glow": "#806321",
+      "itemScale": 0.32,
+      "displace": 0.06
+    }
+  ],
+  "central": {
+    "type": "drill",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "BROCA DOURADA",
+      "en": "GOLDEN DRILL",
+      "es": "TALADRO DORADO",
+      "de": "GOLDENER BOHRER",
+      "zh": "黄金钻机"
+    },
+    "body": {
+      "pt": "Suspensa por uma corrente, gira devagar, coberta por sangue seco e óleo. É ferramenta e troféu ao mesmo tempo. Abriu o território, e agora está exposta como se fosse a obra e não a ferida.",
+      "en": "Hanging from a chain, it turns slowly, covered in dried blood and oil. It is tool and trophy at once. It opened the territory, and now it hangs on display as if it were the artwork and not the wound.",
+      "es": "Suspendido de una cadena, gira lentamente, cubierto de sangre seca y aceite. Es herramienta y trofeo al mismo tiempo. Abrió el territorio y ahora cuelga expuesto como si fuera la obra de arte y no la herida.",
+      "de": "An einer Kette hängend dreht er sich langsam, bedeckt mit getrocknetem Blut und Öl. Werkzeug und Trophäe zugleich. Er öffnete das Territorium und hängt nun ausgestellt, als wäre er das Kunstwerk und nicht die Wunde.",
+      "zh": "它悬在链条上缓慢转动，表面覆着干涸的血和油。它既是工具也是战利品。它打开了这片领地，如今却像艺术品一样被悬挂展示，仿佛作品不是伤口。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "SABOTAR",
+          "en": "SABOTAGE",
+          "es": "SABOTEAR",
+          "de": "SABOTIEREN",
+          "zh": "破坏"
+        },
+        "detail": {
+          "pt": "uma peça sai do lugar",
+          "en": "a part comes loose",
+          "es": "una pieza se suelta",
+          "de": "ein Teil löst sich",
+          "zh": "一个部件松脱"
+        },
+        "rastro": {
+          "cinza": 1,
+          "sangue": 1
+        },
+        "next": "sala-03b-vila-ocupada.html"
+      },
+      {
+        "verb": {
+          "pt": "INFILTRAR",
+          "en": "INFILTRATE",
+          "es": "INFILTRARSE",
+          "de": "EINSICKERN",
+          "zh": "潜入"
+        },
+        "detail": {
+          "pt": "você veste o silêncio do lugar",
+          "en": "you wear the place's silence",
+          "es": "vistes el silencio del lugar",
+          "de": "du trägst die Stille des Ortes",
+          "zh": "你披上这个地方的沉默"
+        },
+        "rastro": {
+          "espelho": 1,
+          "ouro": 1
+        },
+        "next": "sala-03a-animais-fantasma.html"
+      },
+      {
+        "verb": {
+          "pt": "ESPELHAR O INIMIGO",
+          "en": "MIRROR THE ENEMY",
+          "es": "REFLEJAR AL ENEMIGO",
+          "de": "DEN FEIND SPIEGELN",
+          "zh": "映照敌人"
+        },
+        "detail": {
+          "pt": "a broca reflete seu rosto",
+          "en": "the drill reflects your face",
+          "es": "el taladro refleja tu rostro",
+          "de": "der Bohrer spiegelt dein Gesicht",
+          "zh": "钻机映出你的脸"
+        },
+        "rastro": {
+          "espelho": 2,
+          "ouro": 1
+        },
+        "next": "sala-03c-corpo-fragmentado.html"
+      }
+    ]
+  }
+}

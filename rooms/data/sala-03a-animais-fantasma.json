@@ -1,0 +1,492 @@
+{
+  "id": "sala-03a-animais-fantasma",
+  "stage": 3,
+  "name": {
+    "pt": "ANIMAIS FANTASMA",
+    "en": "GHOST ANIMALS",
+    "es": "ANIMALES FANTASMA",
+    "de": "GEISTERTIERE",
+    "zh": "幽灵动物"
+  },
+  "scene": {
+    "accent": "#243B8F",
+    "accent2": "#0E8C86",
+    "fog": "#03070c",
+    "fogDensity": 0.042,
+    "ambient": {
+      "color": "#121c2e",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#0E8C86",
+      "intensity": 8.1,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#02050a",
+      "colorA": "#243B8F",
+      "colorB": "#0E8C86",
+      "glow": "#243B8F",
+      "liquid": 0.5,
+      "veins": 0.0,
+      "crack": 0.0,
+      "grid": 0.3,
+      "gridScale": 0.5,
+      "scale": 0.14
+    },
+    "fireflies": {
+      "color": "#E8E1D2",
+      "count": 100,
+      "drift": 0.7,
+      "size": 36
+    },
+    "boundary": {
+      "radius": 13.5,
+      "glow": "#243B8F",
+      "height": 6
+    },
+    "audio": {
+      "root": 36.0,
+      "intensity": 0.48
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#E8E1D2",
+      "itemTint": "#11141B",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "xa1",
+      "content": {
+        "title": {
+          "pt": "CRÂNIO 7",
+          "en": "SKULL 7",
+          "es": "CRÁNEO 7",
+          "de": "SCHÄDEL 7",
+          "zh": "头骨 7"
+        },
+        "body": {
+          "pt": "Crânio suspenso, espécie não catalogada. O número foi escrito à mão sobre o osso. Antes dele havia outro número, ainda visível por baixo.",
+          "en": "Suspended skull, species not catalogued. The number was handwritten onto the bone. Before it there was another number, still visible beneath.",
+          "es": "Cráneo suspendido, especie no catalogada. El número fue escrito a mano sobre el hueso. Debajo todavía se ve otro número anterior.",
+          "de": "Schwebender Schädel, Art nicht katalogisiert. Die Nummer wurde von Hand auf den Knochen geschrieben. Darunter ist noch eine ältere Nummer zu erkennen.",
+          "zh": "悬浮的头骨，物种未被编目。编号是手写在骨头上的。它下面还能看见另一个更早的编号。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0E8C86",
+      "itemTint": "#0a1418",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "xa2",
+      "content": {
+        "title": {
+          "pt": "CRÂNIO 12",
+          "en": "SKULL 12",
+          "es": "CRÁNEO 12",
+          "de": "SCHÄDEL 12",
+          "zh": "头骨 12"
+        },
+        "body": {
+          "pt": "Segundo crânio, fratura compatível com captura. É parente do primeiro, marcado do mesmo jeito. Foram guardados juntos e catalogados como coisas separadas.",
+          "en": "Second skull, fracture consistent with capture. It is kin to the first, marked the same way. They were kept together and catalogued as separate things.",
+          "es": "Segundo cráneo, fractura compatible con captura. Es pariente del primero, marcado de la misma manera. Se conservaron juntos y fueron catalogados como cosas separadas.",
+          "de": "Zweiter Schädel, Fraktur passend zu einer Gefangennahme. Er ist mit dem ersten verwandt und auf dieselbe Weise markiert. Sie wurden zusammen aufbewahrt und als getrennte Dinge katalogisiert.",
+          "zh": "第二个头骨，骨折特征符合被捕获时造成的损伤。它与第一个属于同类，也以同样方式标记。它们被放在一起保存，却被归档为彼此分离的东西。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        0,
+        0,
+        -9.2
+      ],
+      "accent": "#243B8F",
+      "info": "xa3",
+      "content": {
+        "title": {
+          "pt": "REGISTRO",
+          "en": "RECORDING",
+          "es": "GRABACIÓN",
+          "de": "AUFNAHME",
+          "zh": "录音"
+        },
+        "body": {
+          "pt": "Arquivo sonoro de espécie ausente, em loop. É a única coisa que restou viva do bicho, um som repetindo num aparelho que não sabe o que guarda.",
+          "en": "Sound archive of an absent species, looping. It is the only thing left alive of the animal, a sound repeating in a device that does not know what it holds.",
+          "es": "Archivo sonoro de una especie ausente, en bucle. Es lo único que queda vivo del animal: un sonido que se repite en un dispositivo que no sabe lo que contiene.",
+          "de": "Klangarchiv einer verschwundenen Art, in Endlosschleife. Es ist das Einzige, was vom Tier noch lebt: ein Ton, der sich in einem Gerät wiederholt, das nicht weiß, was es bewahrt.",
+          "zh": "一个已经消失物种的声音档案，循环播放。这是那只动物唯一仍然活着的部分：声音在一个并不知道自己承载何物的设备中反复出现。"
+        }
+      }
+    },
+    {
+      "type": "bones",
+      "position": [
+        0,
+        0,
+        -3.4
+      ],
+      "accent": "#E8E1D2",
+      "count": 8,
+      "info": "xa4",
+      "content": {
+        "title": {
+          "pt": "RASTRO",
+          "en": "TRACK",
+          "es": "HUELLA",
+          "de": "SPUR",
+          "zh": "痕迹"
+        },
+        "body": {
+          "pt": "Marca de garra em metal, profundidade incomum. Algo com muita força passou por uma parede que deveria ser dura demais para guardar rastros.",
+          "en": "Claw mark in metal, unusual depth. Something with great strength crossed a wall that should have been too hard to hold tracks.",
+          "es": "Marca de garra en metal, profundidad inusual. Algo de gran fuerza atravesó una pared que debería haber sido demasiado dura para conservar huellas.",
+          "de": "Krallenspur in Metall, ungewöhnlich tief. Etwas mit großer Kraft überquerte eine Wand, die eigentlich zu hart hätte sein müssen, um Spuren zu halten.",
+          "zh": "金属上的爪痕，深度异常。某种力量极强的东西穿过了一面本应坚硬到无法留下痕迹的墙。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        -2,
+        1.6,
+        -6.0
+      ],
+      "tint": "#0a1018",
+      "glow": "#0E8C86",
+      "itemScale": 0.3,
+      "displace": 0.06,
+      "info": "xa5",
+      "content": {
+        "title": {
+          "pt": "MEMBRANA",
+          "en": "MEMBRANE",
+          "es": "MEMBRANA",
+          "de": "MEMBRAN",
+          "zh": "膜"
+        },
+        "body": {
+          "pt": "Fragmento translúcido, reage à luz direta. Quando iluminado, mostra por dentro um desenho de veias que continua se movendo devagar.",
+          "en": "Translucent fragment, reacts to direct light. When lit, it reveals inside a pattern of veins that keeps moving slowly.",
+          "es": "Fragmento translúcido, reacciona a la luz directa. Al iluminarlo, revela en su interior un patrón de venas que sigue moviéndose lentamente.",
+          "de": "Durchscheinendes Fragment, reagiert auf direktes Licht. Beleuchtet zeigt es im Inneren ein Adermuster, das sich langsam weiterbewegt.",
+          "zh": "半透明碎片，会对直射光产生反应。被照亮时，内部显出缓慢移动的血管状纹理。"
+        }
+      }
+    },
+    {
+      "type": "panel",
+      "position": [
+        -6,
+        1.7,
+        -5.0
+      ],
+      "rotation": [
+        0,
+        0.5,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#9fe7ef",
+      "line": "#243B8F",
+      "info": "xa6",
+      "content": {
+        "title": {
+          "pt": "TELA",
+          "en": "SCREEN",
+          "es": "PANTALLA",
+          "de": "BILDSCHIRM",
+          "zh": "屏幕"
+        },
+        "body": {
+          "pt": "Projeções de cardumes cruzam a parede. Os peixes nadam contra o canto e desaparecem, e outro cardume nasce do mesmo ponto, sem parar.",
+          "en": "Projections of fish swarms cross the wall. The fish swim into the corner and vanish, and another swarm is born from the same point, without stopping.",
+          "es": "Proyecciones de cardúmenes cruzan la pared. Los peces nadan hacia la esquina y desaparecen, y otro cardumen nace del mismo punto, sin detenerse.",
+          "de": "Projektionen von Fischschwärmen ziehen über die Wand. Die Fische schwimmen in die Ecke und verschwinden, und aus demselben Punkt entsteht ohne Pause ein neuer Schwarm.",
+          "zh": "鱼群投影从墙面游过。鱼游入角落后消失，另一群又从同一点诞生，循环不止。"
+        }
+      }
+    },
+    {
+      "type": "panel",
+      "position": [
+        6,
+        1.7,
+        -5.2
+      ],
+      "rotation": [
+        0,
+        -0.5,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#9fe7ef",
+      "line": "#0E8C86"
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        6.6,
+        1.3,
+        -3.4
+      ],
+      "rotation": [
+        0.0,
+        -0.6,
+        0
+      ],
+      "tint": "#243B8F",
+      "size": [
+        0.9,
+        1.6
+      ],
+      "distort": 0.05
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        -6.8,
+        1.1,
+        -4.6
+      ],
+      "rotation": [
+        0.0,
+        0.55,
+        0
+      ],
+      "tint": "#0E8C86",
+      "size": [
+        0.9,
+        1.6
+      ],
+      "distort": 0.05
+    },
+    {
+      "type": "shard",
+      "position": [
+        1.6,
+        2.0,
+        -7.6
+      ],
+      "tint": "#0a1018",
+      "glow": "#243B8F",
+      "itemScale": 0.34,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        4.2,
+        1.4,
+        -5.6
+      ],
+      "tint": "#0a1018",
+      "glow": "#E8E1D2",
+      "itemScale": 0.28,
+      "displace": 0.06
+    },
+    {
+      "type": "totem",
+      "position": [
+        -8,
+        0,
+        -9
+      ],
+      "accent": "#0E8C86",
+      "height": 2.8,
+      "segments": 4
+    },
+    {
+      "type": "totem",
+      "position": [
+        8,
+        0,
+        -8.6
+      ],
+      "accent": "#243B8F",
+      "height": 3.1,
+      "segments": 4
+    },
+    {
+      "type": "lowpoly-jaguar",
+      "position": [
+        0,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0.5,
+        0
+      ],
+      "base": "#08070b",
+      "glow": "#B7F03B",
+      "bodyScale": 1.15
+    },
+    {
+      "type": "fish-school",
+      "position": [
+        -6.0,
+        0.4,
+        -5.0
+      ],
+      "count": 7,
+      "glow": "#0E8C86"
+    },
+    {
+      "type": "fish-school",
+      "position": [
+        6.4,
+        0.6,
+        -7.0
+      ],
+      "count": 5,
+      "glow": "#243B8F"
+    }
+  ],
+  "central": {
+    "type": "jaguar",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "ONÇA DE FUMAÇA",
+      "en": "SMOKE JAGUAR",
+      "es": "JAGUAR DE HUMO",
+      "de": "RAUCHJAGUAR",
+      "zh": "烟雾美洲豹"
+    },
+    "body": {
+      "pt": "Feita de fumaça e pixels, não ataca. Observa, e a sala gira devagar ao redor dela. É o animal que sumiu do território voltando como imagem. Presença sem corpo, memória que aprendeu a andar.",
+      "en": "Made of smoke and pixels, it does not attack. It watches, and the room turns slowly around it. It is the animal that vanished from the territory, returning as image. Presence without a body, memory that learned to walk.",
+      "es": "Hecho de humo y píxeles, no ataca. Observa, y la sala gira lentamente a su alrededor. Es el animal que desapareció del territorio y regresa como imagen. Presencia sin cuerpo, memoria que aprendió a caminar.",
+      "de": "Aus Rauch und Pixeln gemacht greift er nicht an. Er beobachtet, und der Raum dreht sich langsam um ihn. Es ist das Tier, das aus dem Territorium verschwand und als Bild zurückkehrt. Präsenz ohne Körper, Erinnerung, die laufen gelernt hat.",
+      "zh": "它由烟与像素构成，并不攻击。它只是注视，而房间缓慢围着它旋转。它是从领地中消失的动物，以影像重新归来。没有身体的存在，学会行走的记忆。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "SEGUIR",
+          "en": "FOLLOW",
+          "es": "SEGUIR",
+          "de": "FOLGEN",
+          "zh": "跟随"
+        },
+        "detail": {
+          "pt": "ela anda sem deixar marca",
+          "en": "it walks leaving no trace",
+          "es": "camina sin dejar rastro",
+          "de": "er läuft, ohne eine Spur zu hinterlassen",
+          "zh": "它行走，却不留下痕迹"
+        },
+        "rastro": {
+          "espelho": 1,
+          "voz": 1
+        },
+        "next": "sala-04a-elementos.html"
+      },
+      {
+        "verb": {
+          "pt": "LIBERTAR O CARDUME",
+          "en": "RELEASE THE SHOAL",
+          "es": "LIBERAR EL CARDUMEN",
+          "de": "DEN SCHWARM FREILASSEN",
+          "zh": "释放鱼群"
+        },
+        "detail": {
+          "pt": "as projeções se espalham pelas paredes",
+          "en": "the projections spread across the walls",
+          "es": "las proyecciones se extienden por las paredes",
+          "de": "die Projektionen breiten sich über die Wände aus",
+          "zh": "投影扩散到墙面"
+        },
+        "rastro": {
+          "raiz": 1,
+          "espelho": 1
+        },
+        "next": "sala-04c-vozes-ancestrais.html"
+      },
+      {
+        "verb": {
+          "pt": "VESTIR A PELE",
+          "en": "WEAR THE SKIN",
+          "es": "VESTIR LA PIEL",
+          "de": "DIE HAUT TRAGEN",
+          "zh": "披上皮肤"
+        },
+        "detail": {
+          "pt": "seu contorno fica translúcido",
+          "en": "your outline turns translucent",
+          "es": "tu contorno se vuelve translúcido",
+          "de": "deine Kontur wird durchscheinend",
+          "zh": "你的轮廓变得半透明"
+        },
+        "rastro": {
+          "espelho": 2,
+          "cinza": 1
+        },
+        "next": "sala-04b-vozes-dissidentes.html"
+      }
+    ]
+  }
+}

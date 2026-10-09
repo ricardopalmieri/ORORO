@@ -1,0 +1,446 @@
+{
+  "id": "sala-03b-vila-ocupada",
+  "stage": 3,
+  "name": {
+    "pt": "VILA OCUPADA",
+    "en": "OCCUPIED VILLAGE",
+    "es": "ALDEA OCUPADA",
+    "de": "BESETZTES DORF",
+    "zh": "被占据的村庄"
+  },
+  "scene": {
+    "accent": "#858B94",
+    "accent2": "#243B8F",
+    "fog": "#06070a",
+    "fogDensity": 0.035,
+    "ambient": {
+      "color": "#1a1d24",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#858B94",
+      "intensity": 7.4,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#05060a",
+      "colorA": "#858B94",
+      "colorB": "#243B8F",
+      "glow": "#C9A24A",
+      "liquid": 0.35,
+      "veins": 0.08,
+      "crack": 0.25,
+      "grid": 0.3,
+      "gridScale": 0.4,
+      "scale": 0.14
+    },
+    "fireflies": {
+      "color": "#C9A24A",
+      "count": 80,
+      "drift": 0.3
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#243B8F",
+      "height": 6
+    },
+    "audio": {
+      "root": 39.0,
+      "intensity": 0.45
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "banner",
+      "position": [
+        -6.4,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0.3,
+        0
+      ],
+      "color": "#3a0d12",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#8A0303",
+      "emissiveIntensity": 0.1,
+      "info": "va1",
+      "content": {
+        "title": {
+          "pt": "BANDEIRA",
+          "en": "FLAG",
+          "es": "BANDERA",
+          "de": "FLAGGE",
+          "zh": "旗帜"
+        },
+        "body": {
+          "pt": "Tecido rasgado, símbolo parcial. Foi feita à mão, com linha de outra cor nas emendas. Quem costurou sabia que ela ia durar pouco.",
+          "en": "Torn fabric, partial symbol. It was made by hand, with thread of another color at the seams. Whoever sewed it knew it would not last long.",
+          "es": "Tela rasgada, símbolo parcial. Fue hecha a mano, con hilo de otro color en las costuras. Quien la cosió sabía que no duraría mucho.",
+          "de": "Zerrissenes Tuch, unvollständiges Symbol. Von Hand gefertigt, mit andersfarbigem Faden an den Nähten. Wer es nähte, wusste, dass es nicht lange halten würde.",
+          "zh": "撕裂的布料，图案残缺。它是手工制作的，缝线处用了另一种颜色的线。缝制它的人知道，它不会维持太久。"
+        }
+      }
+    },
+    {
+      "type": "chair-ghost",
+      "position": [
+        -2,
+        0,
+        -6.4
+      ],
+      "rotation": [
+        0,
+        0.4,
+        0
+      ],
+      "accent": "#243B8F",
+      "info": "va2",
+      "content": {
+        "title": {
+          "pt": "CADEIRA",
+          "en": "CHAIR",
+          "es": "SILLA",
+          "de": "STUHL",
+          "zh": "椅子"
+        },
+        "body": {
+          "pt": "Lugar vazio à mesa. O assento ainda guarda a forma de um peso. A madeira está gasta só de um lado, o lado por onde a pessoa se levantava todo dia.",
+          "en": "Empty seat at the table. It still holds the shape of a weight. The wood is worn on one side only, the side the person rose from every day.",
+          "es": "Asiento vacío junto a la mesa. Todavía conserva la forma de un peso. La madera está gastada solo de un lado, el lado por el que aquella persona se levantaba cada día.",
+          "de": "Leerer Platz am Tisch. Er trägt noch die Form eines Gewichts. Das Holz ist nur auf einer Seite abgenutzt, auf der Seite, von der die Person jeden Tag aufstand.",
+          "zh": "桌边的空座位。它仍保留着某种重量留下的形状。木头只在一侧磨损，那是那个人每天起身的一侧。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        -5.6,
+        0,
+        -7
+      ],
+      "accent": "#858B94",
+      "info": "va3",
+      "content": {
+        "title": {
+          "pt": "RÁDIO",
+          "en": "RADIO",
+          "es": "RADIO",
+          "de": "RADIO",
+          "zh": "收音机"
+        },
+        "body": {
+          "pt": "Sintonia perdida, ruído constante, talvez intencional. De vez em quando, dentro da estática, uma voz quase forma uma palavra, e some antes de terminar.",
+          "en": "Lost frequency, constant noise, perhaps intentional. Now and then, inside the static, a voice almost forms a word, and fades before it finishes.",
+          "es": "Frecuencia perdida, ruido constante, quizá intencional. De vez en cuando, dentro de la estática, una voz casi forma una palabra y se desvanece antes de terminarla.",
+          "de": "Verlorene Frequenz, konstantes Rauschen, vielleicht absichtlich. Hin und wieder bildet sich in der Statik beinahe ein Wort, doch die Stimme verblasst, bevor es endet.",
+          "zh": "失落的频率，持续的噪声，也许是故意的。偶尔在静电中，一个声音几乎形成一个词，却在说完前消散。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.4
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#806321",
+      "itemTint": "#1a1612",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "va4",
+      "content": {
+        "title": {
+          "pt": "RETRATO",
+          "en": "PORTRAIT",
+          "es": "RETRATO",
+          "de": "PORTRÄT",
+          "zh": "肖像"
+        },
+        "body": {
+          "pt": "Moldura vazia, verso parcialmente queimado. A foto não está aqui. Restou o retângulo mais claro na parede, onde ela protegeu a tinta do tempo.",
+          "en": "Empty frame, back partially burnt. The photo is not here. What remains is the lighter rectangle on the wall, where it shielded the paint from time.",
+          "es": "Marco vacío, parte trasera parcialmente quemada. La foto no está. Lo que queda es el rectángulo más claro de la pared, donde protegió la pintura del paso del tiempo.",
+          "de": "Leerer Rahmen, Rückseite teilweise verbrannt. Das Foto fehlt. Übrig ist das hellere Rechteck an der Wand, wo es die Farbe vor der Zeit geschützt hat.",
+          "zh": "空画框，背面部分烧焦。照片已经不在。墙上只留下一个更浅的矩形，那是照片曾替油漆挡住时间的地方。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0E8C86",
+      "itemTint": "#0a1410",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "va5",
+      "content": {
+        "title": {
+          "pt": "TECIDO",
+          "en": "FABRIC",
+          "es": "TELA",
+          "de": "STOFF",
+          "zh": "布料"
+        },
+        "body": {
+          "pt": "Bordado com coordenadas. O ponto marcado não existe em nenhum mapa. Alguém guardou um lugar dentro de um pano, um endereço que só o corpo de quem bordou sabia chegar.",
+          "en": "Embroidered with coordinates. The marked point exists on no map. Someone kept a place inside a cloth, an address only the body that stitched it knew how to reach.",
+          "es": "Bordada con coordenadas. El punto marcado no existe en ningún mapa. Alguien guardó un lugar dentro de una tela, una dirección a la que solo sabía llegar el cuerpo que la bordó.",
+          "de": "Mit Koordinaten bestickt. Der markierte Punkt existiert auf keiner Karte. Jemand bewahrte einen Ort in einem Stoff auf, eine Adresse, die nur der Körper zu erreichen wusste, der sie gestickt hatte.",
+          "zh": "绣着坐标。标记的点不存在于任何地图上。有人把一个地点保存在一块布里，一个只有缝出它的身体才知道如何抵达的地址。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        0,
+        0.4,
+        -3.6
+      ],
+      "tint": "#11141b",
+      "glow": "#858B94",
+      "itemScale": 0.2,
+      "displace": 0.06,
+      "info": "va6",
+      "content": {
+        "title": {
+          "pt": "MARCA",
+          "en": "MARK",
+          "es": "MARCA",
+          "de": "SPUR",
+          "zh": "痕迹"
+        },
+        "body": {
+          "pt": "Vestígio de corrente no chão, função não confirmada. O desenho no piso repete a distância exata de um passo curto, o passo de quem andava preso a algo.",
+          "en": "Trace of a chain on the floor, function unconfirmed. The pattern on the floor repeats the exact length of a short step, the step of someone bound to something.",
+          "es": "Rastro de una cadena en el suelo, función no confirmada. El patrón repite exactamente la longitud de un paso corto, el paso de alguien atado a algo.",
+          "de": "Kettenspur auf dem Boden, Funktion unbestätigt. Das Muster wiederholt exakt die Länge eines kurzen Schrittes, den Schritt von jemandem, der an etwas gebunden war.",
+          "zh": "地板上的锁链痕迹，功能尚未确认。图案精确重复着一个短步的长度，那是被某物束缚之人的步幅。"
+        }
+      }
+    },
+    {
+      "type": "chair-ghost",
+      "position": [
+        1.2,
+        0,
+        -7.4
+      ],
+      "rotation": [
+        0,
+        -0.3,
+        0
+      ],
+      "accent": "#243B8F"
+    },
+    {
+      "type": "chair-ghost",
+      "position": [
+        4,
+        0,
+        -5.8
+      ],
+      "rotation": [
+        0,
+        1.0,
+        0
+      ],
+      "accent": "#243B8F"
+    },
+    {
+      "type": "banner",
+      "position": [
+        6.4,
+        0,
+        -3.4
+      ],
+      "rotation": [
+        0,
+        -0.3,
+        0
+      ],
+      "color": "#1c1f2a",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#243B8F",
+      "emissiveIntensity": 0.08
+    },
+    {
+      "type": "shard",
+      "position": [
+        5.6,
+        1.6,
+        -4.4
+      ],
+      "tint": "#120e0a",
+      "glow": "#806321",
+      "itemScale": 0.32,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        -5.8,
+        1.5,
+        -5.0
+      ],
+      "tint": "#0c1018",
+      "glow": "#243B8F",
+      "itemScale": 0.3,
+      "displace": 0.06
+    },
+    {
+      "type": "panel",
+      "position": [
+        0,
+        1.6,
+        -9.0
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#858B94",
+      "line": "#243B8F"
+    }
+  ],
+  "central": {
+    "type": "villa-table",
+    "position": [
+      0,
+      0,
+      -5.0
+    ],
+    "title": {
+      "pt": "MESA DOS AUSENTES",
+      "en": "TABLE OF THE ABSENT",
+      "es": "MESA DE LOS AUSENTES",
+      "de": "TISCH DER ABWESENDEN",
+      "zh": "缺席者之桌"
+    },
+    "body": {
+      "pt": "Três lugares vazios. Sobre a mesa, uma concha, uma garra e um documento queimado. O jantar foi posto e ninguém veio, ou vieram e foram levados. A ausência aqui tem forma, peso e lugar reservado.",
+      "en": "Three empty seats. On the table, a shell, a claw, and a burnt document. The meal was set and no one came, or they came and were taken. Absence here has shape, weight, and a seat reserved.",
+      "es": "Tres asientos vacíos. Sobre la mesa, una concha, una garra y un documento quemado. La comida estaba servida y nadie llegó, o llegaron y se los llevaron. Aquí la ausencia tiene forma, peso y un asiento reservado.",
+      "de": "Drei leere Plätze. Auf dem Tisch liegen eine Muschel, eine Kralle und ein verbranntes Dokument. Das Essen war gedeckt und niemand kam, oder sie kamen und wurden fortgebracht. Abwesenheit hat hier Form, Gewicht und einen reservierten Platz.",
+      "zh": "三个空座位。桌上放着一只贝壳、一只爪子和一份烧焦的文件。饭已经摆好，却没人来，或者他们来了之后被带走。这里的缺席拥有形状、重量，以及一个被保留的座位。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "SENTAR",
+          "en": "SIT",
+          "es": "SENTARSE",
+          "de": "SICH SETZEN",
+          "zh": "坐下"
+        },
+        "detail": {
+          "pt": "a cadeira aceita seu peso",
+          "en": "the chair accepts your weight",
+          "es": "la silla acepta tu peso",
+          "de": "der Stuhl nimmt dein Gewicht an",
+          "zh": "椅子接纳你的重量"
+        },
+        "rastro": {
+          "voz": 1,
+          "cinza": 1
+        },
+        "next": "sala-04b-vozes-dissidentes.html"
+      },
+      {
+        "verb": {
+          "pt": "ROUBAR O DOCUMENTO",
+          "en": "TAKE THE DOCUMENT",
+          "es": "TOMAR EL DOCUMENTO",
+          "de": "DAS DOKUMENT NEHMEN",
+          "zh": "拿起文件"
+        },
+        "detail": {
+          "pt": "o papel queimado resiste",
+          "en": "the burnt paper resists",
+          "es": "el papel quemado se resiste",
+          "de": "das verbrannte Papier widersetzt sich",
+          "zh": "烧焦的纸在抵抗"
+        },
+        "rastro": {
+          "ouro": 2
+        },
+        "next": "sala-04a-elementos.html"
+      },
+      {
+        "verb": {
+          "pt": "CHAMAR OS AUSENTES",
+          "en": "CALL THE ABSENT",
+          "es": "LLAMAR A LOS AUSENTES",
+          "de": "DIE ABWESENDEN RUFEN",
+          "zh": "呼唤缺席者"
+        },
+        "detail": {
+          "pt": "o ar muda de densidade",
+          "en": "the air changes density",
+          "es": "el aire cambia de densidad",
+          "de": "die Luft verändert ihre Dichte",
+          "zh": "空气的密度发生变化"
+        },
+        "rastro": {
+          "voz": 2,
+          "espelho": 1
+        },
+        "next": "sala-04c-vozes-ancestrais.html"
+      }
+    ]
+  }
+}

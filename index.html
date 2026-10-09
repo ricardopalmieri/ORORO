@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR" data-room="portal" class="portal-html">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>OROЯO</title>
+  <meta name="description" content="OROЯO: galeria digital escura. Entidade sereia-onça, decolonial, pos-humana, nascida do oleo, do ouro, do espelho e da contaminacao." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=38" />
+  <script type="importmap">
+    { "imports": { "three": "./assets/js/three.module.js" } }
+  </script>
+<link rel="stylesheet" href="./multiplayer/style.css?v=38" />
+</head>
+<body class="ororo-room portal-body">
+  <canvas id="scene-canvas" tabindex="-1"></canvas>
+  <div class="screen-grain"></div>
+  <div class="screen-vignette"></div>
+
+  <div class="hud">
+    <a class="hud-brand" href="#" id="brand-link">OR<span class="glyph-ya">O</span><span class="glyph-ya">Я</span>O</a>
+    <div class="hud-right">
+      <button class="hud-mute" id="mute-btn" type="button" aria-label="sound">
+        <svg class="icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 9v6h3l4 4V5L7 9H4z"/>
+          <path d="M16 9a4 4 0 0 1 0 6"/>
+          <path d="M18.5 6.5a8 8 0 0 1 0 11"/>
+        </svg>
+        <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 9v6h3l4 4V5L7 9H4z"/>
+          <path d="M15 9l5 6M20 9l-5 6"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <main class="portal">
+    <h1 class="portal-mark">OROЯO</h1>
+    <p class="portal-tag" id="tagline">GALERIA DIGITAL · TERRITÓRIO CONTAMINADO</p>
+
+    <div class="portal-lang" id="lang-toggle">
+      <button type="button" data-lang="pt">PT</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="es">ES</button>
+      <button type="button" data-lang="de">DE</button>
+      <button type="button" data-lang="zh">中文</button>
+    </div>
+
+    <a class="portal-enter" href="rooms/sala-01-genese.html" id="enter-link">ENTRAR</a>
+
+    <button class="portal-reset" id="reset-btn" type="button">APAGAR RASTROS</button>
+  </main>
+
+  <div class="rastros" id="rastros">
+    <button class="rastros-toggle" type="button" id="rastros-toggle">RASTROS</button>
+    <div class="rastros-list" id="rastros-list"></div>
+  </div>
+
+  <div class="veil" id="veil">
+    <div class="veil-title"></div>
+    <div class="veil-sub"></div>
+    <div class="veil-controls"></div>
+  </div>
+
+  <script type="module">
+    import {
+      initPortalScene, loadContent, getLang, setLang, L,
+      getRastros, resetExperience, RASTRO_KEYS, RASTRO_COLORS, ORORO_AUDIO,
+    } from './ororo-core.js?v=38';
+
+    import { chooseAvatar } from './multiplayer/avatar.js?v=38';
+    /* fundo: cena 3D com movimento de câmera lento, apenas decorativo */
+    initPortalScene({ fog: '#03040a', fogDensity: 0.03 });
+
+    const content = await loadContent('./content/ororo-content.json');
+    let lang = getLang();
+
+    function applyLang() {
+      document.documentElement.lang = {pt:'pt-BR',en:'en',es:'es',de:'de',zh:'zh-CN'}[lang] || 'en';
+      const ui = content.ui[lang] || {};
+      document.getElementById('tagline').textContent = ui.start_tagline || '';
+      document.getElementById('enter-link').textContent = ui.start_enter || 'ENTER';
+      document.getElementById('reset-btn').textContent = ui.reset_label || 'CLEAR TRACES';
+      document.getElementById('rastros-toggle').textContent = ui.rastros_title || 'TRACES';
+      document.querySelectorAll('#lang-toggle button').forEach((b) => {
+        b.classList.toggle('is-active', b.dataset.lang === lang);
+      });
+      buildRastros();
+    }
+
+    document.querySelectorAll('#lang-toggle button').forEach((b) => {
+      b.addEventListener('click', () => {
+        lang = b.dataset.lang;
+        setLang(lang);
+        document.documentElement.lang = {pt:'pt-BR',en:'en',es:'es',de:'de',zh:'zh-CN'}[lang] || 'en';
+        applyLang();
+      });
+    });
+
+    /* rastros (memória local) */
+    function buildRastros() {
+      const ui = content.ui[lang] || {};
+      const rastros = getRastros();
+      const maxVal = Math.max(4, ...RASTRO_KEYS.map((k) => rastros[k]));
+      const list = document.getElementById('rastros-list');
+      list.innerHTML = '';
+      RASTRO_KEYS.forEach((k) => {
+        const row = document.createElement('div');
+        row.className = 'rastro-row';
+        row.style.setProperty('--bar-color', RASTRO_COLORS[k]);
+        row.style.setProperty('--val', String((rastros[k] / maxVal) * 10));
+        const label = (ui.rastros && ui.rastros[k]) || k;
+        row.innerHTML = `<span class="label">${label}</span><span class="bar"><i></i></span>`;
+        list.append(row);
+      });
+    }
+    document.getElementById('rastros-toggle').addEventListener('click', () => {
+      document.getElementById('rastros').classList.toggle('is-open');
+    });
+
+    /* reset */
+    document.getElementById('reset-btn').addEventListener('click', () => {
+      resetExperience();
+      buildRastros();
+    });
+
+    /* som */
+    const muteBtn = document.getElementById('mute-btn');
+    function updateMute() { const enabled=ORORO_AUDIO.isEnabled(); muteBtn.classList.toggle('is-muted', !enabled); const ui=content.ui[lang]||{}; muteBtn.setAttribute('aria-label', enabled?(ui.mute||'Mute sound'):(ui.unmute||'Enable sound')); }
+    updateMute();
+    muteBtn.addEventListener('click', () => {
+      const on = !ORORO_AUDIO.isEnabled();
+      ORORO_AUDIO.setEnabled(on);
+      if (on) ORORO_AUDIO.start({ root: 36, intensity: 0.5 });
+      else ORORO_AUDIO.stop();
+      updateMute();
+    });
+    window.addEventListener('pointerdown', () => {
+      const ctx = ORORO_AUDIO.getContext();
+      if (ctx && ctx.state === 'suspended') ctx.resume();
+    }, { once: true });
+
+    /* entrada: véu fecha (fade longo) revelando a cena de fundo */
+    const veil = document.getElementById('veil');
+    veil.querySelector('.veil-title').innerHTML = '<span class="brand">OROЯO</span>';
+    requestAnimationFrame(() => {
+      applyLang();
+      setTimeout(() => veil.classList.add('is-hidden'), 250);
+    });
+
+    /* travessia: fade-in longo mostrando o nome da primeira sala, depois navega */
+    document.getElementById('enter-link').addEventListener('click', async (e) => {
+      e.preventDefault();
+      const href = e.currentTarget.getAttribute('href');
+      const chosenProfile = await chooseAvatar('sala-01-genese');
+      if (!chosenProfile) return;
+      lang=getLang();applyLang();
+      const room = content.rooms['sala-01-genese'];
+      veil.querySelector('.veil-title').textContent = L(room.name, lang);
+      veil.querySelector('.veil-sub').textContent = '';
+      veil.querySelector('.veil-controls').textContent = '';
+      veil.classList.remove('is-hidden');
+      if (ORORO_AUDIO.isEnabled()) ORORO_AUDIO.duck(0.04, 1.2);
+      setTimeout(() => { window.location.href = href; }, 2200);
+    });
+
+    /* link da marca: permanece na própria tela inicial */
+    document.getElementById('brand-link').addEventListener('click', (e) => e.preventDefault());
+  </script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+{
+  "id": "sala-06b-insurreicao",
+  "stage": 6,
+  "name": {
+    "pt": "INSURREIÇÃO",
+    "en": "INSURRECTION",
+    "es": "INSURRECCIÓN",
+    "de": "AUFSTAND",
+    "zh": "起义"
+  },
+  "scene": {
+    "accent": "#C1121F",
+    "accent2": "#0F6F5C",
+    "fog": "#06050a",
+    "fogDensity": 0.036,
+    "ambient": {
+      "color": "#220a0a",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C1121F",
+      "intensity": 8.9,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#050406",
+      "colorA": "#C1121F",
+      "colorB": "#0F6F5C",
+      "glow": "#B7F03B",
+      "liquid": 0.4,
+      "veins": 0.22,
+      "crack": 0.35,
+      "grid": 0.22,
+      "gridScale": 0.42,
+      "scale": 0.15
+    },
+    "fireflies": {
+      "color": "#B7F03B",
+      "count": 120,
+      "drift": 0.55
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#C1121F",
+      "height": 6.5
+    },
+    "audio": {
+      "root": 30.9,
+      "intensity": 0.6
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "banner",
+      "position": [
+        -6.4,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0.35,
+        0
+      ],
+      "color": "#3a0508",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#8A0303",
+      "emissiveIntensity": 0.18,
+      "info": "ins1",
+      "content": {
+        "title": {
+          "pt": "BANDEIRA A",
+          "en": "FLAG A",
+          "es": "BANDERA A",
+          "de": "FLAGGE A",
+          "zh": "旗帜 A"
+        },
+        "body": {
+          "pt": "Tecido rasgado, símbolo parcialmente visível. O rasgo não é do tempo, é de uso. Foi puxada de muitas mãos ao mesmo tempo e resistiu.",
+          "en": "Torn fabric, symbol partly visible. The tear is not from time, it is from use. It was pulled by many hands at once and held.",
+          "es": "Tela rasgada, símbolo parcialmente visible. El desgarro no viene del tiempo, sino del uso. Muchas manos tiraron de ella al mismo tiempo y resistió.",
+          "de": "Zerrissenes Tuch, Symbol teilweise sichtbar. Der Riss stammt nicht von der Zeit, sondern vom Gebrauch. Viele Hände zogen gleichzeitig daran, und es hielt stand.",
+          "zh": "撕裂的布料，图案部分可见。这道裂口不是岁月造成的，而是使用留下的。许多只手同时拉扯它，而它撑住了。"
+        }
+      }
+    },
+    {
+      "type": "banner",
+      "position": [
+        6.4,
+        0,
+        -3.4
+      ],
+      "rotation": [
+        0,
+        -0.35,
+        0
+      ],
+      "color": "#0a1f14",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#0F6F5C",
+      "emissiveIntensity": 0.16,
+      "info": "ins2",
+      "content": {
+        "title": {
+          "pt": "BANDEIRA B",
+          "en": "FLAG B",
+          "es": "BANDERA B",
+          "de": "FLAGGE B",
+          "zh": "旗帜 B"
+        },
+        "body": {
+          "pt": "Segunda bandeira, cor diferente, mesmo rasgo. Foi feita depois da primeira, copiando até o dano. O gesto virou modelo, o modelo virou movimento.",
+          "en": "Second flag, different color, same tear. It was made after the first, copying even the damage. The gesture became a template, the template became a movement.",
+          "es": "Segunda bandera, color diferente, mismo desgarro. Fue hecha después de la primera, copiando incluso el daño. El gesto se volvió modelo y el modelo se volvió movimiento.",
+          "de": "Zweite Flagge, andere Farbe, derselbe Riss. Sie entstand nach der ersten und kopierte sogar den Schaden. Die Geste wurde zur Vorlage, die Vorlage zur Bewegung.",
+          "zh": "第二面旗帜，颜色不同，却有同样的裂口。它在第一面之后被制作，甚至复制了损伤。动作变成模板，模板又变成运动。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        -5,
+        0,
+        -3.6
+      ],
+      "accent": "#C1121F",
+      "info": "ins3",
+      "content": {
+        "title": {
+          "pt": "TAMBOR",
+          "en": "DRUM",
+          "es": "TAMBOR",
+          "de": "TROMMEL",
+          "zh": "鼓"
+        },
+        "body": {
+          "pt": "Membrana de metal, vibração ainda perceptível. Encoste a mão e sente o último toque, ainda vivo no material. O ritmo não terminou, só ficou baixo demais para ouvir.",
+          "en": "Metal membrane, vibration still perceptible. Touch it and feel the last beat, still alive in the material. The rhythm did not end, it only dropped too low to hear.",
+          "es": "Membrana de metal, la vibración todavía es perceptible. Tócala y siente el último golpe, aún vivo en el material. El ritmo no terminó: simplemente cayó por debajo de lo audible.",
+          "de": "Metallmembran, Vibration noch spürbar. Berühre sie und fühle den letzten Schlag, noch lebendig im Material. Der Rhythmus endete nicht, er wurde nur zu tief, um ihn zu hören.",
+          "zh": "金属鼓膜，振动仍能感受到。触摸它，可以感觉到最后一次敲击仍活在材料里。节奏并没有结束，只是低到无法听见。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        -2,
+        0.6,
+        -7.0
+      ],
+      "tint": "#100808",
+      "glow": "#0F6F5C",
+      "itemScale": 0.3,
+      "displace": 0.06,
+      "info": "ins4",
+      "content": {
+        "title": {
+          "pt": "BARRICADA",
+          "en": "BARRICADE",
+          "es": "BARRICADA",
+          "de": "BARRIKADE",
+          "zh": "路障"
+        },
+        "body": {
+          "pt": "Pedaço de estrutura, marcas de impacto recentes. Foi feita para segurar e segurou. As marcas contam de que lado veio a força, e de que lado ela parou.",
+          "en": "Piece of structure, recent impact marks. It was made to hold and it held. The marks tell which side the force came from, and which side it stopped.",
+          "es": "Fragmento de estructura, marcas de impacto recientes. Fue hecha para resistir y resistió. Las marcas dicen de qué lado llegó la fuerza y de qué lado se detuvo.",
+          "de": "Stück einer Struktur, frische Einschlagspuren. Sie wurde gebaut, um standzuhalten, und sie hielt. Die Spuren zeigen, von welcher Seite die Kraft kam und auf welcher Seite sie gestoppt wurde.",
+          "zh": "一块结构残片，带有新近的撞击痕迹。它被制造来抵挡，而它确实抵挡住了。痕迹说明力量从哪一边来，又在哪一边停止。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        0,
+        0,
+        -3.4
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.85,
+        1.1,
+        0.85
+      ],
+      "accent": "#B7F03B",
+      "itemTint": "#0a1206",
+      "itemScale": 0.4,
+      "displace": 0.06,
+      "info": "ins5",
+      "content": {
+        "title": {
+          "pt": "OBJETOS",
+          "en": "OBJECTS",
+          "es": "OBJETOS",
+          "de": "GEGENSTÄNDE",
+          "zh": "物件"
+        },
+        "body": {
+          "pt": "Conjunto de pequenos itens, nenhum identificado. São coisas de bolso, deixadas juntas às pressas. Cada uma pertenceu a um corpo que precisou ter as mãos livres.",
+          "en": "Set of small items, none identified. They are pocket things, left together in haste. Each one belonged to a body that needed its hands free.",
+          "es": "Conjunto de pequeños objetos, ninguno identificado. Son cosas de bolsillo, dejadas juntas con prisa. Cada una perteneció a un cuerpo que necesitó tener las manos libres.",
+          "de": "Sammlung kleiner Dinge, keines identifiziert. Taschensachen, hastig zusammen abgelegt. Jedes gehörte zu einem Körper, der seine Hände frei haben musste.",
+          "zh": "一组小物品，没有一个能够确认身份。都是口袋里的东西，被匆忙放在一起。每一样都曾属于一具需要腾出双手的身体。"
+        }
+      }
+    },
+    {
+      "type": "panel",
+      "position": [
+        5.8,
+        1.6,
+        -6.4
+      ],
+      "rotation": [
+        0,
+        -0.4,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#0F6F5C",
+      "line": "#C1121F",
+      "info": "ins6",
+      "content": {
+        "title": {
+          "pt": "PROJEÇÃO",
+          "en": "PROJECTION",
+          "es": "PROYECCIÓN",
+          "de": "PROJEKTION",
+          "zh": "投影"
+        },
+        "body": {
+          "pt": "Sombra de corpo em movimento, sem fonte aparente. A sombra anda sem quem a faça. Repete o mesmo gesto de erguer algo, de novo e de novo, sem cansar.",
+          "en": "Shadow of a moving body, no apparent source. The shadow walks with no one to cast it. It repeats the same gesture of raising something, again and again, without tiring.",
+          "es": "Sombra de un cuerpo en movimiento, sin fuente aparente. La sombra camina sin nadie que la proyecte. Repite el mismo gesto de levantar algo, una y otra vez, sin cansarse.",
+          "de": "Schatten eines bewegten Körpers ohne erkennbare Quelle. Der Schatten geht, ohne dass jemand ihn wirft. Immer wieder hebt er etwas hoch, ohne müde zu werden.",
+          "zh": "移动身体的影子，却没有明显来源。影子在没有任何人投射它的情况下行走。它不断重复举起某物的动作，一次又一次，永不疲倦。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        5,
+        0,
+        -3.8
+      ],
+      "accent": "#0F6F5C"
+    },
+    {
+      "type": "banner",
+      "position": [
+        -6.8,
+        0,
+        -7.6
+      ],
+      "rotation": [
+        0,
+        0.6,
+        0
+      ],
+      "color": "#3a0508",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#C1121F",
+      "emissiveIntensity": 0.14
+    },
+    {
+      "type": "banner",
+      "position": [
+        6.8,
+        0,
+        -8
+      ],
+      "rotation": [
+        0,
+        -0.6,
+        0
+      ],
+      "color": "#0a1f14",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#B7F03B",
+      "emissiveIntensity": 0.14
+    },
+    {
+      "type": "shard",
+      "position": [
+        2.2,
+        0.7,
+        -7.4
+      ],
+      "tint": "#100808",
+      "glow": "#C1121F",
+      "itemScale": 0.32,
+      "displace": 0.06
+    },
+    {
+      "type": "panel",
+      "position": [
+        -5.8,
+        1.6,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0.4,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#C1121F",
+      "line": "#0F6F5C"
+    }
+  ],
+  "central": {
+    "type": "mask",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "MÁSCARA COLETIVA",
+      "en": "COLLECTIVE MASK",
+      "es": "MÁSCARA COLECTIVA",
+      "de": "KOLLEKTIVE MASKE",
+      "zh": "集体面具"
+    },
+    "body": {
+      "pt": "Muitas faces se sobrepõem nesta máscara enorme. Nenhuma é a principal, e todas se movem juntas. É o rosto que a multidão faz quando decide ter um só. Cabe em qualquer um e não devolve nenhuma cara sozinha.",
+      "en": "Many faces overlap in this enormous mask. None is the main one, and all move together. It is the face a crowd makes when it decides to have just one. It fits anyone and gives back no single face alone.",
+      "es": "Muchos rostros se superponen en esta máscara enorme. Ninguno es el principal y todos se mueven juntos. Es el rostro que forma una multitud cuando decide tener uno solo. Le sirve a cualquiera y no devuelve ningún rostro individual.",
+      "de": "Viele Gesichter überlagern sich in dieser riesigen Maske. Keines ist das Hauptgesicht, und alle bewegen sich gemeinsam. Es ist das Gesicht, das eine Menge formt, wenn sie beschließt, nur eines zu haben. Sie passt jedem und gibt kein einzelnes Gesicht zurück.",
+      "zh": "许多张脸重叠在这张巨大面具上。没有哪一张是主角，而它们全部一起移动。这是一群人决定只拥有一张脸时形成的面孔。它适合任何人，却不会单独还给任何一张脸。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "ERGUER",
+          "en": "RAISE",
+          "es": "LEVANTAR",
+          "de": "ERHEBEN",
+          "zh": "举起"
+        },
+        "detail": {
+          "pt": "a sala parece responder ao gesto",
+          "en": "the room seems to answer the gesture",
+          "es": "la sala parece responder al gesto",
+          "de": "der Raum scheint auf die Geste zu antworten",
+          "zh": "房间仿佛回应这个动作"
+        },
+        "rastro": {
+          "ouro": 1,
+          "voz": 1
+        },
+        "next": "sala-07-final.html"
+      },
+      {
+        "verb": {
+          "pt": "INCENDIAR",
+          "en": "SET ALIGHT",
+          "es": "PRENDER FUEGO",
+          "de": "ENTZÜNDEN",
+          "zh": "点燃"
+        },
+        "detail": {
+          "pt": "o ar fica mais pesado",
+          "en": "the air grows heavier",
+          "es": "el aire se vuelve más pesado",
+          "de": "die Luft wird schwerer",
+          "zh": "空气变得更沉重"
+        },
+        "rastro": {
+          "cinza": 2,
+          "sangue": 1
+        },
+        "next": "sala-07-final.html"
+      },
+      {
+        "verb": {
+          "pt": "DESAPARECER",
+          "en": "DISAPPEAR",
+          "es": "DESAPARECER",
+          "de": "VERSCHWINDEN",
+          "zh": "消失"
+        },
+        "detail": {
+          "pt": "seu contorno se perde nas sombras",
+          "en": "your outline is lost in the shadows",
+          "es": "tu contorno se pierde entre las sombras",
+          "de": "deine Kontur verliert sich in den Schatten",
+          "zh": "你的轮廓消失在阴影中"
+        },
+        "rastro": {
+          "espelho": 2,
+          "voz": 1
+        },
+        "next": "sala-07-final.html"
+      }
+    ]
+  }
+}

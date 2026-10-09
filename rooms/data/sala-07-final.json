@@ -1,0 +1,374 @@
+{
+  "id": "sala-07-final",
+  "stage": 7,
+  "name": {
+    "pt": "LIMIAR",
+    "en": "THRESHOLD",
+    "es": "UMBRAL",
+    "de": "SCHWELLE",
+    "zh": "门槛"
+  },
+  "scene": {
+    "accent": "#C9A24A",
+    "accent2": "#0E8C86",
+    "fog": "#04050a",
+    "fogDensity": 0.029,
+    "ambient": {
+      "color": "#1c1a20",
+      "intensity": 1.725
+    },
+    "keyLight": {
+      "color": "#C9A24A",
+      "intensity": 8.9,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#04050a",
+      "colorA": "#C9A24A",
+      "colorB": "#243B8F",
+      "glow": "#E8E1D2",
+      "liquid": 0.65,
+      "veins": 0.12,
+      "crack": 0.1,
+      "grid": 0.15,
+      "gridScale": 0.4,
+      "scale": 0.12
+    },
+    "fireflies": {
+      "color": "#E8E1D2",
+      "count": 140,
+      "drift": 0.5
+    },
+    "boundary": {
+      "radius": 14,
+      "glow": "#C9A24A",
+      "height": 7.5
+    },
+    "audio": {
+      "root": 35.0,
+      "intensity": 0.5
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0E8C86",
+      "itemTint": "#0a1f1c",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "fi1",
+      "content": {
+        "title": {
+          "pt": "ÓLEO",
+          "en": "OIL",
+          "es": "ACEITE",
+          "de": "ÖL",
+          "zh": "油"
+        },
+        "body": {
+          "pt": "O primeiro brilho ainda está aqui, sob a poeira. É o mesmo óleo do ovo da gênese, mais velho e mais quieto. Reconhece quem chegou até aqui.",
+          "en": "The first shine is still here, under the dust. It is the same oil from the egg of the genesis, older and quieter. It recognizes whoever made it this far.",
+          "es": "El primer brillo sigue aquí, bajo el polvo. Es el mismo aceite del huevo de la génesis, más viejo y más quieto. Reconoce a quien logró llegar hasta aquí.",
+          "de": "Der erste Glanz ist noch hier, unter dem Staub. Es ist dasselbe Öl aus dem Ei der Genese, älter und stiller. Es erkennt, wer es bis hierher geschafft hat.",
+          "zh": "最初的光泽仍在这里，藏在尘埃下面。它还是创世之卵里的那种油，只是更古老、更安静。它认得那些真正走到这里的人。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C9A24A",
+      "itemTint": "#1a1306",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "fi2",
+      "content": {
+        "title": {
+          "pt": "OURO",
+          "en": "GOLD",
+          "es": "ORO",
+          "de": "GOLD",
+          "zh": "黄金"
+        },
+        "body": {
+          "pt": "O peso não diminuiu. Carregou o percurso inteiro e continua pesando o mesmo. O que ele guarda dentro não se gasta com a viagem.",
+          "en": "The weight has not lessened. It bore the whole journey and still weighs the same. What it holds inside does not wear down with the crossing.",
+          "es": "El peso no ha disminuido. Cargó con todo el recorrido y sigue pesando lo mismo. Lo que guarda dentro no se desgasta con el cruce.",
+          "de": "Das Gewicht hat nicht abgenommen. Es trug die ganze Reise und wiegt noch immer gleich viel. Was es in sich bewahrt, nutzt sich auf dem Weg nicht ab.",
+          "zh": "重量没有减轻。它承载了整段旅程，如今仍然同样沉重。它内部保存的东西不会因为穿越而磨损。"
+        }
+      }
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        -6.6,
+        1.3,
+        -4.6
+      ],
+      "rotation": [
+        0.0,
+        0.55,
+        0
+      ],
+      "tint": "#243B8F",
+      "size": [
+        0.9,
+        1.6
+      ],
+      "distort": 0.05,
+      "info": "fi3",
+      "content": {
+        "title": {
+          "pt": "ESPELHO",
+          "en": "MIRROR",
+          "es": "ESPEJO",
+          "de": "SPIEGEL",
+          "zh": "镜子"
+        },
+        "body": {
+          "pt": "Cada caco mostra uma versão diferente do mesmo rosto. São todas as escolhas feitas no caminho, guardadas em pedaços de vidro. Juntas, ainda não fecham numa cara só.",
+          "en": "Each shard shows a different version of the same face. They are all the choices made along the way, kept in pieces of glass. Together, they still do not close into one face.",
+          "es": "Cada fragmento muestra una versión diferente del mismo rostro. Son todas las decisiones tomadas en el camino, guardadas en pedazos de vidrio. Juntas, todavía no cierran en una sola cara.",
+          "de": "Jede Scherbe zeigt eine andere Version desselben Gesichts. Es sind all die Entscheidungen des Weges, in Glasstücken bewahrt. Zusammen schließen sie sich noch immer nicht zu einem einzigen Gesicht.",
+          "zh": "每一片碎镜都显示同一张脸的不同版本。那是一路上所有选择，被保存在玻璃碎片里。即使放在一起，它们仍无法闭合成唯一的一张脸。"
+        }
+      }
+    },
+    {
+      "type": "root",
+      "position": [
+        2,
+        0,
+        -7.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "accent": "#0F6F5C",
+      "branches": 3,
+      "info": "fi4",
+      "content": {
+        "title": {
+          "pt": "RAIZ",
+          "en": "ROOT",
+          "es": "RAÍZ",
+          "de": "WURZEL",
+          "zh": "根"
+        },
+        "body": {
+          "pt": "Continua crescendo, mesmo aqui. Chegou ao fim do percurso e não parou. Procura, no limiar, uma terra que talvez esteja do outro lado.",
+          "en": "Still growing, even here. It reached the end of the path and did not stop. At the threshold, it searches for a soil that maybe lies on the other side.",
+          "es": "Sigue creciendo, incluso aquí. Llegó al final del camino y no se detuvo. En el umbral busca una tierra que quizá esté al otro lado.",
+          "de": "Sie wächst weiter, selbst hier. Sie erreichte das Ende des Weges und hörte nicht auf. An der Schwelle sucht sie nach Erde, die vielleicht auf der anderen Seite liegt.",
+          "zh": "即使到了这里，它仍在继续生长。它抵达路径尽头，却没有停止。在门槛处，它寻找一片也许存在于另一侧的土地。"
+        }
+      }
+    },
+    {
+      "type": "tank",
+      "position": [
+        0,
+        0,
+        -8.6
+      ],
+      "radius": 0.45,
+      "height": 1.3,
+      "colorA": "#1a0306",
+      "colorB": "#8A0303",
+      "glow": "#C1121F",
+      "info": "fi5",
+      "content": {
+        "title": {
+          "pt": "SANGUE",
+          "en": "BLOOD",
+          "es": "SANGRE",
+          "de": "BLUT",
+          "zh": "血"
+        },
+        "body": {
+          "pt": "A cor muda conforme alguém se aproxima. Guardou a memória de cada corpo que passou pelas salas. Diante de você, escolhe um tom que só você viu.",
+          "en": "The color shifts as someone approaches. It kept the memory of every body that passed through the rooms. Before you, it picks a tone only you have seen.",
+          "es": "El color cambia cuando alguien se acerca. Guardó la memoria de cada cuerpo que pasó por las salas. Ante ti elige un tono que solo tú has visto.",
+          "de": "Die Farbe verändert sich, wenn sich jemand nähert. Es bewahrte die Erinnerung an jeden Körper, der die Räume durchquerte. Vor dir wählt es einen Ton, den nur du gesehen hast.",
+          "zh": "有人靠近时，颜色会改变。它保存着每一具穿过这些房间的身体的记忆。面对你，它选择一种只有你见过的色调。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        -5.6,
+        0,
+        -7
+      ],
+      "accent": "#872D67",
+      "info": "fi6",
+      "content": {
+        "title": {
+          "pt": "VOZ",
+          "en": "VOICE",
+          "es": "VOZ",
+          "de": "STIMME",
+          "zh": "声音"
+        },
+        "body": {
+          "pt": "Repete, baixinho, tudo o que foi dito nas salas anteriores. É o arquivo do percurso inteiro, falado sem parar. Reconhece as suas escolhas entre todas as outras.",
+          "en": "Quietly repeats everything said in the rooms before. It is the archive of the whole crossing, spoken without pause. It knows your choices among all the others.",
+          "es": "Repite en voz baja todo lo dicho en las salas anteriores. Es el archivo de todo el recorrido, hablado sin pausa. Reconoce tus elecciones entre todas las demás.",
+          "de": "Leise wiederholt sie alles, was in den vorherigen Räumen gesagt wurde. Sie ist das Archiv der gesamten Durchquerung, ohne Pause gesprochen. Unter all den anderen erkennt sie deine Entscheidungen.",
+          "zh": "它低声重复之前房间里说过的一切。这是整段穿越的档案，不停地被说出。在所有其他选择之中，它认得属于你的那些。"
+        }
+      }
+    },
+    {
+      "type": "totem",
+      "position": [
+        -8,
+        0,
+        -9
+      ],
+      "accent": "#806321",
+      "height": 3.2,
+      "segments": 5
+    },
+    {
+      "type": "totem",
+      "position": [
+        8,
+        0,
+        -8.6
+      ],
+      "accent": "#0F6F5C",
+      "height": 3.4,
+      "segments": 5
+    },
+    {
+      "type": "mirror-shard",
+      "position": [
+        6.6,
+        1.3,
+        -4.8
+      ],
+      "rotation": [
+        0.0,
+        -0.55,
+        0
+      ],
+      "tint": "#0E8C86",
+      "size": [
+        0.9,
+        1.6
+      ],
+      "distort": 0.05
+    }
+  ],
+  "central": {
+    "type": "fusion",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "scale": 1.05,
+    "title": {
+      "pt": "OROЯO",
+      "en": "OROЯO",
+      "es": "OROЯO",
+      "de": "OROЯO",
+      "zh": "OROЯO"
+    },
+    "body": {
+      "pt": "Uma silhueta incompleta, feita de tudo o que foi absorvido, recusado e transformado até aqui. Ela tem a sua forma, montada com os rastros que você deixou. No limiar, decide se o percurso recomeça ou se dissolve em outro.",
+      "en": "An incomplete silhouette, made of everything absorbed, refused, and transformed so far. It has your shape, assembled from the traces you left. At the threshold, it decides whether the crossing starts over or dissolves into another.",
+      "es": "Una silueta incompleta, hecha de todo lo absorbido, rechazado y transformado hasta aquí. Tiene tu forma, ensamblada con los rastros que dejaste. En el umbral decide si el cruce vuelve a comenzar o se disuelve en otro.",
+      "de": "Eine unvollständige Silhouette, gemacht aus allem, was bisher aufgenommen, abgelehnt und verwandelt wurde. Sie hat deine Form, zusammengesetzt aus den Spuren, die du hinterlassen hast. An der Schwelle entscheidet sie, ob die Durchquerung von vorn beginnt oder sich in eine andere auflöst.",
+      "zh": "一个不完整的轮廓，由一路上所有被吸收、拒绝和转化的东西构成。它拥有你的形状，由你留下的痕迹拼装而成。在门槛上，它决定这次穿越是重新开始，还是溶解进另一场穿越。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "RECOMEÇAR",
+          "en": "START OVER",
+          "es": "EMPEZAR DE NUEVO",
+          "de": "VON VORN BEGINNEN",
+          "zh": "重新开始"
+        },
+        "detail": {
+          "pt": "a água volta a ficar lisa",
+          "en": "the water turns smooth again",
+          "es": "el agua vuelve a quedar lisa",
+          "de": "das Wasser wird wieder glatt",
+          "zh": "水面再次变得平滑"
+        },
+        "rastro": {},
+        "next": "sala-01-genese.html",
+        "reset": true
+      },
+      {
+        "verb": {
+          "pt": "DISSOLVER",
+          "en": "DISSOLVE",
+          "es": "DISOLVERSE",
+          "de": "AUFLÖSEN",
+          "zh": "溶解"
+        },
+        "detail": {
+          "pt": "você se torna parte de outro percurso",
+          "en": "you become part of another crossing",
+          "es": "te vuelves parte de otro cruce",
+          "de": "du wirst Teil einer anderen Durchquerung",
+          "zh": "你成为另一场穿越的一部分"
+        },
+        "rastro": {
+          "espelho": 1
+        },
+        "next": "../index.html"
+      }
+    ]
+  }
+}

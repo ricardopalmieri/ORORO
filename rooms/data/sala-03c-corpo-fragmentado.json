@@ -1,0 +1,420 @@
+{
+  "id": "sala-03c-corpo-fragmentado",
+  "stage": 3,
+  "name": {
+    "pt": "CORPO FRAGMENTADO",
+    "en": "FRAGMENTED BODY",
+    "es": "CUERPO FRAGMENTADO",
+    "de": "FRAGMENTIERTER KÖRPER",
+    "zh": "碎片化身体"
+  },
+  "scene": {
+    "accent": "#C1121F",
+    "accent2": "#0E8C86",
+    "fog": "#07040a",
+    "fogDensity": 0.035,
+    "ambient": {
+      "color": "#240e10",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C1121F",
+      "intensity": 8.1,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#070306",
+      "colorA": "#C1121F",
+      "colorB": "#0E8C86",
+      "glow": "#8A0303",
+      "liquid": 0.5,
+      "veins": 0.18,
+      "crack": 0.1,
+      "grid": 0.2,
+      "gridScale": 0.4,
+      "scale": 0.15
+    },
+    "fireflies": {
+      "color": "#C1121F",
+      "count": 90,
+      "drift": 0.4
+    },
+    "boundary": {
+      "radius": 12.5,
+      "glow": "#C1121F",
+      "height": 6
+    },
+    "audio": {
+      "root": 38.0,
+      "intensity": 0.5
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C1121F",
+      "itemTint": "#160808",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "ca1",
+      "content": {
+        "title": {
+          "pt": "PRÓTESE",
+          "en": "PROSTHESIS",
+          "es": "PRÓTESIS",
+          "de": "PROTHESE",
+          "zh": "义肢"
+        },
+        "body": {
+          "pt": "Peça articulada, compatível com membro ausente. Foi feita para um corpo específico. As dobras já estão gastas no lugar exato onde ele usava mais.",
+          "en": "Articulated piece, compatible with a missing limb. It was made for one specific body. The joints are already worn in the exact place it was used most.",
+          "es": "Pieza articulada, compatible con una extremidad ausente. Fue hecha para un cuerpo específico. Las articulaciones ya están gastadas justo en el punto donde más se utilizó.",
+          "de": "Gelenkiges Teil, passend zu einer fehlenden Gliedmaße. Es wurde für einen bestimmten Körper gefertigt. Die Gelenke sind genau dort abgenutzt, wo sie am meisten benutzt wurden.",
+          "zh": "一件可活动的部件，与缺失的肢体相匹配。它是为某一个特定身体制作的。关节恰好在使用最频繁的位置已经磨损。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#0E8C86",
+      "itemTint": "#08120e",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "ca2",
+      "content": {
+        "title": {
+          "pt": "GARRA",
+          "en": "CLAW",
+          "es": "GARRA",
+          "de": "KRALLE",
+          "zh": "爪"
+        },
+        "body": {
+          "pt": "Réplica em escala real, microfraturas na superfície. Não é osso nem metal. É uma terceira coisa, feita para lembrar as duas ao mesmo tempo.",
+          "en": "Full scale replica, microfractures on the surface. It is neither bone nor metal. It is a third thing, made to recall both at once.",
+          "es": "Réplica a escala real, microfracturas en la superficie. No es hueso ni metal. Es una tercera cosa, hecha para recordar ambos a la vez.",
+          "de": "Replik in Originalgröße, Mikrorisse auf der Oberfläche. Weder Knochen noch Metall. Etwas Drittes, geschaffen, um zugleich an beides zu erinnern.",
+          "zh": "等比例复制品，表面有微裂纹。它既不是骨，也不是金属。它是第三种东西，被制造出来同时唤起两者。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        0,
+        0,
+        -3.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.8,
+        1.2,
+        0.8
+      ],
+      "accent": "#872D67",
+      "itemTint": "#120a14",
+      "itemScale": 0.36,
+      "displace": 0.06,
+      "info": "ca3",
+      "content": {
+        "title": {
+          "pt": "ÓRGÃO",
+          "en": "ORGAN",
+          "es": "ÓRGANO",
+          "de": "ORGAN",
+          "zh": "器官"
+        },
+        "body": {
+          "pt": "Estrutura sem correspondência anatômica conhecida. Tem entradas e saídas, mas nenhum manual. Pulsa como se ainda esperasse ser ligada a um corpo.",
+          "en": "Structure with no known anatomical match. It has inputs and outputs, but no manual. It pulses as if still waiting to be joined to a body.",
+          "es": "Estructura sin equivalente anatómico conocido. Tiene entradas y salidas, pero ningún manual. Late como si todavía esperara ser unida a un cuerpo.",
+          "de": "Struktur ohne bekannte anatomische Entsprechung. Sie hat Ein- und Ausgänge, aber keine Anleitung. Sie pulsiert, als warte sie noch darauf, mit einem Körper verbunden zu werden.",
+          "zh": "一种没有已知解剖对应物的结构。它有输入和输出，却没有说明书。它脉动着，仿佛仍在等待与某具身体连接。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        -5.6,
+        1.4,
+        -5.6
+      ],
+      "tint": "#140608",
+      "glow": "#C1121F",
+      "itemScale": 0.34,
+      "displace": 0.06,
+      "info": "ca4",
+      "content": {
+        "title": {
+          "pt": "TECIDO",
+          "en": "TISSUE",
+          "es": "TEJIDO",
+          "de": "GEWEBE",
+          "zh": "组织"
+        },
+        "body": {
+          "pt": "Amostra muscular com luz própria, pulso constante. A luz acompanha o pulso e o pulso não para. Foi separada do corpo e não recebeu o aviso.",
+          "en": "Muscle sample with its own light, constant pulse. The light follows the pulse and the pulse does not stop. It was cut from the body and never got the message.",
+          "es": "Muestra muscular con luz propia, pulso constante. La luz sigue el pulso y el pulso no se detiene. Fue cortada del cuerpo y nunca recibió el aviso.",
+          "de": "Muskelprobe mit eigenem Licht, konstanter Puls. Das Licht folgt dem Puls und der Puls hört nicht auf. Sie wurde vom Körper getrennt und hat die Nachricht nie erhalten.",
+          "zh": "带有自身光源的肌肉样本，持续脉动。光跟着脉动，脉动从未停止。它被从身体切下，却从未收到身体已经分离的消息。"
+        }
+      }
+    },
+    {
+      "type": "tank",
+      "position": [
+        -6,
+        0,
+        -7.6
+      ],
+      "radius": 0.4,
+      "height": 1.3,
+      "colorA": "#1a0306",
+      "colorB": "#0E8C86",
+      "glow": "#C1121F",
+      "info": "ca5",
+      "content": {
+        "title": {
+          "pt": "GEL",
+          "en": "GEL",
+          "es": "GEL",
+          "de": "GEL",
+          "zh": "凝胶"
+        },
+        "body": {
+          "pt": "Cultura em suspensão, crescimento lento e contínuo. Toma devagar a forma do frasco. Se trocarem o frasco, ela recomeça sem se lembrar da forma anterior.",
+          "en": "Culture in suspension, slow, continuous growth. It slowly takes the shape of its jar. Change the jar and it starts over, with no memory of the earlier shape.",
+          "es": "Cultivo en suspensión, crecimiento lento y continuo. Toma poco a poco la forma de su recipiente. Cambia el recipiente y empieza de nuevo, sin memoria de la forma anterior.",
+          "de": "Kultur in Suspension, langsames, kontinuierliches Wachstum. Sie nimmt allmählich die Form ihres Gefäßes an. Wechselt man das Gefäß, beginnt sie von vorn, ohne Erinnerung an die frühere Form.",
+          "zh": "悬浮培养物，缓慢而持续地生长。它一点点变成容器的形状。换一个容器，它就重新开始，对之前的形状毫无记忆。"
+        }
+      }
+    },
+    {
+      "type": "panel",
+      "position": [
+        -5.6,
+        1.6,
+        -3.0
+      ],
+      "rotation": [
+        0,
+        0.45,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#C1121F",
+      "line": "#0E8C86",
+      "info": "ca6",
+      "content": {
+        "title": {
+          "pt": "DIAGRAMA",
+          "en": "DIAGRAM",
+          "es": "DIAGRAMA",
+          "de": "DIAGRAMM",
+          "zh": "图示"
+        },
+        "body": {
+          "pt": "Mapa corporal com órgãos fora de posição. As setas ligam partes que não deviam se ligar. Talvez seja um erro, talvez seja outro corpo.",
+          "en": "Body map with organs out of position. The arrows connect parts that should not connect. Maybe it is a mistake, maybe it is another body.",
+          "es": "Mapa corporal con órganos fuera de lugar. Las flechas conectan partes que no deberían conectarse. Tal vez sea un error, tal vez sea otro cuerpo.",
+          "de": "Körperkarte mit Organen an falschen Stellen. Pfeile verbinden Teile, die nicht verbunden sein sollten. Vielleicht ist es ein Fehler, vielleicht ein anderer Körper.",
+          "zh": "一张器官位置错乱的身体图。箭头连接着本不该相连的部位。也许这是错误，也许这是另一种身体。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        5.8,
+        1.6,
+        -6.2
+      ],
+      "tint": "#140608",
+      "glow": "#0E8C86",
+      "itemScale": 0.36,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        0,
+        1.8,
+        -8.6
+      ],
+      "tint": "#140608",
+      "glow": "#C1121F",
+      "itemScale": 0.3,
+      "displace": 0.06
+    },
+    {
+      "type": "panel",
+      "position": [
+        5.8,
+        1.6,
+        -3.4
+      ],
+      "rotation": [
+        0,
+        -0.45,
+        0
+      ],
+      "size": [
+        1.1,
+        1.6
+      ],
+      "opacity": 0.85,
+      "accent": "#0E8C86",
+      "line": "#C1121F"
+    },
+    {
+      "type": "bones",
+      "position": [
+        0,
+        0,
+        -9.4
+      ],
+      "accent": "#C1121F",
+      "count": 8
+    }
+  ],
+  "central": {
+    "type": "heart",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "title": {
+      "pt": "CORAÇÃO HÍBRIDO",
+      "en": "HYBRID HEART",
+      "es": "CORAZÓN HÍBRIDO",
+      "de": "HYBRIDHERZ",
+      "zh": "混合心脏"
+    },
+    "body": {
+      "pt": "Metade músculo, metade concha, pulsa dentro de uma cápsula. O ritmo muda perto de alguém. Bate mais rápido quando há corpo por perto, como se reconhecesse. É montagem de restos, e mesmo assim reage.",
+      "en": "Half muscle, half shell, it beats inside a capsule. The rhythm shifts when someone is near. It quickens when a body approaches, as if it recognized. It is an assembly of remains, and still it responds.",
+      "es": "Mitad músculo, mitad caparazón, late dentro de una cápsula. El ritmo cambia cuando alguien se acerca. Se acelera ante la proximidad de un cuerpo, como si lo reconociera. Es un ensamblaje de restos y, aun así, responde.",
+      "de": "Halb Muskel, halb Schale schlägt es in einer Kapsel. Der Rhythmus verändert sich, wenn jemand nahe ist. Er beschleunigt sich, sobald sich ein Körper nähert, als würde er ihn erkennen. Es ist aus Überresten zusammengesetzt und reagiert dennoch.",
+      "zh": "一半肌肉，一半外壳，它在胶囊中跳动。有人靠近时节奏会改变。身体接近时，它会加快，仿佛能够辨认。它由残余物拼成，却依然作出回应。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "RECOMPOR",
+          "en": "RECOMPOSE",
+          "es": "RECOMPONER",
+          "de": "NEU ZUSAMMENSETZEN",
+          "zh": "重组"
+        },
+        "detail": {
+          "pt": "as peças se aproximam sem encaixar de vez",
+          "en": "the pieces come close without fully fitting",
+          "es": "las piezas se acercan sin encajar del todo",
+          "de": "die Teile nähern sich, ohne ganz zu passen",
+          "zh": "碎片彼此靠近，却无法完全契合"
+        },
+        "rastro": {
+          "raiz": 1,
+          "ouro": 1
+        },
+        "next": "sala-04c-vozes-ancestrais.html"
+      },
+      {
+        "verb": {
+          "pt": "AMPUTAR",
+          "en": "AMPUTATE",
+          "es": "AMPUTAR",
+          "de": "AMPUTIEREN",
+          "zh": "截除"
+        },
+        "detail": {
+          "pt": "uma parte segue pulsando, separada",
+          "en": "one part keeps beating, separate",
+          "es": "una parte sigue latiendo, separada",
+          "de": "ein Teil schlägt weiter, getrennt",
+          "zh": "有一部分分离后仍继续跳动"
+        },
+        "rastro": {
+          "sangue": 2
+        },
+        "next": "sala-04b-vozes-dissidentes.html"
+      },
+      {
+        "verb": {
+          "pt": "MULTIPLICAR",
+          "en": "MULTIPLY",
+          "es": "MULTIPLICAR",
+          "de": "VERVIELFACHEN",
+          "zh": "增殖"
+        },
+        "detail": {
+          "pt": "o coração se divide em quatro imagens",
+          "en": "the heart divides into four images",
+          "es": "el corazón se divide en cuatro imágenes",
+          "de": "das Herz teilt sich in vier Bilder",
+          "zh": "心脏分裂成四个影像"
+        },
+        "rastro": {
+          "espelho": 2,
+          "sangue": 1
+        },
+        "next": "sala-04a-elementos.html"
+      }
+    ]
+  }
+}

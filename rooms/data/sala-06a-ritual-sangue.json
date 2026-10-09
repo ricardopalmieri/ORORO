@@ -1,0 +1,411 @@
+{
+  "id": "sala-06a-ritual-sangue",
+  "stage": 6,
+  "name": {
+    "pt": "RITUAL DE ÁGUA E SANGUE",
+    "en": "RITUAL OF WATER AND BLOOD",
+    "es": "RITUAL DE AGUA Y SANGRE",
+    "de": "RITUAL AUS WASSER UND BLUT",
+    "zh": "水与血的仪式"
+  },
+  "scene": {
+    "accent": "#8A0303",
+    "accent2": "#0E8C86",
+    "fog": "#080305",
+    "fogDensity": 0.038,
+    "ambient": {
+      "color": "#240a0c",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C1121F",
+      "intensity": 8.1,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#070205",
+      "colorA": "#8A0303",
+      "colorB": "#0E8C86",
+      "glow": "#C1121F",
+      "liquid": 0.55,
+      "veins": 0.3,
+      "crack": 0.05,
+      "grid": 0.18,
+      "gridScale": 0.4,
+      "scale": 0.14
+    },
+    "fireflies": {
+      "color": "#C1121F",
+      "count": 80,
+      "drift": 0.3
+    },
+    "boundary": {
+      "radius": 12,
+      "glow": "#8A0303",
+      "height": 6
+    },
+    "audio": {
+      "root": 32.7,
+      "intensity": 0.55
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "pedestal",
+      "position": [
+        -4.4,
+        0,
+        -3.4
+      ],
+      "accent": "#C1121F",
+      "height": 0.5,
+      "radius": 0.32,
+      "lightIntensity": 6,
+      "item": {
+        "tint": "#150406",
+        "scale": 0.28
+      },
+      "info": "rs1",
+      "content": {
+        "title": {
+          "pt": "TIGELA A",
+          "en": "BOWL A",
+          "es": "CUENCO A",
+          "de": "SCHALE A",
+          "zh": "碗 A"
+        },
+        "body": {
+          "pt": "Tigela rasa, resíduo escuro no fundo. O que ficou secou em anéis, um por vez. Cada anel marca uma vez em que ela foi usada e esvaziada.",
+          "en": "Shallow bowl, dark residue at the bottom. What was left dried in rings, one at a time. Each ring marks a time it was used and emptied.",
+          "es": "Cuenco poco profundo, residuo oscuro en el fondo. Lo que quedó se secó formando anillos, uno tras otro. Cada anillo marca una vez que fue usado y vaciado.",
+          "de": "Flache Schale, dunkle Rückstände am Boden. Was übrig blieb, trocknete Ring für Ring. Jeder Ring markiert eine Nutzung und eine Leerung.",
+          "zh": "浅碗，底部有深色残留物。留下的东西一圈一圈地干涸。每一道环形痕迹都记录了一次使用与清空。"
+        }
+      }
+    },
+    {
+      "type": "pedestal",
+      "position": [
+        4.4,
+        0,
+        -3.6
+      ],
+      "accent": "#0E8C86",
+      "height": 0.5,
+      "radius": 0.32,
+      "lightIntensity": 6,
+      "item": {
+        "tint": "#06120e",
+        "scale": 0.28
+      },
+      "info": "rs2",
+      "content": {
+        "title": {
+          "pt": "TIGELA B",
+          "en": "BOWL B",
+          "es": "CUENCO B",
+          "de": "SCHALE B",
+          "zh": "碗 B"
+        },
+        "body": {
+          "pt": "Segunda tigela, líquido diferente, temperatura elevada. Está morna sem fonte de calor. Guarda o calor de um corpo que encostou aqui há pouco tempo.",
+          "en": "Second bowl, different liquid, elevated temperature. It is warm with no source of heat. It holds the warmth of a body that touched here not long ago.",
+          "es": "Segundo cuenco, líquido diferente, temperatura elevada. Está caliente sin fuente de calor. Conserva el calor de un cuerpo que lo tocó hace poco.",
+          "de": "Zweite Schale, andere Flüssigkeit, erhöhte Temperatur. Sie ist warm ohne Wärmequelle. Sie bewahrt die Wärme eines Körpers, der sie vor nicht langer Zeit berührt hat.",
+          "zh": "第二只碗，里面是不同的液体，温度偏高。没有热源，它却仍然温暖。它保存着不久前触碰这里的某具身体的热度。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        0,
+        0,
+        -2.4
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.8,
+        1.0,
+        0.8
+      ],
+      "accent": "#E8E1D2",
+      "itemTint": "#160a0c",
+      "itemScale": 0.32,
+      "displace": 0.06,
+      "info": "rs3",
+      "content": {
+        "title": {
+          "pt": "TECIDO",
+          "en": "CLOTH",
+          "es": "TELA",
+          "de": "TUCH",
+          "zh": "布"
+        },
+        "body": {
+          "pt": "Tecido molhado com mancha irregular, não foi limpo de propósito. A mancha é a única escrita que sobrou do ato. Lavar seria apagar, e alguém escolheu guardar.",
+          "en": "Wet cloth with an irregular stain, left unclean on purpose. The stain is the only writing the act left behind. To wash it would be to erase, and someone chose to keep it.",
+          "es": "Tela mojada con una mancha irregular, dejada sin limpiar a propósito. La mancha es la única escritura que dejó el acto. Lavarla sería borrar, y alguien eligió conservarla.",
+          "de": "Nasses Tuch mit unregelmäßigem Fleck, absichtlich ungereinigt. Der Fleck ist die einzige Schrift, die die Handlung hinterließ. Ihn auszuwaschen hieße zu löschen, und jemand entschied sich, ihn zu bewahren.",
+          "zh": "湿布上有不规则污迹，被故意留下而没有清洗。污迹是这次行为留下的唯一文字。洗掉它就是抹除，而有人选择保留。"
+        }
+      }
+    },
+    {
+      "type": "tank",
+      "position": [
+        -6,
+        0,
+        -7
+      ],
+      "radius": 0.4,
+      "height": 1.2,
+      "colorA": "#04060a",
+      "colorB": "#8A0303",
+      "glow": "#0E8C86",
+      "info": "rs4",
+      "content": {
+        "title": {
+          "pt": "VASO",
+          "en": "VESSEL",
+          "es": "RECIPIENTE",
+          "de": "GEFÄSS",
+          "zh": "容器"
+        },
+        "body": {
+          "pt": "Água escura, superfície parada, reflexo não condiz com a sala. Mostra um teto que não é este. Talvez o teto do lugar onde a água foi tirada, guardado dentro dela.",
+          "en": "Dark water, still surface, reflection does not match the room. It shows a ceiling that is not this one. Maybe the ceiling of the place the water was drawn from, kept inside it.",
+          "es": "Agua oscura, superficie quieta, el reflejo no coincide con la sala. Muestra un techo que no es este. Quizá el techo del lugar de donde se extrajo el agua, guardado dentro de ella.",
+          "de": "Dunkles Wasser, stille Oberfläche, das Spiegelbild passt nicht zum Raum. Es zeigt eine Decke, die nicht diese ist. Vielleicht die Decke des Ortes, an dem das Wasser geschöpft wurde, in ihm bewahrt.",
+          "zh": "深色的水，表面静止，倒影与房间不符。它映出一个并非这里的天花板。也许是取水之地的天花板，被水带在内部。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        -2,
+        0.2,
+        -8.6
+      ],
+      "radius": 0.22,
+      "color": "#1a0508",
+      "glow": "#C1121F",
+      "info": "rs5",
+      "content": {
+        "title": {
+          "pt": "MARCA CIRCULAR",
+          "en": "CIRCULAR MARK",
+          "es": "MARCA CIRCULAR",
+          "de": "KREISMARKIERUNG",
+          "zh": "圆形标记"
+        },
+        "body": {
+          "pt": "Marca no chão, diâmetro constante, repetida em outros pontos. Os círculos se alinham numa rota pela sala. Quem os fez andava sempre o mesmo caminho, sempre parando nos mesmos lugares.",
+          "en": "Mark on the floor, constant diameter, repeated elsewhere. The circles line up into a route through the room. Whoever made them walked the same path, always stopping at the same places.",
+          "es": "Marca en el suelo, diámetro constante, repetida en otros lugares. Los círculos se alinean formando una ruta por la sala. Quien los hizo recorrió el mismo camino, deteniéndose siempre en los mismos puntos.",
+          "de": "Markierung auf dem Boden, gleichbleibender Durchmesser, andernorts wiederholt. Die Kreise bilden eine Route durch den Raum. Wer sie machte, ging immer denselben Weg und hielt an denselben Stellen.",
+          "zh": "地板上的标记，直径始终一致，在其他地方也反复出现。这些圆连接成一条穿过房间的路线。留下它们的人总走同一条路，也总在同样的位置停下。"
+        }
+      }
+    },
+    {
+      "type": "rock",
+      "position": [
+        2.2,
+        0.2,
+        -8.8
+      ],
+      "radius": 0.22,
+      "color": "#1a0508",
+      "glow": "#C1121F",
+      "info": "rs6",
+      "content": {
+        "title": {
+          "pt": "PEDRA VERMELHA",
+          "en": "RED STONE",
+          "es": "PIEDRA ROJA",
+          "de": "ROTER STEIN",
+          "zh": "红石"
+        },
+        "body": {
+          "pt": "Pedra lisa, quente ao toque. Foi gasta de tanto ser segurada. A cor não é tinta, é o que ela absorveu de tudo que passou pela mão de quem a usava.",
+          "en": "Smooth stone, warm to the touch. It was worn smooth from being held. The color is not paint, it is what it soaked up from all that passed through the hand that used it.",
+          "es": "Piedra lisa, cálida al tacto. Se volvió suave de tanto ser sostenida. El color no es pintura: es lo que absorbió de todo lo que pasó por la mano que la usó.",
+          "de": "Glatter Stein, warm bei Berührung. Er wurde durch das Halten glatt. Die Farbe ist keine Farbe, sondern das, was er von allem aufnahm, das durch die Hand ging, die ihn benutzte.",
+          "zh": "光滑的石头，触摸时温暖。它因为长期被握持而磨得平滑。颜色不是涂料，而是它从那只使用它的手所经过的一切中吸收来的。"
+        }
+      }
+    },
+    {
+      "type": "tank",
+      "position": [
+        6,
+        0,
+        -7.4
+      ],
+      "radius": 0.4,
+      "height": 1.2,
+      "colorA": "#04060a",
+      "colorB": "#8A0303",
+      "glow": "#0E8C86"
+    },
+    {
+      "type": "shard",
+      "position": [
+        -2.2,
+        0.4,
+        -7.0
+      ],
+      "tint": "#1a0608",
+      "glow": "#C1121F",
+      "itemScale": 0.24,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        2.2,
+        0.5,
+        -7.4
+      ],
+      "tint": "#1a0608",
+      "glow": "#C1121F",
+      "itemScale": 0.26,
+      "displace": 0.06
+    },
+    {
+      "type": "cable",
+      "from": [
+        -3,
+        4.4,
+        -1.5
+      ],
+      "to": [
+        -1,
+        3.6,
+        -3
+      ],
+      "sag": 0.5,
+      "glow": "#C1121F"
+    },
+    {
+      "type": "cable",
+      "from": [
+        3,
+        4.4,
+        -1.5
+      ],
+      "to": [
+        1,
+        3.6,
+        -3
+      ],
+      "sag": 0.5,
+      "glow": "#C1121F"
+    }
+  ],
+  "central": {
+    "type": "bowl",
+    "position": [
+      0,
+      0,
+      -5.0
+    ],
+    "title": {
+      "pt": "BACIA NEGRA",
+      "en": "BLACK BASIN",
+      "es": "CUENCO NEGRO",
+      "de": "SCHWARZES BECKEN",
+      "zh": "黑色水盆"
+    },
+    "body": {
+      "pt": "Uma gota vermelha cai em loop e se transforma em iridescência antes de sumir. Sangue vira óleo vira ouro, e recomeça. É o ritual reduzido ao mínimo gesto, repetido até virar imagem que não pede explicação.",
+      "en": "A red drop falls in a loop, turning iridescent before it disappears. Blood becomes oil becomes gold, and starts again. It is ritual reduced to the smallest gesture, repeated until it becomes an image that asks for no explanation.",
+      "es": "Una gota roja cae en bucle, se vuelve iridiscente antes de desaparecer. Sangre se vuelve aceite, aceite se vuelve oro, y todo empieza de nuevo. Es el ritual reducido al gesto más pequeño, repetido hasta convertirse en una imagen que no pide explicación.",
+      "de": "Ein roter Tropfen fällt in einer Schleife, wird schillernd und verschwindet. Blut wird Öl, Öl wird Gold, dann beginnt alles wieder. Ritual auf die kleinste Geste reduziert, wiederholt, bis daraus ein Bild wird, das keine Erklärung verlangt.",
+      "zh": "一滴红色液体循环落下，在消失前变得虹彩。血变成油，油变成黄金，然后再次开始。仪式被缩减到最小的动作，不断重复，直到成为一个无需解释的影像。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "SANGRAR",
+          "en": "BLEED",
+          "es": "SANGRAR",
+          "de": "BLUTEN",
+          "zh": "流血"
+        },
+        "detail": {
+          "pt": "escrever com o corpo",
+          "en": "writing with the body",
+          "es": "escribir con el cuerpo",
+          "de": "mit dem Körper schreiben",
+          "zh": "用身体书写"
+        },
+        "rastro": {
+          "sangue": 2
+        },
+        "next": "sala-07-final.html"
+      },
+      {
+        "verb": {
+          "pt": "LAVAR",
+          "en": "WASH",
+          "es": "LAVAR",
+          "de": "WASCHEN",
+          "zh": "清洗"
+        },
+        "detail": {
+          "pt": "limpa e mancha ao mesmo tempo",
+          "en": "it cleans and stains at once",
+          "es": "limpia y mancha al mismo tiempo",
+          "de": "es reinigt und befleckt zugleich",
+          "zh": "同时清洁，也同时染污"
+        },
+        "rastro": {
+          "oleo": 1,
+          "espelho": 1
+        },
+        "next": "sala-07-final.html"
+      },
+      {
+        "verb": {
+          "pt": "BEBER",
+          "en": "DRINK",
+          "es": "BEBER",
+          "de": "TRINKEN",
+          "zh": "饮下"
+        },
+        "detail": {
+          "pt": "o gosto muda depois de engolir",
+          "en": "the taste changes after swallowing",
+          "es": "el sabor cambia después de tragar",
+          "de": "der Geschmack verändert sich nach dem Schlucken",
+          "zh": "吞咽之后，味道发生变化"
+        },
+        "rastro": {
+          "sangue": 1,
+          "raiz": 1
+        },
+        "next": "sala-07-final.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,686 @@
+/* =========================================================================
+   OROЯO — folha de estilos compartilhada
+   Galeria digital escura, ritualística, cyberdigital. Tipografia única:
+   IBM Plex Sans (interface, corpo) + IBM Plex Mono (sistema, números).
+   Tudo em caixa alta. UI reduzida a seis zonas fixas + mira central.
+
+   Estrutura do arquivo:
+   1. Variáveis de paleta e tipografia
+   2. Reset e base
+   3. Camada 3D (canvas, vinheta, grão)
+   4. Zonas de UI (topo-esquerda, topo-centro, topo-direita)
+   5. Mira central (repouso / sobre vivo / objeto central)
+   6. Minimapa (inferior-esquerda)
+   7. Painel de interação (inferior-centro): inspeção e decisão
+   8. Rastros (inferior-direita)
+   9. Véu / transição ritual (fade longo)
+   10. Joystick de toque
+   11. Portal (index.html)
+   12. Responsivo
+   ========================================================================= */
+
+/* ---------- 1. Paleta ---------------------------------------------------- */
+:root{
+  --void:        #030406;
+  --void-2:      #090B10;
+  --void-3:      #11141B;
+
+  --oil-green:   #0F6F5C;
+  --oil-teal:    #0E8C86;
+  --oil-blue:    #243B8F;
+  --oil-purple:  #4B1F68;
+  --oil-magenta: #872D67;
+
+  --oro:         #C9A24A;
+  --oro-deep:    #806321;
+
+  --vagalume:    #B7F03B;
+
+  --blood:       #8A0303;
+  --blood-bright:#C1121F;
+
+  --bone:        #E8E1D2;
+  --ash:         #858B94;
+  --ash-dim:     #4E535C;
+
+  /* sala ativa pode sobrescrever este token via JS (applyAccent) */
+  --accent:      var(--oil-teal);
+  --accent-2:    var(--oil-purple);
+
+  /* tipografia única do projeto: IBM Plex, em variações regular/bold.
+     Nada de display alternativo — tudo em caixa alta via CSS. */
+  --font-sans: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  /* marca/wordmark OROЯO mantém fonte do sistema (original) */
+  --font-brand: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  color-scheme: dark;
+}
+
+/* ---------- 2. Reset / base ---------------------------------------------- */
+*{ box-sizing: border-box; }
+html,body{
+  margin:0; padding:0;
+  width:100%; height:100%;
+  background: var(--void);
+  color: var(--bone);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow: hidden;
+  overscroll-behavior: none;
+  text-transform: uppercase;
+}
+
+body.ororo-room, body.ororo-portal{
+  width:100vw; height:100vh;
+}
+
+a{ color: inherit; text-decoration: none; }
+button{ font-family: inherit; text-transform: inherit; }
+
+::selection{ background: rgba(201,162,74,0.25); color: var(--bone); }
+
+.scroll-thin::-webkit-scrollbar{ width:3px; }
+.scroll-thin::-webkit-scrollbar-thumb{ background: var(--ash-dim); }
+
+/* glyph helper: alinhamento fino do Я de OROЯO */
+.glyph-ya{ display:inline-block; transform: translateY(0.01em); }
+.wordmark{ font-family: var(--font-brand); font-weight: 700; letter-spacing: 0.18em; white-space: nowrap; }
+
+/* ---------- 3. Camada 3D --------------------------------------------------*/
+#scene-canvas{
+  position: fixed; inset:0;
+  width:100%; height:100%;
+  display:block; outline:none;
+  background: var(--void);
+}
+
+.screen-grain{
+  position: fixed; inset:0; pointer-events:none; z-index:5;
+  mix-blend-mode: overlay; opacity:0.12;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+.screen-vignette{
+  position: fixed; inset:0; pointer-events:none; z-index:6;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 42%, rgba(2,3,5,0.65) 100%);
+}
+
+/* ---------- 4. Zonas de UI -------------------------------------------------*/
+.hud{
+  position: fixed; inset:0; pointer-events:none; z-index:30;
+  font-family: var(--font-mono);
+}
+
+/* topo-esquerda: marca / link para o início */
+.hud-brand{
+  position:absolute; top:22px; left:24px; pointer-events:auto;
+  font-family: var(--font-brand); font-weight:700;
+  font-size: 0.95rem; letter-spacing:0.34em;
+  color: var(--bone); opacity:0.8;
+  border-bottom: 1px solid transparent;
+  transition: opacity .35s ease, color .35s ease, border-color .35s ease;
+}
+.hud-brand:hover{ opacity:1; color: var(--accent); border-color: var(--accent); }
+
+/* topo-centro: nome do local */
+.hud-location{
+  position:absolute; top:24px; left:50%; transform:translateX(-50%);
+  font-size: 0.66rem; letter-spacing:0.42em; font-weight:500;
+  color: var(--ash); white-space:nowrap;
+  text-shadow: 0 0 16px rgba(0,0,0,0.85);
+}
+
+/* topo-direita: numero da sala + mute */
+.hud-right{
+  position:absolute; top:18px; right:20px; pointer-events:auto;
+  display:flex; align-items:center; gap:14px;
+}
+.hud-stage{
+  font-size: 0.66rem; letter-spacing:0.32em; color: var(--ash);
+}
+.hud-stage b{ color: var(--accent); font-weight:700; }
+.hud-mute{
+  width:34px; height:34px; display:flex; align-items:center; justify-content:center;
+  background:transparent; border:1px solid rgba(232,225,210,0.16); cursor:pointer;
+  color: var(--ash); transition: border-color .25s ease, color .25s ease;
+}
+.hud-mute:hover{ border-color: var(--accent); color: var(--accent); }
+.hud-mute svg{ width:15px; height:15px; display:block; }
+.hud-mute .icon-muted{ display:none; }
+.hud-mute.is-muted .icon-on{ display:none; }
+.hud-mute.is-muted .icon-muted{ display:block; }
+.hud-mute.is-muted{ color: var(--blood-bright); border-color: rgba(193,18,31,0.4); }
+
+/* ---------- 5. Mira central -------------------------------------------------*/
+.crosshair{
+  position: fixed; top:50%; left:50%; z-index:24;
+  width:18px; height:18px; margin:-9px 0 0 -9px;
+  pointer-events:none; opacity:0.55;
+  transition: opacity .25s ease, transform .25s ease;
+}
+.crosshair::before, .crosshair::after{
+  content:""; position:absolute; background: var(--bone); opacity:0.6;
+}
+.crosshair::before{ left:50%; top:0; width:1px; height:100%; transform:translateX(-50%); }
+.crosshair::after{ top:50%; left:0; height:1px; width:100%; transform:translateY(-50%); }
+.crosshair .dot{
+  position:absolute; left:50%; top:50%; width:3px; height:3px; border-radius:50%;
+  background: var(--bone); opacity:0.7; transform:translate(-50%,-50%);
+}
+/* sobre objeto comum: vaga-lume */
+.crosshair.is-hover{ opacity:1; transform: scale(1.25); }
+.crosshair.is-hover::before, .crosshair.is-hover::after{ background: var(--vagalume); }
+.crosshair.is-hover .dot{ background: var(--vagalume); box-shadow: 0 0 8px var(--vagalume); }
+/* sobre o objeto central: dourado, gota ativando */
+.crosshair.is-relic{ opacity:1; transform: scale(1.5) rotate(45deg); }
+.crosshair.is-relic::before, .crosshair.is-relic::after{ background: var(--oro); }
+.crosshair.is-relic .dot{ background: var(--oro); box-shadow: 0 0 10px var(--oro); }
+
+/* ---------- 6. Minimapa -----------------------------------------------------*/
+.minimap{
+  position: fixed; left:20px; bottom:20px; z-index:28;
+  width:108px; height:108px; pointer-events:none;
+  background: rgba(6,8,12,0.5);
+  border: 1px solid rgba(232,225,210,0.1);
+  border-radius:50%;
+}
+.minimap canvas{ width:100%; height:100%; display:block; border-radius:50%; }
+
+/* monitor de FFT — pequeno, minimalista, ao lado do minimapa */
+.fft-monitor{
+  position: fixed; left:140px; bottom:20px; z-index:28;
+  width:96px; height:34px; pointer-events:none;
+  background: rgba(6,8,12,0.42);
+  border: 1px solid rgba(183,240,59,0.14);
+  border-left: 2px solid rgba(183,240,59,0.5);
+}
+.fft-monitor canvas{ width:100%; height:100%; display:block; }
+:root[data-contrast="high"] .fft-monitor{ background:#000; border-color:#B7F03B; }
+
+/* ---------- 7. Painel de interação — MODAIS CENTRAIS ------------------------
+   O antigo painel discreto (inferior-centro) virou um modal de tela cheia,
+   centralizado, que interrompe a navegação. Camada = backdrop escuro + card.
+   Mobile-first: o card ocupa quase toda a largura em telas pequenas e se
+   estabiliza numa largura confortável em telas grandes.
+   --------------------------------------------------------------------------- */
+.panel-zone{
+  position: fixed; inset:0; z-index:60;
+  display:flex; align-items:center; justify-content:center;
+  padding: clamp(16px, 4vw, 48px);
+  pointer-events:none;
+}
+.panel-zone:empty{ display:none; }
+
+/* backdrop */
+.modal-backdrop{
+  position:fixed; inset:0; z-index:0;
+  background: rgba(2,3,5,0.72);
+  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+  opacity:0; transition: opacity .45s ease;
+  pointer-events:auto;
+}
+.modal-backdrop.is-open{ opacity:1; }
+
+/* card do modal */
+.panel{
+  position:relative; z-index:1;
+  pointer-events:auto;
+  width:100%; max-width: 640px;
+  max-height: calc(100vh - clamp(32px, 8vw, 96px));
+  overflow-y:auto;
+  background: linear-gradient(180deg, rgba(9,11,16,0.97) 0%, rgba(5,6,9,0.97) 100%);
+  border: 1px solid rgba(232,225,210,0.14);
+  border-top: 3px solid var(--accent);
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.4);
+  padding: clamp(22px, 5vw, 40px);
+  opacity:0; transform: translateY(18px) scale(0.985);
+  transition: opacity .5s cubic-bezier(.2,.7,.2,1), transform .5s cubic-bezier(.2,.7,.2,1);
+}
+.panel.is-open{ opacity:1; transform: translateY(0) scale(1); }
+.panel:focus{ outline:none; }
+.panel:focus-visible{ outline:2px solid var(--vagalume); outline-offset:3px; }
+
+.panel-head{
+  display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
+  margin-bottom: clamp(12px, 2.4vw, 18px);
+}
+.panel-title{
+  font-family: var(--font-mono); font-weight:700;
+  font-size: clamp(1.05rem, 3.4vw, 1.5rem); letter-spacing:0.16em;
+  color: var(--bone); line-height:1.2;
+}
+.panel-close{
+  flex-shrink:0; width:40px; height:40px; line-height:1; text-align:center;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(232,225,210,0.04); border:1px solid rgba(232,225,210,0.2);
+  color: var(--ash); cursor:pointer; font-size:1.1rem; padding:0;
+  transition: color .25s ease, border-color .25s ease, background .25s ease;
+}
+.panel-close:hover{ color: var(--accent); border-color: var(--accent); }
+.panel-close:focus-visible{ outline:2px solid var(--vagalume); outline-offset:2px; }
+
+.panel-body{
+  font-size: clamp(0.92rem, 2.6vw, 1.06rem); line-height:1.7; letter-spacing:0.01em;
+  color: var(--bone); opacity:0.9; text-transform:none; font-weight:400;
+  margin:0;
+}
+.panel-body + .panel-body,
+.panel-body p + p{ margin-top: 0.85em; }
+
+/* modal de decisão: verbos lado a lado ------------------------------------- */
+.panel-decision{ max-width: 860px; border-top-color: var(--oro); }
+.panel-decision .panel-title{ color: var(--oro); }
+.panel-decision .panel-body{ opacity:0.82; }
+.panel-choices{
+  display:flex; flex-direction:row; flex-wrap:nowrap;
+  gap: clamp(10px, 1.8vw, 16px);
+  margin-top: clamp(18px, 3vw, 28px);
+}
+.choice{
+  flex:1 1 0; min-width:0;
+  display:flex; flex-direction:column; gap:8px;
+  background: rgba(232,225,210,0.03);
+  border: 1px solid rgba(232,225,210,0.16);
+  padding: clamp(14px, 2.4vw, 22px) clamp(12px, 2vw, 20px);
+  cursor:pointer; text-align:left; color: var(--bone);
+  min-height:96px;
+  transition: border-color .25s ease, background .25s ease, transform .2s ease;
+}
+.choice:hover, .choice:focus-visible{
+  border-color: var(--vagalume); background: rgba(183,240,59,0.08);
+  transform: translateY(-2px); outline:none;
+}
+.choice:focus-visible{ outline:2px solid var(--vagalume); outline-offset:2px; }
+.choice-verb{
+  display:block; font-family: var(--font-mono); font-weight:700;
+  font-size: clamp(0.86rem, 2.4vw, 1.08rem); letter-spacing:0.1em; color: var(--bone);
+}
+.choice:hover .choice-verb, .choice:focus-visible .choice-verb{ color: var(--vagalume); }
+.choice-detail{
+  display:block; font-size: clamp(0.74rem, 2vw, 0.86rem); letter-spacing:0.01em;
+  color: var(--ash); text-transform:none; font-weight:400; line-height:1.45;
+}
+
+/* ---------- 8. Rastros (inferior-direita) -----------------------------------*/
+.rastros{
+  position: fixed; right:20px; bottom:20px; z-index:28;
+  font-family: var(--font-mono); pointer-events:auto;
+  display:flex; flex-direction:column; align-items:flex-end; gap:6px;
+}
+.rastros-toggle{
+  background:none; border:none; cursor:pointer; padding:0;
+  color: var(--ash); font-family: var(--font-mono);
+  font-size:0.6rem; letter-spacing:0.34em;
+  opacity:0.6; transition: opacity .25s ease, color .25s ease;
+}
+.rastros-toggle:hover{ opacity:1; color: var(--accent); }
+.rastros-list{
+  display:flex; flex-direction:column; gap:5px;
+  padding:0; max-height:0; overflow:hidden; opacity:0;
+  transition: max-height .45s ease, opacity .35s ease, padding .45s ease;
+  align-items:flex-end;
+}
+.rastros.is-open .rastros-list{ max-height:200px; opacity:1; padding-top:8px; }
+.rastro-row{ display:flex; align-items:center; gap:8px; }
+.rastro-row .label{ font-size:0.56rem; letter-spacing:0.22em; color: var(--ash-dim); width:48px; text-align:right; }
+.rastro-row .bar{ width:46px; height:2px; background: rgba(133,139,148,0.16); position:relative; }
+.rastro-row .bar i{
+  position:absolute; inset:0 auto 0 0;
+  background: var(--bar-color, var(--accent));
+  box-shadow: 0 0 5px var(--bar-color, var(--accent));
+  width: calc(var(--val,0) * 10%);
+  transition: width .6s ease;
+}
+
+/* ---------- 9. Véu / transição ritual ----------------------------------------*/
+.veil{
+  position: fixed; inset:0; z-index:90;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:22px; text-align:center; padding:24px;
+  background: var(--void);
+  opacity:1; cursor:pointer;
+  transition: opacity 1.8s cubic-bezier(.45,0,.2,1);
+  overflow:hidden;
+}
+.veil.is-hidden{ opacity:0; pointer-events:none; }
+.veil::before{
+  content:""; position:absolute; inset:-20%;
+  background: radial-gradient(ellipse at 30% 30%, var(--accent) 0%, transparent 55%),
+              radial-gradient(ellipse at 75% 70%, var(--accent-2) 0%, transparent 55%);
+  opacity:0.1; filter: blur(60px);
+  animation: veil-drift 26s ease-in-out infinite alternate;
+}
+@keyframes veil-drift{
+  0%{ transform: scale(1) translate(0,0); }
+  100%{ transform: scale(1.25) translate(4%,-3%); }
+}
+.veil-title{
+  position:relative; font-family: var(--font-sans); font-weight:700;
+  font-size: clamp(1.6rem, 6vw, 3.2rem); letter-spacing:0.16em;
+  color: var(--bone); line-height:1.15;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+  text-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.veil-title.fade-out{
+  opacity: 0;
+}
+.veil-title.fade-in{
+  animation: fadeInText 0.8s ease-in-out;
+}
+@keyframes fadeInText{
+  0%{ opacity: 0; }
+  100%{ opacity: 1; }
+}
+.veil-title .brand{
+  font-family: var(--font-brand);
+}
+.veil-sub{
+  position:relative; font-family: var(--font-mono); font-weight:500;
+  font-size: 0.66rem; letter-spacing:0.42em; color: var(--accent);
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+  text-shadow: 0 0 12px rgba(0,0,0,0.7);
+}
+.veil-sub.fade-out{
+  opacity: 0;
+}
+.veil-sub.fade-in{
+  animation: fadeInText 0.8s ease-in-out 0.2s both;
+}
+.veil-sub.pulse{
+  animation: veil-pulse 2.6s ease-in-out infinite;
+}
+@keyframes veil-pulse{
+  0%, 100%{ opacity:0.45; } 50%{ opacity:1; }
+}
+.veil-controls{
+  position:relative; font-family: var(--font-mono); font-weight:600;
+  font-size: 0.62rem; letter-spacing:0.22em; color: var(--vagalume);
+  line-height:2;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+  text-shadow: 0 0 10px rgba(183,240,59,0.4);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+.veil-controls.fade-out{
+  opacity: 0;
+}
+.veil-controls.fade-in{
+  animation: fadeInText 0.8s ease-in-out 0.4s both;
+}
+
+/* ---------- 10. Joystick de toque --------------------------------------------*/
+/* A zona invisível é deliberadamente grande: em mobile o usuário não precisa
+   acertar o círculo. O joystick flutua para o ponto onde o polegar encosta. */
+.touch-stick-zone{
+  position:fixed; left:0; bottom:64px; z-index:29;
+  width:min(48vw,340px); height:min(52dvh,430px);
+  display:none; touch-action:none; overscroll-behavior:none;
+  user-select:none; -webkit-user-select:none; -webkit-tap-highlight-color:transparent;
+}
+.touch-stick{
+  position:fixed; left:96px; top:calc(100dvh - 200px); z-index:30;
+  width:156px; height:156px; border-radius:50%;
+  transform:translate(-50%,-50%);
+  border:2px solid rgba(232,225,210,0.18);
+  background:radial-gradient(circle at center,rgba(232,225,210,0.035) 0 35%,rgba(6,8,12,0.42) 36% 100%);
+  box-shadow:inset 0 0 28px rgba(0,0,0,.35),0 8px 30px rgba(0,0,0,.18);
+  touch-action:none; user-select:none; -webkit-user-select:none;
+  pointer-events:none; display:none; opacity:.72;
+  transition:opacity .12s ease,border-color .12s ease;
+}
+.touch-stick::before,.touch-stick::after{
+  content:""; position:absolute; left:50%; top:50%; background:rgba(232,225,210,.09); transform:translate(-50%,-50%);
+}
+.touch-stick::before{width:62%;height:1px;}
+.touch-stick::after{width:1px;height:62%;}
+.touch-stick .center-dot{
+  position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;
+  transform:translate(-50%,-50%);background:rgba(232,225,210,.22);
+}
+.touch-stick .nub{
+  position:absolute; width:68px; height:68px; border-radius:50%;
+  left:50%; top:50%; transform:translate(-50%,-50%);
+  background:radial-gradient(circle at 42% 38%,rgba(232,225,210,.2),rgba(9,11,16,.78));
+  border:2px solid var(--accent);
+  box-shadow:0 0 18px color-mix(in srgb,var(--accent) 25%,transparent),inset 0 0 16px rgba(255,255,255,.04);
+  will-change:transform;
+}
+.touch-stick.is-active{opacity:1;border-color:rgba(232,225,210,.32);}
+@media (pointer:coarse){ .touch-stick-zone,.touch-stick{display:block;} }
+
+/* ---------- 10b. Acessibilidade --------------------------------------------
+   Botão A11Y no HUD (topo-direita, ao lado do mudo) que abre um menu de
+   preferências: movimento reduzido, alto contraste e texto maior. Cada
+   preferência vira um atributo em <html> (data-*), persistido em
+   localStorage por ororo-core.js.
+   --------------------------------------------------------------------------- */
+
+/* leitor de tela: conteúdo do modal anunciado por região viva */
+.sr-only{
+  position:absolute !important; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+/* botão A11Y (mesma linguagem do botão de mudo) */
+.hud-a11y{
+  width:34px; height:34px; display:flex; align-items:center; justify-content:center;
+  background:transparent; border:1px solid rgba(232,225,210,0.16); cursor:pointer;
+  color: var(--ash); transition: border-color .25s ease, color .25s ease;
+  font-family: var(--font-mono); font-weight:700; font-size:0.62rem; letter-spacing:0.02em;
+}
+.hud-a11y:hover{ border-color: var(--accent); color: var(--accent); }
+.hud-a11y:focus-visible{ outline:2px solid var(--vagalume); outline-offset:2px; }
+.hud-a11y.is-active{ color: var(--vagalume); border-color: rgba(183,240,59,0.45); }
+
+/* menu de acessibilidade */
+.a11y-menu{
+  position:fixed; top:62px; right:20px; z-index:70;
+  width:min(88vw, 300px);
+  background: rgba(9,11,16,0.97);
+  border:1px solid rgba(232,225,210,0.16);
+  border-top:3px solid var(--vagalume);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  padding:16px 18px;
+  pointer-events:auto;
+  opacity:0; transform: translateY(-10px); visibility:hidden;
+  transition: opacity .3s ease, transform .3s ease, visibility 0s linear .3s;
+}
+.a11y-menu.is-open{ opacity:1; transform: translateY(0); visibility:visible; transition-delay:0s; }
+.a11y-menu h2{
+  font-family: var(--font-mono); font-weight:700; font-size:0.66rem; letter-spacing:0.24em;
+  color: var(--bone); margin:0 0 14px;
+}
+.a11y-row{
+  display:flex; align-items:center; justify-content:space-between; gap:12px;
+  padding:9px 0; border-top:1px solid rgba(232,225,210,0.08);
+}
+.a11y-row:first-of-type{ border-top:none; }
+.a11y-row .a11y-label{
+  font-family: var(--font-sans); font-weight:500; font-size:0.72rem; letter-spacing:0.06em;
+  color: var(--bone); text-transform:none;
+}
+.a11y-row .a11y-hint{
+  display:block; font-size:0.6rem; color: var(--ash-dim); letter-spacing:0; text-transform:none; margin-top:2px;
+}
+/* switch acessível */
+.a11y-switch{
+  flex-shrink:0; width:46px; height:26px; border-radius:13px; position:relative;
+  background: rgba(232,225,210,0.1); border:1px solid rgba(232,225,210,0.2);
+  cursor:pointer; padding:0; transition: background .25s ease, border-color .25s ease;
+}
+.a11y-switch::after{
+  content:""; position:absolute; top:2px; left:2px; width:20px; height:20px; border-radius:50%;
+  background: var(--ash); transition: transform .25s ease, background .25s ease;
+}
+.a11y-switch[aria-checked="true"]{ background: rgba(183,240,59,0.22); border-color: var(--vagalume); }
+.a11y-switch[aria-checked="true"]::after{ transform: translateX(20px); background: var(--vagalume); }
+.a11y-switch:focus-visible{ outline:2px solid var(--vagalume); outline-offset:2px; }
+
+/* foco visível global para elementos interativos do HUD */
+.hud-brand:focus-visible, .hud-mute:focus-visible, .rastros-toggle:focus-visible,
+.portal-enter:focus-visible, .portal-lang button:focus-visible, .portal-reset:focus-visible{
+  outline:2px solid var(--vagalume); outline-offset:3px;
+}
+
+/* modo ALTO CONTRASTE: reforça texto, bordas e fundos dos modais */
+:root[data-contrast="high"]{
+  --bone: #FFFFFF;
+  --ash: #D8D8D8;
+  --ash-dim: #B0B0B0;
+}
+:root[data-contrast="high"] .panel{
+  background:#000; border-color:#fff; box-shadow:0 0 0 2px #000;
+}
+:root[data-contrast="high"] .panel-body{ opacity:1; }
+:root[data-contrast="high"] .modal-backdrop{ background: rgba(0,0,0,0.9); }
+:root[data-contrast="high"] .choice{ border-color: rgba(255,255,255,0.5); }
+:root[data-contrast="high"] .hud-location{ color: var(--bone); }
+:root[data-contrast="high"] .screen-vignette,
+:root[data-contrast="high"] .screen-grain{ display:none; }
+
+/* modo TEXTO MAIOR */
+:root[data-textsize="large"] .panel-body{ font-size: clamp(1.05rem, 3vw, 1.24rem); line-height:1.75; }
+:root[data-textsize="large"] .panel-title{ font-size: clamp(1.2rem, 3.8vw, 1.7rem); }
+:root[data-textsize="large"] .choice-verb{ font-size: clamp(0.98rem, 2.7vw, 1.2rem); }
+:root[data-textsize="large"] .choice-detail{ font-size: clamp(0.84rem, 2.2vw, 0.98rem); }
+
+/* MOVIMENTO REDUZIDO: preferência do sistema OU escolha manual (data-motion)
+   desliga animações longas, deriva do véu, texturas animadas de fundo. */
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; }
+  .veil{ transition: opacity .35s ease; }
+  .veil::before{ animation:none; }
+  .portal-mark{ animation:none; }
+}
+:root[data-motion="reduced"] *{
+  animation-duration:0.001ms !important; animation-iteration-count:1 !important;
+  transition-duration:0.14s !important;
+}
+:root[data-motion="reduced"] .veil::before{ animation:none; }
+:root[data-motion="reduced"] .portal-mark{ animation:none; }
+
+/* ---------- 11. Portal (index.html) ------------------------------------------*/
+html.portal-html, body.portal-body{ height:auto; min-height:100%; overflow-y:auto; overflow-x:hidden; }
+.portal-body{ background: var(--void); }
+
+.portal{
+  position:relative; z-index:5; min-height:100vh;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  text-align:center; padding:40px 20px;
+}
+.portal-mark{
+  font-family: var(--font-brand); font-weight:700;
+  font-size: clamp(2.8rem, 12vw, 7.5rem); letter-spacing:0.18em; margin:0;
+  background: linear-gradient(120deg, var(--bone) 0%, var(--oil-teal) 35%, var(--oro) 55%, var(--blood-bright) 75%, var(--bone) 100%);
+  background-size:240% 100%; -webkit-background-clip:text; background-clip:text; color:transparent;
+  animation: ororo-sheen 16s ease-in-out infinite;
+  text-shadow: 0 0 60px rgba(14,140,134,0.18);
+}
+@keyframes ororo-sheen{ 0%,100%{ background-position:0% 50%; } 50%{ background-position:100% 50%; } }
+.portal-tag{
+  font-family: var(--font-mono); letter-spacing:0.5em; font-size:0.66rem; color: var(--ash);
+  margin: 16px 0 0;
+}
+.portal-enter{
+  margin-top:40px;
+  font-family: var(--font-sans); font-weight:700; letter-spacing:0.42em;
+  font-size: 0.85rem; color: var(--bone);
+  background: transparent; border:1px solid rgba(232,225,210,0.25);
+  padding:16px 46px; cursor:pointer; text-decoration:none; display:inline-block;
+  transition: all .4s ease;
+}
+.portal-enter:hover{ border-color: var(--vagalume); color: var(--void); background: var(--vagalume); box-shadow: 0 0 40px rgba(183,240,59,0.3); }
+
+.portal-lang{
+  margin-top:30px; display:flex; gap:10px; font-family: var(--font-mono);
+}
+.portal-lang button{
+  background:transparent; border:1px solid rgba(232,225,210,0.18); color: var(--ash);
+  padding:7px 16px; font-size:0.64rem; letter-spacing:0.3em; cursor:pointer;
+  transition: all .25s ease;
+}
+.portal-lang button.is-active{ color: var(--void); background: var(--accent); border-color: var(--accent); }
+.portal-lang button:hover{ border-color: var(--accent); color: var(--accent); }
+.portal-lang button.is-active:hover{ color: var(--void); }
+
+.portal-reset{
+  margin-top:46px; font-family: var(--font-mono); font-size:0.58rem;
+  letter-spacing:0.3em; color: var(--ash-dim); background:none; border:none;
+  cursor:pointer; border-bottom:1px solid transparent;
+}
+.portal-reset:hover{ color: var(--blood-bright); border-color: var(--blood-bright); }
+
+
+.room-mobile-fullscreen,
+.room-mobile-fullscreen #scene-canvas{width:100vw;height:100dvh;}
+@supports(height:100svh){.room-mobile-fullscreen,.room-mobile-fullscreen #scene-canvas{min-height:100svh;}}
+
+/* ---------- 12. Responsivo ------------------------------------------------------*/
+@media (max-width: 820px), (pointer: coarse){
+  .hud-brand{ top:14px; left:14px; font-size:1.02rem; letter-spacing:0.21em; }
+  .hud-location{ top:18px; font-size:0.78rem; letter-spacing:0.2em; max-width:42vw; overflow:hidden; text-overflow:ellipsis; }
+  .hud-right{ top:12px; right:12px; gap:9px; }
+  .hud-stage{ font-size:0.78rem; letter-spacing:0.16em; }
+  .hud-mute, .hud-a11y{ width:36px; height:36px; }
+  .hud-a11y{ font-size:0.78rem; }
+  .a11y-menu{ top:56px; right:12px; font-size:0.88rem; }
+  .minimap{ left:12px; bottom:12px; width:84px; height:84px; }
+  .fft-monitor{ left:104px; bottom:12px; width:80px; height:28px; }
+  .touch-stick{ left:96px; top:calc(100dvh - 200px); width:156px; height:156px; }
+  .touch-stick-zone{ width:min(52vw,340px); height:min(56dvh,430px); bottom:58px; }
+  .rastros{ right:12px; bottom:12px; }
+  .rastro-row .label{font-size:0.7rem;}
+  .veil-title{ letter-spacing:0.1em; }
+  .panel-body{ font-size:1.08rem; line-height:1.72; }
+  .panel-title{ font-size:clamp(1.3rem,5vw,1.62rem); }
+  .choice{ min-height:88px; }
+  .choice-verb{font-size:1.05rem;}.choice-detail{font-size:0.9rem;line-height:1.5;}
+}
+
+/* telas realmente estreitas: os verbos passam a empilhar para não espremer
+   o texto além do legível (fallback do "lado a lado") */
+@media (max-width: 440px){
+  .panel-choices{ flex-direction:column; gap:10px; }
+  .choice{ min-height:0; padding:14px 16px; gap:5px; }
+  .choice-verb{ font-size:0.95rem; }
+  .choice-detail{ font-size:0.8rem; }
+}
+
+/* telas largas: modal de decisão respira mais */
+@media (min-width: 1100px){
+  .panel-decision{ max-width: 940px; }
+}
+/* v36: seletor de 5 idiomas */
+.portal-lang{flex-wrap:wrap;justify-content:center;max-width:min(92vw,520px)}
+.portal-lang button{padding:8px 13px;min-width:52px;letter-spacing:.18em}
+html[lang="zh-CN"] body{font-family:"IBM Plex Sans","Noto Sans SC","Microsoft YaHei",sans-serif}
+
+/* v38: ferramentas extras de acessibilidade para navegação 3D. */
+.nav-assist{
+ position:fixed;left:50%;bottom:42px;z-index:34;transform:translateX(-50%);
+ display:none;max-width:min(82vw,520px);padding:7px 10px;
+ color:var(--bone);background:rgba(3,4,6,.78);border:1px solid rgba(232,225,210,.18);
+ font:600 11px/1.3 var(--font-mono);letter-spacing:.08em;text-transform:uppercase;
+ pointer-events:none;text-align:center;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)
+}
+:root[data-navassist="on"] .nav-assist{display:block}
+:root[data-crosshair="large"] .crosshair{width:40px;height:40px}
+:root[data-crosshair="large"] .crosshair::before,
+:root[data-crosshair="large"] .crosshair::after{background:#fff;box-shadow:0 0 5px #000,0 0 8px rgba(183,240,59,.55)}
+:root[data-crosshair="large"] .crosshair .dot{width:6px;height:6px;background:var(--vagalume);box-shadow:0 0 0 2px #000}
+:root[data-effects="reduced"] .screen-grain{display:none}
+:root[data-effects="reduced"] .screen-vignette{opacity:.28}
+:root[data-effects="reduced"] .fft-monitor{opacity:.58}
+:root[data-textsize="large"] .hud-location,
+:root[data-textsize="large"] .hud-stage,
+:root[data-textsize="large"] .rastros-toggle{font-size:1rem}
+:root[data-textsize="large"] .a11y-menu{width:min(92vw,360px)}
+:root[data-textsize="large"] .a11y-menu h2{font-size:.82rem}
+:root[data-textsize="large"] .a11y-row .a11y-label{font-size:.9rem}
+:root[data-textsize="large"] .a11y-row .a11y-hint{font-size:.76rem;line-height:1.4}
+@media(pointer:coarse),(max-width:760px){.nav-assist{bottom:112px;font-size:13px;padding:9px 12px}}

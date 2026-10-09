@@ -1,0 +1,417 @@
+{
+  "id": "sala-05b-fogo-cruzado",
+  "stage": 5,
+  "name": {
+    "pt": "FOGO CRUZADO",
+    "en": "CROSSFIRE",
+    "es": "FUEGO CRUZADO",
+    "de": "KREUZFEUER",
+    "zh": "交叉火力"
+  },
+  "scene": {
+    "accent": "#C1121F",
+    "accent2": "#243B8F",
+    "fog": "#06050a",
+    "fogDensity": 0.038,
+    "ambient": {
+      "color": "#220a0a",
+      "intensity": 1.65
+    },
+    "keyLight": {
+      "color": "#C1121F",
+      "intensity": 8.9,
+      "position": [
+        0,
+        5.5,
+        1
+      ]
+    },
+    "floor": {
+      "colorDeep": "#06050a",
+      "colorA": "#C1121F",
+      "colorB": "#243B8F",
+      "glow": "#B7F03B",
+      "liquid": 0.35,
+      "veins": 0.2,
+      "crack": 0.3,
+      "grid": 0.22,
+      "gridScale": 0.42,
+      "scale": 0.15
+    },
+    "fireflies": {
+      "color": "#B7F03B",
+      "count": 100,
+      "drift": 0.5
+    },
+    "boundary": {
+      "radius": 13,
+      "glow": "#C1121F",
+      "height": 6.5
+    },
+    "audio": {
+      "root": 30.9,
+      "intensity": 0.6
+    },
+    "spawn": {
+      "position": [
+        0,
+        1.65,
+        8.5
+      ],
+      "yaw": 0,
+      "pitch": -0.04
+    }
+  },
+  "props": [
+    {
+      "type": "vitrine",
+      "position": [
+        -3.6,
+        0,
+        -2.2
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#C1121F",
+      "itemTint": "#160808",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "fc1",
+      "content": {
+        "title": {
+          "pt": "TOCHA",
+          "en": "TORCH",
+          "es": "ANTORCHA",
+          "de": "FACKEL",
+          "zh": "火把"
+        },
+        "body": {
+          "pt": "Chama presa no ar, combustível ainda gotejando. O fogo foi congelado no meio de um gesto. Ainda dá para ver a mão que o carregava, ausente logo atrás.",
+          "en": "Flame frozen in the air, fuel still dripping. The fire was frozen mid gesture. You can still make out the hand that carried it, absent just behind.",
+          "es": "Llama congelada en el aire, el combustible todavía gotea. El fuego quedó detenido a mitad del gesto. Aún se distingue la mano que lo llevaba, ausente justo detrás.",
+          "de": "Flamme in der Luft eingefroren, der Brennstoff tropft noch. Das Feuer wurde mitten in der Geste angehalten. Die Hand, die es trug, lässt sich noch erahnen, direkt dahinter abwesend.",
+          "zh": "火焰被冻结在半空，燃料仍在滴落。火被定格在一个动作中途。还能辨认出曾握着它的那只手，而手的主人已经不在后方。"
+        }
+      }
+    },
+    {
+      "type": "vitrine",
+      "position": [
+        3.6,
+        0,
+        -2.6
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.3,
+        0.9
+      ],
+      "accent": "#243B8F",
+      "itemTint": "#0a0e1c",
+      "itemScale": 0.42,
+      "displace": 0.06,
+      "info": "fc2",
+      "content": {
+        "title": {
+          "pt": "ESCUDO",
+          "en": "SHIELD",
+          "es": "ESCUDO",
+          "de": "SCHILD",
+          "zh": "盾牌"
+        },
+        "body": {
+          "pt": "Placa de metal amassada, marcas de impacto recentes. Cada amassado é de um lado diferente. Foi usado por muitas mãos, contra muitas direções, no mesmo dia.",
+          "en": "Dented metal plate, recent impact marks. Each dent comes from a different side. It was held by many hands, against many directions, on the same day.",
+          "es": "Placa metálica abollada, marcas de impacto recientes. Cada abolladura viene de un lado diferente. Fue sostenida por muchas manos, contra muchas direcciones, el mismo día.",
+          "de": "Verbeulte Metallplatte, frische Einschlagspuren. Jede Delle kommt aus einer anderen Richtung. Sie wurde am selben Tag von vielen Händen gegen viele Richtungen gehalten.",
+          "zh": "凹陷的金属板，带着新近的撞击痕迹。每个凹痕来自不同方向。同一天里，它被许多只手举着，抵挡来自许多方向的力量。"
+        }
+      }
+    },
+    {
+      "type": "shard",
+      "position": [
+        0,
+        1.8,
+        -7.0
+      ],
+      "tint": "#1a0608",
+      "glow": "#B7F03B",
+      "itemScale": 0.26,
+      "displace": 0.06,
+      "info": "fc3",
+      "content": {
+        "title": {
+          "pt": "PROJÉTIL",
+          "en": "PROJECTILE",
+          "es": "PROYECTIL",
+          "de": "PROJEKTIL",
+          "zh": "弹丸"
+        },
+        "body": {
+          "pt": "Suspenso a meio caminho, trajetória interrompida. Parou entre quem atirou e quem levaria. O meio do caminho virou o lugar mais quieto da sala.",
+          "en": "Suspended mid flight, trajectory interrupted. It stopped between the one who fired and the one who would be hit. The middle of its path became the quietest place in the room.",
+          "es": "Suspendido a mitad de vuelo, trayectoria interrumpida. Se detuvo entre quien disparó y quien iba a ser alcanzado. El centro de su recorrido se convirtió en el lugar más silencioso de la sala.",
+          "de": "Mitten im Flug schwebend, Flugbahn unterbrochen. Es blieb zwischen der Person, die schoss, und der Person, die getroffen worden wäre. Die Mitte seiner Bahn wurde zum stillsten Ort im Raum.",
+          "zh": "悬停在飞行途中，轨迹被中断。它停在开枪者与本应被击中者之间。飞行路径的中点成了房间里最安静的地方。"
+        }
+      }
+    },
+    {
+      "type": "speaker",
+      "position": [
+        -5.6,
+        0,
+        -3.6
+      ],
+      "accent": "#243B8F",
+      "info": "fc4",
+      "content": {
+        "title": {
+          "pt": "RÁDIO TÁTICO",
+          "en": "TACTICAL RADIO",
+          "es": "RADIO TÁCTICA",
+          "de": "TAKTISCHES FUNKGERÄT",
+          "zh": "战术无线电"
+        },
+        "body": {
+          "pt": "Transmite ordens cruzadas, dois lados na mesma frequência. As vozes se contradizem sem se ouvir. Cada lado acha que fala sozinho, e os dois mandam avançar.",
+          "en": "Transmits crossed orders, both sides on the same frequency. The voices contradict each other without listening. Each side thinks it speaks alone, and both order the advance.",
+          "es": "Transmite órdenes cruzadas, ambos bandos en la misma frecuencia. Las voces se contradicen sin escucharse. Cada lado cree hablar solo, y ambos ordenan avanzar.",
+          "de": "Überträgt sich kreuzende Befehle, beide Seiten auf derselben Frequenz. Die Stimmen widersprechen sich, ohne einander zuzuhören. Jede Seite glaubt, allein zu sprechen, und beide befehlen den Vormarsch.",
+          "zh": "传出交错的命令，双方处在同一个频率上。声音彼此矛盾，却从不倾听。每一方都以为只有自己在说话，而双方都下令前进。"
+        }
+      }
+    },
+    {
+      "type": "banner",
+      "position": [
+        -6.4,
+        0,
+        -6.0
+      ],
+      "rotation": [
+        0,
+        0.35,
+        0
+      ],
+      "color": "#3a0508",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#C1121F",
+      "emissiveIntensity": 0.16,
+      "info": "fc5",
+      "content": {
+        "title": {
+          "pt": "BARRICADA",
+          "en": "BARRICADE",
+          "es": "BARRICADA",
+          "de": "BARRIKADE",
+          "zh": "路障"
+        },
+        "body": {
+          "pt": "Estrutura improvisada, ainda fumegando. Feita de móveis, portas e o que tinha por perto. Uma casa desmontada às pressas para virar parede.",
+          "en": "Improvised structure, still smoking. Made of furniture, doors, and whatever was near. A home taken apart in haste to become a wall.",
+          "es": "Estructura improvisada, todavía humeante. Hecha con muebles, puertas y todo lo que había cerca. Una casa desmontada a toda prisa para convertirse en muro.",
+          "de": "Improvisierte Struktur, noch rauchend. Aus Möbeln, Türen und allem gebaut, was in der Nähe war. Ein Zuhause wurde hastig zerlegt, um zur Mauer zu werden.",
+          "zh": "临时搭建的结构，仍在冒烟。由家具、门和身边能找到的一切组成。一个家被匆忙拆开，变成一堵墙。"
+        }
+      }
+    },
+    {
+      "type": "bones",
+      "position": [
+        5.6,
+        0,
+        -7.0
+      ],
+      "accent": "#C1121F",
+      "count": 8,
+      "info": "fc6",
+      "content": {
+        "title": {
+          "pt": "CAPACETE",
+          "en": "HELMET",
+          "es": "CASCO",
+          "de": "HELM",
+          "zh": "头盔"
+        },
+        "body": {
+          "pt": "Capacete amassado, sem identificação. Protegeu uma cabeça e perdeu o dono no mesmo instante. Serve para os dois lados, e por isso não diz de qual era.",
+          "en": "Dented helmet, no identification. It shielded a head and lost its owner in the same instant. It fits both sides, and so it will not say which it was.",
+          "es": "Casco abollado, sin identificación. Protegió una cabeza y perdió a su dueño en el mismo instante. Sirve para ambos bandos, y por eso no dirá cuál era.",
+          "de": "Verbeulter Helm ohne Kennzeichnung. Er schützte einen Kopf und verlor im selben Augenblick seinen Besitzer. Er passt beiden Seiten und verrät deshalb nicht, zu welcher er gehörte.",
+          "zh": "凹陷的头盔，没有任何身份标记。它保护了一个头，也在同一瞬间失去了主人。它适合双方，因此拒绝说明自己属于哪一边。"
+        }
+      }
+    },
+    {
+      "type": "banner",
+      "position": [
+        6.4,
+        0,
+        -6.4
+      ],
+      "rotation": [
+        0,
+        -0.35,
+        0
+      ],
+      "color": "#1c1f2a",
+      "size": [
+        0.8,
+        1.6
+      ],
+      "emissive": "#243B8F",
+      "emissiveIntensity": 0.12
+    },
+    {
+      "type": "totem",
+      "position": [
+        -7.5,
+        0,
+        -3
+      ],
+      "accent": "#C1121F",
+      "height": 3.8,
+      "segments": 5
+    },
+    {
+      "type": "totem",
+      "position": [
+        7.5,
+        0,
+        -3.4
+      ],
+      "accent": "#243B8F",
+      "height": 3.6,
+      "segments": 5
+    },
+    {
+      "type": "shard",
+      "position": [
+        -2,
+        0.8,
+        -8.4
+      ],
+      "tint": "#1a0608",
+      "glow": "#C1121F",
+      "itemScale": 0.24,
+      "displace": 0.06
+    },
+    {
+      "type": "shard",
+      "position": [
+        2.2,
+        0.9,
+        -8.6
+      ],
+      "tint": "#1a0608",
+      "glow": "#243B8F",
+      "itemScale": 0.26,
+      "displace": 0.06
+    }
+  ],
+  "central": {
+    "type": "astrolabe",
+    "position": [
+      0,
+      0,
+      -5.2
+    ],
+    "glow": "#C1121F",
+    "title": {
+      "pt": "ESFERA DE TRÉGUA",
+      "en": "TRUCE SPHERE",
+      "es": "ESFERA DE TREGUA",
+      "de": "WAFFENRUHE-KUGEL",
+      "zh": "停火之球"
+    },
+    "body": {
+      "pt": "Uma esfera de vidro guarda fumaça presa no centro. Gira devagar entre os dois lados. É a pausa feita objeto, o instante em que ninguém atira. Frágil como vidro, e por enquanto ninguém a quebrou.",
+      "en": "A glass sphere holds smoke trapped at its center. It turns slowly between both sides. It is the pause made object, the instant when no one fires. Fragile as glass, and for now no one has broken it.",
+      "es": "Una esfera de vidrio contiene humo atrapado en el centro. Gira lentamente entre ambos lados. Es la pausa convertida en objeto, el instante en que nadie dispara. Frágil como el vidrio, y por ahora nadie la ha roto.",
+      "de": "Eine Glaskugel hält Rauch in ihrem Zentrum gefangen. Sie dreht sich langsam zwischen beiden Seiten. Sie ist die Pause als Objekt, der Augenblick, in dem niemand schießt. Zerbrechlich wie Glas, und vorerst hat sie niemand zerbrochen.",
+      "zh": "玻璃球中央困着一团烟。它在双方之间缓慢旋转。它是被物化的暂停，是没有人开枪的那个瞬间。像玻璃一样脆弱，而至少现在还没有人打碎它。"
+    },
+    "choices": [
+      {
+        "verb": {
+          "pt": "ATIRAR",
+          "en": "FIRE",
+          "es": "DISPARAR",
+          "de": "FEUERN",
+          "zh": "开火"
+        },
+        "detail": {
+          "pt": "o som chega antes do gesto",
+          "en": "the sound arrives before the gesture",
+          "es": "el sonido llega antes que el gesto",
+          "de": "der Klang kommt vor der Geste",
+          "zh": "声音先于动作到来"
+        },
+        "rastro": {
+          "sangue": 2
+        },
+        "next": "sala-06b-insurreicao.html"
+      },
+      {
+        "verb": {
+          "pt": "ABAIXAR AS ARMAS",
+          "en": "LOWER WEAPONS",
+          "es": "BAJAR LAS ARMAS",
+          "de": "WAFFEN SENKEN",
+          "zh": "放下武器"
+        },
+        "detail": {
+          "pt": "as mãos pesam mais que o metal",
+          "en": "hands weigh more than metal",
+          "es": "las manos pesan más que el metal",
+          "de": "Hände wiegen mehr als Metall",
+          "zh": "双手比金属更沉"
+        },
+        "rastro": {
+          "voz": 1,
+          "raiz": 1
+        },
+        "next": "sala-06a-ritual-sangue.html"
+      },
+      {
+        "verb": {
+          "pt": "FUGIR",
+          "en": "FLEE",
+          "es": "HUIR",
+          "de": "FLIEHEN",
+          "zh": "逃离"
+        },
+        "detail": {
+          "pt": "o caminho se abre na fumaça",
+          "en": "a path opens in the smoke",
+          "es": "se abre un camino en el humo",
+          "de": "im Rauch öffnet sich ein Weg",
+          "zh": "烟雾中打开一条路"
+        },
+        "rastro": {
+          "cinza": 1,
+          "espelho": 1
+        },
+        "next": "sala-06c-ritual-fusao.html"
+      }
+    ]
+  }
+}
