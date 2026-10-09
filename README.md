@@ -1,11 +1,11 @@
-# OROЯO — an open, accessible, multi-user 3D gallery engine for the web
+# OROЯO: an open, accessible, multi-user 3D gallery engine for the web
 
-> **OROЯO** is a free and open-source (GPL-3.0) browser platform that lets artists, collectives and communities publish navigable, multi-user 3D exhibition spaces — with voice, video, chat, generative sound, five languages and built-in accessibility options — using only static files, JSON and a small PHP backend.
->
-> *OROЯO — the artwork* (a decolonial, post-human mermaid-jaguar entity) is the platform's first **case study**: a 17-room, non-linear digital gallery built entirely with the engine.
+OROЯO is free software (GPL-3.0) for publishing navigable 3D exhibition spaces in the browser. Visitors share the space as avatars, talk by voice, show their webcam and chat. Each room has its own generated soundscape, texts in five languages and accessibility options. Everything runs from static files, JSON and a small PHP backend.
+
+The first case study built with the engine is *OROЯO*, an artwork by Ricardo Palmieri and Natasha Marzliak: a non-linear digital gallery with 17 rooms around an entity born from oil, gold, mirrors and contamination.
 
 ![License: GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue)
-![Status: working prototype](https://img.shields.io/badge/status-working%20prototype%20(v38)-orange)
+![Status: functional prototype](https://img.shields.io/badge/status-functional%20prototype%20(v38)-orange)
 ![Languages](https://img.shields.io/badge/i18n-PT%20%7C%20EN%20%7C%20ES%20%7C%20DE%20%7C%20ZH-green)
 ![No build step](https://img.shields.io/badge/build-none%20required-lightgrey)
 
@@ -14,64 +14,66 @@
 ## Table of contents
 
 1. [Summary](#1-summary)
-2. [Social context and problem](#2-social-context-and-problem)
+2. [Social context](#2-social-context)
 3. [Concept: platform and case study](#3-concept-platform-and-case-study)
-4. [How it works — the visitor's journey](#4-how-it-works--the-visitors-journey)
+4. [How a visit works](#4-how-a-visit-works)
 5. [Technical architecture](#5-technical-architecture)
 6. [Real-time communication](#6-real-time-communication)
 7. [Accessibility](#7-accessibility)
 8. [Privacy and security](#8-privacy-and-security)
 9. [Installation and deployment](#9-installation-and-deployment)
-10. [Cloudflare Realtime setup (step by step)](#10-cloudflare-realtime-setup-step-by-step)
+10. [Cloudflare Realtime setup, step by step](#10-cloudflare-realtime-setup-step-by-step)
 11. [Authoring rooms and content](#11-authoring-rooms-and-content)
 12. [Repository structure](#12-repository-structure)
 13. [Current status and proposed work](#13-current-status-and-proposed-work)
-14. [Roadmap / To-do](#14-roadmap--to-do)
-15. [Related work and positioning](#15-related-work-and-positioning)
+14. [Roadmap](#14-roadmap)
+15. [Related work](#15-related-work)
 16. [Team, credits and licences](#16-team-credits-and-licences)
 
 ---
 
 ## 1. Summary
 
-Immersive online spaces — "virtual galleries", "metaverse" rooms, social VR — are today provided almost entirely by proprietary, centralised platforms. They require accounts, collect behavioural data, demand powerful hardware, lock content into closed formats and rarely treat accessibility as a first-class requirement. Small cultural actors, peripheral communities and independent artists either cannot afford them or must surrender authorship and data to use them.
+Shared 3D spaces on the web (virtual galleries, social VR rooms) are mostly offered by commercial platforms. They ask for accounts, collect usage data, need recent hardware and keep the content in their own formats. Accessibility is rarely part of the design. For independent artists, small collectives and communities on the periphery of cities, this means paying for a service they do not control, or staying out.
 
-OROЯO proposes a **lightweight, self-hostable alternative**: a web engine in which each exhibition room is a single declarative JSON file (atmosphere, lights, objects, texts in five languages, narrative choices). The engine renders it in real time with Three.js, synthesises its soundscape procedurally with the Web Audio API, and connects visitors through a minimal PHP presence service plus a WebRTC Selective Forwarding Unit (SFU) for voice and webcam. It runs on commodity shared hosting, needs no build tooling and has no user accounts.
+OROЯO is a self-hostable engine for this kind of space. Each room is one JSON file that describes its atmosphere, lights, objects, texts and the choices that lead to other rooms. The browser renders the room with Three.js and synthesises its sound with the Web Audio API. A small PHP service handles presence and chat, and a WebRTC SFU relays voice and video. The whole system runs on ordinary shared hosting, with no build step, no database and no user accounts.
 
-The engine is validated through a real artistic production: *OROЯO*, a 17-room digital gallery developed with territorial communities in Santo André (São Paulo, Brazil), to be integrated into the long-running public **WebMuseu Noisetupi** (online since 2020).
+The engine is being tested on a real artistic production, the *OROЯO* gallery, planned as a new wing of the WebMuseu Noisetupi, a public online museum created with Lei Aldir Blanc funding in 2020 and online since 2021.
 
-## 2. Social context and problem
+## 2. Social context
 
-| Problem | Consequence | How OROЯO responds |
+| Problem | Effect | What OROЯO does |
 |---|---|---|
-| Immersive cultural spaces are proprietary and centralised | Communities lose authorship, data and continuity when a platform changes its terms or shuts down | GPL-3.0 code, open JSON content format, self-hosting on cheap shared hosting |
-| High technical barrier to entry | Only well-funded institutions build 3D / online exhibitions | Rooms authored as JSON or in a visual editor; no compilation step; procedural assets instead of 3D modelling |
-| Accessibility is an afterthought in 3D / WebXR | Disabled, neurodivergent and low-bandwidth audiences are excluded | Accessibility menu (reduced motion, high contrast, larger text), ARIA live regions, keyboard / touch / gamepad input, opt-in microphone, multilingual UI, lightweight assets |
-| Surveillance by default on social platforms | Visitors are tracked and profiled | No accounts, no analytics, personal journey stored only in the visitor's browser, ephemeral server state |
-| Digital exclusion of peripheral territories | Cultural production from the margins rarely reaches the network on its own terms | Methodology in which local artists are co-authors of rooms, not content suppliers |
+| Shared 3D cultural spaces depend on centralised commercial platforms | Communities lose authorship, data and continuity when a platform changes its terms or closes | GPL-3.0 code, open JSON format for content, self-hosting on low-cost shared hosting |
+| Building a 3D online exhibition requires specialised skills | Mostly well-funded institutions can do it | Rooms written as JSON or in a visual editor; parametric objects replace 3D modelling; no compilation |
+| Accessibility is usually missing in 3D and WebXR projects | Disabled people, neurodivergent people and people on slow connections are left out | Accessibility menu, ARIA announcements, keyboard, touch and gamepad input, microphone off by default, five languages, small downloads |
+| Social platforms track their users by default | Visitors are profiled | No accounts, no analytics, the visitor's path is stored only in their own browser, server data expires |
+| Artists from peripheral territories have little say over how their work circulates online | Their production reaches the network through other people's channels | A working method in which local artists author rooms of the gallery and keep their credits |
 
 ## 3. Concept: platform and case study
 
-### 3.1 The platform (the software)
+### 3.1 The platform
 
-A generic engine for **data-driven, multi-user, accessible 3D exhibition rooms**:
+A generic engine for multi-user, accessible 3D exhibition rooms described by data:
 
-- **Declarative rooms** — one JSON file describes everything that makes a room unique.
-- **Procedural assets** — a library of ~40 parametric 3D builders (vitrines, totems, cables, roots, mirror shards, tanks, masks, creatures, particle systems), so rooms can be built without 3D-modelling skills or heavy model files.
-- **Procedural sound** — each room declares a sound profile; audio is synthesised live, with zero audio files.
-- **Narrative graph** — rooms are linked by visitor choices ("verbs"), allowing non-linear dramaturgy.
-- **Traces** — the visitor's path is remembered locally and fed back into the visuals.
-- **Co-presence** — visitors see each other as avatars, talk by voice, share webcam, chat and exchange files.
+- **Rooms as data.** One JSON file holds everything specific to a room.
+- **Parametric objects.** About 40 builders for vitrines, totems, cables, roots, mirror shards, tanks, masks, animals and particle systems. Rooms can be assembled without modelling software or heavy model files.
+- **Generated sound.** Each room declares a sound profile and the audio is synthesised live in the browser. There are no audio files.
+- **Narrative graph.** Rooms are connected by the choices visitors make, so the path through the gallery can branch.
+- **Traces.** Each choice is remembered in the visitor's browser and changes the colour of the rooms that follow.
+- **Presence.** Visitors see each other as avatars, speak by voice, can show their webcam, chat in private and send files.
 
-### 3.2 The case study: *OROЯO*, the artwork
+### 3.2 The case study: *OROЯO*
 
-OROЯO is an entity — river, machine, mirror, animal and process — whose visible form is a **mermaid-jaguar** born from oil, gold, mirrors and contamination. She is deliberately fluid: never a fixed character, never a mascot. The gallery is a dark, contaminated territory in which the visitor does not "learn about" OROЯO but is absorbed into her process: *absorb, refuse, transmute*.
+OROЯO is an entity with no original body and no fixed identity. She reorganises herself from the territories, forms of life, conflicts, memories, materials and technologies she meets. In the gallery her visible form is a mermaid-jaguar made of heavy water, oil, gold and mirror, appearing and dissolving across the rooms. The name joins *ororo* (oil, in Yoruba) and *oro* (gold, in Spanish). The palindrome with a mirrored Cyrillic Я stands for reflection and contamination.
 
-The work is created through a territorial methodology: **"OROЯO does not visit the territories. OROЯO is transformed by them."** Two creative hubs — Vila Suíça (Sarau na Quebrada) and Paranapiacaba (a historic railway village in the Atlantic Forest) — host short residencies in which local artists author rooms of the gallery. Results are returned to the communities through performative events ("Decolonial Banquets") and remain permanently and freely accessible online.
+The gallery is a work of Game Art and expanded cinema. There is no combat, score, victory or mandatory progression. Playing means walking, listening, waiting, getting closer, activating objects and making decisions that change what is seen and heard. Each path produces a different montage.
+
+The working method is territorial: *OROЯO does not visit the territories, she is transformed by them.* The current proposal (submitted to the PNAB Santo André call, results pending) plans residencies in two areas of Santo André, São Paulo: Vila Suíça, with the Sarau na Quebrada cultural point, and Paranapiacaba, a railway heritage village in the Atlantic Forest, with Coletivo FOPP. Six local artists, three per territory, would author new territory-rooms of the gallery. The results would return to each community through public events called Decolonial Banquets and stay online free of charge.
 
 ### 3.3 Narrative structure
 
-17 rooms in 7 stages. Stages 1 and 7 are shared; stages 2–6 branch into three parallel paths (a / b / c). In each room the visitor chooses a verb at the central relic; the choice is logged as a **trace** (oil, blood, root, gold, mirror, voice, ash) that tints subsequent rooms and reappears as fragments orbiting the final core.
+17 rooms in 7 stages. Stages 1 and 7 are shared. Stages 2 to 6 branch into three paths (a, b and c). In every room the central relic offers verbs. The chosen verb is stored as a trace (oil, blood, root, gold, mirror, voice, ash), tints the following rooms and returns as fragments orbiting the final core.
 
 ```mermaid
 flowchart LR
@@ -91,23 +93,23 @@ flowchart LR
   A6 & B6 & C6 --> S7[07 Final]
 ```
 
-*(Simplified view — choices may also cross between paths. The graph is defined entirely by the `next` field of each choice in the room JSON.)*
+This is a simplified view. Choices can also cross between paths, since the graph is defined by the `next` field of each choice in the room files.
 
-## 4. How it works — the visitor's journey
+## 4. How a visit works
 
-1. **Portal** (`index.html`) — choose language, sound on/off, enter.
-2. **Room** — a first-person 3D space. Move with WASD / arrow keys, look by dragging (mouse or touch), or use a gamepad. A minimap shows position, the room's relic and other visitors.
-3. **Inspect** — approaching or tapping an object opens an accessible modal with its text in the selected language; a modulated noise bed accompanies it.
-4. **Choose** — the central relic offers verbs. The chosen verb is stored as a trace and the visitor moves to the next room without a full page reload.
-5. **Meet** — other visitors in the same room appear as avatars (with a photo or live webcam on the face). Voice chat, private text chat, voice notes and file transfer are available.
-6. **Accessibility menu** — reachable from every room at any time.
+1. **Portal** (`index.html`). The visitor picks a language, turns sound on or off and enters.
+2. **Room.** A first-person 3D space. Movement uses WASD or the arrow keys, looking around uses mouse or touch drag, and a gamepad also works. A minimap shows the visitor, the room's relic and the other people present.
+3. **Objects.** Approaching or tapping an object opens a dialog with its text in the chosen language, with a noise layer in the sound.
+4. **Choice.** The relic at the centre offers verbs. The chosen verb becomes a trace and the next room loads without reloading the whole page.
+5. **Other visitors.** People in the same room appear as avatars, with a photo or live webcam on the face. Voice, private chat, voice notes and file sending are available.
+6. **Accessibility menu.** Available in every room at any moment.
 
 ## 5. Technical architecture
 
 ```mermaid
 flowchart TB
   subgraph Browser
-    UI[HTML/CSS HUD + a11y menu] --> CORE[ororo-core.js<br/>Three.js scene, navigation,<br/>procedural props, traces]
+    UI[HTML/CSS HUD + accessibility menu] --> CORE[ororo-core.js<br/>Three.js scene, navigation,<br/>parametric objects, traces]
     CORE --> AUDIO[ororo-audio.js<br/>Web Audio synthesis]
     CORE --> MP[multiplayer/client.js<br/>avatars, presence]
     MP --> CHAT[chat.js]
@@ -117,14 +119,14 @@ flowchart TB
     DATA[rooms/data/*.json<br/>content/ui.json]
   end
   subgraph PHP server
-    API[multiplayer/api.php<br/>presence, pose, chat, faces]
+    API[multiplayer/api.php<br/>presence, position, chat, photos]
     PROXY[multiplayer/sfu.php<br/>authenticated SFU proxy]
-    CFG[(ororo-sfu.php / sfu-config.php<br/>secret, server-only)]
+    CFG[(ororo-sfu.php or sfu-config.php<br/>secret, server only)]
   end
   CF[Cloudflare Realtime SFU]
   CORE -- fetch --> DATA
   MP -- JSON POST --> API
-  SFUJS -- session / track negotiation --> PROXY
+  SFUJS -- session and track negotiation --> PROXY
   PROXY -- Bearer secret --> CF
   SFUJS <-- one PeerConnection: audio + video --> CF
   PROXY -. reads .-> CFG
@@ -132,103 +134,109 @@ flowchart TB
 
 | Layer | Technology | Notes |
 |---|---|---|
-| Rendering | Three.js (vendored ES modules, import map) | `EffectComposer` + `UnrealBloomPass`; custom shaders for liquid floor, colour pass, fog and glow sprites |
-| Engine | Vanilla JavaScript ES modules (`ororo-core.js`, ~3.5k lines) | Room loader, parametric prop builders, soft navigation between rooms, minimap, traces, UI |
-| Sound | Web Audio API (`ororo-audio.js`, `audio-config.js`) | Per-room profile: pad waveform, chords / detune, filter motion, noise colour, reverb size, event density; FFT analyser for the HUD |
-| Content | JSON (one file per room + `content/ui.json`) | 5 languages: pt, en, es, de, zh |
-| Authoring | `editor.html` + `ororo-editor.js`, `build_rooms.py` | Visual editing / export of room JSON; Python script regenerates room wrappers and manifest |
-| Presence | PHP 8.1+ (`multiplayer/api.php`) | File-based, short-lived state in the system temp dir with `flock`; access key checked by SHA-256; rate-limited |
-| Media | WebRTC + Cloudflare Realtime SFU via `multiplayer/sfu.php` | The secret never leaves the server |
-| Hosting | Any Apache / PHP shared host with HTTPS | No database, no Node.js, no build step |
+| Rendering | Three.js, vendored ES modules loaded with an import map | `EffectComposer` and `UnrealBloomPass`; custom shaders for the liquid floor, colour pass, fog and glow |
+| Engine | Plain JavaScript ES modules (`ororo-core.js`, about 3,500 lines) | Room loading, parametric object builders, navigation between rooms without page reload, minimap, traces, interface |
+| Sound | Web Audio API (`ororo-audio.js`, `audio-config.js`) | Per-room profile: pad waveform, chords and detune, filter movement, noise colour, reverb size, event density; FFT analyser shown in the HUD |
+| Content | JSON, one file per room plus `content/ui.json` | Portuguese, English, Spanish, German and Chinese |
+| Authoring | `editor.html` with `ororo-editor.js`, and `build_rooms.py` | Visual editing and export of room files; a Python script regenerates room pages and the manifest |
+| Presence | PHP 8.1+ (`multiplayer/api.php`) | Short-lived state in files in the system temp folder, protected with `flock`; access key checked against a SHA-256 hash, with rate limiting |
+| Media | WebRTC through Cloudflare Realtime SFU, via `multiplayer/sfu.php` | The secret stays on the server |
+| Hosting | Any Apache and PHP host with HTTPS | No database, no Node.js, no build step |
 
 ## 6. Real-time communication
 
-The key design decision is the move from a **peer-to-peer mesh** (every visitor connected to every other: *n·(n−1)/2* connections, with upload bandwidth growing linearly with room size) to **a single PeerConnection per visitor to an SFU**:
+Earlier versions connected every visitor directly to every other visitor (a peer-to-peer mesh). With *n* people that means *n·(n−1)/2* connections, and each person's upload grows with the size of the room. The current version gives each visitor a single connection to an SFU (Selective Forwarding Unit), which relays the streams:
 
-- Each client **publishes** at most one audio track and — only once activated — one webcam track (320×240), and **subscribes** to the tracks of the other people in the same room.
-- Visitors enter with the microphone **off**. A silent but stable audio track is published and swapped for the real microphone with `RTCRtpSender.replaceTrack()`, so toggling never renegotiates or drops the call. The webcam follows the same pattern after first use.
-- The browser only talks to our PHP proxy, which authenticates the OROЯO session and calls the Cloudflare API with the secret. The backend only allows subscribing to tracks of users **present in the same room**.
-- Presence, position, private chat, event log and avatar photos stay on the PHP service, independent of the SFU, so text communication keeps working if media fails. Connection loss triggers a reconnect dialog.
-- STUN: `stun.cloudflare.com:3478`. TURN can be added later as a fallback for very restrictive networks.
-- Current limit: **8 people per room** (see roadmap: proximity-based subscription).
+- Each browser sends at most one audio track and, after the visitor turns it on, one webcam track at 320×240. It receives the tracks of the other people in the same room.
+- Visitors enter with the microphone off. The browser sends a silent audio track from the start and swaps it for the real microphone with `RTCRtpSender.replaceTrack()`. Turning the microphone on and off never renegotiates or drops the call. The webcam works the same way after its first use.
+- The browser only talks to our PHP proxy. The proxy checks the OROЯO session, calls the Cloudflare API with the secret and only allows a visitor to receive tracks from people in the same room.
+- Presence, position, private chat, the event log and avatar photos run on the PHP service, separate from the SFU. If media fails, text chat keeps working. When the connection drops, a dialog offers to reconnect.
+- STUN server: `stun.cloudflare.com:3478`. A TURN server can be added later for very restrictive networks.
+- Current limit: 8 people per room. Selective subscription by proximity is on the roadmap.
 
 ## 7. Accessibility
 
-Accessibility is treated as a requirement of the engine, not of an individual room.
+Accessibility features live in the engine, so every room gets them.
 
-**Implemented**
+**Already implemented**
 
-- Accessibility menu in every room: *reduced motion*, *high contrast*, *larger text* (preferences persisted locally).
-- Modals use `aria-modal`, `aria-labelledby` / `aria-describedby`; announcements via `aria-live` regions; toggles expose `aria-pressed` / `aria-checked` / `aria-expanded`.
-- Multiple input modalities: keyboard, mouse, touch and gamepad.
-- Full UI and content in 5 languages, with the document `lang` attribute kept in sync.
-- Global mute; microphone off by default; webcam opt-in.
-- Text chat as an alternative to voice.
-- Procedural geometry and audio keep downloads small for low-bandwidth connections.
+- Accessibility menu in every room with reduced motion, high contrast and larger text. Preferences are kept in the browser.
+- Dialogs use `aria-modal`, `aria-labelledby` and `aria-describedby`. Announcements go through `aria-live` regions. Toggle buttons expose `aria-pressed`, `aria-checked` and `aria-expanded`.
+- Keyboard, mouse, touch and gamepad input.
+- Interface and content in five languages, with the page `lang` attribute kept in sync.
+- Global mute. Microphone off by default. Webcam only when the visitor turns it on.
+- Text chat for people who cannot or do not want to use voice.
+- Generated geometry and sound keep downloads small on slow connections.
 
-**Known gaps** (see [Roadmap](#14-roadmap--to-do)): no screen-reader-navigable alternative to the 3D view yet, no audio description, no captions for voice chat, `prefers-reduced-motion` not yet applied automatically, no photosensitivity warning, no formal WCAG 2.2 audit.
+**Missing so far** (see [Roadmap](#14-roadmap)): a version of each room that works with screen readers, audio description, captions for voice chat, automatic use of the system's reduced motion setting, a photosensitivity warning and a formal WCAG 2.2 audit. The PNAB proposal includes Libras, audio description, captions, screen-reader texts and two paid evaluation rounds with disabled people.
 
 ## 8. Privacy and security
 
-**Principles:** data minimisation, no accounts, no third-party analytics, ephemeral server state, secrets only on the server.
+The guiding rules are to collect as little as possible, have no accounts and no third-party analytics, delete server data quickly and keep secrets on the server.
 
-**Implemented**
+**Already implemented**
 
-- No login or personal profile: visitors choose a display name and an optional photo.
-- The visitor's journey (traces) lives only in the browser's `localStorage` and can be erased from the UI ("erase traces").
-- Server state is temporary: chat messages and voice notes expire after 30 minutes, avatar photos after 24 hours, users are removed when they leave.
-- Microphone and webcam require an explicit user action.
-- The Cloudflare App Secret is read by PHP only. `.htaccess` denies HTTP access to the config file, and the config can live outside the web root (`ororo-sfu.php`). Real config files are git-ignored.
-- Access key checked by SHA-256 with constant-time comparison and per-IP rate limiting (12 attempts / 10 min).
-- JSON-only POST API, request-size limits, rejection of cross-site requests (`Sec-Fetch-Site`), `Cache-Control: no-store`, `X-Content-Type-Options: nosniff`.
+- No login and no profile. Visitors choose a display name and, if they want, a photo.
+- The visitor's path (traces) is stored only in the browser's `localStorage` and can be erased from the interface.
+- Server data is temporary. Chat messages and voice notes expire after 30 minutes, avatar photos after 24 hours, and users are removed when they leave.
+- Microphone and webcam need an explicit action from the visitor.
+- Only PHP reads the Cloudflare App Secret. `.htaccess` blocks HTTP access to the config file, which can also live outside the public web folder (`ororo-sfu.php`). Real config files are excluded from git.
+- The access key is compared with a SHA-256 hash in constant time, with a limit of 12 attempts per IP every 10 minutes.
+- The API accepts only JSON POST requests, limits request size, rejects cross-site requests (`Sec-Fetch-Site`) and sends `Cache-Control: no-store` and `X-Content-Type-Options: nosniff`.
 
-**Known gaps:** Google Fonts loaded from a third party (GDPR concern), no Content-Security-Policy yet, no moderation tools (mute / kick / report), no published privacy notice, dependency on a commercial SFU provider. See roadmap.
+**Missing so far:** fonts are loaded from Google Fonts (a GDPR concern), there is no Content-Security-Policy, no moderation tools (mute, remove, report), no published privacy notice, and media depends on a commercial SFU provider. See the roadmap.
 
-> **Responsible disclosure:** please report vulnerabilities privately via a GitHub security advisory rather than in a public issue.
+To report a vulnerability, please open a private GitHub security advisory instead of a public issue.
 
 ## 9. Installation and deployment
 
 ### Requirements
 
-- Web server with **PHP 8.1+** and **HTTPS** (WebRTC and microphone access require a secure context).
-- PHP `curl` extension recommended (falls back to PHP streams).
-- A free **Cloudflare** account for voice / webcam. This is optional: the gallery, presence and chat work without it.
+- A web server with PHP 8.1 or later and HTTPS. WebRTC and microphone access only work in a secure context.
+- The PHP `curl` extension is recommended. Without it the proxy uses PHP streams.
+- A free Cloudflare account for voice and webcam. This part is optional: the gallery, presence and chat work without it.
 
 ### Run locally
 
 ```bash
 git clone https://github.com/ricardopalmieri/ORORO.git
+```
+
+```bash
 cd ORORO
+```
+
+```bash
 php -S localhost:8000
 ```
 
-Open <http://localhost:8000>. `localhost` counts as a secure context, so microphone access works. The single-user gallery works with any static file server; multi-user features need PHP.
+Then open <http://localhost:8000>. Browsers treat `localhost` as a secure context, so the microphone works. The single-visitor gallery runs on any static file server. Multi-user features need PHP.
 
-### Deploy to shared hosting
+### Deploy on shared hosting
 
-1. Back up your current installation.
+1. Back up the current installation.
 2. Upload the repository contents, including `multiplayer/.htaccess`.
-3. Configure the SFU credentials — see [section 10](#10-cloudflare-realtime-setup-step-by-step).
-4. **Set your own access key.** Generate the SHA-256 of a passphrase of your choice and replace `ORORO_ACCESS_HASH` in `multiplayer/api.php`:
+3. Configure the SFU credentials, as described in [section 10](#10-cloudflare-realtime-setup-step-by-step).
+4. Set your own access key. Generate the SHA-256 hash of a passphrase and put it in `ORORO_ACCESS_HASH` in `multiplayer/api.php`:
    ```bash
    php -r "echo hash('sha256', 'your-passphrase'), PHP_EOL;"
    ```
-5. After updating, hard-refresh browsers (Ctrl/Cmd + Shift + R); modules are cache-busted with `?v=` query strings.
-6. Test with two devices on different networks (e.g. one on Wi-Fi, one on 4G/5G): both appear in the room, audio flows both ways, toggling the microphone does not drop the call, the webcam appears on the remote avatar's face, leaving removes the participant for everyone.
+5. After each update, force a refresh in the browser (Ctrl/Cmd + Shift + R). Modules are versioned with `?v=` in their URLs.
+6. Test with two devices on different networks, for example one on Wi-Fi and one on 4G/5G. Check that both appear in the room, audio works in both directions, switching the microphone does not drop the call, the webcam shows on the remote avatar and leaving removes the person for everyone.
 
-## 10. Cloudflare Realtime setup (step by step)
+## 10. Cloudflare Realtime setup, step by step
 
-OROЯO uses **Cloudflare Realtime SFU** (formerly *Cloudflare Calls*) to relay audio and video. You need two values: an **App ID** (32 characters) and an **App Secret / API token** (64 characters).
+OROЯO uses Cloudflare Realtime SFU (earlier called Cloudflare Calls) to relay audio and video. You need two values: an **App ID** with 32 characters and an **App Secret** (API token) with 64 characters.
 
-1. **Create an account** at <https://dash.cloudflare.com/sign-up>. The free plan is enough to start; the SFU includes a free monthly traffic allowance (check Cloudflare's current pricing page).
-2. In the dashboard sidebar, open **Realtime** (shown as **Calls** in older dashboards) → **Serverless SFU**.
-3. Click **Create** / **Create application**, give it a name (e.g. `ororo-production`) and confirm.
-4. Cloudflare displays the **App ID** and the **App Secret** (API token). **Copy the secret immediately** — it may be shown only once. If you lose it, regenerate it from the application's page.
+1. Create an account at <https://dash.cloudflare.com/sign-up>. The free plan is enough to start, and the SFU includes a free monthly traffic allowance. Check Cloudflare's pricing page for current numbers.
+2. In the dashboard sidebar, open **Realtime** (called **Calls** in older dashboards), then **Serverless SFU**.
+3. Click **Create** (or **Create application**), give it a name such as `ororo-production` and confirm.
+4. Cloudflare shows the App ID and the App Secret. Copy the secret right away, because it may only be shown once. If you lose it, generate a new one on the application page.
 5. On your server, copy the template:
    ```bash
    cp multiplayer/sfu-config.example.php multiplayer/sfu-config.php
    ```
-   **Recommended:** instead, place it one directory *above* your public web root (e.g. next to `public_html`) named `ororo-sfu.php`. `multiplayer/sfu.php` checks that location first and falls back to `multiplayer/sfu-config.php`.
+   A safer option is to place the file one folder above the public web folder (next to `public_html`, for example) with the name `ororo-sfu.php`. `multiplayer/sfu.php` looks there first and falls back to `multiplayer/sfu-config.php`.
 6. Fill in the values:
    ```php
    <?php
@@ -238,18 +246,18 @@ OROЯO uses **Cloudflare Realtime SFU** (formerly *Cloudflare Calls*) to relay a
        'app_secret' => '<64-character App Secret>',
    ];
    ```
-7. Open a room and switch on the microphone. If a value is malformed, the interface shows a local diagnostic (e.g. *"App ID … must have 32 characters"*) and no request is sent to Cloudflare. If the credentials are wrong, the proxy relays Cloudflare's error **without exposing the secret**.
+7. Open a room and turn on the microphone. If a value has the wrong format, the interface shows a local message (for example, that the App ID needs 32 characters) and nothing is sent to Cloudflare. If the credentials are wrong, the proxy passes on Cloudflare's error message without exposing the secret.
 
 **Rules**
 
 - Never put `app_secret` in JavaScript, HTML, URLs, `localStorage` or a git commit. `multiplayer/sfu-config.php` and `ororo-sfu.php` are listed in `.gitignore`.
-- Use one Cloudflare application per environment (development / production).
-- If a secret is ever exposed, **regenerate it in the dashboard immediately** and update the server file.
-- Self-hosted alternatives (LiveKit, mediasoup, Janus) are on the roadmap for full data sovereignty.
+- Use one Cloudflare application per environment (development and production).
+- If a secret is ever exposed, generate a new one in the dashboard and update the file on the server.
+- Self-hosted SFUs (LiveKit, mediasoup, Janus) are on the roadmap for full control over the data.
 
 ## 11. Authoring rooms and content
 
-Each room is one self-contained file, `rooms/data/<room-id>.json` (abridged example from `sala-01-genese.json`):
+Each room is a single file, `rooms/data/<room-id>.json`. A shortened example from `sala-01-genese.json`:
 
 ```jsonc
 {
@@ -264,11 +272,11 @@ Each room is one self-contained file, `rooms/data/<room-id>.json` (abridged exam
   "props": [
     {
       "type": "vitrine", "position": [-3.6, 0, -2.0], "size": [0.9, 1.3, 0.9],
-      "content": { "title": { "en": "SCALE" }, "body": { "en": "…" } }
+      "content": { "title": { "en": "SCALE" }, "body": { "en": "..." } }
     }
   ],
   "central": {
-    "type": "…", "title": { "en": "…" }, "body": { "en": "…" },
+    "type": "...", "title": { "en": "..." }, "body": { "en": "..." },
     "choices": [
       {
         "verb":   { "en": "ABSORB" },
@@ -281,126 +289,126 @@ Each room is one self-contained file, `rooms/data/<room-id>.json` (abridged exam
 }
 ```
 
-(`rastro` is the trace weight added by a choice; `next` defines the narrative graph.)
+`rastro` is the weight a choice adds to a trace. `next` points to the following room and so defines the narrative graph.
 
 **Workflow**
 
-1. Edit visually in `editor.html` and export the JSON, or edit the file by hand.
-2. Run `python3 build_rooms.py` to (re)generate the thin HTML loader `rooms/<room-id>.html` and the manifest `rooms/data/rooms.json`. The script is idempotent and never modifies room content.
-3. Shared UI strings live in `content/ui.json`; sound profiles in `audio-config.js`.
+1. Edit a room in `editor.html` and export the JSON, or edit the file by hand.
+2. Run `python3 build_rooms.py`. It regenerates the small HTML page for each room (`rooms/<room-id>.html`) and the manifest `rooms/data/rooms.json`. It can be run any number of times and never changes room content.
+3. Interface strings shared by all rooms are in `content/ui.json`. Sound profiles are in `audio-config.js`.
 
-`build_rooms_legacy.py`, `content/build_content_legacy.py` and `content/migrate_to_perroom.py` are kept only as references for the original geometry / texts and for the migration to the one-file-per-room format.
+`build_rooms_legacy.py`, `content/build_content_legacy.py` and `content/migrate_to_perroom.py` are kept as a record of the original geometry and texts and of the move to one file per room.
 
 ## 12. Repository structure
 
 ```text
 ORORO/
-├── index.html                 # portal (language, sound, entry)
+├── index.html                 # portal: language, sound, entry
 ├── editor.html                # visual room editor
-├── ororo-core.js              # engine: scene, navigation, procedural props, traces, UI, a11y menu
-├── ororo-audio.js             # generative Web Audio engine
+├── ororo-core.js              # engine: scene, navigation, objects, traces, interface, accessibility menu
+├── ororo-audio.js             # generated sound (Web Audio)
 ├── ororo-editor.js            # editor logic
-├── audio-config.js            # per-room sound profiles
+├── audio-config.js            # sound profile per room
 ├── style.css
-├── build_rooms.py             # generates room loaders + manifest
-├── content/                   # UI strings (ui.json) and legacy content tools
+├── build_rooms.py             # regenerates room pages and manifest
+├── content/                   # interface strings (ui.json) and legacy content scripts
 ├── rooms/
-│   ├── *.html                 # thin per-room loaders (generated)
-│   └── data/*.json            # one declarative file per room + rooms.json manifest
+│   ├── *.html                 # small loader page per room (generated)
+│   └── data/*.json            # one file per room, plus the rooms.json manifest
 ├── multiplayer/
-│   ├── api.php                # presence, pose, chat, faces, access key
+│   ├── api.php                # presence, position, chat, photos, access key
 │   ├── sfu.php                # authenticated proxy to Cloudflare Realtime
-│   ├── sfu-config.example.php # credentials template (copy → sfu-config.php, git-ignored)
+│   ├── sfu-config.example.php # credentials template (copy to sfu-config.php, ignored by git)
 │   ├── client.js              # multi-user client, avatars, reconnection
-│   ├── sfu.js                 # WebRTC publish / subscribe
+│   ├── sfu.js                 # WebRTC send and receive
 │   ├── avatar.js, chat.js, i18n.js, style.css
-│   └── .htaccess              # denies HTTP access to the config file
+│   └── .htaccess              # blocks HTTP access to the config file
 └── assets/
-    ├── js/                    # vendored Three.js + addons (MIT)
-    └── audio|models|textures|video/   # placeholders for future media
+    ├── js/                    # vendored Three.js and addons (MIT)
+    └── audio|models|textures|video/   # empty folders for future media
 ```
 
 ## 13. Current status and proposed work
 
-**Existing — working prototype (v38)**, developed independently:
+**What exists today: functional prototype, version 38**
 
-- complete navigable gallery of 17 rooms with procedural props, sound and traces;
-- one-JSON-per-room format, visual editor and build script;
-- multi-user presence, text chat, voice notes, file transfer, avatar photos;
-- SFU-based voice and webcam;
-- accessibility menu and 5-language UI.
+- A navigable gallery with 17 rooms, parametric objects, generated sound and traces.
+- One JSON file per room, a visual editor and a build script.
+- Multi-user presence, text chat, voice notes, file sending and avatar photos.
+- Voice and webcam through an SFU.
+- Accessibility menu and an interface in five languages.
 
-**Proposed new work** — clearly distinct from the above, turning a single-artwork prototype into a reusable public-interest platform:
+**Proposed new work.** The goal is to turn a prototype made for one artwork into a platform other people can reuse:
 
-1. **Reusable engine package** — separate the engine from the OROЯO content (theme, rooms and assets as a pluggable "exhibition pack"), template-generated rooms, a documented JSON Schema.
-2. **Accessible alternative mode** — a screen-reader-navigable text / 2D representation of every room, generated from the same JSON, plus audio description and captions.
-3. **Scalable, sovereign real-time layer** — proximity-based subscription to lift the 8-person limit, push-based presence, optional self-hosted SFU.
-4. **Privacy and moderation toolkit** — CSP, self-hosted fonts, privacy notice, consent flows, mute / kick / report, private rooms.
-5. **Authoring for non-programmers** — a complete visual editor so territorial artists can build rooms autonomously.
+1. **Engine as a reusable package.** Separate the engine from the OROЯO content, so that theme, rooms and media become an exchangeable "exhibition pack". One template for all rooms and a documented JSON Schema.
+2. **Accessible alternative mode.** A text and 2D version of every room, generated from the same JSON and usable with screen readers, plus audio description and captions.
+3. **Real-time layer that scales and can be self-hosted.** Subscription by proximity to go beyond 8 people per room, push-based presence and an optional self-hosted SFU.
+4. **Privacy and moderation tools.** Content-Security-Policy, self-hosted fonts, a privacy notice, consent dialogs, mute, remove and report, private rooms.
+5. **Editing for people who do not program.** A complete visual editor so artists in the territories can build rooms on their own.
 
-## 14. Roadmap / To-do
+## 14. Roadmap
 
 ### Security and privacy
 
-- [x] Remove credentials from the repository and its history; provide `sfu-config.example.php`; git-ignore real config files
-- [ ] Rotate any credential that has existed outside the production server
+- [x] Remove credentials from the repository and its history, add `sfu-config.example.php` and exclude real config files from git
+- [ ] Generate new credentials for any secret that existed outside the production server
 - [ ] Content-Security-Policy, `Permissions-Policy`, `Referrer-Policy` and HSTS headers
-- [ ] Self-host fonts (remove the Google Fonts third-party request)
-- [ ] Published privacy notice (GDPR / Brazilian LGPD) and explicit consent dialog for microphone and camera
-- [ ] Moderation: mute, kick, report, per-room host role; invite-only / private rooms
-- [ ] Audit of chat sanitisation and file uploads (type / size allow-list)
-- [ ] Per-session tokens with expiry; CSRF review of the JSON API
-- [ ] Optional end-to-end media encryption (WebRTC Encoded Transforms / SFrame)
-- [ ] Self-hosted SFU option (LiveKit / mediasoup) for data sovereignty
-- [ ] Automated secret scanning in CI (e.g. gitleaks)
+- [ ] Serve fonts from our own server instead of Google Fonts
+- [ ] Privacy notice (GDPR and Brazilian LGPD) and an explicit consent dialog for microphone and camera
+- [ ] Moderation: mute, remove and report, a host role per room, private rooms by invitation
+- [ ] Review chat sanitisation and file uploads (allowed types and sizes)
+- [ ] Session tokens with expiry; CSRF review of the JSON API
+- [ ] Optional end-to-end encryption for media (WebRTC Encoded Transforms, SFrame)
+- [ ] Self-hosted SFU option (LiveKit or mediasoup)
+- [ ] Automatic secret scanning in CI (gitleaks, for example)
 
 ### Accessibility
 
-- [ ] Formal WCAG 2.2 AA audit (axe-core + manual NVDA / VoiceOver / TalkBack testing)
-- [ ] Screen-reader-navigable text / 2D mode mirroring each room
-- [ ] Audio description of rooms and objects, authored in the room JSON
-- [ ] Live captions / transcripts for voice chat
-- [ ] Respect `prefers-reduced-motion`, `prefers-contrast` and `prefers-color-scheme` automatically
-- [ ] Photosensitivity warning and options to disable grain, flicker and bloom
-- [ ] Complete keyboard operation: visible focus, skip links, focus management between rooms
-- [ ] Remappable controls; one-handed and switch-access navigation (click-to-move)
-- [ ] Low-end mode (LOD, no post-processing, fewer particles) for older phones and slow networks
-- [ ] Sign-language video layer (Libras / DGS) and community-contributed languages, including Indigenous languages
-- [ ] Co-design and testing sessions with disabled users
+- [ ] WCAG 2.2 AA audit with axe-core and manual tests in NVDA, VoiceOver and TalkBack
+- [ ] Text and 2D mode for each room, usable with screen readers
+- [ ] Audio description of rooms and objects, written in the room JSON
+- [ ] Live captions or transcripts for voice chat
+- [ ] Follow the system settings `prefers-reduced-motion`, `prefers-contrast` and `prefers-color-scheme` automatically
+- [ ] Photosensitivity warning and options to turn off grain, flicker and bloom
+- [ ] Full keyboard use: visible focus, skip links, focus handling when moving between rooms
+- [ ] Remappable controls; one-handed and switch navigation (click to move)
+- [ ] Light mode for older phones and slow networks (simpler geometry, no post-processing, fewer particles)
+- [ ] Sign language video layer (Libras, DGS) and languages added by the community, including Indigenous languages
+- [ ] Design and test sessions with disabled people
 
-### Scalability and maintainability
+### Scale and maintenance
 
-- [ ] Replace polling with WebSocket / Server-Sent Events presence
-- [ ] Proximity-based / selective track subscription to support rooms with more than 8 people
-- [ ] A single room template instead of 17 near-identical HTML loaders
-- [ ] JSON Schema for rooms, with validation in the editor and in CI
-- [ ] Split `ororo-core.js` into modules (scene, props, UI, navigation, a11y)
-- [ ] Engine as an installable package; OROЯO as an example "exhibition pack"
-- [ ] Move all strings (including PHP messages) into translation files; contributor workflow for new languages
-- [ ] Optional media assets (GLB models, textures, video) with lazy loading and compression (Draco / KTX2)
-- [ ] Docker image and one-click deployment guides
-- [ ] Automated tests (unit tests for builders, end-to-end tests for navigation and multi-user)
-- [ ] Semantic versioning, CHANGELOG, contribution guide, code of conduct
-- [ ] WebXR (VR headset) mode as progressive enhancement
+- [ ] Replace polling with WebSocket or Server-Sent Events for presence
+- [ ] Subscribe to tracks by proximity, to allow more than 8 people per room
+- [ ] One room template instead of 17 near-identical HTML pages
+- [ ] JSON Schema for rooms, checked in the editor and in CI
+- [ ] Split `ororo-core.js` into modules (scene, objects, interface, navigation, accessibility)
+- [ ] Publish the engine as an installable package, with OROЯO as an example exhibition pack
+- [ ] Move every string, including PHP messages, into translation files, with a simple process for new languages
+- [ ] Optional media files (GLB models, textures, video) with lazy loading and compression (Draco, KTX2)
+- [ ] Docker image and deployment guides
+- [ ] Automated tests: unit tests for object builders, end-to-end tests for navigation and multi-user
+- [ ] Semantic versioning, changelog, contribution guide and code of conduct
+- [ ] WebXR mode for VR headsets, added on top of the browser version
 
-## 15. Related work and positioning
+## 15. Related work
 
 | Tool | Model | What OROЯO adds |
 |---|---|---|
-| Proprietary virtual-gallery / social-VR services (e.g. Spatial, Gather, Artsteps) | Closed, account-based, centralised | Self-hostable, no accounts, open content format |
-| Mozilla Hubs (now community-maintained) | Open source, but heavy server infrastructure | Runs on shared PHP hosting — no Node, database or container orchestration |
-| A-Frame / plain Three.js | Libraries, not ready-to-use exhibition platforms | Turnkey rooms, narrative graph, co-presence and accessibility built in |
-| Video conferencing (Jitsi, BigBlueButton) | Communication without spatial / artistic dimension | Authored spatial environments with integrated communication |
+| Commercial virtual gallery and social VR services (Spatial, Gather, Artsteps) | Closed, account-based, centralised | Self-hosting, no accounts, open content format |
+| Mozilla Hubs (now maintained by its community) | Open source, needs heavier server infrastructure | Runs on shared PHP hosting without Node, database or containers |
+| A-Frame and plain Three.js | Libraries for building 3D scenes | Ready rooms, narrative graph, presence and accessibility included |
+| Video calls (Jitsi, BigBlueButton) | Communication without a spatial or artistic layer | Authored spaces with communication built in |
 
 ## 16. Team, credits and licences
 
-- **Ricardo Palmieri (Noisetupi)** — co-author, game design, programming (Three.js, Web Audio, multi-user), WebMuseu Noisetupi. Contributor.
-- **Natasha Marzliak** — co-author, artistic direction, OROЯO dramaturgy, curatorship.
-- **Territorial artists** of Vila Suíça and Paranapiacaba (Santo André, Brazil) — authors of gallery rooms (credits added as rooms are created).
+- **Ricardo Palmieri (Noisetupi).** Co-author and co-director of *OROЯO*; game design, programming (Three.js, Web Audio, multi-user), visual and spatial construction; creator of the WebMuseu Noisetupi. Contributor to this repository.
+- **Natasha Marzliak.** Co-author and co-director of *OROЯO*; dramaturgy, conceptual research, narrative and shared curatorship.
+- **Artists from Vila Suíça and Paranapiacaba** (Santo André, Brazil). Authors of future territory-rooms, credited as their rooms are created.
 
 **Licences**
 
-- OROЯO engine code: **GNU GPL-3.0** — see [LICENSE](LICENSE).
+- OROЯO engine code: GNU GPL-3.0, see [LICENSE](LICENSE).
 - Three.js and addons (`assets/js/`): MIT License, © three.js authors.
 - IBM Plex fonts: SIL Open Font License 1.1.
-- Artistic content of the OROЯO case study (texts, concept, characters): © the authors; a licence for reuse (e.g. Creative Commons) is to be defined.
+- Artistic content of the *OROЯO* case study (texts, concept, characters): © the authors. A reuse licence, such as Creative Commons, is still to be defined.
